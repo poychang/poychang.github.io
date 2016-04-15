@@ -1,7 +1,7 @@
 poychang.com
 =====
 
-The repo for [poychang.com](http://poychang.com)
+The repo for [poychang.github.io](http://poychang.github.io)
 
 ## Running locally
 
