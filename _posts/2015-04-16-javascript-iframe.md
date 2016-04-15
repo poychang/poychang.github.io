@@ -6,7 +6,7 @@ author: Poy
 comments: true
 categories: [Develop, Javascript]
 ---
-## 方法一︰
+### 方法一︰
 先加入iframe的語法。（Ex︰A.html）
 
 ```html
@@ -33,7 +33,7 @@ categories: [Develop, Javascript]
 <body onload="resize();">
 ```
 
-## 方法二︰
+### 方法二︰
 在同一個檔案內編寫就可以了。
 
 ```html
