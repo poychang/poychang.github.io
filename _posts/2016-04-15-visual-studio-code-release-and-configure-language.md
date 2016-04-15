@@ -13,3 +13,5 @@ Visual Studio Code 1.0 釋出後，介面會自動轉乘系統預設的語系，
 只是中文的介面讓我一時之間不知道如何下指令了...
 
 如果要切換回英文介面，可以按 `Ctrl + Shift + P` 輸入`語言`，執行`設定語言`， 這時候 VSCode 會將 locale.json 開啟，只要把其中 `"locale":"zh-TW"` 改成 `"locale":"en-US"`，儲存後重新啟動，即可將 Visual Studio Code 介面切換成英文語系。
+
+![設定語言](http://i.imgur.com/oUXS0wh.png)
