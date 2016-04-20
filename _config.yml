@@ -7,21 +7,21 @@ highlighter: rouge
 markdown: kramdown
 disqus: poychang
 title: Poy Chang
-google_analytics: UA-1849069-6s
+google_analytics: UA-1849069-6
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: Nothing but Coding
+      title: Nothing but Learning
 
 description: Poy Chang
 author:
   name: Poy Chang
   github: poychang
   twitter: poychang
-  bio: Trial and Error.
+  bio: Trial and Error
   email_md5: c525d15ee116aca696f7af9a926e1788
 
 permalink: /:title/
