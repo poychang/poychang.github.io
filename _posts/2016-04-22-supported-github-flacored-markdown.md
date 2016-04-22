@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 有支援 Github Flavored 的 Markdown 語言
-date: 2016-04-21 20:22
+date: 2016-04-22 20:22
 author: Poy
 comments: true
 categories: [Tools, Develop]
