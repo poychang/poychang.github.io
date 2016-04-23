@@ -8,6 +8,7 @@ markdown: kramdown
 disqus: poychang
 title: Poy Chang
 google_analytics: UA-1849069-6
+timezone: Asia/Taipei
 
 defaults:
   -
