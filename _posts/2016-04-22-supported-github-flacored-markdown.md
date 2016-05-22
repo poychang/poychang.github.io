@@ -23,7 +23,7 @@ function foo() {
 
 上面這樣的寫法，透過 Github Flavored 的 highlighter-rouge 去渲染後，就會變成這樣： 
 
-```js
+```javascript
 function foo() {
 	var bar = '';
 	if (bar === 'Awesome'){

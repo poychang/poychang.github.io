@@ -4,7 +4,7 @@ title: 連線 FTP 出現 530 Valid Hostname is expected
 date: 2016-04-20 06:41
 author: Poy
 comments: true
-categories: [Tools, Uncategorized]
+categories: [Tools]
 ---
 想要在同一台 IIS 網頁伺服器中同時架設多個站台，同時又想讓各個站台都使用預設的 80 埠時，可以透過 IIS 的站台繫結來達成，而且此功能也適用於 FTP 站台，你唯一要設定的，就是不同站台使用不一樣的主機名稱或網域名稱
 
