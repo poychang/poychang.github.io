@@ -35,6 +35,7 @@ rss_path: feed.xml
 rss_url: http://feeds.feedburner.com/poychang
 categories_path: categories/
 about_path: about/
+list_path: list/
 #tags_path: tags.html
 
 BASE_PATH:

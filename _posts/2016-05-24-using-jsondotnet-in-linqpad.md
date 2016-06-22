@@ -12,7 +12,7 @@ categories: [C#, Tools]
 
 ![遺漏 using 指示詞](http://i.imgur.com/FfvtyQZ.png)
 
-這是因為程式碼必須引入 Newtonsoft.Json 命名空間，才能使用 JObject 這個型別。我們可以從工具列的 `Query` 中開啟 `Query Properties`，或直接按快速鍵 `f4`，在 `Additional References` 頁籤中點選 `Add` 加入所需的 `dll` 參考。如果你電腦上沒有 Json.NET 的 `dll`，可以從[這裡](https://github.com/JamesNK/Newtonsoft.Json/releases)下載最新的程式碼。
+這是因為程式碼必須引入 Newtonsoft.Json 命名空間，才能使用 JObject 這個型別。我們可以從工具列的 `Query` > `References and Properties` 開啟 `Query Properties`，或直接按快速鍵 `f4`，在 `Additional References` 頁籤中點選 `Add` 加入所需的 `dll` 參考。如果你電腦上沒有 Json.NET 的 `dll`，可以從[這裡](https://github.com/JamesNK/Newtonsoft.Json/releases)下載最新的程式碼。
  
 ![加入需要的 References](http://i.imgur.com/7z2z5Zk.png)
 
