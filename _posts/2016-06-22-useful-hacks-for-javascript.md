@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 有趣的 JavaScript 小技巧
-date: 2016-06-21 17:17
+date: 2016-06-22 17:17
 author: Poy
 comments: true
 categories: [Javascript]
