@@ -49,6 +49,15 @@
 			</ul>
 		</nav>
 
+		<div style="text-align: center;">
+			<form action="/search" method="get">
+				<input type="text" id="search_box" name="query" placeholder="keyword...">
+				<input type="submit" value="search">
+			</form>
+		</div>
+
+		<hr>
+
 		<h5>Recent Posts</h5>
 		<ul class="list-unstyled">
 			{% for post in site.posts limit:10 %}
