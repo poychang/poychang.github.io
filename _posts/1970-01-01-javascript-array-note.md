@@ -13,8 +13,9 @@ categories: []
 
 # Javascript Array Cheat Sheet
 
-![Javascript-Array-Cheat-Sheet](http://i.imgur.com/Jsb9NrZ.jpg)
-<a href="http://i.imgur.com/Jsb9NrZ.jpg" target="_blank">開新視窗</a>
+<a href="http://i.imgur.com/Jsb9NrZ.jpg" target="_blank">
+	![Javascript-Array-Cheat-Sheet](http://i.imgur.com/Jsb9NrZ.jpg)
+</a>
 
 ## 推薦使用 [lodash](https://lodash.com/)
 
