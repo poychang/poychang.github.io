@@ -9,7 +9,7 @@ categories: [Develop, SQL]
 在SQL Server 中建立好與 Oracle 連接後，可透過下列方式查詢 Oracle DB Server 的資料
 
 ```sql
-SELECT * FROM OpenQuery（[linkedServerName],'SELECT * FROM dual')
+SELECT * FROM OpenQuery([linkedServerName],'SELECT * FROM dual')
 //ex: SELECT * FROM OpenQuery(PROD,'SELECT * FROM dual')
 ```
 
@@ -22,7 +22,7 @@ SELECT * FROM dual WHERE EmplID='12258'
 則需要透過「轉義字符(')」來控制，因此SQL修改成如下的方式傳值
 
 ```sql
-SELECT * FROM OpenQuery（PROD,'SELECT * FROM dual WHERE EmplID=''12258''')
+SELECT * FROM OpenQuery(PROD,'SELECT * FROM dual WHERE EmplID=''12258''')
 ```
 
 如果今天你要在傳的 SQL 中再加上參數了話，就會變得複雜了，請參考下列 SQL 來處理
