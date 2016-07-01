@@ -63,7 +63,7 @@ gitlab-ctl restart
 
 ```
 // 切換到 root 身份，修改系統排程設定檔
-sudo vi crontab -e
+sudo crontab -e
 ```
 
 6.開啟編輯氣候，在裡面加上下面這行，使系統每天 02:00 時，會執行 Gitlab 備份程序
@@ -86,9 +86,29 @@ Error executing action `create` on resource 'directory[/mnt/BackupServer/gitlab_
 
 山不轉路轉，於是我將 Gitlab 的備份路徑，改到 user 的家目錄底下，並在 `cron table` 中，增加一個排程
 
-![](http://i.imgur.com/5HqdJqn.png)
+```
+0 3 * * * /bin/cp -a /home/user/gitlab_backup/. /mnt/BackupServer/gitlab_backup/
+```
 
 就是在 02:00 的時候執行 Gitlab 的備份計畫（備份檔存在 user 家目錄下），於 03:00 的時候將該備份檔，複製至掛載的遠端硬碟中，順利解決備份至不同機器的目的。
+
+## 定期清除備份資料
+
+Gitlab 的備份檔案是不會被覆蓋的，依照上述做法，每天都會有一筆新的備份檔，這無形也是造成硬碟空間的耗損，因此可以在 `cron table` 中再增加一個排程，只保留七天內的備份檔。
+
+```
+0 4 * * * find /mnt/BackupServer/gitlab_backup/ -name "*gitlab_backup.tar" -mtime +7 -exec rm -rf {} \;
+```
+
+### 完整排程程式碼
+
+```
+0 2 * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create
+0 3 * * * /bin/cp -a /home/user/gitlab_backup/. /mnt/BackupServer/gitlab_backup/
+0 4 * * * find /mnt/BackupServer/gitlab_backup/ -name "*gitlab_backup.tar" -mtime +7 -exec rm -rf {} \;
+```
+
+![](http://i.imgur.com/l9c5L72.png)
 
 參考資料：
 
