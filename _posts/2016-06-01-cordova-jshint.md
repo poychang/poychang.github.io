@@ -53,6 +53,10 @@ console.log('test 1/2/3');
 
 如果不想每次都遞迴資料夾做檢查，那就把 `recursiveFolderSearch` 設定成 `false` 即可。
 
+## code
+
+[poychang/010_jshint.js](https://gist.github.com/poychang/e9273db6f08833905c8e7dae14e2d897)
+
 ```javascript
 #!/usr/bin/env node
 
