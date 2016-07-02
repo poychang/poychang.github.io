@@ -19,6 +19,17 @@ NVM 是管理 Node.js 版本的工具，但不同系統有對應的工具
 * Windows 使用 [coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows)
 * Mac OS、Linux 使用 [creationix/nvm](https://github.com/creationix/nvm)
 
+----------
+
+如果已經有安裝過 Node.js，請先執行下列兩件事：
+
+1. 務必先移除 Node.js
+2. 將安裝 `npm` 套件的檔案移除（預設位置 `C:\Users<user>\AppData\Roaming\npm`），
+
+在完成安裝後再重新安裝您所需要的全域套件。
+
+----------
+
 Windows 版的安裝相對簡單，從網頁中下載最新版[（V1.1.0）](https://github.com/coreybutler/nvm-windows/releases/download/1.1.0/nvm-setup.zip)的安裝檔，解壓縮後就下一步、下一步，然後就安裝好了。
 
 安裝完成後，你可以開啟命令提示字元，輸入 `nvm` 就會顯示相關的操作提示
@@ -36,11 +47,3 @@ Windows 版的安裝相對簡單，從網頁中下載最新版[（V1.1.0）](htt
 * `nvm use <版本號>`
 	* 切換 Node.js 版本
 
-----------
-
-如果已經有安裝過 Node.js，請先執行下列兩件事：
-
-1. 務必先移除 Node.js
-2. 將安裝 `npm` 套件的檔案移除（預設位置 `C:\Users<user>\AppData\Roaming\npm`），
-
-在完成安裝後再重新安裝您所需要的全域套件。
