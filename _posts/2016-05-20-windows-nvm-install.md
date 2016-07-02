@@ -30,7 +30,7 @@ NVM 是管理 Node.js 版本的工具，但不同系統有對應的工具
 
 ----------
 
-Windows 版的安裝相對簡單，從網頁中下載最新版[（V1.1.0）](https://github.com/coreybutler/nvm-windows/releases/download/1.1.0/nvm-setup.zip)的安裝檔，解壓縮後就下一步、下一步，然後就安裝好了。
+Windows 版的安裝相對簡單，從網頁中[下載最新版](https://github.com/coreybutler/nvm-windows/releases)的安裝檔，解壓縮後就下一步、下一步，然後就安裝好了。
 
 安裝完成後，你可以開啟命令提示字元，輸入 `nvm` 就會顯示相關的操作提示
 
