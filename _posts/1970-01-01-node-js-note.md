@@ -117,8 +117,9 @@ Linux 解法：Linix系統幾乎都內建`systemd`，擁有處理各項任務的
 
 步驟：
 
-1.	建立`myapp.service`檔案（可以將myapp替換成你想要的名稱）
-2.	內容包含如下：
+1.建立`myapp.service`檔案（可以將myapp替換成你想要的名稱）
+
+2.內容包含如下：
 
 ```
 [Unit]
@@ -137,9 +138,12 @@ WorkingDirectory=/var/www/myapp
 WantedBy=multi-user.target
 ```
 
-3.	將檔案複製至`/etc/systemd/system`
-4.	Start it with systemctl start myapp.
-5.	Enable it to run on boot with systemctl enable myapp.
-6.	See logs with journalctl -u myapp
+3.將檔案複製至`/etc/systemd/system`
+
+4.Start it with systemctl start myapp.
+
+5.Enable it to run on boot with systemctl enable myapp.
+
+6.See logs with journalctl -u myapp
 
 More details at: How we deploy node apps on Linux, 2016 edition
