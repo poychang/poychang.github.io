@@ -10,7 +10,7 @@ categories: [Develop]
 
 但上面的處理方式，個人覺得有點醜陋，下面這段批次程式碼，可以把檔名變成看起來比較順眼的 `001.jpg`, `002.jpg`, `010.jpg`, `011.jpg` ...等。這裡有[完整程式碼](code)。
 
-```batch
+```bash
 @echo off
 setlocal EnableDelayedExpansion
 set i=0
@@ -31,7 +31,7 @@ for /F %%G in ('dir /b ??.jpg') do ( ren %%G 0%%G )
 
 第二段則是利用一些檔名規則，去做補零的動作，如果需要 4 位數的補零，則修改成下面一段程式碼，即可。
 
-```batch
+```bash
 rem 針對一位數的 jpg 檔前面補 3 個 0
 for /F %%G in ('dir /b ?.jpg') do ( ren %%G 000%%G )
 rem 針對二位數的 jpg 檔前面補 2 個 0
