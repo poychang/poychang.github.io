@@ -52,7 +52,7 @@ function foo() {
 *	delphi
 *	diff
 *	django
-*	**dos - dos batch files**
+*	**dos** - dos batch files
 *	erlang
 *	erlang-repl
 *	glsl
@@ -71,6 +71,7 @@ function foo() {
 *	parser3
 *	Perl
 *	PHP
+*	**powershell**
 *	profile - python profiler output
 *	python
 *	r
