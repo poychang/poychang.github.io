@@ -4,9 +4,9 @@ title: Cordova 取得相機使用權限
 date: 2016-08-11 10:24
 author: Poy
 comments: true
-categories: [Javascript, C#, SQL, App, Webapi, Azure, Develop, Tools, Uncategorized]
+categories: [App, Tools]
 ---
-想要讓 Cordova App 具有掃描 QR Code 的功能，簡單！加入 [phonegap/phonegap-plugin-barcodescanner](https://github.com/phonegap/phonegap-plugin-barcodescanner) 套件，照著套件的使用說明，寫個[幾行程式碼](code-1)就搞定了，輕鬆寫意。只是部屬到 Android 然後要使用相機功能時，出現了這個畫面...
+想要讓 Cordova App 具有掃描 QR Code 的功能，簡單！加入 [phonegap/phonegap-plugin-barcodescanner](https://github.com/phonegap/phonegap-plugin-barcodescanner) 套件，照著套件的使用說明，寫個[幾行程式碼](code-1)就搞定了，輕鬆寫意。只是部署到 Android 然後要使用相機功能時，出現了這個畫面...
 
 ![相機出現問題](http://i.imgur.com/RivLKnr.png)
 
@@ -28,7 +28,7 @@ HTC：`設定` > `關於` > `軟體資訊` > `更多` > `建置號碼`，然後�
 
 SAMSUNG：`設定` > `關於裝置` > `版本號碼`，然後對 `版本號碼` 一直點擊它開發人員選項就會出現了
 
-最後要使用 Visual Studio 直接部屬至裝置了話，要記得開啟開發人員選項中的 `USB偵錯` 選項。
+最後要使用 Visual Studio 直接部署至裝置了話，要記得開啟開發人員選項中的 `USB偵錯` 選項。
 
 ----------
 
