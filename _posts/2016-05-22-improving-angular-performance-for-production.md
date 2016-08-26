@@ -2,7 +2,7 @@
 layout: post
 title: 停用 Angular Debug 模式來增加效能
 date: 2016-05-22 09:56
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Javascript, App]
 ---

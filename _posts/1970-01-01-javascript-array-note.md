@@ -2,7 +2,7 @@
 layout: post
 title: Javascript Array 操作筆記
 date: 1970-01-01 12:00
-author: Poy
+author: Poy Chang
 comments: true
 categories: []
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Gitlab 備份筆記
 date: 2016-06-30 11:16
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Tools]
 ---

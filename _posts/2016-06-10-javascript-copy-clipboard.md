@@ -2,7 +2,7 @@
 layout: post
 title: 只用 JavaScript 實作一鍵複製
 date: 2016-06-10 00:12
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Javascript]
 ---

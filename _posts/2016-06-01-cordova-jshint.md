@@ -2,7 +2,7 @@
 layout: post
 title: 使用 JSHint 檢查 Cordova 專案程式碼
 date: 2016-06-01 16:23
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Javascript, App, Develop]
 ---

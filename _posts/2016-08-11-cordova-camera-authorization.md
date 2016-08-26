@@ -2,7 +2,7 @@
 layout: post
 title: Cordova 取得相機使用權限
 date: 2016-08-11 10:24
-author: Poy
+author: Poy Chang
 comments: true
 categories: [App, Tools]
 ---

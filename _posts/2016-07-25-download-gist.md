@@ -2,7 +2,7 @@
 layout: post
 title: 使用 curl 下載特定 Gist
 date: 2016-07-25 17:31
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Develop]
 ---

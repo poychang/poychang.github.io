@@ -2,7 +2,7 @@
 layout: post
 title: 如何偵測使用者是否使用行動裝置來瀏覽網站
 date: 2015-12-12 11:30
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Develop]
 ---

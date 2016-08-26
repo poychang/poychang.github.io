@@ -2,7 +2,7 @@
 layout: post
 title: SQL Server 使用 OpenQuery 以及傳遞參數
 date: 2014-03-15 11:30
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Develop, SQL]
 ---

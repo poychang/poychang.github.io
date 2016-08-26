@@ -2,7 +2,7 @@
 layout: post
 title: Android App 上架前的準備動作
 date: 2016-06-09 17:46
-author: Poy
+author: Poy Chang
 comments: true
 categories: [App, Tools]
 ---

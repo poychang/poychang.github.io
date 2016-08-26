@@ -2,7 +2,7 @@
 layout: post
 title: iOS 支援多語系 App 名稱
 date: 2016-06-13 17:22
-author: Poy
+author: Poy Chang
 comments: true
 categories: [App, Develop]
 ---

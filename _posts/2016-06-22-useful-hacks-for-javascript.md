@@ -2,7 +2,7 @@
 layout: post
 title: 有趣的 JavaScript 小技巧
 date: 2016-06-22 17:17
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Javascript]
 ---

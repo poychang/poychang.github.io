@@ -2,7 +2,7 @@
 layout: post
 title: 讓 Codrova 自動增加版本號
 date: 2016-06-06 12:34
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Javascript, App, Develop]
 ---

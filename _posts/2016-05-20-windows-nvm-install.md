@@ -2,7 +2,7 @@
 layout: post
 title: 在 Windows 環境中使用 NVM 管理 Node.js 
 date: 2016-05-20 00:09
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Tools]
 ---

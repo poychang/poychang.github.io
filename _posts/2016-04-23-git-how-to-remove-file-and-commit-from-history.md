@@ -2,7 +2,7 @@
 layout: post
 title: 移除 Git 歷史紀錄
 date: 2016-04-23 01:15
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Tools, Develop]
 ---

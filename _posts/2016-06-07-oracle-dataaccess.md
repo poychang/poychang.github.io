@@ -2,7 +2,7 @@
 layout: post
 title: 無法載入檔案或組件 - 使用 64 位元版本的 IIS Express
 date: 2016-06-07 17:11
-author: Poy
+author: Poy Chang
 comments: true
 categories: [C#, Develop]
 ---

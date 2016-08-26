@@ -2,7 +2,7 @@
 layout: post
 title: Azure 使用 BizTalk 無法安裝 Agent
 date: 2016-07-01 14:02
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Azure]
 ---

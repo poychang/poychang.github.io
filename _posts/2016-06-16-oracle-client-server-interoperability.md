@@ -2,7 +2,7 @@
 layout: post
 title: Oracle Client/Server 支援對照表
 date: 2016-06-16 11:00
-author: Poy
+author: Poy Chang
 comments: true
 categories: [SQL, Tools]
 ---

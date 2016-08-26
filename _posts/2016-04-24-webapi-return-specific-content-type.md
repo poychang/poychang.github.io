@@ -2,7 +2,7 @@
 layout: post
 title: WebAPI 直接回傳指定的檔案格式
 date: 2016-04-24 15:25
-author: Poy
+author: Poy Chang
 comments: true
 categories: [WebAPI, App]
 ---

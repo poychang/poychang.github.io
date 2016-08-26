@@ -2,7 +2,7 @@
 layout: post
 title: 使用 remotebuild 遠端建置 iOS App
 date: 2016-05-13 16:02
-author: Poy
+author: Poy Chang
 comments: true
 categories: [App]
 ---

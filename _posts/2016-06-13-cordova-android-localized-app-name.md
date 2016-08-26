@@ -2,7 +2,7 @@
 layout: post
 title: Android 支援多語系 App 名稱（含自動化程式碼）
 date: 2016-06-13 13:53
-author: Poy
+author: Poy Chang
 comments: true
 categories: [App, Develop]
 ---

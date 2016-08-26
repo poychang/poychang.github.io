@@ -2,7 +2,7 @@
 layout: post
 title: 保護 Cordova 專案的程式碼
 date: 2016-05-31 17:07
-author: Poy
+author: Poy Chang
 comments: true
 categories: [App, Develop]
 ---

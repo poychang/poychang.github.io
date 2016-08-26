@@ -2,7 +2,7 @@
 layout: post
 title: 設定 PowerShell 的 Alias
 date: 2016-08-05 09:26
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Tools]
 ---

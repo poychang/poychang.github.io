@@ -2,7 +2,7 @@
 layout: post
 title: Cordova 專案中儲存圖片至裝置中
 date: 2016-04-28 09:25
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Javascript, App]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: 使用 batch 批次修改檔案名稱（更名工具）
 date: 2016-05-4 14:46
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Develop]
 ---

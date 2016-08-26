@@ -2,7 +2,7 @@
 layout: post
 title: Oracle 的 SQL 報表出現斷行錯誤
 date: 2014-01-02 11:30
-author: Poy
+author: Poy Chang
 comments: true
 categories: [SQL]
 ---

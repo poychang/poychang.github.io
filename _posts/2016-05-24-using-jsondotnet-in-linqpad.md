@@ -2,7 +2,7 @@
 layout: post
 title: 在 LINQPad 中使用 Json.NET 
 date: 2016-05-24 09:09
-author: Poy
+author: Poy Chang
 comments: true
 categories: [C#, Tools]
 ---

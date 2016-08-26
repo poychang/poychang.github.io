@@ -2,7 +2,7 @@
 layout: post
 title: 安裝 Ubuntu 虛擬機並調整終端機螢幕解析度
 date: 2015-11-12 11:30
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Tools]
 ---

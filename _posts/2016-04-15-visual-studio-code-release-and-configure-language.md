@@ -2,7 +2,7 @@
 layout: post
 title: Visual Studio Code 1.0 釋出囉！
 date: 2016-04-15 01:41
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Tools]
 ---

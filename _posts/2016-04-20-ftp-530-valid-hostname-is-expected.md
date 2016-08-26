@@ -2,7 +2,7 @@
 layout: post
 title: 連線 FTP 出現 530 Valid Hostname is expected
 date: 2016-04-20 06:41
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Tools]
 ---

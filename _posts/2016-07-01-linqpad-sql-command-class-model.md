@@ -2,7 +2,7 @@
 layout: post
 title: 使用 LINQPad 快速產生對應 SQL 查詢結果的類別
 date: 2016-07-01 11:48
-author: Poy
+author: Poy Chang
 comments: true
 categories: [Tools]
 ---
