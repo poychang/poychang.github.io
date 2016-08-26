@@ -87,7 +87,7 @@ public static class LINQPadExtensions
 				var collumnName = (string)row["ColumnName"];
 
 				builder.AppendLine(string.Format("\tpublic {0}{1} {2} {{ get; set; }}", name, isNullable ? "?" : string.Empty, collumnName));
-				builder.AppendLine();
+				//builder.AppendLine();
 			}
 
 			builder.AppendLine("}");
