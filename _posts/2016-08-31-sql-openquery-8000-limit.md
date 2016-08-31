@@ -31,7 +31,7 @@ Execute a pass-through command against a linked server
 [;]
 ```
 
-上面這是 [EXECUTE MSDN](https://msdn.microsoft.com/zh-tw/library/ms188332(v=sql.120).aspx) 的 Scheme，以簡單的實例來說，就是用像這樣的語句：
+上面這是 [EXECUTE MSDN](https://msdn.microsoft.com/zh-tw/library/ms188332.aspx) 的 Scheme，以簡單的實例來說，就是用像這樣的語句：
 
 ```sql
 EXECUTE (@Query) AT LinkedServer
@@ -43,10 +43,12 @@ EXECUTE (@Query) AT LinkedServer
 
 此文件中也說明 `@string_variable` 這區域變數可以是任何 char、varchar、nchar 或 nvarchar 資料類型，其中包含 (max) 資料類型在內。
 
-這是不是意味著，我以後就不要用 OpenQuery，全部改用 EXECUTE 的方式就好了呢。
+## 總結
+
+如果是在 SQL 語句中，要調用其他資料庫的資料，且所用的查詢條件不會太長時，這種情境使用 OpenQuery 來做資料調用是滿適合的。但如果查詢的條件超級無敵長（超過 8KB），可以將該查詢改寫成系統預存程序、使用者定義預存程序、CLR 預存程序等方式，使用 EXECUTE 的方式來做。
 
 參考資料：
 
 * [Execute very long statements in TSQL using sp_executesql](http://stackoverflow.com/questions/8151121/execute-very-long-statements-in-tsql-using-sp-executesql)
 * [OPENQUERY (Transact-SQL)](https://msdn.microsoft.com/zh-tw/library/ms188427.aspx)
-* [EXECUTE (Transact-SQL)](https://msdn.microsoft.com/zh-tw/library/ms188332(v=sql.120).aspx)
+* [EXECUTE (Transact-SQL)](https://msdn.microsoft.com/zh-tw/library/ms188332.aspx)
