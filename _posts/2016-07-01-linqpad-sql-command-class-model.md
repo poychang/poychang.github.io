@@ -24,6 +24,8 @@ categories: [Tools]
 
 ## code
 
+詳請至 Github Gist [poychang/ClassModelGenerator.linq](https://gist.github.com/poychang/945448b1ce77873608f649d256648bb1)
+
 ```cs
 void Main()
 {
