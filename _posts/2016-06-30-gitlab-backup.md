@@ -87,7 +87,7 @@ Error executing action `create` on resource 'directory[/mnt/BackupServer/gitlab_
 山不轉路轉，於是我將 Gitlab 的備份路徑，改到 user 的家目錄底下，並在 `cron table` 中，增加一個排程
 
 ```
-0 3 * * * /bin/cp -a /home/user/gitlab_backup/. /mnt/BackupServer/gitlab_backup/
+0 3 * * * find /home/user/gitlab_backup/ -name "*gitlab_backup.tar" -mtime -1 -exec /bin/cp -a {} /mnt/BackupServer$
 ```
 
 就是在 02:00 的時候執行 Gitlab 的備份計畫（備份檔存在 user 家目錄下），於 03:00 的時候將該備份檔，複製至掛載的遠端硬碟中，順利解決備份至不同機器的目的。
@@ -97,15 +97,21 @@ Error executing action `create` on resource 'directory[/mnt/BackupServer/gitlab_
 Gitlab 的備份檔案是不會被覆蓋的，依照上述做法，每天都會有一筆新的備份檔，這無形也是造成硬碟空間的耗損，因此可以在 `cron table` 中再增加一個排程，只保留七天內的備份檔。
 
 ```
-0 4 * * * find /mnt/BackupServer/gitlab_backup/ -name "*gitlab_backup.tar" -mtime +7 -exec rm -rf {} \;
+0 3 * * * find /mnt/BackupServer/gitlab_backup/ -name "*gitlab_backup.tar" -mtime +3 -exec rm -rf {} \;
 ```
 
 ### 完整排程程式碼
 
 ```
+## Gitlab Backup
+# Launch Gitlab backup service
 0 2 * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create
-0 3 * * * /bin/cp -a /home/user/gitlab_backup/. /mnt/BackupServer/gitlab_backup/
-0 4 * * * find /mnt/BackupServer/gitlab_backup/ -name "*gitlab_backup.tar" -mtime +7 -exec rm -rf {} \;
+# Retain backup data on local folder in 3 days
+0 2 * * * find /home/user/gitlab_backup/ -name "*gitlab_backup.tar" -mtime +3 -exec rm -rf {} \;
+# Move Gitlab backup file to remote server
+0 3 * * * find /home/user/gitlab_backup/ -name "*gitlab_backup.tar" -mtime -1 -exec /bin/cp -a {} /mnt/BackupServer$
+# Retain backup data on remote folder in 3 day
+0 3 * * * find /mnt/BackupServer/gitlab_backup/ -name "*gitlab_backup.tar" -mtime +3 -exec rm -rf {} \;
 ```
 
 ![](http://i.imgur.com/l9c5L72.png)
