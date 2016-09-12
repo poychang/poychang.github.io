@@ -39,4 +39,4 @@ about_path: about/
 list_path: list/
 #tags_path: tags.html
 
-BASE_PATH:
+BASE_PATH: https://poychang.github.io
