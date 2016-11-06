@@ -32,6 +32,8 @@ categories: [Develop]
 
 有了 `<OwnerID>`、`<FileName>` 以及 `<GistID>` 資訊，就可以使用 `curl` 來下載囉～
 
+----------
+
 ## code
 
 ```bash

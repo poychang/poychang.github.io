@@ -16,7 +16,7 @@ categories: [Tools]
 
 1. 開啟 LINQPad，然後將 Language 的選項調整為使用 `C# Program`
 2. 建立資料庫連線
-3. 將[完整程式碼](code)給貼到 LINQPad 裡
+3. 將[完整程式碼](#code)給貼到 LINQPad 裡
 4. 輸入我們的 SQL Command
 5. 執行後就可以看到產出的相對映類別
 
