@@ -42,6 +42,6 @@ git push --force
 
 在做版控的過程中，注意每次的 commit 內容和說明是必須的，而 push 到 remotes 前將版控紀錄整理好，讓 commit tree 長的漂漂亮亮是可以讓之後看的人身心愉悅的，可以參考[Git 版本控制系統(3) 還沒 push 前可以做的事](https://ihower.tw/blog/archives/2622)，學習如何整理你的版控歷史紀錄。
 
-注意！這裡提到的方法，可刪除並更新遠端的歷史紀錄，但是會造成其他人 repository 的歷史紀錄變的怪怪的，這時候建議砍掉重新從遠端下載一份，會比較"乾淨"。
+注意！這裡提到的方法，**可刪除並更新遠端的歷史紀錄**，但是會造成其他人 repository 的歷史紀錄變的怪怪的，這時候建議砍掉重新從遠端下載一份，會比較"乾淨"。
 
 參考來源：[Removing selected commit log entries for a Git repository](http://stackoverflow.com/questions/495345/removing-selected-commit-log-entries-for-a-git-repository)
