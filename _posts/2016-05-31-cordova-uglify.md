@@ -10,13 +10,13 @@ categories: [App, Develop]
 
 ![APK 檔案結構](http://i.imgur.com/zeQ7a9u.png)
 
-Hybrid App 本質上就是使用前端的技術，JavaScrip、CSS、HTML，因此可以透過類似前端 UglifyJS 工具來保護我們的程式碼（讓程式碼變得很難很難讀懂...），而在 Cordova 專案下，可以使用 [cordova-uglify](https://github.com/rossmartin/cordova-uglify) 來達成保護程式碼的目的，而且這工具也適用於 Ionic 框架。
+Hybrid App 本質上就是使用前端的技術，JavaScrip、CSS、HTML，因此可以透過類似前端 UglifyJS 工具來保護我們的程式碼（讓程式碼變得很難很難讀懂...），而在 Cordova 專案下，可以使用 [rossmartin/cordova-uglify](https://github.com/rossmartin/cordova-uglify) 來達成保護程式碼的目的，而且這工具也適用於 Ionic 框架。
 
 cordova-uglify 主要使用下列三個套件來對檔案做壓縮
 
-* [UglifyJS2](https://github.com/mishoo/UglifyJS2) 用來壓縮 JavaScript 檔案
-* [clean-css](https://github.com/GoalSmashers/clean-css) 用來壓縮 CSS 檔案
-* [imagemin](https://github.com/imagemin/imagemin) 用來壓縮 jpeg、png、gif、svg 圖片
+* [mishoo/UglifyJS2](https://github.com/mishoo/UglifyJS2) 用來壓縮 JavaScript 檔案
+* [GoalSmashers/clean-css](https://github.com/GoalSmashers/clean-css) 用來壓縮 CSS 檔案
+* [imagemin/imagemin](https://github.com/imagemin/imagemin) 用來壓縮 jpeg、png、gif、svg 圖片
 
 ### 使用 cordova-uglify
 
@@ -100,6 +100,7 @@ cordova build <platform> --release
 npm install cordova-uglify --legacy-bundling --save-dev
 ``` 
 
+2016/10/26 [rossmartin/cordova-uglify](https://github.com/rossmartin/cordova-uglify) 作者將用於壓縮圖片的 `imagemin` 移除了，如果舊專案中有用到相關的功能，需要另外寫一個 `hook` 去替代。
 
 參考資料：
 
