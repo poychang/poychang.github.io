@@ -287,6 +287,7 @@ ILookup<int, string> customerLookup =
     customers.ToLookup(c => c.CustomerID, c => c.Name);
 ```
 
+----------
 
 參考資料：
 

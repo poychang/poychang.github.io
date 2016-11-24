@@ -58,6 +58,8 @@ cordova.plugins.diagnostic.requestCameraAuthorization(function (status) {
 });
 ```
 
+----------
+
 參考資料：
 
 * [Problem with Android 6.0.1 #139](https://github.com/phonegap/phonegap-plugin-barcodescanner/issues/139)

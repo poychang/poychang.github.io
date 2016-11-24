@@ -25,6 +25,8 @@ categories: [C#, Webapi, Develop, Tools]
 
 新版的 .NET Command Line Tools 在執行 `dotnet new`、`dotnet restore`、`dotnet build`、`dotnet publish`、`dotnet run` 也都是使用 `.csproj`，不再支援 `package.json` 了。
 
+----------
+
 參考資料：
 
 * [.NET Core Plans to Drop project.json](http://www.infoq.com/cn/news/2016/05/project-json)

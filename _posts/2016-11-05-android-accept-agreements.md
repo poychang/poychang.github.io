@@ -31,6 +31,8 @@ android update sdk --no-ui --filter build-tools-24.0.0,android-24,extra-android-
 
 這樣就會更新你 Android SDK 並自動接受授權了，輕鬆升上 Android SDK Platform 24。
 
+----------
+
 參考資料：
 
 * [Automatically accept all SDK licences](http://stackoverflow.com/questions/38096225/automatically-accept-all-sdk-licences)

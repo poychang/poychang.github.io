@@ -58,6 +58,8 @@ cat -v 010_add_platform_class.js.fix
 mv 010_add_platform_class.js.fix  010_add_platform_class.js
 ```
 
+----------
+
 參考資料：
 
 * [Remote Build](http://taco.tools/docs/remote-build.html)

@@ -120,7 +120,9 @@ $ iisexpress /config:config-file
 $ iisexpress /config:C:\Users\poypo\Documents\Code\poycode\Personal\PCWebAPI\.vs\config\applicationhost.config /siteid:2
 ```
 
-參考文件：
+----------
+
+參考資料：
 
 1.  [設定本機 Web 伺服器以允許連接到本機行動服務](https://azure.microsoft.com/zh-tw/documentation/articles/mobile-services-dotnet-backend-how-to-configure-iis-express/)
 2.  [Running IIS Express from the Command Line](http://www.iis.net/learn/extensions/using-iis-express/running-iis-express-from-the-command-line)

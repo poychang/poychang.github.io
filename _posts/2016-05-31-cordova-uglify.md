@@ -94,13 +94,15 @@ cordova build <platform> --release
 
 ### 後記
 
-安裝在開發中的專案上時，加上 `--save-dev` 是個明智的做法，確保之後的專案在回復套件時，將這個保護也建置起來。
+* 安裝在開發中的專案上時，加上 `--save-dev` 是個明智的做法，確保之後的專案在回復套件時，將這個保護也建置起來。
 
 ```bash
 npm install cordova-uglify --legacy-bundling --save-dev
 ``` 
 
-2016/10/26 [rossmartin/cordova-uglify](https://github.com/rossmartin/cordova-uglify) 作者將用於壓縮圖片的 `imagemin` 移除了，如果舊專案中有用到相關的功能，需要另外寫一個 `hook` 去替代。
+* 2016/10/26 [rossmartin/cordova-uglify](https://github.com/rossmartin/cordova-uglify) 作者將用於壓縮圖片的 `imagemin` 移除了，如果舊專案中有用到相關的功能，需要另外寫一個 `hook` 去替代。
+
+----------
 
 參考資料：
 

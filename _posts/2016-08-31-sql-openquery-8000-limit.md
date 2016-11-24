@@ -47,6 +47,8 @@ EXECUTE (@Query) AT LinkedServer
 
 如果是在 SQL 語句中，要調用其他資料庫的資料，且所用的查詢條件不會太長時，這種情境使用 OpenQuery 來做資料調用是滿適合的。但如果查詢的條件超級無敵長（超過 8KB），可以將該查詢改寫成系統預存程序、使用者定義預存程序、CLR 預存程序等方式，使用 EXECUTE 的方式來做。
 
+----------
+
 參考資料：
 
 * [Execute very long statements in TSQL using sp_executesql](http://stackoverflow.com/questions/8151121/execute-very-long-statements-in-tsql-using-sp-executesql)

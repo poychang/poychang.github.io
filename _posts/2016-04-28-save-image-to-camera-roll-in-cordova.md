@@ -90,6 +90,8 @@ saveImageToPhone(
 );
 ```
 
+----------
+
 參考資料：
 
 * [Ionic Framework 教學 - 10. 使用 Cordova Plugin](http://sushiwens.blogspot.tw/2015/11/ionic-framework-10.html)

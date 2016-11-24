@@ -165,6 +165,8 @@ function isDirectoryExists(path) {
 }
 ```
 
+----------
+
 參考資料：
 
 * [Android Developer - Supporting Different Languages](https://developer.android.com/training/basics/supporting-devices/languages.html)

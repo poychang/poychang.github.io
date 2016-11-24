@@ -77,6 +77,8 @@ iOS App 的名稱主要是抓專案檔 Info 中 Bundle Display Name 和 Bundle N
 
 但有個半自動化的方案，就是把寫好的資料夾和檔案複製下來，之後有需要的時候，在用介面新增進去。用介面處理的時候，Xcode 就會自動幫你註冊檔案了，這樣是會讓流程稍微快一點。
 
+----------
+
 參考資料：
 
 * [Localize iPhone Application Name](http://useyourloaf.com/blog/localize-iphone-application-name/)

@@ -116,6 +116,8 @@ Gitlab 的備份檔案是不會被覆蓋的，依照上述做法，每天都會�
 
 ![](http://i.imgur.com/l9c5L72.png)
 
+----------
+
 參考資料：
 
 * [Gitlab 備份/還原設定筆記](http://mycodetub.logdown.com/posts/260395-gitlab-backup-restore-settings-notes)

@@ -109,6 +109,8 @@ string mimeType = System.Web.MimeMapping.GetMimeMapping(fileName);
      preCondition="integratedMode,runtimeVersionv4.0" />
 ```
 
+----------
+
 參考資料：
 
 * [Attribute Routing in ASP.NET Web API 2](http://www.asp.net/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2)

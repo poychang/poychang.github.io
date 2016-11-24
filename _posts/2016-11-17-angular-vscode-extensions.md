@@ -36,6 +36,8 @@ categories: [Javascript, Develop, Tools]
 	* - Automatic metadata submission & synchronization to [angulardoc.io](http://angulardoc.io/) for analysis
 	* - "AngularDoc" editor for visualizing the architecture, classes, modules, routes, and imports.
 
+----------
+
 參考資料：
 
 * [The Will Will Web - 如何用Visual Studio Code 開發AngularJS 應用程式](http://blog.miniasp.com/post/2015/06/07/Using-Visual-Studio-Code-with-AngularJS.aspx)

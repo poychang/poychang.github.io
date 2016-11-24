@@ -50,6 +50,8 @@ MOVE 'AdventureWorks2014_Log' TO 'C:\Program Files\Microsoft SQL Server\MSSQL12.
 1. SQL Server 2012 Express LocalDB 的連線伺服器名稱：`(localdb)\v11.0`
 2. SQL Server 2014 Express LocalDB 的連線伺服器名稱：`(localdb)\MSSQLLocalDB`
 
+----------
+
 參考資料：
 
 * [AdventureWorks2014 installation script](http://sqlblog.com/blogs/john_paul_cook/archive/2014/08/10/adventureworks2014-installation-script.aspx)

@@ -133,6 +133,8 @@ fs.readFile('package.json', 'utf8', function (err, data) {
 });
 ```
 
+----------
+
 參考資料：
 
 * [Automatic build numbering](https://forum.ionicframework.com/t/automatic-build-numbering/9283)

@@ -44,4 +44,8 @@ git push --force
 
 注意！這裡提到的方法，**可刪除並更新遠端的歷史紀錄**，但是會造成其他人 repository 的歷史紀錄變的怪怪的，這時候建議砍掉重新從遠端下載一份，會比較"乾淨"。
 
-參考來源：[Removing selected commit log entries for a Git repository](http://stackoverflow.com/questions/495345/removing-selected-commit-log-entries-for-a-git-repository)
+----------
+
+參考資料：
+
+* [Removing selected commit log entries for a Git repository](http://stackoverflow.com/questions/495345/removing-selected-commit-log-entries-for-a-git-repository)

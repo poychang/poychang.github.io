@@ -86,6 +86,8 @@ rem -------------------------------------------------
 :END
 ```
 
+----------
+
 參考資料：
 
 * [使用 awk sprintf 修改 檔案名稱](http://blog.longwin.com.tw/2009/04/awk-sprintf-mv-rename-filename-2009/)

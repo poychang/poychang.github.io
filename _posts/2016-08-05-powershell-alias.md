@@ -26,6 +26,8 @@ Set-Alias ll Get-ChildItem
 
 這樣我就可以不改變習慣的使用 `ll` 來顯示資料夾內容了～ohyeah
 
+----------
+
 參考資料：
 
 * [Using the New-Alias Cmdlet](https://technet.microsoft.com/en-us/library/ee176913.aspx?f=255&MSPPError=-2147217396)

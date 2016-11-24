@@ -65,6 +65,8 @@ console.log(user1.age);  // 27
 
 小技巧們，好玩又不黏手:)
 
+----------
+
 參考資料：
 
 * [12 extremely useful hacks for JavaScript](https://blog.jscrambler.com/12-extremely-useful-hacks-for-javascript/?utm_source=javascriptweekly&utm_medium=email)

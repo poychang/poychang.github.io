@@ -143,6 +143,8 @@ function lintFile(file, callback) {
 
 如果在執行過程中，一直出現 `Error: Hook failed with error code 1:` 這樣的錯誤訊息，很有可能是你的 JS 檔的編碼格式不是用 Unicode (UTF-8 無簽章) 的格式，因此無法正確地執行檔案，變更一下檔案編碼就搞定了。
 
+----------
+
 參考資料：
 
 * [Minifying Your App’s Source Code](http://blog.ionic.io/minifying-your-source-code/)

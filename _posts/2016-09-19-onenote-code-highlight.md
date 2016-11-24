@@ -44,6 +44,8 @@ Visual Studio 必裝的擴充套件之一，[Productivity Power Tools](https://g
 
 都是使用我熟習的工具和語法，決定就是你了！
 
+----------
+
 參考資料：
 
 * [OneNote2013 代码语法高亮插件](http://blog.home-ml.com/wordpress/?p=1)

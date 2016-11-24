@@ -36,6 +36,8 @@ EXEC sp_dropextendedproc 'sp_password'
 
 ```
 
+----------
+
 參考資料：
 
 * [查詢 SQL Server 中安裝的擴充預存程序](https://msdn.microsoft.com/zh-tw/library/ms164637%28v=sql.120%29.aspx?f=255&MSPPError=-2147217396)

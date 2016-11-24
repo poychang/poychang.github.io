@@ -44,6 +44,8 @@ curl -O https://gist.githubusercontent.com/<OwnerID>/<GistID>/raw/<FileName>
 curl -O https://gist.githubusercontent.com/poychang/128d62787f1bf5a60fcdafcb5d223b70/raw/.gitignore
 ```
 
+----------
+
 參考資料：
 
 * [Github Developer](https://developer.github.com/)

@@ -24,6 +24,7 @@ myApp.config(['$compileProvider', function ($compileProvider) {
 
 在開發過程中，可能會使用 [kentcdodds/ng-stats](https://github.com/kentcdodds/ng-stats) 來查看頁面中 Angular digest/watches 的變化，以了解操作的執行效能，然而在設定關閉 `debugInfoEnabled` 後，此功能就不能使用了（同時也沒了聊勝於無的錯誤訊息），因此開發過程中還是將此功能打開比較方便。
 
+----------
 
 參考資料：
 

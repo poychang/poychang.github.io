@@ -44,6 +44,8 @@ OS | Windows Server 2008 R2 SP1
 
 (這篇完全是工作遇到狀況的小筆記...)
 
+----------
+
 參考資料：
 
 * [混合式連線概觀](https://azure.microsoft.com/zh-tw/documentation/articles/integration-hybrid-connection-overview/)

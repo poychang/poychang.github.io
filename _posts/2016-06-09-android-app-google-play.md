@@ -70,6 +70,8 @@ zipalign -v 4 android-release-unsigned.apk AppName.apk
 
 `AppName.apk` 就是我們最後須要的檔案了，接下來就可以到 Google Play 去上傳簽屬 + 優化過的 APK 了。
 
+----------
+
 參考資料：
 
 * [Inoic: Publishing your app](http://ionicframework.com/docs/guide/publishing.html)

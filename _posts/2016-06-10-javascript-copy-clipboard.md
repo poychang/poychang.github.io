@@ -99,6 +99,8 @@ categories: [Javascript]
 
 不要重複造輪子，的確節省了很多開發時間，而且在暇時之餘，更可以研究高手們的程式碼是如何寫的精粹。唯一的缺點就是，畢竟東西不是自己寫的，必須要花一點時間閱讀文件，然後測試看看，是否手邊適合專案。
 
+----------
+
 參考資料：
 
 * [Click button copy to clipboard using jQuery](http://stackoverflow.com/questions/22581345/click-button-copy-to-clipboard-using-jquery)

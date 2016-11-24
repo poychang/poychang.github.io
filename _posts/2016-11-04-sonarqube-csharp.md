@@ -121,6 +121,8 @@ MSBuild.SonarQube.Runner end
 
 可以正確的測試 C# 的專案，但遇到使用 ASP.NET Core 當框架的專案時，無法完成程式碼掃描，[這裡](http://stackoverflow.com/questions/37841439/running-sonarqube-against-an-asp-net-core-solution-project)說，可能是因為專案檔格式的變更，所以暫無法使用 SonarQube 進行測試。
 
+----------
+
 參考資料：
 
 * [程式碼品質分析的好用工具 - SonarQube 基本介紹 (1)](https://dotblogs.com.tw/kirkchen/2016/06/04/sonarqube-introduction)
