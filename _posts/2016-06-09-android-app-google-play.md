@@ -70,8 +70,26 @@ zipalign -v 4 android-release-unsigned.apk AppName.apk
 
 `AppName.apk` 就是我們最後須要的檔案了，接下來就可以到 Google Play 去上傳簽屬 + 優化過的 APK 了。
 
+### 後記
+
+如果你在執行**簽署 APK**時，最後出現下圖警告：
+
+![timestamp warning](http://i.imgur.com/unPdapc.png)
+
+`No -tsa or -tsacert is provided and this jar is not timestamped.` 這訊息主要是因為 JAVA 7 以後，在簽署時增加了 `timestamp` 的檢查，所以需要增加 `tsa` 參數，以下提供兩家可以使用的 `timestamp` 服務網站：
+
+1. http://timestamp.digicert.com
+2. http://tsa.starfieldtech.com
+
+再將指令改成如下，就不會有警告了。
+
+```bash
+jarsigner  -tsa http://timestamp.digicert.com -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore AppName.keystore android-release-unsigned.apk AppAliasName
+```
+
 ----------
 
 參考資料：
 
 * [Inoic: Publishing your app](http://ionicframework.com/docs/guide/publishing.html)
+* [-tsa or -tsacert timestamp for applet jar self-signed](http://stackoverflow.com/questions/21695520/tsa-or-tsacert-timestamp-for-applet-jar-self-signed)
