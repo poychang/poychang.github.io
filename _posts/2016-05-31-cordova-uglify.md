@@ -18,7 +18,7 @@ cordova-uglify 主要使用下列三個套件來對檔案做壓縮
 * [GoalSmashers/clean-css](https://github.com/GoalSmashers/clean-css) 用來壓縮 CSS 檔案
 * [imagemin/imagemin](https://github.com/imagemin/imagemin) 用來壓縮 jpeg、png、gif、svg 圖片
 
-### 使用 cordova-uglify
+## 使用 cordova-uglify
 
 安裝方式很簡單，到你的 Cordova 專案資料夾底下，執行
 
@@ -39,7 +39,7 @@ cordova build <platform> --release
 
 ![使用 cordova-uglify 的前後樣貌](http://i.imgur.com/2sJ24Di.png)
 
-### cordova-uglify 設定檔
+## cordova-uglify 設定檔
 
 在 Cordova 專案中的 `hooks` 資料夾中，會有個 `uglify-config.json` 檔案，這就是 cordova-uglify 套件的設定檔，如果不想每次要做醜化（壓縮）的動作，都要加上 `--release` 參數了話，可以修改這個設定檔中 `alwaysRun` 的值為 `true`，如此一來每次 `prepare` 或 `build` 都會執行這個動作。
 
@@ -84,7 +84,7 @@ cordova build <platform> --release
 }
 ```
 
-### 醜化（壓縮）的好處多多
+## 醜化（壓縮）的好處多多
 
 * 可以降低程式碼被找出突破口的風險（連註解都不見了，超難讀懂的....）
 * 降低程式碼的體積，在網路傳輸時也比較節省頻寬
@@ -92,7 +92,7 @@ cordova build <platform> --release
  
 但有一點要注意，醜化（壓縮）的動作會自動更改程式碼中的變數名稱，因此在開發時最好搭配 IIFE 的方式來寫 JavaScript，避免變數汙染整個專案，產生變數衝突的問題。
 
-### 後記
+## 後記
 
 * 安裝在開發中的專案上時，加上 `--save-dev` 是個明智的做法，確保之後的專案在回復套件時，將這個保護也建置起來。
 

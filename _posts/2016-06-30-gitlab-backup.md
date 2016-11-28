@@ -100,7 +100,7 @@ Gitlab 的備份檔案是不會被覆蓋的，依照上述做法，每天都會�
 0 3 * * * find /mnt/BackupServer/gitlab_backup/ -name "*gitlab_backup.tar" -mtime +3 -exec rm -rf {} \;
 ```
 
-### 完整排程程式碼
+## 完整排程程式碼
 
 ```
 ## Gitlab Backup

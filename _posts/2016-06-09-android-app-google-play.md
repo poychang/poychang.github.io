@@ -70,7 +70,7 @@ zipalign -v 4 android-release-unsigned.apk AppName.apk
 
 `AppName.apk` 就是我們最後須要的檔案了，接下來就可以到 Google Play 去上傳簽屬 + 優化過的 APK 了。
 
-### 後記
+## 後記
 
 如果你在執行**簽署 APK**時，最後出現下圖警告：
 

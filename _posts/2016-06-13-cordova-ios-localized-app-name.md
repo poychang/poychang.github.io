@@ -28,7 +28,7 @@ iOS App 的名稱主要是抓專案檔 Info 中 Bundle Display Name 和 Bundle N
 
 ----------
 
-### 步驟一
+## 步驟一
 
 實際上我們不修改 `Info.plist`，而是藉由 `InfoPlist.strings` 然後進行本地化設定，`InfoPlist.strings` 會在系統執行的時候覆蓋掉對應的 `Info.plist` 屬性。
 
@@ -38,7 +38,7 @@ iOS App 的名稱主要是抓專案檔 Info 中 Bundle Display Name 和 Bundle N
 
 ![選擇 Strings 樣板](http://i.imgur.com/L8eyoI6.png)
 
-### 步驟二
+## 步驟二
 
 在 `InfoPlist.strings` 中加入下面兩行程式碼並輸入你的 App 名稱（英文語系的名稱），然後點選 Xcode 右方的面板的 `Localize...`，此時這個檔案就有了區分不同語系的屬性，預設的語系是 `English`。
 
@@ -49,7 +49,7 @@ iOS App 的名稱主要是抓專案檔 Info 中 Bundle Display Name 和 Bundle N
 
 ![輸入 App 名稱並使之本地化](http://i.imgur.com/ro8YIjc.png)
 
-### 步驟三
+## 步驟三
 
 執行完上述的本地化之後，會在專案資訊的 `Localizations` 中看到目前有 `English` 的語系，而該欄後面的 Resource 欄位中，可以看到寫者 `1 File Localized`，這就是指我們剛剛本地化的 `InfoPlist.strings` 檔案。
 
@@ -59,13 +59,13 @@ iOS App 的名稱主要是抓專案檔 Info 中 Bundle Display Name 和 Bundle N
 
 ![](http://i.imgur.com/e7by8Bk.png)
 
-### 最後
+## 最後
 
 完成上述步驟後，可以在檔案導覽中看到 `InfoPlist.strings` 左邊多了個黑色箭頭，點開後可以看到對應語系的檔案，這時候我們就可以去修改中文語系的 App 名稱，就搞定了。
 
 ![完成多語系設定](http://i.imgur.com/P2vuY5p.png)
 
-### 補充
+## 補充
 
 做完上面的步驟後，如果你開啟 Finder 看 `Resources` 資料夾，你會找不到原本的 `InfoPlist.strings`，取而代之的是 `en.lproj` 和 `zh-Hant.lproj` 資料夾，本地化就是透過這樣的方式達成的。
 

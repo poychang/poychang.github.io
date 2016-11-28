@@ -8,7 +8,7 @@ categories: [Javascript]
 ---
 偶然在逛到一篇在講 JavaScript 的 hack 小技巧，有幾項覺得滿實用的，寫下來筆記。
 
-### 使用 `!!` 將變數轉型成 Boolean
+## 使用 `!!` 將變數轉型成 Boolean
 
 JavaScript 有一種特性，稱為 Truthy and Falsy，他會預期下列的值為 `false`
 
@@ -35,7 +35,7 @@ console.log(emptyAccount.cash);      //0
 console.log(emptyAccount.hasMoney);  //false
 ```
 
-### 使用 `+` 將變數轉型成 Number
+## 使用 `+` 將變數轉型成 Number
 
 如果要手動將 String 轉換成 Number 普遍來說會使用 `Number(value)` 來處理（我比較偏好這樣的處理方式，維護起來比較明確知道要做什麼），但有另一種特別的作法可以知道一下，就是利用 `+` 加號運算子來做隱性轉型。
 
@@ -49,7 +49,7 @@ console.log(toNumber('3.14'));  //3.14
 console.log(toNumber('ABC'));   //NaN
 ```
 
-### 使用 `||` 設定預設值
+## 使用 `||` 設定預設值
 
 這個小技巧非常實用，利用 `||` OR 運算子來設定變數的預設值。
 
