@@ -17,7 +17,7 @@ categories: [C#, Webapi, Develop, Tools]
 1. 在有 `package.json` 的資料夾下，執行 `dotnet migrate` 指令
 2. 使用  Visual Studio 2017 開啟專案，會跳出轉換訊息
 
-建議使用第一個方法，因為我現行的專案總總是轉不成功...
+建議使用第一個方法，因為我現行的專案總是轉不成功...
 
 ## 新建專案
 
