@@ -102,6 +102,8 @@ npm install cordova-uglify --legacy-bundling --save-dev
 
 * 2016/10/26 [rossmartin/cordova-uglify](https://github.com/rossmartin/cordova-uglify) 作者將用於壓縮圖片的 `imagemin` 移除了，如果舊專案中有用到相關的功能，需要另外寫一個 `hook` 去替代。
 
+* 2016/12/06 補"坑"筆記，使用 cordova-uglify 時出現路徑問題，需增加 process.cwd() 取得執行路徑，才能正常運作。可參考 [poychang/uglify.js](https://gist.github.com/poychang/eaf206e79e8094e7fd00d4979a0641d1)
+
 ----------
 
 參考資料：
