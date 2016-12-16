@@ -15,7 +15,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Nothing but Learning
+      title: Explicit is better than implicit
 
 description: Poy Chang
 author:
