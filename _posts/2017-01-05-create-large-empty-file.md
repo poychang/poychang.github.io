@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 快速產生空的檔案
-date: 2016-01-05 09:43
+date: 2017-01-05 09:43
 author: Poy Chang
 comments: true
 categories: [Tools]
