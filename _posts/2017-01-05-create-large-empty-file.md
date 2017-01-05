@@ -21,7 +21,7 @@ categories: [Tools]
 $ fsutil file createnew TestFileName 1000
 ```
 
-簡單輸入檔名和要產生的檔案長度（單位為 `Byte`，1000 = 1KB），就搞定了。
+簡單輸入檔名和要產生的檔案長度（單位為 `bytes`，1000 = 1KB），就搞定了。
 
 ## 工具：Dummy File Creator
 
