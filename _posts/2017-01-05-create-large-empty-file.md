@@ -33,6 +33,33 @@ $ fsutil file createnew TestFileName 1000
 
 使用方法真的又簡單又直覺，英文也淺顯易懂，甚至可以輕鬆產出 GB 級的大檔案，是不是很值得收藏。
 
+### 快速鍵
+
+這款工具在操作上，設定了很多快速鍵，使用快速鍵操作的方式如下：
+
+1. 開啟 Dummy File Creator
+2. 輸入檔案大小
+3. `alt` + `B` 選擇儲存檔案位置及名稱
+4. `alt` + `R` 啟動隨機檔案大小
+5. `alt` + `C` 產生檔案
+6. `alt` + `X` 關閉程式
+
+有了快速鍵，是不是變得很程序猿 XD
+
+### 批次產生
+
+如果要產生很多個檔案怎麼辦？產生一次輸入一次也太累了吧！這工具也提供批次產生，只要選擇 `Multiple Files` 然後選擇設定好的批次檔，就可以產生多筆檔案。
+
+![Multiple Files](http://i.imgur.com/SWiba8y.png)
+
+批次檔的範例如下：
+
+![批次檔範例](http://i.imgur.com/hUlcJxL.png)
+
+規則很簡單，像這樣 `FULL_FILENAME` `[tab]` `FILESIZE_IN_BYTES` `[tab]` `RANDOM_SWITCH` `[enter]`，注意中間是用 `tab` 做分隔。
+
+如此一來就可以輕鬆產生多筆測試用的檔案了。
+
 ----------
 
 參考資料：
