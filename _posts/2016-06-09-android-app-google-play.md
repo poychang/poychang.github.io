@@ -74,7 +74,7 @@ zipalign -v 4 android-release-unsigned.apk AppName.apk
 
 如果你在執行**簽署 APK**時，最後出現下圖警告：
 
-![timestamp warning](http://i.imgur.com/unPdapc.png)
+![timestamp warning](http://i.imgur.com/yMFyKHs.png)
 
 `No -tsa or -tsacert is provided and this jar is not timestamped.` 這訊息主要是因為 JAVA 7 以後，在簽署時增加了 `timestamp` 的檢查，所以需要增加 `tsa` 參數，以下提供兩家可以使用的 `timestamp` 服務網站：
 
