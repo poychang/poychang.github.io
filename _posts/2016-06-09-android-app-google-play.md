@@ -47,9 +47,9 @@ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore AppName.keystor
 
 ## 優化 APK
 
-Android 的 SDK 中包含了一個用於優化 APK 的工具 [zipalign](https://developer.android.com/studio/command-line/zipalign.html)。此工具主要的目的是為了使未壓縮的數據相對文件起始處有一個固定的偏移，使 APK 中所有未壓縮的數據均按照4bytes對齊，提升執行效率。
+Android 的 SDK 中包含了一個用於優化 APK 的工具 [zipalign](https://developer.android.com/studio/command-line/zipalign.html)。此工具主要的目的是為了使未壓縮的數據相對文件起始處有一個固定的偏移，使 APK 中所有未壓縮的數據均按照 4 bytes 對齊，提升執行效率。
 
-只要有安裝 Android SDK，你可以在安裝的目錄下找到這個工具（我的 Windows 的路徑為：C:\Program Files (x86)\Android\android-sdk\build-tools\23.0.2）。
+只要有安裝 Android SDK，你可以在安裝的目錄下找到這個工具（我的 Windows 的路徑為：`C:\Program Files (x86)\Android\android-sdk\build-tools\23.0.2`）。
 
 為了讓打指令的時候，可以打少一點字，可以將此路徑加入系統的環境變數中。
 
@@ -68,7 +68,7 @@ zipalign -v 4 android-release-unsigned.apk AppName.apk
 
 ## 準備收工
 
-`AppName.apk` 就是我們最後須要的檔案了，接下來就可以到 Google Play 去上傳簽屬 + 優化過的 APK 了。
+`AppName.apk` 就是我們最後須要的檔案了，接下來就可以到 [Google Play Developer Console](https://play.google.com/apps/publish/) 去上傳簽屬 + 優化過的 APK 了。
 
 ## 後記
 
