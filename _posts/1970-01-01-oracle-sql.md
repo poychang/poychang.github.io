@@ -45,6 +45,15 @@ ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY-MM-DD';
 * 當月最後一天的 23:59:59
 	* `to_date( to_char( last_day(sysdate), 'dd-mm-yyyy' )||'　23:59:59', 'dd-mm-yy hh24:mi:ss' )`
 
+## Oracle 的 SQL 報表出現斷行錯誤
+
+SQL 明明就是正確的，在 TOAD 上可以順利執行，但上傳到 Oracle 之後，卻頻頻出現出現錯誤，或毫無作用。解決的方法是：
+
+* 將多餘的空行刪掉
+* 注意 SQL 最後一行有沒有加 `/` 符號
+
+詳細請參考[此篇文章](https://poychang.github.io/oracle-sql-special-characters/)。
+
 ----------
 
 參考資料：
