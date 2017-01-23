@@ -25,6 +25,10 @@ categories: [SQL]
 
 **在 Oracle 中，如果換行字元不正確，那該 SQL 是無法正確執行的。**因此如果你的檔案有換行，但無法正確執行（如下圖：不可執行的版本）那可能就是你的換行符號有問題了。
 
+可執行的版本
+
 ![可執行的版本](http://i.imgur.com/oDX1swo.jpg)
+
+不可執行的版本
 
 ![不可執行的版本](http://i.imgur.com/YEVDqJf.jpg)
