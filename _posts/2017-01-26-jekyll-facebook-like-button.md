@@ -85,8 +85,10 @@ Like Button Configurator 程式碼產生器會產出如下兩段的程式碼：
 網頁內容才是來看你部落格的主要目的，因此我們不希望載入 Facebook Like 按鈕的程式碼造成內容瀏覽的負擔，因此可以在 `script` 標籤中透過 `defer` 參數來延遲此 Javascript 的載入。
 
 ```javascript
-<script defer>(function(d, s, id) {
-	//...
+<script defer>
+(function(d, s, id) {
+	//do something...
+})();
 </script>
 ```
 
