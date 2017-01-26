@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在 Jekyll 上增加 Facebook Like 按鈕
-date: 2017-01-26 14:14
+date: 2017-01-20 14:14
 author: Poy Chang
 comments: true
 categories: [Tools]
@@ -84,7 +84,7 @@ Like Button Configurator 程式碼產生器會產出如下兩段的程式碼：
 
 網頁內容才是來看你部落格的主要目的，因此我們不希望載入 Facebook Like 按鈕的程式碼造成內容瀏覽的負擔，因此可以在 `script` 標籤中透過 `defer` 參數來延遲此 Javascript 的載入。
 
-```javascript
+```html
 <script defer>
 (function(d, s, id) {
 	//do something...
