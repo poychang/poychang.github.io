@@ -86,7 +86,7 @@ Like Button Configurator 程式碼產生器會產出如下兩段的程式碼：
 
 ```javascript
 <script defer>(function(d, s, id) {
-	...
+	//...
 </script>
 ```
 
