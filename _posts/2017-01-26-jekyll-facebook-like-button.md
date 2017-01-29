@@ -37,7 +37,9 @@ Jekyll 預設的架構
 * 根目錄中有兩個重要檔案：主設定檔 `_config.yml` 和主入口 `index.html`
 * 重點資料夾：`_includes`、`_layouts`、`_posts`、`_sass`
 	* `_includes` 資料夾存放各種版面上的元件，利於後續模組化使用
-	* `_layouts` 資料夾存放各種版面的檔案，例如設計好的 header、footer 版面等，可以再透過 `{``% include header.html %}`
+{% raw %}
+	* `_layouts` 資料夾存放各種版面的檔案，例如設計好的 header、footer 版面等，可以再透過 `{% include header.html %}`
+{% endraw %}
 這樣的方式來引用。
 
 	* `_posts` 資料夾存放部落格文章

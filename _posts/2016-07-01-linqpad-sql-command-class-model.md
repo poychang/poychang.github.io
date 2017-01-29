@@ -87,8 +87,9 @@ public static class LINQPadExtensions
 				var name = TypeAliases.ContainsKey(type) ? TypeAliases[type] : type.Name;
 				var isNullable = (bool)row["AllowDBNull"] && NullableTypes.Contains(type);
 				var collumnName = (string)row["ColumnName"];
-
+{% raw %}
 				builder.AppendLine(string.Format("\tpublic {0}{1} {2} {{ get; set; }}", name, isNullable ? "?" : string.Empty, collumnName));
+{% endraw %}
 				//builder.AppendLine();
 			}
 
