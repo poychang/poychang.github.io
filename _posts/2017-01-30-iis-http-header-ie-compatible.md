@@ -50,7 +50,19 @@ categories: [Tools]
 
 上面的作法是針對特定網頁去做設定，如果是想針對網站做設定了話，可以透過 IIS 來處理。
 
-IIS 6 中，可以在針對站台設定自訂的 HTTP 標頭名稱為 `X-UA-Compatible`，並且將值設定為 `IE=EmulateIE7` 即可完成全站設定。
+IIS 7 中，可以在針對站台的**HTTP 回應標頭**新增 HTTP 標頭名稱為 `X-UA-Compatible`，並且將值設為 `IE=EmulateIE7` 即可完成全站設定。
+
+![HTTP 回應標頭](http://i.imgur.com/n3JLjUh.png)
+
+>選擇站台中的 **HTTP 回應標頭**
+
+![新增](http://i.imgur.com/FRQOTku.png)
+
+>點選右側動作的新增
+
+![設定 X-UA-Compatible 標頭](http://i.imgur.com/4XGhPiX.png)
+
+>設定 X-UA-Compatible 標頭
 
 如果同時有以上二種作法，則是「特定頁面設定 X-UA-Compatible」的優先權較高。
 
