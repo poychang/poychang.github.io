@@ -89,6 +89,8 @@ if(
 ?>
 ```
 
+>PHP 程式碼
+
 ```vb
 Dim UserAgent
 UserAgent = Lcase(Request.ServerVariables("HTTP_USER_AGENT"))
@@ -99,6 +101,8 @@ else
 	'Not IE Browser
 end if
 ```
+
+>VB 程式碼
 
 ----------
 
