@@ -30,3 +30,4 @@ categories: [C#, Webapi, Develop, Tools]
 參考資料：
 
 * [.NET Core Plans to Drop project.json](http://www.infoq.com/cn/news/2016/05/project-json)
+* [.NET Core 2.0 Changes – 5 Things to Know](https://stackify.com/net-core-2-0-changes/)
