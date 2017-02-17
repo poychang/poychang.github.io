@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 開啟 SSMS 2016 的黑色佈景主題
-date: 2017-02-17 22:36
+title: 啟用 SSMS 2016 的黑色佈景主題
+date: 2017-02-17 21:58
 author: Poy Chang
 comments: true
 categories: [SQL, Tools]
