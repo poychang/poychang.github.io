@@ -24,7 +24,7 @@ categories: [Azure, Tools]
 
 * Hybrid Connection 會用到 80、443、5671、9350~9354 這幾個 Port
 * 地端伺服器的防火牆只要開啟 Outbound 連線就可以
-* 混合式連接不支援UDP的通訊協定
+* 混合式連接不支援 UDP 的通訊協定
 
 另外，一個 BizTalk 服務可以給多個混合式連線使用，且主機名稱最好不要有特殊字元、連結號或底線，這樣有可能會有問題，且使用時請一定要使用地端伺服器的主機名稱，使用 IP 可能會無法連線
 
@@ -55,7 +55,7 @@ Add-HybridConnectionClient -ConnectionString "Endpoint=hc://YourBizTalkServiceNa
 
 Microsoft Azure Hybrid Connection Manager [下載位置](https://www.microsoft.com/en-us/download/details.aspx?id=42962)
 
-官方文件：[PowerShell CmdLet | 混合式連線管理員](https://msdn.microsoft.com/zh-tw/library/azure/dn789178.aspx)
+官方文件：[PowerShell CmdLet 混合式連線管理員](https://msdn.microsoft.com/zh-tw/library/azure/dn789178.aspx)
 
 >重要事項：這裡的 -ConnectionString 參數是指 Azure 管理入口網站中列出的完整**內部部署連接字串**。
 
