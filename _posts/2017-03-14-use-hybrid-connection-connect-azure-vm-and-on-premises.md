@@ -44,21 +44,15 @@ categories: [Azure, Tools]
 1. 在 Azure VM 上安裝 Hybrid Connection Client
 	* 參考下方 Hybrid Connection Client 段落的下載位置
 2. 確認服務有開啟
-
 ![Hybrid Connections Client Service](http://i.imgur.com/e8GVG82.png)
 
 3. 取得 Hybrid Connection 所產生的**應用程式連接字串**（主要、次要都可以）
-
 ![應用程式連接字串](http://i.imgur.com/PyCagEE.png)
 
-4. 使用系統管理員權限開啟 PowerShell 執行下列指令，其中 `ConnectionString` 需替換成的**應用程式連接字串**
-
-```powershell
-Add-HybridConnectionClient -ConnectionString "Endpoint=hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourNewHybridConnectionName;SharedAccessKeyName=defaultListener;SharedAccessKey=xxxx"
-```
-
+4. 使用系統管理員權限開啟 PowerShell 執行下列指令
+	* `Add-HybridConnectionClient -ConnectionString "YourConnectionString"`
+	* 其中 `YourConnectionString` 需替換成上一步取得的**應用程式連接字串**
 5. 執行 `Get-HybridConnectionClient` 檢查是否有把地端伺服器的連結加進去
-
 ![Get-HybridConnectionClient](http://i.imgur.com/71QJcyk.png)
 
 6. 順利加入後，可執行 `ping <地端主機名稱>` 來試試看有沒連結到
@@ -75,8 +69,12 @@ PowerShell CmdLet
 
 * `Add-HybridConnection`
 	* 在混合式連線管理員中，將新的內部部署接聽程式連線新至 Azure 上現有的混合式連接。
-	* 語法：`Add-HybridConnection -ConnectionString <string>  [<CommonParameters>]`
-	* 範例：
+	* 語法 & 範例：
+
+```powershell
+Add-HybridConnection -ConnectionString <string>  [<CommonParameters>]
+```
+
 ```powershell
 Add-HybridConnection -ConnectionString "Endpoint=hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourNewHybridConnectionName;SharedAccessKeyName=defaultListener;SharedAccessKey=xxxx"
 ```
@@ -85,16 +83,24 @@ Add-HybridConnection -ConnectionString "Endpoint=hc://YourBizTalkServiceName.hyb
 	* 針對本機混合式連線管理員上設定的內部部署接聽程式，更新連線參數。
 * `Remove-HybridConnection`
 	* 從本機混合式連線管理員中，移除特定混合式連接的內部部署接聽程式。
-	* 語法：`Remove-HybridConnection -ConnectionString <string>  [<CommonParameters>]`
-	* 範例：
+	* 語法 & 範例：
+
+```powershell
+Remove-HybridConnection -ConnectionString <string>  [<CommonParameters>]
+```
+
 ```powershell
 Remove-HybridConnection -ConnectionString "Endpoint=hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourHybridConnectionName;SharedAccessKeyName=defaultListener;SharedAccessKey=xxxx"
 ```
 
 * `Get-HybridConnection`
 	* 針對本機混合式連線管理員上設定的所有混合式連接，傳回內部部署接聽程式的相關資訊。
-	* 語法：`Get-HybridConnectionClient [-ConnectionString <string>] [-Uri <uri>] `
-	* 範例：
+	* 語法 & 範例：
+
+```powershell
+Get-HybridConnectionClient [-ConnectionString <string>] [-Uri <uri>] 
+```
+
 ```powershell
 Get-HybridConnectionClient -URI "hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourHybridConnectionName"
 ```
@@ -114,24 +120,36 @@ PowerShell CmdLet
 
 * `Add-HybridConnection`
 	* 在混合式連線管理員中，將新的內部部署接聽程式連線新至 Azure 上現有的混合式連接。
-	* 語法：`Add-HybridConnectionClient -ConnectionString <string>  [<CommonParameters>]`
-	* 範例：
+	* 語法 & 範例：
+
+```powershell
+Add-HybridConnectionClient -ConnectionString <string>  [<CommonParameters>]
+```
+
 ```powershell
 Add-HybridConnectionClient -ConnectionString "Endpoint=hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourNewHybridConnectionName;SharedAccessKeyName=defaultListener;SharedAccessKey=xxxx"
 ```
 
 * `Remove-HybridConnection`
 	* 從本機混合式連線管理員中，移除特定混合式連接的內部部署接聽程式。
-	* 語法：`Remove-HybridConnectionClient -ConnectionString <string>  [<CommonParameters>]`
-	* 範例：
+	* 語法 & 範例：
+
+```powershell
+Remove-HybridConnectionClient -ConnectionString <string>  [<CommonParameters>]
+```
+
 ```powershell
 Remove-HybridConnectionClient CconnectionString "Endpoint=hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourHybridConnectionName;SharedAccessKeyName=defaultListener;SharedAccessKey=xxxx"
 ```
 
 * `Get-HybridConnection`
 	* 針對本機混合式連線管理員上設定的所有混合式連接，傳回內部部署接聽程式的相關資訊。
-	* 語法：`Get-HybridConnectionClient [-ConnectionString <string>] [-Uri <uri>] `
-	* 範例：
+	* 語法 & 範例：
+
+```powershell
+Get-HybridConnectionClient [-ConnectionString <string>] [-Uri <uri>]
+```
+
 ```powershell
 Get-HybridConnectionClient -URI "hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourHybridConnectionName"
 ```
