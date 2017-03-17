@@ -28,28 +28,40 @@ categories: [Azure, Tools]
 
 另外，一個 BizTalk 服務可以給多個混合式連線使用，且主機名稱最好不要有特殊字元、連結號或底線，這樣有可能會有問題，且使用時請一定要使用地端伺服器的主機名稱，使用 IP 可能會無法連線
 
-## 搭配 Azure VM（待補圖）
+## 搭配 Azure VM
 
 如果你是使用 Azure 虛擬機器的服務來構建環境了話，就無法用 Azure Portal 上的設定選項來設定 Hybrid Connection，基本的步驟如下：
 
 1. 登入 [Azure 傳統入口網站](https://manage.windowsazure.com/)
 	* 目前只有 Azure 傳統入口網站能單獨建立 BizTalk 服務
+	* BizTalk Hybrid Connection 基本有 5 個免費連線可以用（好棒棒！）
 2. 在左側瀏覽窗格中，選取並建立 [BizTalk 服務](https://docs.microsoft.com/zh-tw/azure/biztalk-services/biztalk-provision-services)
 3. 從中選取 [建立混合式連接] 並設定想要連線地端伺服器
 4. 在地端伺服器上使用 Hybrid Connection Manager 來設定內部部屬連接字串
 
 到這裡都和上一節差不多，接下來不同的是 Azure VM 要怎麼做設定。
 
-1. 在 Azure VM 上安裝 Hybrid Connection Client，並確認服務有開啟
-2. 開啟 PowerShell
-3. 執行下列指令，其中 `ConnectionString` 需替換成你 Hybrid Connection 所產生的**應用程式連接字串**
+1. 在 Azure VM 上安裝 Hybrid Connection Client
+	* 參考下方 Hybrid Connection Client 段落的下載位置
+2. 確認服務有開啟
+
+![Hybrid Connections Client Service](http://i.imgur.com/e8GVG82.png)
+
+3. 取得 Hybrid Connection 所產生的**應用程式連接字串**（主要、次要都可以）
+
+![應用程式連接字串](http://i.imgur.com/PyCagEE.png)
+
+4. 使用系統管理員權限開啟 PowerShell 執行下列指令，其中 `ConnectionString` 需替換成的**應用程式連接字串**
 
 ```powershell
 Add-HybridConnectionClient -ConnectionString "Endpoint=hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourNewHybridConnectionName;SharedAccessKeyName=defaultListener;SharedAccessKey=xxxx"
 ```
 
-4. 執行 `Get-HybridConnectionClient` 檢查是否有把地端伺服器的連結加進去
-5. 順利加入後，可執行 `ping <地端主機名稱>` 來試試看有沒連結到
+5. 執行 `Get-HybridConnectionClient` 檢查是否有把地端伺服器的連結加進去
+
+![Get-HybridConnectionClient](http://i.imgur.com/71QJcyk.png)
+
+6. 順利加入後，可執行 `ping <地端主機名稱>` 來試試看有沒連結到
 
 ## Hybrid Connection Manager
 
