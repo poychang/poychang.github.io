@@ -13,6 +13,11 @@ Oracle 用來取得目前系統時間的函數為 `sysdate`
 ```sql
 SELECT sysdate FROM dual;
 ```
+## 資料庫系統版本
+
+```sql3/24/2017 2:19:33 PM SELECT * FROM V$VERSION;
+SELECT * FROM V$VERSION;
+```
 
 ## 更改目前 session 日期顯示格式
 
