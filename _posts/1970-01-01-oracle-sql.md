@@ -15,7 +15,7 @@ SELECT sysdate FROM dual;
 ```
 ## 資料庫系統版本
 
-```sql3/24/2017 2:19:33 PM SELECT * FROM V$VERSION;
+```sql
 SELECT * FROM V$VERSION;
 ```
 
