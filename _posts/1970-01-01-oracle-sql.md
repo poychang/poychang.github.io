@@ -59,6 +59,24 @@ SQL 明明就是正確的，在 TOAD 上可以順利執行，但上傳到 Oracle
 
 詳細請參考[此篇文章](https://poychang.github.io/oracle-sql-special-characters/)。
 
+## C# System.Data.OracleClient 問題
+
+中文錯誤訊息：
+
+>InvalidOperationException: 嘗試載入 Oracle 用戶端程式庫時傳出 BadImageFormatException。當與具有 32 位元的 Oracle 用戶端元件執行 64 位元模式安裝時，會出現此問題。
+>BadImageFormatException: 試圖載入格式錯誤的程式。 (發生例外狀況於 HRESULT: 0x8007000B)
+
+英文錯誤訊息：
+
+>System.InvalidOperationException: Attempt to load Oracle client libraries threw BadImageFormatException. This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.
+>System.BadImageFormatException: An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B).
+
+原因：
+
+OracleClient 會依 x64/x86 決定適當的 Oracle Client 版本，不必手工切換。因此，如果想在 Windows x64 上使用 `System.Data.Oraclient`，最好 32bit/64bit 兩種 10.2 + 版本的 Oracle Client 都要裝，並確定 `PATH` 變數中二者的 bin 目錄都有在其中。
+
+詳細請參考[此篇文章](https://poychang.github.io/oracle-client-windows/)。
+
 ----------
 
 參考資料：
