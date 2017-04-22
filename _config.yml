@@ -15,7 +15,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Explicit is better than implicit
+      title: I am PC
 
 description: Poy Chang
 author:
