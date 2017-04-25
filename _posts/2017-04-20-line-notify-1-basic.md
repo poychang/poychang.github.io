@@ -153,7 +153,7 @@ Postman 裡面的操作步驟如下：
 
 ![](http://i.imgur.com/9wS3Q7a.jpg)
 
-Line Notify 服務除了發送文字訊息之外，還可以發送貼圖訊息、圖片訊息，讓你的應用可以更廣泛。在官方部落格裏面還有搭配 IoT 去觸發相關的服務，然後再去傳 Line Notify 訊息，這種應用感覺就超酷的！
+Line Notify 服務除了發送文字訊息之外，還可以發送貼圖訊息、圖片訊息，讓你的應用可以更廣泛。在官方部落格的[文章](https://engineering.linecorp.com/en/blog/detail/94)裡裏面還有搭配 IoT 去觸發相關的服務，然後再去傳 Line Notify 訊息，這種應用感覺就超酷的！
 
 ----------
 
