@@ -75,24 +75,24 @@ sitemap:
 </thead>
 <tbody>
   <tr>
-	<td>`&` 符號</td>
-	<td>`&amp;`</td>
+	<td>& 符號</td>
+	<td>&amp;amp;</td>
   </tr>
   <tr>
 	<td>單引號</td>
-	<td>`&apos;`</td>
+	<td>&amp;apos;</td>
   </tr>
   <tr>
 	<td>雙引號</td>
-	<td>`&quot;`</td>
+	<td>&amp;quot;</td>
   </tr>
   <tr>
 	<td>大於</td>
-	<td>`&gt;`</td>
+	<td>&amp;gt;</td>
   </tr>
   <tr>
 	<td>小於</td>
-	<td>`&lt;`</td>
+	<td>&amp;lt;</td>
   </tr>
 </tbody>
 </table>
