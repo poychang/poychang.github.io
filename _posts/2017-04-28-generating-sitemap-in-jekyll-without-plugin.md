@@ -48,7 +48,9 @@ Sitemap 必須符合以下條件：
 
 ## 自動產生 sitemap.xml 內容
 
+{% raw %}
 在 Jekyll 我們可以透過 `{% for post in site.posts %}` 來遍巡文章，或 `{% for page in site.pages %}` 來遍尋頁面，藉此取得各頁面的 metadata，然後寫入 xml 中，因此可以在 jekyll 專案裡面建立一個 `sitemap.xml` 檔案，內容如下：
+{% endraw %}
 
 <script src="https://gist.github.com/poychang/fb7be1320565c6cee6cf8255a1ce321a.js"></script>
 
