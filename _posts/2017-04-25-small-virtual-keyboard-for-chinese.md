@@ -15,6 +15,7 @@ categories: [Tools]
 >網站版面有點眼花撩亂，就直接點下面的連結下載程式吧
 
 主程式下載位置：[http://cnt.lakefolks.com/CNTzip.exe](http://cnt.lakefolks.com/CNTzip.exe)
+
 中文化下載位置：[http://cnt.lakefolks.com/Chinese-Files.exe](http://cnt.lakefolks.com/Chinese-Files.exe)
 
 安裝步驟：
