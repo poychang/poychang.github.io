@@ -144,6 +144,16 @@ article{
 	margin-bottom: 20px;
 }
 
+.article_body h1,
+.article_body h2,
+.article_body h3,
+.article_body h4,
+.article_body h5,
+.article_body h6 {
+	margin-top: 40px;
+	color: #2c3e50;
+}
+
 .post-date {
 	text-transform: uppercase;
 	font-size: 14px;
