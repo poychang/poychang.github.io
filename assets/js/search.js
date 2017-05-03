@@ -1,5 +1,5 @@
 /// reference to /assets/js/lunr.js
-(function() {
+(function () {
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
 
