@@ -124,9 +124,55 @@ IF EXIST "%DEPLOYMENT_TARGET%\.angular-cli.json" (
 
 <script src="https://gist.github.com/poychang/04098db7b88deec9b9af3e5a947b9677.js"></script>
 
+## 後記
+
+部署到 Azure 後一定都很正常，直到在子頁面（例：`example.com/about`）中按下 `F5` 做重新整理的時候，網站就掛掉了，錯誤訊息如下：
+
+`The resource you are looking for has been removed, had its name changed, or is temporarily unavailable.`
+
+也就是網站找不到指定資源的錯誤。
+
+這讓我想到保哥[有篇文章](http://blog.miniasp.com/post/2017/01/17/Angular-2-deploy-on-IIS.aspx)說過 Angular 的路由機制在 IIS 下會有狀況發生，其因大致上就是 Angular 的路由方式會被 IIS 當作是找靜態檔案，所以路由就失效了。
+
+保哥的文章有三個解法，很值得看，而我這次是要部屬到 Azure 上，所以採用 URL Rewrite 自動網址重寫的方式來做。
+
+首先在 `src` 資料夾下加入 `web.config` 檔案，並加入以下內容：
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <system.webServer>
+    <rewrite>
+      <rules>
+        <rule name="SPA" stopProcessing="true">
+          <match url=".*" />
+          <action type="Rewrite" url="/" />
+          <conditions>
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+          </conditions>
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+</configuration>
+```
+
+然後修改 `.angular-cli.json` 中的 `assets` 值，大致如下：
+
+```json
+"assets": [
+	"assets",
+	"web.config",
+	"favicon.ico"
+]
+```
+
+目的是要把 `web.config` 當作靜態資源，保留在編譯後的 `dist` 資料夾中，然後跟著部署一起上 Azure，這樣就搞定了。
+
 ----------
 
 參考資料：
 
 * [Running Angular2 App on Azure App Services with CI and CD](https://prmadi.com/running-angular2-app-on-azure-app-services-with-ci-cd/)
 * [Run NPM, Bower, Composer, Gulp & Grunt In Azure App Services During Deployment](https://prmadi.com/azure-custom-deployment/)
+* [如何將 Angular 2 含有路由機制的 SPA 網頁應用程式部署到 IIS 網站伺服器](http://blog.miniasp.com/post/2017/01/17/Angular-2-deploy-on-IIS.aspx)
