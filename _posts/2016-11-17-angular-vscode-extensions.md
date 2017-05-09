@@ -8,10 +8,10 @@ categories: [Javascript, Develop, Tools]
 ---
 [台灣 AngularJS 社群](https://www.facebook.com/groups/Angular2.tw/)於 2016/10/19 舉辦的小聚時，看到好多神奇的擴充套件，[保哥](http://blog.miniasp.com)更發起了[開發 Angular 2 必備 VSCode 擴充套件](https://paper.dropbox.com/doc/-Angular-2-VSCode--Kh2w3saOyZtJSHawFoBem)的共筆，讓各位先進們一同分享好用的擴充套件。內文為共筆的備份。
 
-開發 Angular 2 必備 VSCode 擴充套件
+## 開發 Angular 2 必備 VSCode 擴充套件
 
-* [Angular 2 TypeScript Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2)
-	* [ [GitHub](https://github.com/johnpapa/vscode-angular2-snippets) ]
+* [Angular v4 TypeScript Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2)
+	* [ [GitHub](https://github.com/johnpapa/vscode-angular-snippets) ]
 	* 開發 Angular 2 的時候經常有許多**語法糖**，對初學者來說經常會打錯，有了這些 Code Snippets 就可以降低打錯字的機會。
 * [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
 	* [ [GitHub](https://github.com/soates/Auto-Import) ]
@@ -35,6 +35,12 @@ categories: [Javascript, Develop, Tools]
 	* - Full integration of [angular-cli](https://github.com/angular/angular-cli) generate commands (e.g. `ng g component`) on the explorer's context menu
 	* - Automatic metadata submission & synchronization to [angulardoc.io](http://angulardoc.io/) for analysis
 	* - "AngularDoc" editor for visualizing the architecture, classes, modules, routes, and imports.
+
+## 個人覺得好用的擴充套件
+
+* VS Color Picker
+* Quokka.js
+* Code Spellchecker
 
 ----------
 
