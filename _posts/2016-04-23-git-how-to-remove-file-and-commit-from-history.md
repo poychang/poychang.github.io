@@ -44,6 +44,20 @@ git push --force
 
 注意！這裡提到的方法，**可刪除並更新遠端的歷史紀錄**，但是會造成其他人 repository 的歷史紀錄變的怪怪的，這時候建議砍掉重新從遠端下載一份，會比較"乾淨"。
 
+## 補充
+
+如果是要刪除最後一次的 commit，並請更新至遠端，可以透過下列方式：
+
+```bash
+# move HEAD to previous commit, and discard all working copy changes
+git reset HEAD^
+
+# push it
+git push --force
+```
+
+其中 `HEAD` 後面的 `^` 是指前一版本的意思。
+
 ----------
 
 參考資料：
