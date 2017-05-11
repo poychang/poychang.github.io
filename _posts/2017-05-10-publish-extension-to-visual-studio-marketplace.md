@@ -6,7 +6,7 @@ author: Poy Chang
 comments: true
 categories: [Develop, Tools]
 ---
-建立了 VS Code 擴充套件後，你可以選擇發行至官方的 [Extension Marketplace](https://marketplace.visualstudio.com)，或者封裝成 `.vsix` 做分享，本篇就來介紹發行擴充套件至 Extension Marketplace 的動作。
+在[建立了 VS Code 擴充套件](../build-vscode-extension/)後，你可以選擇發行至官方的 [Extension Marketplace](https://marketplace.visualstudio.com)，或者封裝成 `.vsix` 做分享，本篇就來介紹發行擴充套件至 Extension Marketplace 的動作。
 
 ## 安裝
 
