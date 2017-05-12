@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 開發 Angular 2 推薦的 VS Code 擴充套件
+title: 推薦開發 Angular 的 VS Code 擴充套件
 date: 2016-11-17 10:22
 author: Poy Chang
 comments: true
@@ -41,6 +41,8 @@ categories: [Javascript, Develop, Tools]
 * VS Color Picker
 * Quokka.js
 * Code Spellchecker
+
+如果想要製作屬於自己的 Visual Studio Code 擴充套件包，可以參考這篇[文章](../build-vscode-extension/)。
 
 ----------
 
