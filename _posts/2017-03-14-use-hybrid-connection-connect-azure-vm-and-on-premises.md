@@ -57,7 +57,13 @@ categories: [Azure, Tools]
 
 6. 順利加入後，可執行 `ping <地端主機名稱>` 來試試看有沒連結到
 
-## Hybrid Connection Manager
+----------
+
+## 以下為相關的整理文件
+
+記得一個大方向：Hybrid Connection Manager 用於地端，Hybrid Connection Client 用於雲端。
+
+### Hybrid Connection Manager
 
 Microsoft Azure Hybrid Connection Manager [下載位置](https://www.microsoft.com/en-us/download/details.aspx?id=42962)
 
@@ -108,7 +114,7 @@ Get-HybridConnectionClient -URI "hc://YourBizTalkServiceName.hybrid.biztalk.wind
 * `Set-HybridConnectionManagerConfiguration`
 	* 設定混合式連線管理員的本機管理 TCP 通訊埠。
 
-## Hybrid Connection Client
+### Hybrid Connection Client
 
 Microsoft Azure Hybrid Connection Client [下載位置](https://www.microsoft.com/en-us/download/details.aspx?id=44216)
 
