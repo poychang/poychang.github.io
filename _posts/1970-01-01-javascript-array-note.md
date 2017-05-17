@@ -66,7 +66,9 @@ app.controller('myCtrl', ['$scope', 'lodash', function ($scope, _){
 
 ## 常用操作
 
-### join : 將陣列元素用固定符號串成字串 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join))
+### join
+
+將陣列元素用固定符號串成字串 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join))
 
 ```javascript
 var arr = ["jack", "john", "may", "su", "Ada"];
@@ -94,7 +96,9 @@ delete arr[1];
 // [1,,3, 4, 5, 6]
 ```
 
-### Array.form : 將字串或輸入參數組成陣列 (非常方便) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from))
+### Array.form
+
+將字串或輸入參數組成陣列 (非常方便) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from))
 
 ```javascript
 // Array-like object (arguments) to Array
@@ -122,7 +126,9 @@ Array.from([1, 2, 3], x => x + x); // [2, 4, 6]
 Array.from({length:5}, (v, k) => k); // [0, 1, 2, 3, 4]
 ```
 
-### sort : 陣列排序 (很好用) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort))
+### sort
+
+陣列排序 (很好用) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort))
 
 ```javascript
 var arr = [5, 9, 1, 3, 2, 6];
@@ -141,7 +147,9 @@ arr.sort(function (a,b) {
 // [9,6,5,3,2,1]
 ```
 
-### push : 新增元素或元素組到陣列 (想不用到都不行) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push))
+### push
+
+新增元素或元素組到陣列 (想不用到都不行) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push))
 
 ```javascript
 var arr = {
@@ -163,7 +171,9 @@ JSON.stringify(arr);
 } */
 ```
 
-### splice : 改變陣列內容，移除或新增元素 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice))
+### splice
+
+改變陣列內容，移除或新增元素 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice))
 
 ```javascript
 array.splice(index , howMany[, element1[, ...[, elementN]]])
@@ -199,7 +209,9 @@ removed = myFish.splice(3, Number.MAX_VALUE);
 //myFish is ["parrot", "anemone", "blue"]
 //removed is ["trumpet", "surgeon"]
 ```
-### some : 陣列比對，只要有一個元素是 true，就返回 true (很好用) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some))
+### some
+
+陣列比對，只要有一個元素是 true，就返回 true (很好用) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some))
 
 ```javascript
 var arr = ["jack", "john", "may", "su", "Ada"];
@@ -209,7 +221,9 @@ var flag = arr.some(function (value, index, array) {
 //  flag 為 true
 ```
 
-### every :  陣列比對，所有元素都是 true 才是 true (很好用) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every))
+### every
+
+陣列比對，所有元素都是 true 才是 true (很好用) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every))
 
 ```javascript
 var arr = ["jack", "john", "may", "su", "Ada"];
@@ -219,7 +233,9 @@ var flag = arr.every(function (value, index, array) {
 // flag 為 false
 ```
 
-### filter : 陣列過濾，透過 filter 的過濾條件返回一個新陣列 (非常好用)
+### filter
+
+陣列過濾，透過 filter 的過濾條件返回一個新陣列 (非常好用)
 
 ```javascript
 var arr = ["jack", "john", "may", "su", "Ada"];
@@ -230,7 +246,9 @@ arr2.join("、");
 //  jack、john
 ```
 
-### map : 對陣列中的各元素進行操作，操作後的值會被寫入新的陣列中並返回 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
+### map
+
+對陣列中的各元素進行操作，操作後的值會被寫入新的陣列中並返回 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
 
 ```javascript
 var arr = [1, 2, 3, 4, 5, 6];
@@ -243,7 +261,9 @@ arr2.join("、");
 
 ## 別人寫的好用程式碼
 
-### 陣列的 distinct : 取得陣列中不重複的元素值，輸出成新陣列 (有用到 jQuery)
+### 陣列的 distinct
+
+取得陣列中不重複的元素值，輸出成新陣列 (有用到 jQuery)
 
 ```javascript
 function GetUnique(inputArray) {
@@ -257,9 +277,11 @@ function GetUnique(inputArray) {
 }
 ```
 
-## 冷門操作
+## 進階操作
 
-### concat : 會將兩個陣列合併產生新的陣列，原陣列不改變 (不常用，但很簡單就記一下吧) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat))
+### concat
+
+會將兩個陣列合併產生新的陣列，原陣列不改變 (不常用，但很簡單就記一下吧) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat))
 
 ```javascript
 var alpha = ["a", "b", "c"];
@@ -268,7 +290,9 @@ var alphaNumeric = alpha.concat(numeric);
 // creates array ["a", "b", "c", 1, 2, 3]; alpha and numeric are unchanged
 ```
 
-### reduce : 陣列中的每一個元素都會呼叫一次callback函數，唯一不同的是，函數的回傳值會當作下一次呼叫的傳入值，方向為索引 0 到 陣列尾端 (冷門，幾乎可以不用記) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce))
+### reduce
+
+陣列中的每一個元素都會呼叫一次callback函數，唯一不同的是，函數的回傳值會當作下一次呼叫的傳入值，方向為索引 0 到 陣列尾端 (冷門，幾乎可以不用記) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce))
 
 ```javascript
 var arr = [1, 2, 3, 4, 5, 6];
@@ -278,6 +302,12 @@ var flag = arr.reduce(function (previousValue, currentValue, index, array) {
 // 所以 flag 為 1 + 2 + 3 + 4 + 5 + 6 = 21
 ```
 
-### reduceRight : 與 reduce 相同，只是是從陣列尾端到索引 0 的位置 (冷門，幾乎可以不用記) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight))
+### reduceRight
 
+與 reduce 相同，只是是從陣列尾端到索引 0 的位置 (冷門，幾乎可以不用記) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight))
 
+----------
+
+參考資料：
+
+* []()
