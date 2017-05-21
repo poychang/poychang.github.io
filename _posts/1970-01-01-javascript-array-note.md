@@ -11,7 +11,7 @@ categories: []
 
 [完整的 Array 用法可以看 MDN 官網](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-# Javascript Array Cheat Sheet
+## Javascript Array Cheat Sheet
 
 <a href="http://i.imgur.com/Jsb9NrZ.jpg" target="_blank">
 	![Javascript-Array-Cheat-Sheet](http://i.imgur.com/Jsb9NrZ.jpg)
@@ -40,33 +40,7 @@ app.controller(
 )  
 ```
 
-# 目錄
-
-*	join : 將陣列元素用固定符號串成字串 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join))
-*	清除或增加陣列長度 (清除陣列很好用)
-*	刪除陣列元素([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete))
-*	toString()：將陣列轉成字串
-*	Array.form : 將字串或輸入參數組成陣列 (非常方便) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from))
-*	sort : 陣列排序 (很好用) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort))
-*	push : 新增元素或元素組到陣列 (想不用到都不行) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push))
-*	splice : 改變陣列內容，移除或新增元素 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice))
-*	some : 陣列比對，只要有一個元素是 true，就返回 true (很好用) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some))
-*	every :  陣列比對，所有元素都是 true 才是 true (很好用) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every))
-*	filter : 陣列過濾，透過 filter 的過濾條件返回一個新陣列 (非常好用)
-*	map : 對陣列中的各元素進行操作，操作後的值會被寫入新的陣列中並返回 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
-
-## 別人寫的好用程式碼
-
-*	陣列的 distinct : 取得陣列中不重複的元素值，輸出成新陣列 (有用到 jQuery)
-
-## 冷門操作
-
-*	concat : 會將兩個陣列合併產生新的陣列，原陣列不改變 (不常用，但很簡單就記一下吧) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat))
-*	reduce : 陣列中的每一個元素都會呼叫一次callback函數，唯一不同的是，函數的回傳值會當作下一次呼叫的傳入值，方向為索引 0 到 陣列尾端 (冷門，幾乎可以不用記) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce))
-*	reduceRight : 與 reduce 相同，只是是從陣列尾端到索引 0 的位置 (冷門，幾乎可以不用記) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight))
-
-
-## 常用操作
+## 原生操作
 
 ### join
 
@@ -78,7 +52,9 @@ var str = arr.join("、");
 // str 為 jack、john、may、su、Ada
 ```
 
-### 清除或增加陣列長度 (清除陣列很好用)
+### arr.length = 0;
+
+清除或增加陣列長度 (清除陣列很好用)
 
 ```javascript
 var arr = [1, 2, 3, 4, 5, 6];
@@ -90,7 +66,9 @@ arr.length = 5;
 // [,,,,] 
 ```
 
-### 刪除陣列元素([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete))
+### delete
+
+刪除陣列元素([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete))
 
 ```javascript
 var arr = [1, 2, 3, 4, 5, 6];
@@ -98,7 +76,7 @@ delete arr[1];
 // [1,,3, 4, 5, 6]
 ```
 
-### Array.form
+### form
 
 將字串或輸入參數組成陣列 (非常方便) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from))
 
@@ -261,26 +239,6 @@ arr2.join("、");
 // 2、4、6、8、10、12
 ```
 
-## 別人寫的好用程式碼
-
-### 陣列的 distinct
-
-取得陣列中不重複的元素值，輸出成新陣列 (有用到 jQuery)
-
-```javascript
-function GetUnique(inputArray) {
-	var outputArray = [];
-	for (var i = 0; i < inputArray.length; i++) {
-		if ((jQuery.inArray(inputArray[i], outputArray)) == -1) {
-			outputArray.push(inputArray[i]);
-		}
-	}
-	return outputArray;
-}
-```
-
-## 進階操作
-
 ### concat
 
 會將兩個陣列合併產生新的陣列，原陣列不改變 (不常用，但很簡單就記一下吧) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat))
@@ -307,6 +265,26 @@ var flag = arr.reduce(function (previousValue, currentValue, index, array) {
 ### reduceRight
 
 與 reduce 相同，只是是從陣列尾端到索引 0 的位置 (冷門，幾乎可以不用記) ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight))
+
+----------
+
+## 別人寫的好用程式碼
+
+### 陣列的 distinct
+
+取得陣列中不重複的元素值，輸出成新陣列 (有用到 jQuery)
+
+```javascript
+function GetUnique(inputArray) {
+	var outputArray = [];
+	for (var i = 0; i < inputArray.length; i++) {
+		if ((jQuery.inArray(inputArray[i], outputArray)) == -1) {
+			outputArray.push(inputArray[i]);
+		}
+	}
+	return outputArray;
+}
+```
 
 ----------
 
