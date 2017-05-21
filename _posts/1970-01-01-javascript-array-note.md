@@ -17,25 +17,27 @@ categories: []
 	![Javascript-Array-Cheat-Sheet](http://i.imgur.com/Jsb9NrZ.jpg)
 </a>
 
-## 推薦使用 [lodash](https://lodash.com/)
+## 推薦使用 [Lodash](https://lodash.com/)
 
-*	Lo-Dash 提供很多我們平常 coding 會用到的工具函式，部分函式的效能甚至比原生 JavaScript 函式還要快。
-*	常用到的 Lo-Dash 函式有以下四種分類：
+*	Lodash 提供很多我們平常 coding 會用到的工具函式，部分函式的效能甚至比原生 JavaScript 函式還要快。
+*	常用到的 Lodash 函式有以下四種分類：
 	*	Arrays
 	*	Collections
 	*	Objects
 	*	Utilities
-*	若在 Angular 中使用，推薦將 lodash 封裝成一個 module，程式碼如下：
+*	若在 AngularJS 中使用，推薦將 Lodash 封裝成一個 module，程式碼如下：
+
 ```javascript
-angular.module(‘LoDash', []).factory(‘lodash', function($window) {  
-    return $window._; // LoDash 一定要先 include 進來  
+angular.module('Lodash', []).factory('lodash', function($window) {  
+    return $window._; // Lodash 一定要先 include 進來  
 });  
   
-app.module('myApp', ['LoDash']);  
+app.module('myApp', ['Lodash']);  
   
-app.controller('myCtrl', ['$scope', 'lodash', function ($scope, _){  
-  // 這邊的 _ 代表 Lo-Dash  
-}])  
+app.controller(
+	'myCtrl',
+	['$scope', 'lodash', function ($scope, _){ /* 這邊的 _ 代表 Lodash */ }]
+)  
 ```
 
 # 目錄
@@ -310,4 +312,4 @@ var flag = arr.reduce(function (previousValue, currentValue, index, array) {
 
 參考資料：
 
-* []()
+* [Lodash](https://lodash.com/)
