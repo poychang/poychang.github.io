@@ -4,7 +4,7 @@ title: 在 Azure 中使用 CI 和 CD 佈署 Angular 應用程式
 date: 2017-05-03 23:10
 author: Poy Chang
 comments: true
-categories: [Azure, Tools]
+categories: [Angular, Azure, Tools]
 ---
 DevOps 當道的時代，CI 和 CD 這兩個名詞一定要知道，而在 Azure App Service 上，也有提供 CI、CD 的服務，讓你可以使用各種版控工具做提交，然後執行腳本來完成持續整合，並在最後發布至 Azure App Service 中。
 
