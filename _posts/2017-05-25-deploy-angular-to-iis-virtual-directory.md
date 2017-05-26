@@ -4,7 +4,7 @@ title: 佈署 Angular 應用程式至 IIS 虛擬目錄 / 應用程式
 date: 2017-05-25 22:16
 author: Poy Chang
 comments: true
-categories: [Typescript, Javascript, C#, SQL, App, Angular, Webapi, Azure, Develop, Tools, Uncategorized]
+categories: [Angular, Tools]
 ---
 佈署 Angular 應用程式至 IIS 時，一定會遇到路由問題，基本上兩種解法，修改 Angular 路由模組訂定，改用 [useHash](https://angular.io/docs/ts/latest/guide/router.html#!#-hashlocationstrategy-) 的方式處理，或者使用 IIS 的 URL Rewrite 模組，而如果佈署到 IIS 網站的虛擬目錄 / 應用程式時，有些地方就要修改了。
 
