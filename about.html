@@ -9,10 +9,44 @@ title: About Poy Chang
     <div class="col-md-9 col-sm-9 col-xs-12 center-block">
         <p>Poy Chang has deep love for tech. Recently learning Angular and Ionic framework to build an app with corporation support. As a developer, keep learning and practice what you learn is the most important thing I thought.</p>
         <p>Trial and Error. Through books, films or simply travel to the field wonderful life drama :)</p>
+        <br>
+        <ul class="list-unstyled list-inline">
+            {% if site.author.github %}
+            <li>
+                <a class="btn btn-default btn-sm" href="https://github.com/{{ site.author.github }}">
+                    <i class="fa fa-github-alt fa-lg"></i>
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author.facebook %}
+            <li>
+                <a class="btn btn-default btn-sm" href="https://www.facebook.com/{{ site.author.facebook }}">
+                    <i class="fa fa-facebook-official fa-lg"></i>
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author.linkedin %}
+            <li>
+                <a class="btn btn-default btn-sm" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">
+                    <i class="fa fa-linkedin-square fa-lg"></i>
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author.twitter %}
+            <li>
+                <a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
+                    <i class="fa fa-twitter fa-lg"></i>
+                </a>
+            </li>
+            {% endif %}
+        </ul>
+        <br>
+        <p>poypost@gmailcom</p>
+        <p>Taipei, Taiwan</p>
     </div>
 </div>
 
-<br>
+<hr>
 
 <!-- github-calendar start -->
 <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
