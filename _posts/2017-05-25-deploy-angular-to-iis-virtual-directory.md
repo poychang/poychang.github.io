@@ -10,7 +10,11 @@ categories: [Angular, Tools]
 
 >保哥的這篇文章：[如何將 Angular 2 含有路由機制的 SPA 網頁應用程式部署到 IIS 網站伺服器](http://blog.miniasp.com/post/2017/01/17/Angular-2-deploy-on-IIS.aspx)，把佈署方式寫得很清楚，可以解決常見的佈署問題。
 
-先來看一下保哥寫的 web.config：
+>這篇主要使用 URL Rewrite 模組的方式來解決。
+
+首先在 IIS 伺服器中透過 [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx) 安裝 [URL Rewrite 2.0](https://www.iis.net/downloads/microsoft/url-rewrite) 模組。
+
+再來看一下保哥寫的 web.config：
 
 <script src="https://gist.github.com/doggy8088/68eed089b53ff50e81314ba47d92e87a.js"></script>
 
@@ -29,9 +33,26 @@ categories: [Angular, Tools]
 
 <script src="https://gist.github.com/poychang/9a35ce967f6cc7c7714ff55544569821.js"></script>
 
+## 後記
+
+如果你的伺服器環境是使用 IIS 10 了話，你會遇到無法安裝 URL Rewrite 2.0 的問題，錯誤訊息會說此模組只能安裝在 IIS 7 以上版本。
+
+這問題是因為該安裝程式的檢查機制有 bug，他只檢查 1 個位數的版本號，因此版本 10 會被辨識成 1，所以無法安裝，解決步驟如下：
+
+1. 開啟登錄編輯器（Regedit）並移至 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\InetStp` 路徑
+2. 編輯 `MajorVersion` 機碼，類型設定成 `DECIMAL`，數值設定成 `9`
+3. 按 `F5` 重新整理登錄編輯器
+4. 安裝 URL Rewrite 2.0 模組
+5. 完成安裝後再將 `MajorVersion` 機碼回復成 `10`
+6. 按 `F5` 重新整理登錄編輯器
+7. 關閉登錄編輯器
+
+這樣就搞定了。（這問題讓我想起 Y2K 的劫難呀...）
+
 ----------
 
 參考資料：
 
 * [如何將 Angular 2 含有路由機制的 SPA 網頁應用程式部署到 IIS 網站伺服器](http://blog.miniasp.com/post/2017/01/17/Angular-2-deploy-on-IIS.aspx)
 * [Angular 2 application not working when moved into IIS virtual directory](https://stackoverflow.com/questions/43017193/angular-2-application-not-working-when-moved-into-iis-virtual-directory)
+* [why IIS 10.0 can not be install url rewrite 2.0 in win 10 preview](https://forums.iis.net/t/1223556.aspx)
