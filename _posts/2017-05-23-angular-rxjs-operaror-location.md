@@ -199,4 +199,5 @@ import { AnimationFrameScheduler } from 'rxjs/scheduler/AnimationFrameScheduler'
 
 參考資料：
 
+* [RxJS - Operators 使用說明](http://reactivex.io/rxjs/manual/overview.html#operators)
 * [快速找到 RxJS 的 import 路徑的方法](https://forum.angular.tw/t/rxjs-import/356)
