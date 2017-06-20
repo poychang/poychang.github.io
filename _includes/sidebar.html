@@ -47,16 +47,19 @@
         {% endfor %}
     </ul>
     <div align="center">
+        {% if site.google_adsense %}
+        <!-- Google AdSense ads code -->
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- poychang.github.io side ad -->
         <ins class="adsbygoogle"
             style="display:block"
-            data-ad-client="ca-pub-9725019211606469"
+            data-ad-client="{{ site.google_adsense }}"
             data-ad-slot="2970838589"
             data-ad-format="auto"></ins>
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
+        {% endif %}
     </div>
 </div>
 <!-- sidebar.html end -->
