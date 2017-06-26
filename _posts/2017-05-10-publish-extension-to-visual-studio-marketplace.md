@@ -84,6 +84,8 @@ vsce publish
 
 ![擴充套件上架圖](http://i.imgur.com/cV14NIN.png)
 
+這篇發行的擴充套件包在此 [PoyChang Extension Pack](https://marketplace.visualstudio.com/items?itemName=PoyChang.poychang-extension-pack)，有興趣的朋友們可以下載來看看。
+
 ----------
 
 參考資料：
