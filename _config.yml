@@ -32,7 +32,7 @@ author:
 
 permalink: /:title/
 
-gems: ["jekyll-paginate"]
+plugins: ["jekyll-paginate"]
 
 github_repo_url: https://github.com/poychang/poychang.github.io/
 
