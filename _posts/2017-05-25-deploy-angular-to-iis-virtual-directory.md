@@ -25,7 +25,7 @@ categories: [Angular, Tools]
 1. 虛擬目錄 / 應用程式下的 Angular 應用程式要有一個 `web.config` 檔案
 2. `web.config` 中的 `match` 標籤中的 url 要設定成 `/.*`，表示要比對該目錄下的檔案
 3. `web.config` 中的 `action`  標籤中的 url 要設定成 `/VirtualDirectory/`，虛擬資料夾的位置
-4. `index.html` 中的 `base` 修改成 `<base href="/VirtualDirectory/">`
+4. `index.html` 中的 `base` 修改成 `<base href="/VirtualDirectory/">`，或是在 build 的時候使用 `ng build --prod --base-href /VirtualDirectory/` 這個帶有 `--base-href` 參數的指令
 
 如此一來我們 Angular 應用程式的路由機制就可以正確運作了！
 
