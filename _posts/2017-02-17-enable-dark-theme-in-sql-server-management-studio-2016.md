@@ -24,6 +24,10 @@ categories: [SQL, Tools]
 
 ![SSMS 2016 with dark them](http://i.imgur.com/RDeut95.png)
 
+## 後記
+
+- 在安裝 SSMS 2017 時發現也有同樣的設定區塊，位置一模一樣，這個功能什麼時候才會全面開放呢，期待呀！
+
 ----------
 
 參考資料：
