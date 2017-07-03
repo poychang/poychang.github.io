@@ -89,7 +89,7 @@ categories: []
   <tbody>
     <tr>
       <td>\d</td>
-      <td>數字</td>
+      <td><mark>數字</mark></td>
       <td>[0-9]</td>
     </tr>
     <tr>
@@ -99,7 +99,7 @@ categories: []
     </tr>
     <tr>
       <td>\w</td>
-      <td>數字、字母、底線</td>
+      <td><mark>數字、字母、底線</mark></td>
       <td>[a-zA-Z0-9_]</td>
     </tr>
     <tr>
@@ -204,7 +204,7 @@ categories: []
     </tr>
     <tr>
       <td>.</td>
-      <td>比對任何一個字元（但換行符號不算）</td>
+      <td><mark>比對任何一個字元（但換行符號不算）</mark></td>
       <td>/.n/ 可比對 &#8220;nay, an apple is on the tree&#8221; 中的 &#8220;an&#8221; 和 &#8220;on&#8221;，但不可比對 &#8220;nay&#8221;</td>
     </tr>
     <tr>
