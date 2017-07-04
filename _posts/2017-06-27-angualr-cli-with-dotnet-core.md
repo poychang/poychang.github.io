@@ -62,7 +62,7 @@ Angular CLI 會幫我們編譯出靜態的前端網頁程式碼，因此在專�
 
 我們最後希望前、後端的程式碼能整合在一起，因此會在方案檔同一層來執行此指令。
 
->這裡我使用這個指令來產生 Angular 專案 `ng new DemoAngularDotnet -si -st -sg --routing`，後面的參數分別會，忽略 `npm install`、不產生測試檔、不建立 git 版控、建立路由模組
+>這裡我使用這個指令來產生 Angular 專案 `ng new DemoAngularDotnet -sg -si -st --routing`，後面的參數分別會，不建立 git 版控、不執行 `npm install`、不產生測試檔、建立路由模組
 
 ![建立 Angular 專案](http://i.imgur.com/d8ro5Jh.png)
 
@@ -93,6 +93,9 @@ Angular 專案裡有兩個資料夾需要調整：
 因為是整合兩個開發專案，各自有各自的開發工具和編譯需求，因此在開發流程上，需要做一些小調整。
 
 首先，如果你使用 git 做版控了話，你不會想把每次前端編譯後的檔案加到版控系統中，所以可以修改 `.gitignore` 檔案，將 `wwwroot` 排除在版控外，這和我們會排除 `dist` 的原因是一樣的。
+
+>雖然產生 Angular 專案時沒有使用 git，但建議手動加入 Angular CLI 所產生的 `.gitignore` 檔，避免將開發前端所產生的檔案，如 `node_modules`，被加到版控中。
+>而上面提到要排除 `wwwroot` 的設定，我也會寫在前端的 `.gitignore` 中。
 
 ![版控排除 wwwroot 資料夾](http://i.imgur.com/bSU5ISA.png)
 
