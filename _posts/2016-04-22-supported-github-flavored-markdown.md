@@ -86,4 +86,4 @@ function foo() {
 *	vhdl
 *	**xml - XML and also used for HTML with inline CSS and Javascript**
 
-詳細列表請參考 [List of supported languages and lexers](https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers)
+詳細列表請參考 [List of supported languages and lexers](https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers) 或 [github/linguist](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
