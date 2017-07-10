@@ -4,7 +4,7 @@ title: 實作 Line Notify 通知服務 (2) 搭配 ASP.NET Web API
 date: 2017-04-27 23:42
 author: Poy Chang
 comments: true
-categories: [C#, Webapi]
+categories: [C#, ASP.NET Core, Webapi]
 ---
 做過上一篇[實作 Line Notify 通知服務 (1)](https://poychang.github.io/line-notify-1-basic/)後，雖然作法有些複雜，但對 Line Notify 的連動的操作以及發訊息的方法有了認識，這篇打算將複雜封裝，做成一隻隻的 API 服務，讓使用上變得簡單。
 
