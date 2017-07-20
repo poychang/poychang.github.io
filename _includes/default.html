@@ -28,8 +28,20 @@
     <link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.BASE_PATH}}/assets/ico/favicon.ico">
 
-    <!-- Google Fonts cwTeXHei 黑體 -->
-    <link href='https://fonts.googleapis.com/earlyaccess/cwtexhei.css' rel='stylesheet' type='text/css'>
+    <script>
+        var cb = function() {
+            // Google Fonts cwTeXHei 黑體
+            var a = document.createElement('link');
+            a.rel = 'stylesheet';
+            a.href = 'https://fonts.googleapis.com/earlyaccess/cwtexhei.css';
+
+            var dom = document.getElementsByTagName('head')[0];
+            dom.parentNode.insertBefore(a, dom);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(cb);
+        else window.addEventListener('load', cb);
+    </script>
 
     <!-- Le fav and touch icons -->
     <!-- Update these with your own images
