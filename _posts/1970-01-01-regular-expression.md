@@ -174,7 +174,7 @@ categories: []
   <tbody>
     <tr>
       <td>\</td>
-      <td>避開特殊字元</td>
+      <td>避開<a href="https://stackoverflow.com/questions/399078/what-special-characters-must-be-escaped-in-regular-expressions?answertab=active#tab-top">特殊字元</a></td>
       <td>/A\*/ 可用於比對 &#8220;A*&#8221;，其中 * 是一個特殊字元，為避開其特殊意義，所以必須加上 &#8220;\&#8221;</td>
     </tr>
     <tr>
@@ -411,3 +411,4 @@ categories: []
 
 * [就是愛程式 - 正規表示式 Regular Expression](https://atedev.wordpress.com/2007/11/23/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%A4%BA%E5%BC%8F-regular-expression/)
 * [A Single Page Perl Regular Expression Quick Reference](http://www.erudil.com/pdf/preqr.pdf)
+* [What special characters must be escaped in regular expressions?](https://stackoverflow.com/questions/399078/what-special-characters-must-be-escaped-in-regular-expressions?answertab=active#tab-top)

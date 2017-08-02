@@ -31,7 +31,7 @@ keytool -genkey -v -keystore AppName.keystore -alias AppAliasName -keyalg RSA -v
 
 ## 簽署 APK
 
-執行 `cordova build android --release` 會在專案資料夾下的 `\AppName\platforms\android\build\outputs\apk` 位置，產生一個 `android-release-unsigned.apk` 檔，這是未簽署的 APK 封裝檔，這時候我們可以移至該資料夾下，並透過 JDK 的 `jarsigner` 來進行簽屬，指令如下：
+執行 `cordova build android --release` 會在專案資料夾下的 `\AppName\platforms\android\build\outputs\apk` 位置，產生一個 `android-release-unsigned.apk` 檔，這是未簽署的 APK 封裝檔，這時候我們可以移至該資料夾下，並透過 JDK 的 `jarsigner` 來進行簽署，指令如下：
 
 ```bash
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore AppName.keystore android-release-unsigned.apk AppAliasName
@@ -68,7 +68,7 @@ zipalign -v 4 android-release-unsigned.apk AppName.apk
 
 ## 準備收工
 
-`AppName.apk` 就是我們最後須要的檔案了，接下來就可以到 [Google Play Developer Console](https://play.google.com/apps/publish/) 去上傳簽屬 + 優化過的 APK 了。
+`AppName.apk` 就是我們最後須要的檔案了，接下來就可以到 [Google Play Developer Console](https://play.google.com/apps/publish/) 去上傳簽署 + 優化過的 APK 了。
 
 ## 後記
 
