@@ -250,14 +250,14 @@ categories: []
     <tr>
       <td>\b</td>
       <td>比對英文字的邊界，例如空格</td>
-      <td>例如 /\bn\w/ 可以比對 &#8220;noonday&#8221; 中的 &#8216;no&#8217; ;<br />
-      /\wy\b/ 可比對 &#8220;possibly yesterday.&#8221; 中的 &#8216;ly&#8217;</td>
+      <td>例如 /\bn\w/ 可以比對 &#8220;noonday&#8221; 中的 &#8220;no&#8221;<br />
+      /\wy\b/ 可比對 &#8220;possibly yesterday.&#8221; 中的 &#8220;ly&#8221;</td>
     </tr>
     <tr>
       <td>\B</td>
       <td>比對非「英文字的邊界」</td>
-      <td>例如, /\w\Bn/ 可以比對 &#8220;noonday&#8221; 中的 &#8216;on&#8217; ,<br />
-      另外 /y\B\w/ 可以比對 &#8220;possibly yesterday.&#8221; 中的 &#8216;ye&#8217;</td>
+      <td>例如, /\w\Bn/ 可以比對 &#8220;noonday&#8221; 中的 &#8220;on&#8221;<br />
+      另外 /y\B\w/ 可以比對 &#8220;possibly yesterday.&#8221; 中的 &#8220;ye&#8221;</td>
     </tr>
     <tr>
       <td>\cX</td>
@@ -311,13 +311,13 @@ categories: []
     </tr>
     <tr>
       <td>\w</td>
-      <td>比對數字字母字元（Alphanumerical characters）或底線字母（&#8221;_&#8221;），等效於 [A-Za-z0-9_]</td>
-      <td>/\w/ 可比對 &#8220;.A _!9&#8221; 中的 &#8220;A&#8221;、&#8221;_&#8221;、&#8221;9&#8243;。</td>
+      <td>比對數字字母字元（Alphanumerical characters）或底線字母（&#8220;_&#8221;），等效於 [A-Za-z0-9_]</td>
+      <td>/\w/ 可比對 &#8220;.A _!9&#8221; 中的 &#8220;A&#8221;、&#8220;_&#8221;、&#8220;9&#8221;。</td>
     </tr>
     <tr>
       <td>\W</td>
       <td>比對非「數字字母字元或底線字母」，等效於 [^A-Za-z0-9_]</td>
-      <td>/\W/ 可比對 &#8220;.A _!9&#8221; 中的 &#8220;.&#8221;、&#8221; &#8220;、&#8221;!&#8221;，可見其功能與 /\w/ 恰好相反。</td>
+      <td>/\W/ 可比對 &#8220;.A _!9&#8221; 中的 &#8220;.&#8221;、&#8220; &#8221;、&#8220;!&#8221;，可見其功能與 /\w/ 恰好相反。</td>
     </tr>
     <tr>
       <td>\o<em>octal</em></td>
@@ -409,6 +409,7 @@ categories: []
 
 參考資料：
 
+* [RegExr - Regular Expression Online](http://regexr.com/)
 * [就是愛程式 - 正規表示式 Regular Expression](https://atedev.wordpress.com/2007/11/23/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%A4%BA%E5%BC%8F-regular-expression/)
 * [A Single Page Perl Regular Expression Quick Reference](http://www.erudil.com/pdf/preqr.pdf)
 * [What special characters must be escaped in regular expressions?](https://stackoverflow.com/questions/399078/what-special-characters-must-be-escaped-in-regular-expressions?answertab=active#tab-top)
