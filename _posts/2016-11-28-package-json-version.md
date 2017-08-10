@@ -83,5 +83,5 @@ categories: [Javascript, Develop, Tools]
 參考資料：
 
 * [npm package.json](https://docs.npmjs.com/files/package.json)
-* [npm semver](https://www.npmjs.com/package/semver)
+* [npm semver](https://docs.npmjs.com/misc/semver)
 * [package.json文件dependencies中的各种版本号形式](http://blog.kankanan.com/article/package.json-65874ef6-dependencies-4e2d7684540479cd7248672c53f75f625f0f.html)
