@@ -4,7 +4,7 @@ title: 無法載入檔案或組件 - 使用 64 位元版本的 IIS Express
 date: 2016-06-07 17:11
 author: Poy Chang
 comments: true
-categories: [C#, Develop]
+categories: [CSharp, Develop]
 ---
 使用 C# 連線 Oracle 資料庫時，需要安裝 ODAC (Oracle Data Access Components)，這元件有分 [32 位元](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)和 [64 位元](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)的版本，除了要用對版本外，不同的 Visual Studio 版本，也需配合[不同的 ODAC 版本](http://www.oracle.com/technetwork/developer-tools/visual-studio/downloads/index.html)。
 
