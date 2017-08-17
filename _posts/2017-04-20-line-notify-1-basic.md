@@ -34,7 +34,7 @@ ChatBot 真的好紅，網路上多了很多文章和討論，最近看到 Line 
 
 ![取得 Client ID 和 Secret](http://i.imgur.com/vnEU2vJ.png)
 
-### 連動使用者
+### 連動使用者並取得 Authorize Code
 
 接著我們來建立一個簡單的網頁，裡面只包含一個連結按鈕，會轉址到連動該 Line Notify 的設定頁面。
 
@@ -95,7 +95,7 @@ ChatBot 真的好紅，網路上多了很多文章和討論，最近看到 Line 
 
 <script src="https://gist.github.com/poychang/61e48339d95f11fe94b86b136f87521f.js"></script>
 
-這裡我們還需要一個可執行的網頁伺服器環境，讓我們在 `Callback URL` 有設定 http://localhost:3000/ 可以正常運作，這裡有很多種工具可以達成，例如 Visual Studio、[browser-sync](https://www.browsersync.io/)、[usbwebserver](http://www.usbwebserver.net/en/) 都可以輕鬆達成。
+這裡我們還需要一個可執行的網頁伺服器環境，讓我們在 `Callback URL` 有設定 http://localhost:3000/ 可以正常運作，這裡有很多種工具可以達成，例如 Visual Studio、[http-server](https://github.com/indexzero/http-server)、[browser-sync](https://www.browsersync.io/)、[usbwebserver](http://www.usbwebserver.net/en/) 都可以輕鬆達成。
 
 使用者點擊按鈕後，會先需要登入 Line 帳號，然後就會轉跳到下面這個設定連動的畫面。
 
