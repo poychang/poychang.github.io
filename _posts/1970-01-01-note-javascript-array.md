@@ -228,15 +228,31 @@ arr2.join("、");
 
 ### map
 
-對陣列中的各元素進行操作，操作後的值會被寫入新的陣列中並返回 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
+對陣列中的各元素進行操作，操作後的值**會被寫入新的陣列中並返回** ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
 
 ```javascript
 var arr = [1, 2, 3, 4, 5, 6];
-var arr2 = arr.map(function (element,index,array) {
+var arr2 = arr.map(function (element, index, array) {
 	return element * 2;
 });
 arr2.join("、");
 // 2、4、6、8、10、12
+```
+
+### forEach
+
+會給陣列內的每個元素，都執行給定的函式一次 ([MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach))
+
+```javascript
+var a = ['a', 'b', 'c'];
+
+a.forEach(function(element, index, array) {
+    console.log(element);
+});
+
+// a
+// b
+// c
 ```
 
 ### concat
