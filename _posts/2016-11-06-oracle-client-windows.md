@@ -37,12 +37,29 @@ categories: [Tools]
 
 ![OracleClient 資料夾結構](http://i.imgur.com/knx3JXE.png)
 
-接著，還需要新增兩個系統變數：
+接著，還需要新增兩個**系統變數**：
 
-變數名稱 | 值 | 備註
------------- | ------------- | -------------
-NLS_LANG | `TRADITIONAL CHINESE_TAIWAN.ZHT16MSWIN950` | 設定語系
-TNS_ADMIN | `C:\OracleClient\NetWork\Admin` | TNS 連線資訊位置
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>變數名稱</th>
+	<th>值</th>
+	<th>備註</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>NLS_LANG</td>
+	<td>TRADITIONAL CHINESE_TAIWAN.ZHT16MSWIN950</td>
+	<td>設定語系</td>
+  </tr>
+  <tr>
+    <td>TNS_ADMIN</td>
+	<td>C:\OracleClient\NetWork\Admin</td>
+	<td>TNS 連線資訊位置</td>
+  </tr>
+</tbody>
+</table>
 
 再來我們要設定 TNS 連線相關資訊，如同上一步所設定的 TNS_ADMIN，在 `C:\OracleClient\NetWork\Admin` 資料夾下新增 `TNSNAMES.ORA` 檔案，裡面輸入 TNS 連線資訊，基本格式如下：
 
