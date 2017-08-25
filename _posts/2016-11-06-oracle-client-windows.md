@@ -33,7 +33,9 @@ categories: [Tools]
 
 >這裡推薦使用 [Rapid Environment Editor](http://www.rapidee.com/en/about) 修改系統環境變數
 
-另外，為了讓各版本的 Oracle Client 能存取同一份 TNS 連線資訊，我會把相關檔案放在 `OracleClient` 資料夾下，以便共用。
+另外，為了讓各版本的 Oracle Client 能存取同一份 TNS 連線資訊，我會把相關檔案放在 `OracleClient` 資料夾下以便共用，因此我們資料夾結構會長的如下圖。
+
+![OracleClient 資料夾結構](http://i.imgur.com/knx3JXE.png)
 
 接著，還需要新增兩個系統變數：
 
