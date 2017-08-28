@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用 bootstrap 4 顯示/隱藏 HTML 元素
+title: 使用 Bootstrap 4 顯示/隱藏 HTML 元素
 date: 2017-08-25 16:55
 author: Poy Chang
 comments: true
@@ -193,4 +193,5 @@ Display 通用類別，可用於切換元件的顯示與否，並且可以包含
 
 * [Bootstrap - Visibility](https://getbootstrap.com/docs/4.0/utilities/visibility/)
 * [Missing visible-** and hidden-** in Bootstrap v4](https://stackoverflow.com/questions/35351353/missing-visible-and-hidden-in-bootstrap-v4)
+* [Bootstrap 4 Hidden & Visible](https://medium.com/wdstack/bootstrap-4-hidden-visible-dd969a4c5854)
 * [CSS 基本Display屬性](http://archerworkshop.info/cssdisplay/)
