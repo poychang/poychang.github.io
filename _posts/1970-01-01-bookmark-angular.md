@@ -36,6 +36,28 @@ SlideShare：[Angular 4 網站開發最佳實務 (Modern Web 2017)](https://www.
 
 youtube：[使用 Angular 開發 TodoMVC 應用程式完整實作教學](https://www.youtube.com/watch?v=aMeF8ksXv7o&t=271s)
 
+## Microsoft 線上課程
+
+來自 Microsoft Virtual Academy 的線上課程，透過 Eric Greene 帶來 10 小時的系列課程，由淺入深的探索 Angular 開發技巧。
+
+Mastering Angular 課程目錄([點此搜尋更多](https://mva.microsoft.com/search/SearchResults.aspx#!q=Mastering%20Angular&lang=1033))
+
+1. [Components](https://mva.microsoft.com/en-US/training-courses/mastering-angular-part-1-components-17709)
+2. [Pipes](https://mva.microsoft.com/en-US/training-courses/mastering-angular-part-2-pipes-17710)
+3. [Services](https://mva.microsoft.com/en-US/training-courses/mastering-angular-part-3-services-17711)
+4. [Reactive Forms](https://mva.microsoft.com/en-US/training-courses/mastering-angular-part-4-reactive-forms-17728)
+5. [Template Forms](https://mva.microsoft.com/en-US/training-courses/mastering-angular-part-5-template-forms-17731)
+6. [Form Validation](https://mva.microsoft.com/en-US/training-courses/mastering-angular-part-6-form-validation-17734)
+7. [Custom Form Validation](https://mva.microsoft.com/en-US/training-courses/mastering-angular-part-7-custom-form-validation-17736)
+8. [Displaying Form Validation Information](https://mva.microsoft.com/en-US/training-courses/mastering-angular-part-8-displaying-form-validation-information-17741)
+
+## TypeScript - tsconfig.json 設定
+
+[TypeScript 2.3: The --strict Compiler Option](https://blog.mariusschulz.com/2017/06/09/typescript-2-3-the-strict-compiler-option)
+
+* 建議一開始開發就開啟 `strict mode`，讓開發過程充分享受強型別的好處
+	* 如果到後期才開了話，通常報錯會報到你再把它關掉...
+
 ----------
 
 參考資料：
