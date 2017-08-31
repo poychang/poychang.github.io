@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 實作 Wikitude 的 Cordova 範例應用程式
+title: 實作 Wikitude AR SDK 的 Cordova 範例 App
 date: 2017-08-30 21:57
 author: Poy Chang
 comments: true
