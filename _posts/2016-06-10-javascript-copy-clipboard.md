@@ -40,58 +40,9 @@ categories: [Javascript]
 
 如此一來，我們可以就可以用最原始的 JavaScript 不引用任何框架，就達成一鍵複製。
 
-實作內容可參考[完整程式碼](#code)。
+## 完整程式碼
 
-## <a name="code"></a>完整程式碼
-
-```javascript
-(function () {
-    //This method NOT support IE8
-    // ------------------------------
-    // HTML Template:
-    // ------------------------------
-    // <div class="item">
-    //     <p class="copy-area">this it copy-area for test</p>
-    //     <input type="text" value="Copy This Text" class="copy-area">
-    //     <button type="button" class="btn-copy">copy</button>
-    // </div>
-    // ------------------------------
-    document.addEventListener("DOMContentLoaded", function () {
-        //selecting all container has class .item
-        var items = document.querySelectorAll('.item');
-
-        // loop through each item and calling copyToClipBoard function
-        for (var i = 0; i < items.length; ++i) {
-            copyToClipBoard(items[i]);
-        }
-
-        function copyToClipBoard(item) {
-            // selecting copy button for this item
-            var btnCopy = item.querySelector('.btn-copy');
-            // attaching click event
-            btnCopy.addEventListener('click', function (event) {
-                // selecting copy area for this item
-                var copyArea = item.querySelector('.copy-area');
-                var range = document.createRange();
-                range.selectNode(copyArea);
-                // select the text
-                window.getSelection().addRange(range);
-                try {
-                    // execute the copy command  on selected the text in copy area
-                    var copyStatus = document.execCommand('copy');
-                    var msg = copyStatus ? 'copied' : 'failed';
-                    // console the copy status
-                    console.log(msg);
-                } catch (error) {
-                    console.log('Oops!, unable to copy');
-                }
-                // remove the selection
-                window.getSelection().removeAllRanges();
-            });
-        }
-    });
-})();
-```
+<script src="https://gist.github.com/poychang/2b8682c29383920eac49c238e36b8ae2.js"></script>
 
 ## 不要重複造輪子
 
