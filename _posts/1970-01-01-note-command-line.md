@@ -69,6 +69,9 @@ fsutil volume diskfree c:
 	* 執行範例 `runas /user:USER_NAME program.exe`
 	* `PSEXEC` 功能很強，可以取代 `runas`
 * `refreshenv` 不重新啟動 cmd 下，更新環境變數（似乎不是每台機器都可以用）
+* `set` 列出所有環境變數，讀取指定環境變數方法如下
+	* cmd 可使用 `%VARIABLES_NAME%`
+	* PowerShell 可使用 `$Env:VARIABLES_NAME`
 * `df [OPTION] [FILE]` 檢查 Linux 檔案系統的磁碟空間佔用情況
 	* 如果沒有檔案名被指定，則所有當前被掛載的檔案系統的可用空間將被顯示
 	* 常用命令參數
