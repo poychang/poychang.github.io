@@ -32,58 +32,12 @@ function foo() {
 }
 ```
 
-是不是看起來更清楚了！
+是不是看起來更清楚了！而且 Github Flavored 支援超多種語言，參考下面的參考資料。
 
-而且 Github Flavored 支援超多種語言，參考下列表（粗體是個人比較常用的）：
+----------
 
-*	apache
-*	applescript
-*	avrasm - AVR Assembler
-*	axapta
-*	**bash**
-*	brainfuck
-*	clojure
-*	cmake
-*	coffeescript
-*	cpp - C++
-*	**cs**
-*	**css**
-*	d - RDMD
-*	delphi
-*	diff
-*	django
-*	**dos** - dos batch files
-*	erlang
-*	erlang-repl
-*	glsl
-*	haskell
-*	ini
-*	java
-*	**javascript**
-*	**json**
-*	lc
-*	lisp
-*	**markdown**
-*	matlab
-*	mel - Maya Embedded Language
-*	nginx
-*	objectivec
-*	parser3
-*	Perl
-*	PHP
-*	**powershell**
-*	profile - python profiler output
-*	python
-*	r
-*	rib - RenderMan RIB
-*	rsl - RenderMan RSL
-*	Ruby
-*	rust
-*	smalltalk
-*	**sql**
-*	tex
-*	vala
-*	vhdl
-*	**xml - XML and also used for HTML with inline CSS and Javascript**
+參考資料：
 
-詳細列表請參考 [List of supported languages and lexers](https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers) 或 [github/linguist](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
+* [GitHub Guides - Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [List of supported languages and lexers](https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers)
+* [github/linguist - languages.yml](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
