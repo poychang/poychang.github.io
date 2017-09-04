@@ -14,6 +14,10 @@ Visual Studio Code 真的是很優秀，官方提供了值得收藏的 Visual St
 * [下載 Visual Studio Code shortcuts for MacOS](http://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 * [下載 Visual Studio Code shortcuts for Linux](http://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 
+另外官方也有提供方常方便的快速鍵編輯介面，可以使用快速鍵 `Ctrl` + `K` `Ctrl` + `S` 開啟編輯介面，然後點選左側的筆做修改。更多資訊請參考[此官方連結](https://code.visualstudio.com/docs/getstarted/keybindings)。
+
+![Keyboard Shortcuts Editor](https://i.imgur.com/LEoMq4K.png)
+
 ## 好用的重構快速鍵
 
 John Papa 寫了一篇超值得記憶的重構快速鍵文章，但是是以 Mac 鍵盤為主的，下面對應成 Windows 的，邊寫邊記憶！
@@ -45,6 +49,7 @@ John Papa 寫了一篇超值得記憶的重構快速鍵文章，但是是以 Mac
 * `alt` + `shift` + `f` 快速美化程式碼
 	* 不要在自己排版了，讓快速鍵幫你吧
 	* 補充：VSCode 設定擋裡，有一個 `editor.formatOnSave` 可以設定成 `true` 這樣會在每次存檔時，自動執行自動排版功能
+* `Ctrl` + `\` 分割視窗
 * `Ctrl` + `W` 關閉檔案
 * `Ctrl` + `K` `Ctrl` + `W` 關閉所有檔案
 * `Ctrl` + `Alt` + `up`/`down` 垂直選取
