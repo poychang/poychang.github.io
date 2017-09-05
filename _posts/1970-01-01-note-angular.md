@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular 書籤
+title: Angular 筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
@@ -17,6 +17,27 @@ categories: [Angular]
 	2. 加入啟動測試程式碼 [wallabyTest.ts](https://github.com/wallabyjs/ngCliWebpackSample/blob/master/src/wallabyTest.ts) 至 `src\wallabyTest.ts`
 	3. 在 `tsconfig.json` 中設定排除 `src/wallabyTest.ts` 避免影響 Angular AOT 編譯
 	4. 執行 `npm install wallaby-webpack angular2-template-loader electron --save-dev`
+
+## 小技巧
+
+Angular 程式寫到後面，會發現那個 import 的路徑越來越長，一路點點點下去也不是辦法，是有好一點的解法，在 `tsconfig.json` 的 `compilerOptions` 內，可以使用 `paths: []` 的方式來做路徑別名的設定，範例如下：
+
+```json
+"baseUrl": "src",
+"paths": {
+"@env/*": ["environments/*"]
+}
+```
+
+設定完成後，只要使用 `@environments` 就會指到所設定的地方
+
+```typescript
+// 原本的import是長這樣
+import * as env from './../../environments/environment';
+
+// 設定後的寫法
+import * as env from '@env/environment';
+```
 
 ## Angular 4 網站開發最佳實務 (Modern Web 2017)
 
@@ -57,10 +78,6 @@ Mastering Angular 課程目錄([點此搜尋更多](https://mva.microsoft.com/se
 
 * 建議一開始開發就開啟 `strict mode`，讓開發過程充分享受強型別的好處
 	* 如果到後期才開了話，通常報錯會報到你再把它關掉...
-
-## Wallaby 測試
-
-* [如何在 Visual Studio Code 執行 Wallaby 單元測試?](http://oomusou.io/vscode/vscode-wallaby/)
 
 ----------
 
