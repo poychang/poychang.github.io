@@ -82,37 +82,8 @@ fsutil volume diskfree c:
 		* `-T` 檔案系統類型
 	* 使用實例 `df -h`
 
-## PowerShell
-
-[官方教學文件](https://docs.microsoft.com/zh-tw/powershell/scripting/powershell-scripting)
-
-* `$PSVersionTable.PSVersion` 查看 PowerShell 版本
-
-## PowerShell 套件
-
-* `posh-git` 在 PowerShell 命令列上呈現 Git 狀態資訊
-	* [dahlbyk/posh-git](https://github.com/dahlbyk/posh-git)
-	* 安裝指令：`Install-Module posh-git -Scope CurrentUser`
-* `Get-ChildItemColor` 輸出帶有顏色標示的目錄資訊
-	* [joonro/Get-ChildItemColor](https://github.com/joonro/Get-ChildItemColor)
-	* 安裝指令：`Install-Module Get-ChildItemColor`
-	* 建議別名：`Set-Alias ll Get-ChildItemColor -option AllScope`
-
-PowerShell 會自動從以下這 4 個檔名路徑依序載入設定檔，如果找不到檔案也會自動跳過：
-
-1. `%windir%\system32\WindowsPowerShell\v1.0\profile.ps1`
-	* 這個設定檔 `profile.ps1` 會載入到所有使用者與所有 shell 執行環境
-2. `%windir%\system32\WindowsPowerShell\v1.0\Microsoft.PowerShell_profile.ps1` 
-	* 這個設定檔 `Microsoft.PowerShell_profile.ps1` 會載入到所有使用者，但僅限於使用 Microsoft.PowerShell 的 shell 執行環境
-3. `%UserProfile%\Documents\WindowsPowerShell\profile.ps1` 
-	* 這個設定檔 `profile.ps1` 會載入到目前登入的使用者，且會套用到該使用者所有 shell 執行環境
-4. `%UserProfile%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1` 
-	* 這個設定檔 `Microsoft.PowerShell_profile.ps1` 會載入到目前登入的使用者，但僅限於使用 Microsoft.PowerShell 的 shell 執行環境
-
->其中 `%UserProfile%\Documents\` 可由 `%UserProfile%\OneDrive\Documents\` 做載入
-
 ----------
 
 參考資料：
 
-* [如何在 Powershell 開啟時自動引入常用的 ps1 指令檔腳本](https://msdn.microsoft.com/zh-tw/library/dn464004.aspx)
+* []()
