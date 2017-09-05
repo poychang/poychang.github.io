@@ -25,19 +25,21 @@ Angular 程式寫到後面，會發現那個 import 的路徑越來越長，一�
 ```json
 "baseUrl": "src",
 "paths": {
-"@env/*": ["environments/*"]
+"@app/*": ["app/*"]
 }
 ```
 
-設定完成後，只要使用 `@environments` 就會指到所設定的地方
+設定完成後，只要使用 `@app` 就會指到應用程式的根目錄
 
 ```typescript
 // 原本的import是長這樣
 import * as env from './../../environments/environment';
 
 // 設定後的寫法
-import * as env from '@env/environment';
+import * as env from '@app/environments/environment';
 ```
+
+你也可以把 `@app` 設定成其他常用的路徑，讓 import 的畫面變乾淨。
 
 ## Angular 4 網站開發最佳實務 (Modern Web 2017)
 
