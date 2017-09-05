@@ -17,6 +17,12 @@ categories: [Angular]
 	2. 加入啟動測試程式碼 [wallabyTest.ts](https://github.com/wallabyjs/ngCliWebpackSample/blob/master/src/wallabyTest.ts) 至 `src\wallabyTest.ts`
 	3. 在 `tsconfig.json` 中設定排除 `src/wallabyTest.ts` 避免影響 Angular AOT 編譯
 	4. 執行 `npm install wallaby-webpack angular2-template-loader electron --save-dev`
+* Wallaby 覆蓋指標 
+	* <span style="background-color: #CCCCCC"> □ 灰色</span> 表示該段程式碼不包含在任何測試中
+	* <span style="background-color: #5FB550"> □ 綠色</span> 表示該段程式碼至少被一個測試給所覆蓋
+	* <span style="background-color: #D3A121"> □ 黃色</span> 表示該段程式碼僅部分被某些測試所覆蓋
+	* <span style="background-color: #FF5167"> □ 紅色</span> 表示該段程式碼是錯誤或與期望不符
+	* <span style="background-color: #F39796"> □ 粉紅色</span> 表示該段程式碼在失敗測試的執行路徑上
 
 ## 小技巧
 
