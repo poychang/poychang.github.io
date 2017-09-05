@@ -20,7 +20,9 @@ categories: [Angular]
 
 ## 小技巧
 
-Angular 程式寫到後面，會發現那個 import 的路徑越來越長，一路點點點下去也不是辦法，是有好一點的解法，在 `tsconfig.json` 的 `compilerOptions` 內，可以使用 `paths: []` 的方式來做路徑別名的設定，範例如下：
+### 解決 import 路徑過長的問題
+
+Angular 程式寫到後面，會發現那個 import 的路徑越來越長，一路點點點下去也不是辦法，[官網文件](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping)有提供很好的解法，在 `tsconfig.json` 的 `compilerOptions` 內，可以使用 `"PATH_ALIAS": ["PATH"]` 的方式來設定路徑別名，範例如下：
 
 ```json
 {
@@ -38,7 +40,7 @@ Angular 程式寫到後面，會發現那個 import 的路徑越來越長，一�
 設定完成後，只要使用 `@app` 就會指到應用程式的根目錄
 
 ```typescript
-// 原本的import是長這樣
+// 原本的 import 是長這樣
 import * as env from './../../environments/environment';
 
 // 設定後的寫法
