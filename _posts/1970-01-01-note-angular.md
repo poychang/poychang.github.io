@@ -23,11 +23,17 @@ categories: [Angular]
 Angular 程式寫到後面，會發現那個 import 的路徑越來越長，一路點點點下去也不是辦法，是有好一點的解法，在 `tsconfig.json` 的 `compilerOptions` 內，可以使用 `paths: []` 的方式來做路徑別名的設定，範例如下：
 
 ```json
-"baseUrl": "src",
-"paths": {
-"@app/*": ["app/*"]
+{
+	"compilerOptions": {
+		"baseUrl": "src",
+		"paths": {
+			"@app/*": ["app/*"]
+		}
+	}
 }
 ```
+
+注意！如果是用 Angular CLI 產生的專案，在 `src` 資料夾底下會有 `tsconfig.app.json` 和 `tsconfig.spec.json` 兩個設定檔，會以 `tsconfig.json` 為基底將設定覆蓋掉，所以要再確認相關設定是否符合需求。
 
 設定完成後，只要使用 `@app` 就會指到應用程式的根目錄
 
