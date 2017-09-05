@@ -58,6 +58,10 @@ Mastering Angular 課程目錄([點此搜尋更多](https://mva.microsoft.com/se
 * 建議一開始開發就開啟 `strict mode`，讓開發過程充分享受強型別的好處
 	* 如果到後期才開了話，通常報錯會報到你再把它關掉...
 
+## Wallaby 測試
+
+* [如何在 Visual Studio Code 執行 Wallaby 單元測試?](http://oomusou.io/vscode/vscode-wallaby/)
+
 ----------
 
 參考資料：
