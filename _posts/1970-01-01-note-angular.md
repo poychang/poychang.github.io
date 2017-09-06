@@ -32,12 +32,12 @@ Angular 程式寫到後面，會發現那個 import 的路徑越來越長，一�
 
 ```json
 {
-	"compilerOptions": {
-		"baseUrl": "src",
-		"paths": {
-			"@app/*": ["app/*"]
-		}
-	}
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@app/*": ["app/*"]
+    }
+  }
 }
 ```
 
