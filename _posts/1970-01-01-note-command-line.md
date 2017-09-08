@@ -39,6 +39,16 @@ C:\a\local\path> REM the U: drive has been deleted
 C:\a\local\path>
 ```
 
+### 刪除 Mac OS 自動生成隱藏檔案（._DS_Store）
+
+Mac OS 會自動為每個可以由 GUI 圖像界面瀏覽的資料夾生成隱藏檔案 `._DS_Store`，用來記往資料夾的個別設定。
+
+每次把隨身碟借給 Mac OS 的使用者後，在 Windows 就會看到一堆這種檔案，這時候就可以透過以下指令，一次把所有指定的檔案刪除掉。這指令當然也可以用來刪除 Windows 上的快取縮圖 `Thumbs.db`。
+
+```bash
+del /s /q /f /a .DS_STORE
+```
+
 ### 其他待整理指令
 
 ```bash
