@@ -44,7 +44,9 @@ Angular CLI 會幫我們編譯出靜態的前端網頁程式碼，因此在專�
 
 ![加入 app.UseDefaultFiles() 和 app.UseStaticFiles()](http://i.imgur.com/A2845ve.png)
 
-現在我們的 Web API 專案具有提供 API 以及提供靜態檔案的服務了，再來我們需要判斷連進來的 Request 是 API 還是網頁的需求，如果是要存取網頁，則需要把 Request 轉向到 Angular 專案的進入點 `index.html`，因此需要再修改 `Startup.cs` 中的 `Configure()` 方法。
+**接著重點來了！**
+
+現在我們的 Web API 專案具有提供 API 以及提供靜態檔案的服務了，再來我們需要判斷連進來的 Request 是 API 還是網頁的需求，如果是要存取網頁，則需要把 Request 轉向到 Angular 專案的進入點 `index.html`，因此需要再修改 `Startup.cs` 中的 `Configure()` 方法，建立一層 Middleware 來處理這件事。
 
 ![判斷 Request 的目的](http://i.imgur.com/KRedJvP.png)
 
