@@ -95,6 +95,12 @@ Mastering Angular 課程目錄([點此搜尋更多](https://mva.microsoft.com/se
 * 建議一開始開發就開啟 `strict mode`，讓開發過程充分享受強型別的好處
 	* 如果到後期才開了話，通常報錯會報到你再把它關掉...
 
+## 在 VS Code 中對 Angular CLI 專案進行偵錯
+
+這份 VSCode 食譜，展示如何在 VS Code 裡面使用 Debugger for Chrome 擴充套件，來對 Angular CLI 建立的專案進行偵錯！
+
+[Chrome Debugging with Angular CLI](https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI)
+
 ----------
 
 參考資料：
