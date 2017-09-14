@@ -46,13 +46,14 @@ John Papa 寫了一篇超值得記憶的重構快速鍵文章，但是是以 Mac
 
 ## 個人其他常用的快速鍵
 
-* `Alt` + `Shift` + `F` 快速美化程式碼
+* `Shift` + `Alt` + `F` 快速美化程式碼
 	* 不要在自己排版了，讓快速鍵幫你吧
 	* 補充：VSCode 設定擋裡，有一個 `editor.formatOnSave` 可以設定成 `true` 這樣會在每次存檔時，自動執行自動排版功能
-* `Ctrl` + `\` 分割視窗
+* `Ctrl` + `[n]` 分割 n 個視窗（最多 3 個）
 * `Ctrl` + `W` 關閉檔案
 * `Ctrl` + `K` `Ctrl` + `W` 關閉所有檔案
-* `Ctrl` + `Alt` + `up`/`down` 垂直選取
+* `Ctrl` + `Alt` + `↑`/`↓` 垂直選取
+* `Ctrl` + `Shift` + `L` 一次選取檔案內所有相同的文字
 * `Ctrl` + `K`, `Ctrl` + `0` 摺疊所有程式碼
 * `Ctrl` + `K`, `Ctrl` + `[n]` 摺疊至第 n 層的程式碼
 * `Ctrl` + `K`, `Ctrl` + `J` 取消摺疊所有程式碼 
