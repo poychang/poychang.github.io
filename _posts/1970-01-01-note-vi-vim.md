@@ -8,9 +8,19 @@ categories: [Tools]
 ---
 幾乎所有 Linux 系統都會內建 vi 文字編輯器，之於 Windows 就是 notepad 了，再不想安裝其他編輯器時，或臨時需要修改文件時，vi 絕對是你隨手可得的好幫手。
 
-## vi指令說明(簡易版)
+## vi 指令說明(簡易版)
 
 vi 有兩個 mode ，command mode 與 insert mode 。平常一開啟 vi 時，我們是在 command mode，輸入時則要使用的是 insert mode ，而下特殊指令如複製和刪除則是採用 command mode 。
+
+## Vim 入門圖解說明
+
+<a href="https://i.imgur.com/0Shkhob.png" target="_blank">
+  ![Vim Cheat Sheet](https://i.imgur.com/0Shkhob.png)
+</a>
+
+[Download PDF Version](https://1drv.ms/b/s!Aiwtjhj5fofriuAwNz7V4Cjro_d_bA)
+
+參考來源：[給程式設計師的Vim入門圖解說明](http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers/)
 
 ### 進入 insert mode
 

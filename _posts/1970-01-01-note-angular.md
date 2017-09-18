@@ -101,6 +101,10 @@ Mastering Angular 課程目錄([點此搜尋更多](https://mva.microsoft.com/se
 
 [Chrome Debugging with Angular CLI](https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI)
 
+## 測試
+
+object 驗證，有東西不想驗，用這個方法跳過：[jasmine.objectContaining](https://jasmine.github.io/2.0/introduction.html#section-Partial_Matching_with_<code>jasmine.objectContaining</code>)
+
 ----------
 
 參考資料：

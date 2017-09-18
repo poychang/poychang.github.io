@@ -1,12 +1,55 @@
 ---
 layout: post
-title: Dotnet Core 書籤
+title: Dotnet Core 筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [CSharp, dotnet]
 ---
-本篇作為書籤用途，紀錄網路上的 Dotnet Core 參考資料
+本篇作為筆記用途，紀錄 Dotnet Core 參考資料
+
+* [dotnet core 命令列介面 (CLI) 工具](https://docs.microsoft.com/zh-tw/dotnet/core/tools/)
+
+## 自動編譯
+
+使用 `dotnet watch`，他會監測檔案是否有異動，並自動為我們編譯專案。
+
+將 `Microsoft.DotNet.Watcher.Tools` 加入 `.csproj` 檔案中，程式碼如下；
+
+```xml
+<ItemGroup>
+ <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
+</ItemGroup>
+```
+
+設定後執行 `dotnet resotre` 還原相依套件，接著就可以使用 `dotnet watch` 指令來監測專案，基本執行令對照如下：
+
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>Command</th>
+	<th>Command with watch</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+	<td>dotnet run</td>
+	<td>dotnet watch run</td>
+  </tr>
+  <tr>
+	<td>dotnet run -f net451</td>
+	<td>dotnet watch run -f net451</td>
+  </tr>
+  <tr>
+	<td>dotnet test</td>
+	<td>dotnet watch test</td>
+  </tr>
+</tbody>
+</table>
+
+參考資料：
+
+* [Developing ASP.NET Core apps using dotnet watch](https://docs.microsoft.com/en-us/aspnet/core/tutorials/dotnet-watch)
 
 ## ASP.NET Core 教學 - Middleware
 
@@ -19,7 +62,7 @@ Blog：[ASP.NET Core 教學 - Middleware](https://blog.johnwu.cc/article/asp-net
 * [ASP.NET Core Middleware 存取 SPA 網頁資源](https://gist.github.com/poychang/c98f5b35e11f56ad22ff6de6ab09974d)
 * [ASP.NET Core Middleware 限制未授權的 API 呼叫](https://gist.github.com/poychang/60570f178dfb1e4566b45b5b83589b01)
 
-## ASP.NET Core 源码阅读笔记
+## ASP.NET Core 原始碼閱讀筆記
 
 * [ASP.NET Core 源码阅读笔记(1) ---Microsoft.Extensions.DependencyInjection](http://www.cnblogs.com/bill-shooting/p/5540665.html)
 * [ASP.NET Core 源码阅读笔记(2) ---Microsoft.Extensions.DependencyInjection生命周期管理](http://www.cnblogs.com/bill-shooting/p/5550198.html)
