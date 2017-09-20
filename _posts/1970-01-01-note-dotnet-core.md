@@ -70,6 +70,24 @@ Blog：[ASP.NET Core 教學 - Middleware](https://blog.johnwu.cc/article/asp-net
 * [第四篇本来准备写Server的，后来发现功力不够，就搁置了](#)
 * [ASP.NET Core 源码阅读笔记(5) ---Microsoft.AspNetCore.Routing路由](http://www.cnblogs.com/bill-shooting/p/5562066.html)
 
+## 計算程式執行時間
+
+需要測量程式執行時間時，可以使用 .NET 提供的 Stopwatch 物件，參考以下寫法：
+
+```csharp
+/* 使用 Stopwatch 測量的程式執行時間 */
+System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+// ========================================
+sw.Reset(); // 碼表歸零
+sw.Start(); // 碼表開始計時
+/* 要測量的程式區段 */
+sw.Stop(); // 碼錶停止
+System.Diagnostics.Debug.WriteLine("程式區段執行時間");
+System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalMilliseconds.ToString());    // 輸出執行時間(毫秒)
+System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         // 輸出執行時間(秒)
+// ========================================
+```
+
 ----------
 
 參考資料：

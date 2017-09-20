@@ -6,6 +6,36 @@ author: Poy Chang
 comments: true
 categories: []
 ---
+正規表示式通常被稱為一個模式（pattern），為用來描述或者符合一系列符合某個句法規則的字串，透過他我們可以快速搜尋符合指定模式的文字。
+
+## 效能
+
+正規表示式可以幫助我們快速找到符合文字模式的字串，但執行效率未必"快速"，不精確的寫法還是很容易造成效能低落的問題。
+
+以 C# 為例，有幾個提升效率的注意事項：
+
+### 能使用靜態全域變數時盡量用
+
+如下寫法，透過設定 `RegexOptions.Compiled` 可將該正規表達式編譯並成程式集，這設定雖然會增加啟動時間，但重複使用時，會有更好的執行速度。
+
+```
+readonly static Regex regex = new Regex("[ABC]", RegexOptions.Compiled);
+```
+
+另外還有一些設定項，可以參考看看，但不確定是否影響執行速度：
+
+* `RegexOptions.IgnoreCase` 不區分大小寫，只限用在英文字
+* `RegexOptions.Multiline` 多行模式
+* `RegexOptions.Singleline` 單行模式
+
+### 小技巧
+
+* 善用 `^` 標示起始位置，如 `Regex("^Abc")` 只會找 `Abc` 開頭的字串，而 `aAbc` 就忽略
+* 善用 `\b` 偵測字元邊界，和 `^` 意思很類似
+* 善用 `.*?` 忽略後續字串，如 `Regex("^A.*?")` 只比對字串第一個字是否為 `A`，後面忽略
+
+## 正規表示式說明
+
 <table class="table table-striped">
   <thead>
     <tr>
