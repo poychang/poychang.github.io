@@ -17,37 +17,38 @@ Visual Studio Code 提供了極大的彈性讓我們自訂想要的編輯器樣�
 * `editor.fontFamily` 設定字型偏好
 	* 唯一選擇 [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
 	* 連字符號字型可選擇 [Hasklig](https://github.com/i-tu/Hasklig) 或 [FiraCode](https://github.com/tonsky/FiraCode) 擇一使用
+	* 設定值：`"editor.fontFamily": "Hasklig, 'Source Code Pro', Consolas, 'Microsoft JhengHei', 'Courier New', monospace",`
 * `editor.fontLigatures` 開啟連字符號
-	* 設定值：`true`
 	* Hasklig 字型有提供連字符號的功能，例如 `=>` 會變成箭頭符號
+	* 設定值：`"editor.fontLigatures": true,`
 * `editor.formatOnSave` 存檔時自動排版
-	* 設定值：`true`
 	* 可用 `Alt` + `Shift` + `F` 執行自動排版，設定這個選項後，連快速鍵都省了
+	* 設定值：`"editor.formatOnSave": true,`
 * `editor.renderWhitespace` 顯示空白字元
-	* 設定值：`boundary`
+	* 設定值：`"editor.renderWhitespace": "boundary",`
 * `editor.wordWrap` 斷行
-	* 設定值：`true`
+	* 設定值：`"editor.wordWrap": "on",`
 * `files.autoSave` 自動儲存
-	* 設定值：`onWindowChange`
+	* 設定值：`"files.autoSave": "onWindowChange",`
 * `files.autoGuessEncoding` 猜測檔案編碼
-	* 設定值：`true`
 	* 解決 VS Code 不支援判讀檔案是 ASCII 編碼的問題
+	* 設定值：`"files.autoGuessEncoding": true,`
 * `files.insertFinalNewline` 新增一行作為檔案結束
-	* 設定值：`true`
 	* 開發 Python 時建議開啟([PEP 8](https://www.python.org/dev/peps/pep-0008/#id21))
+	* 設定值：`"files.insertFinalNewline": true,`
 * `typescript.referencesCodeLens` 開啟 TypeScript 專案的 CodeLens
-	* 設定值：`true`
+	* 設定值：`"typescript.referencesCodeLens.enabled": true,`
 * `terminal.integrated.shell.windows` 指定使用哪種終端機
-	* 設定值：`"C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"`
 	* 預設是使用 `"C:\\Windows\\sysnative\\cmd.exe"`
+	* 設定值：`"C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"`
 
 ## Workspace 常用設定
 
 我們也可以針對工作目錄下做額外的設定
 
 * `files.exclude` 排除指定檔案
-	* 設定值：`{ "**/*.spec.*": true }`
 	* `.spec` 是前端專案常見的測試檔，可藉此設定暫時隱藏，讓工作目錄乾淨一些
+	* 設定值：`"files.exclude": { "**/*.spec.*": true },`
 
 ----------
 
