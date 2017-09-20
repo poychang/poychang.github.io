@@ -105,6 +105,11 @@ Mastering Angular 課程目錄([點此搜尋更多](https://mva.microsoft.com/se
 
 object 驗證，有東西不想驗，用這個方法跳過：[jasmine.objectContaining](https://jasmine.github.io/2.0/introduction.html#section-Partial_Matching_with_<code>jasmine.objectContaining</code>)
 
+## TypeScript
+
+* [TypeScript 和字段初始化器](https://gxnotes.com/article/137971.html)
+* [TypeScript 入门教程](https://ts.xcatliu.com/basics/type-of-object-interfaces.html)
+
 ----------
 
 參考資料：
