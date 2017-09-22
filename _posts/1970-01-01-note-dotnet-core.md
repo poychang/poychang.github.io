@@ -10,9 +10,9 @@ categories: [CSharp, dotnet]
 
 * [dotnet core 命令列介面 (CLI) 工具](https://docs.microsoft.com/zh-tw/dotnet/core/tools/)
 
-## 自動編譯
+## 開發時自動編譯
 
-使用 `dotnet watch`，他會監測檔案是否有異動，並自動為我們編譯專案。
+使用 `dotnet watch`，他會監測檔案是否有異動，並自動為我們編譯專案，[官方 README 文件](https://github.com/aspnet/DotNetTools/blob/dev/src/Microsoft.DotNet.Watcher.Tools/README.md)。
 
 將 `Microsoft.DotNet.Watcher.Tools` 加入 `.csproj` 檔案中，程式碼如下；
 
