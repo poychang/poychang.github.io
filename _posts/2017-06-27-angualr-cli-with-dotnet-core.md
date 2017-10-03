@@ -126,9 +126,20 @@ Angular 專案裡有兩個資料夾需要調整：
 
 希望這篇整合 Angular CLI 和 ASP.NET Core Web API 專案的說明能幫到你，如果有介紹不清楚的地方，歡迎留言討論：)
 
+## 後記
+
+使用 dotnet cli 或 Visual Studio 開啟有 `node_modules` 資料夾的專案時，有時候會造成啟動很慢，或是有 build 很久的狀況，這時可手動在 `.csproj` 內設定排除 `node_modules` 資料夾，這樣才能讓 dotnet run 或 dotnet build 速度正常，設定方法如下：
+
+```xml
+<PropertyGroup>
+	<DefaultItemExcludes>YOUR_PATH\node_modules\**;$(DefaultItemExcludes)</DefaultItemExcludes>
+</PropertyGroup>
+```
+
 ----------
 
 參考資料：
 
 * [Angular CLI With .NET Core](https://dustinewers.com/angular-cli-with-net-core/)
 * [Multiple solutions for Angular Ahead of Time (AOT) Compilation](https://blog.craftlab.hu/multiple-solutions-for-angular-ahead-of-time-aot-compilation-c474d9a0d508)
+* [Visual Studio 2017 csproj core file exclusion](https://stackoverflow.com/questions/42803170/visual-studio-2017-csproj-core-file-exclusion)

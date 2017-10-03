@@ -8,6 +8,11 @@ categories: [Angular]
 ---
 本篇作為書籤用途，紀錄網路上的 Angular 參考資料
 
+## 發布 Angular 至 IIS 應用程式中
+
+* [Tips for Running an Angular app in IIS](https://blogs.msdn.microsoft.com/premier_developer/2017/06/14/tips-for-running-an-angular-app-in-iis/)
+* IIS URL Rewrite [下載位置](https://www.iis.net/downloads/microsoft/url-rewrite)
+
 ## 在 Angular 中使用 Wallaby.js 單元測試
 
 * [如何在 Visual Studio Code 執行 Wallaby 單元測試?](http://oomusou.io/vscode/vscode-wallaby/)
