@@ -58,7 +58,7 @@ Angular CLI 會幫我們編譯出靜態的前端網頁程式碼，因此在專�
 
 ![將 launchUrl 修改成空值](http://i.imgur.com/TSHQNjU.png)
 
-## 步驟二：設定 Angular CLI 專案
+## 步驟二：建立 Angular CLI 專案
 
 我們將使用 Angular CLI 在 ASP.NET Core 專案中建立 Angular 專案。
 
@@ -128,13 +128,16 @@ Angular 專案裡有兩個資料夾需要調整：
 
 ## 後記
 
-使用 dotnet cli 或 Visual Studio 開啟有 `node_modules` 資料夾的專案時，有時候會造成啟動很慢，或是有 build 很久的狀況，這時可手動在 `.csproj` 內設定排除 `node_modules` 資料夾，這樣才能讓 dotnet run 或 dotnet build 速度正常，設定方法如下：
-
-```xml
-<PropertyGroup>
-	<DefaultItemExcludes>YOUR_PATH\node_modules\**;$(DefaultItemExcludes)</DefaultItemExcludes>
-</PropertyGroup>
-```
+* 2017/10/01
+	* 在「步驟二：建立 Angular CLI 專案」時，可以考慮把整個 Angular 專案收在一個 `ClientApp` 資料夾裡，讓整個專案資料夾結構更清爽些。步驟三的 `angular-cli.json` 設定檔也要有對應的路徑修改。
+* 2017/10/04 
+	* Visual Studio 會在啟動時遍尋專案資料夾內的所有目錄，因此如果使用 Visual Studio 開啟有 `node_modules` 資料夾的專案時，有時候會造成啟動很慢，或是有 build 很久的狀況，這時可手動在 `.csproj` 內設定排除 `node_modules` 資料夾，這樣才能讓 dotnet run 或 dotnet build 速度正常，設定方法如下：
+	```xml
+	<PropertyGroup>
+	  <DefaultItemExcludes>YOUR_PATH\node_modules\**;$(DefaultItemExcludes)</DefaultItemExcludes>
+	</PropertyGroup>
+	```
+	* 深入調查後發現這狀況是個 bug，[目前已修正](https://github.com/aspnet/websdk/commit/771888b40c9947b86af443238ca9427a10bf23a5#diff-81c6e234d77bce12b4c645c597b860cb)，會在下一版中更新。
 
 ----------
 
@@ -143,3 +146,4 @@ Angular 專案裡有兩個資料夾需要調整：
 * [Angular CLI With .NET Core](https://dustinewers.com/angular-cli-with-net-core/)
 * [Multiple solutions for Angular Ahead of Time (AOT) Compilation](https://blog.craftlab.hu/multiple-solutions-for-angular-ahead-of-time-aot-compilation-c474d9a0d508)
 * [Visual Studio 2017 csproj core file exclusion](https://stackoverflow.com/questions/42803170/visual-studio-2017-csproj-core-file-exclusion)
+* [Performance impact by searching excluded directories](https://github.com/dotnet/cli/issues/7525)
