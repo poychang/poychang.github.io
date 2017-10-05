@@ -4,7 +4,7 @@ title: Dotnet Core 筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: [CSharp, dotnet]
+categories: [CSharp, Dotnet]
 ---
 本篇作為筆記用途，紀錄 Dotnet Core 參考資料
 

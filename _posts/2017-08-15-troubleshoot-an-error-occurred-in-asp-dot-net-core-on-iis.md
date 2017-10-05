@@ -4,7 +4,7 @@ title: 如何查找 IIS 中的 ASP.NET Core 錯誤訊息
 date: 2017-08-15 17:00
 author: Poy Chang
 comments: true
-categories: [dotnet, Webapi, Develop]
+categories: [Dotnet, WebAPI, Develop]
 ---
 當架設在 IIS 下的 ASP.NET Core 網站出現不知道怎麼查錯誤的時候，可以試試這個方法。
 
