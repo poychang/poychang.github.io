@@ -93,6 +93,18 @@ Mastering Angular 課程目錄([點此搜尋更多](https://mva.microsoft.com/se
 7. [Custom Form Validation](https://mva.microsoft.com/en-US/training-courses/mastering-angular-part-7-custom-form-validation-17736)
 8. [Displaying Form Validation Information](https://mva.microsoft.com/en-US/training-courses/mastering-angular-part-8-displaying-form-validation-information-17741)
 
+## TypeScript
+
+### 學習資源
+* [TypeScript 和字段初始化器](https://gxnotes.com/article/137971.html)
+* [TypeScript 入门教程](https://ts.xcatliu.com/basics/type-of-object-interfaces.html)
+
+### 小技巧
+
+* 任意屬性
+	* `[propName: string]: any;`
+	* 上列定義了任意屬性為 string 類型的值，定義後該 Class 或 Interface 的屬性必須為該任意屬性的子屬性，以此例來說只能為 string 屬性
+
 ## TypeScript - tsconfig.json 設定
 
 [TypeScript 2.3: The --strict Compiler Option](https://blog.mariusschulz.com/2017/06/09/typescript-2-3-the-strict-compiler-option)
@@ -109,11 +121,6 @@ Mastering Angular 課程目錄([點此搜尋更多](https://mva.microsoft.com/se
 ## 測試
 
 object 驗證，有東西不想驗，用這個方法跳過：[jasmine.objectContaining](https://jasmine.github.io/2.0/introduction.html#section-Partial_Matching_with_<code>jasmine.objectContaining</code>)
-
-## TypeScript
-
-* [TypeScript 和字段初始化器](https://gxnotes.com/article/137971.html)
-* [TypeScript 入门教程](https://ts.xcatliu.com/basics/type-of-object-interfaces.html)
 
 ----------
 
