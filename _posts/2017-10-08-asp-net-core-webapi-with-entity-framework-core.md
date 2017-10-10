@@ -33,7 +33,7 @@ Entity Framework Core 可以介接多種資料庫，從 Microsoft SQL Server 大
 
 使用前要先安裝 `Microsoft.EntityFrameworkCore.Sqlite` NuGet 套件，加入 SQLite 資料庫的 Provider，讓 Entity Framework Core 能支援 SQLite 。
 
->如果要使用其他資料庫，請安裝對應的 Provider。
+>如果要使用其他資料庫，請安裝對應的 Provider，例如要使用 SQL Server 資料庫，請安裝 `Microsoft.EntityFrameworkCore.SqlServer` 套件。
 
 ![安裝 Microsoft.EntityFrameworkCore.Sqlite 套件 NuGet](https://i.imgur.com/jOJGN1I.png)
 
