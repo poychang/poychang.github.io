@@ -13,7 +13,7 @@ categories: []
 * `.json`：`application/json`
 * `.woff`：`application/x-font-woff`
 * `.woff2`：`>application/x-font-woff`
-* 二進位檔案：`application/x-binary`
+* 未知檔案的媒體類型：`application/octet-stream`
 * HTML Form 表單（含檔案）：`multipart/form-data`
 * HTML Form 表單（純資料）：`application/x-www-form-urlencoded`
 
