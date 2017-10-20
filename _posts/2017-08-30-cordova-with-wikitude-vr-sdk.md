@@ -61,7 +61,7 @@ CreateSampleApp.sh -d %CD%/YourProjectName -ios true
 
 ## 輸入金鑰
 
-Wikitude 是付費的解決方案，在正式使用前需要先取得 SDK 的金鑰，因此要先至 Wikitude 網站[註冊成開發者](http://www.wikitude.com/developer/licenses)，登入後從後台取得試用的 SDK 金鑰。
+Wikitude 是付費的解決方案，在開始使用前需要先取得 SDK 的金鑰，因此要先至 Wikitude 網站[註冊成開發者](http://www.wikitude.com/developer/licenses)，登入後從後台取得試用的 SDK 金鑰。
 
 ![取得 SDK 試用金鑰](http://i.imgur.com/ibYQjTI.png)
 
