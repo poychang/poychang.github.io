@@ -61,7 +61,7 @@ Ngrok 免費方案有些限制：
 
 以 Demo 來說，免費版相當夠用，詳細的限制和價格方案請看[這裡](https://ngrok.com/pricing)。
 
-[Ngrok](https://ngrok.com/) 真是個網站開發者必備的神器，除了展示網站外，
+[Ngrok](https://ngrok.com/) 真是個網站開發者必備的神器呀！
 
 ----------
 
