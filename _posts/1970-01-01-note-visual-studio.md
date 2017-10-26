@@ -18,7 +18,8 @@ categories: [Tools]
 ## 必裝套件
 
 * [Whack Whack Terminal](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal)
-	* 在 Visual Studio 中開啟終端機
+	* 終端機模擬器，讓你可以在 Visual Studio 中開啟各種終端機，如 command prompt、powershell、WSL bash
+	* 快速鍵 `Ctrl` + `\`, `Ctrl` + `\`
 * [Visual Studio Spell Checker](https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellCheckerVS2017andLater)
 	* 檢查程式碼英文拼寫是否正確
 	* [介紹文](https://poychang.github.io/visual-studio-spell-checker/)
