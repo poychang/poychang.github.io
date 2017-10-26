@@ -10,7 +10,11 @@ categories: [Tools]
 
 [Visual Studio Spell Checker](https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellCheckerVS2017andLater) 是個檢查程式碼英文拼寫是否正確的擴充套件，適用於 Visual Studio 2013、2015、2017，安裝完成之後，在寫程式碼或註解的時候，會自動檢查英文單字是否有拼寫正確，避免造成日後維護時的困擾。
 
-如果有遇到特殊英文單字，例如公司名稱等，也可以加入該擴充套件的字典中，相當貼心。
+當有檢查到拼寫錯誤的時候，該字下面就會出現紅色毛毛蟲。
+
+![拼字錯誤](https://i.imgur.com/PbacyhJ.png)
+
+如果有遇到特殊英文單字或專有名詞時，也可以加入該擴充套件的字典中，相當貼心。
 
 ## 小調整
 
