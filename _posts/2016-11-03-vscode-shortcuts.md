@@ -60,10 +60,6 @@ John Papa 寫了一篇超值得記憶的重構快速鍵文章，但是是以 Mac
 * `Shift` + `Alt` + `→` 智慧型擴展選擇 Expand AST Select
 * `Shift` + `Alt` + `←` 智慧型縮減選擇 Shrink AST Select
 
-### 自訂的快速鍵
-
-* `Ctrl` + ``` + `↑` 切換最大化面板
-
 ## 官方寫的 VS Code 技巧清單（English）
 
 * [VS Code Tips and Tricks](https://github.com/Microsoft/vscode-tips-and-tricks)
