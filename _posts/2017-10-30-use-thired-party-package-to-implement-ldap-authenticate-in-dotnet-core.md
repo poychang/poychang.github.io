@@ -170,6 +170,8 @@ public static bool SelfLdapAuth(string username, string password)
 
 重點只要擺在 `connection.Bind(string dn, string password)` 中 `dn` 的設定即可。
 
+>本篇完整範例程式碼請參考 [poychang/DemoDotnetCoreNovellLdap](https://github.com/poychang/DemoDotnetCoreNovellLdap)。
+
 ----------
 
 參考資料：
