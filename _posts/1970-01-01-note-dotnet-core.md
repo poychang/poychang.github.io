@@ -10,6 +10,15 @@ categories: [CSharp, Dotnet]
 
 * [dotnet core 命令列介面 (CLI) 工具](https://docs.microsoft.com/zh-tw/dotnet/core/tools/)
 
+## 佈署至 IIS
+
+參考資料：[在使用 IIS 的 Windows 上裝載 ASP.NET Core](https://docs.microsoft.com/zh-tw/aspnet/core/publishing/iis?tabs=aspnetcore2x)
+
+重點：
+
+* 安裝 Donet Core Runtime（[載點](https://www.microsoft.com/net/download/windows)）
+* 安裝 Dotnet Core Windows Server Hosting 模組（[載點](https://www.microsoft.com/net/download/windows)）
+
 ## 開發時自動編譯
 
 使用 `dotnet watch`，他會監測檔案是否有異動，並自動為我們編譯專案，[官方 README 文件](https://github.com/aspnet/DotNetTools/blob/dev/src/Microsoft.DotNet.Watcher.Tools/README.md)。
