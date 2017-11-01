@@ -104,11 +104,11 @@ Remove-HybridConnection -ConnectionString "Endpoint=hc://YourBizTalkServiceName.
 	* 語法 & 範例：
 
 ```powershell
-Get-HybridConnectionClient [-ConnectionString <string>] [-Uri <uri>] 
+Get-HybridConnection [-ConnectionString <string>] [-Uri <uri>] 
 ```
 
 ```powershell
-Get-HybridConnectionClient -URI "hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourHybridConnectionName"
+Get-HybridConnection -URI "hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourHybridConnectionName"
 ```
 
 * `Set-HybridConnectionManagerConfiguration`
@@ -145,7 +145,7 @@ Remove-HybridConnectionClient -ConnectionString <string>  [<CommonParameters>]
 ```
 
 ```powershell
-Remove-HybridConnectionClient CconnectionString "Endpoint=hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourHybridConnectionName;SharedAccessKeyName=defaultListener;SharedAccessKey=xxxx"
+Remove-HybridConnectionClient -ConnectionString "Endpoint=hc://YourBizTalkServiceName.hybrid.biztalk.windows.net/YourHybridConnectionName;SharedAccessKeyName=defaultListener;SharedAccessKey=xxxx"
 ```
 
 * `Get-HybridConnection`
