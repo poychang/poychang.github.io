@@ -61,7 +61,7 @@ categories: [Azure, Tools]
 
 ## 以下為相關的整理文件
 
-記得一個大方向：Hybrid Connection Manager 用於地端，Hybrid Connection Client 用於雲端。
+記得一個大方向：<span style="background-color: #FFFF00">Hybrid Connection Manager 用於地端，Hybrid Connection Client 用於雲端。</span>
 
 ### Hybrid Connection Manager
 
