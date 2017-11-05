@@ -8,7 +8,15 @@ categories: [CSharp, Dotnet]
 ---
 本篇作為筆記用途，紀錄 Dotnet Core 參考資料
 
+## 指令
+
 * [dotnet core 命令列介面 (CLI) 工具](https://docs.microsoft.com/zh-tw/dotnet/core/tools/)
+
+### 常用指令
+
+* `dotnet run --verbosity normal`
+	* 開發時執行程式，並輸出相關執行的資訊
+	* `--verbosity` 設定命令的詳細資訊層級。允許的值為 q[uiet]、m[inimal]、n[ormal]、d[etailed] 及 diag[nostic]
 
 ## 佈署至 IIS
 
