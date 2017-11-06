@@ -17,14 +17,12 @@ Clang-Format 除了能排版外，還能將 tslint 或是 jslint 一些提示的
 ## 安裝
 
 1. 使用 npm 安裝 clang-format
-
 ```
 npm install -g clang-format
 ```
 
 2. 安裝 [Clang-Format](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format) Visual Stuido Code 擴充套件
 3. 在專案下新增 `.clang-format` 的檔案 , 內容如下：
-
 ```
 BasedOnStyle:    Google
 Language:        JavaScript
