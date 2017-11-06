@@ -18,16 +18,21 @@ categories: [Develop]
 
 1. 安裝套件 `npm install text-security`
 2. 在 index.html 引用
+
 ```
 <link rel="stylesheet" type="text/css" href="node_modules/text-security/dist/text-security.css">
 ```
+
 3. 新增 CSS 類別
+
 ```
 .conceal {
   font-family: 'text-security-disc' !important;
 }
 ```
+
 4. 修改 input 類型，從 password 改成 text
+
 ```html
 <input type="text" class="conceal" />
 ```
