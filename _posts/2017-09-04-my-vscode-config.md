@@ -39,8 +39,9 @@ Visual Studio Code 提供了極大的彈性讓我們自訂想要的編輯器樣�
 * `typescript.referencesCodeLens` 開啟 TypeScript 專案的 CodeLens
 	* 設定值：`"typescript.referencesCodeLens.enabled": true,`
 * `terminal.integrated.shell.windows` 指定使用哪種終端機
-	* 預設是使用 `"C:\\Windows\\sysnative\\cmd.exe"`
-	* 設定值：`"C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"`
+	* CMD `"C:\\Windows\\sysnative\\cmd.exe"`
+	* PowerShell `"C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"`
+	* Bash on Ubuntu `"C:\\Windows\\sysnative\\bash.exe"`
 
 ## Workspace 常用設定
 
