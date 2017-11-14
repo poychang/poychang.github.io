@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在 Angualr 網站中取消瀏覽器快取功能
+title: 在 Angular 網站中取消瀏覽器快取功能
 date: 2017-11-06 10:01
 author: Poy Chang
 comments: true
