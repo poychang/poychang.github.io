@@ -4,7 +4,7 @@ title: 如何使用 BrowserSync 啟動開發用網頁伺服器
 date: 2017-11-01 12:00
 author: Poy Chang
 comments: true
-categories: [Test]
+categories: [Tool]
 ---
 當我們在製作前端網頁時，經常會需要將程式碼運行在瀏覽器中，這時候通常需要一個網頁伺服器來執行程式碼，BrowserSync 就是一個輕巧的工具，讓我們能在開發時期，啟動一個小型網頁伺服器，而且還能根據檔案異動，自動刷新畫面，相當方便。
 
