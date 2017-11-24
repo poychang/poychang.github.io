@@ -79,7 +79,11 @@ Blog：[ASP.NET Core 教學 - Middleware](https://blog.johnwu.cc/article/asp-net
 * [ASP.NET Core Middleware 存取 SPA 網頁資源](https://gist.github.com/poychang/c98f5b35e11f56ad22ff6de6ab09974d)
 * [ASP.NET Core Middleware 限制未授權的 API 呼叫](https://gist.github.com/poychang/60570f178dfb1e4566b45b5b83589b01)
 
-## ASP.NET Core 原始碼閱讀筆記
+## ASP.NET Core 框架揭秘 by Artech
+
+[http://www.cnblogs.com/artech/p/inside-asp-net-core-1.html](http://www.cnblogs.com/artech/p/inside-asp-net-core-1.html)
+
+## ASP.NET Core 原始碼閱讀筆記 by Bill Shooting
 
 * [ASP.NET Core 源码阅读笔记(1) ---Microsoft.Extensions.DependencyInjection](http://www.cnblogs.com/bill-shooting/p/5540665.html)
 * [ASP.NET Core 源码阅读笔记(2) ---Microsoft.Extensions.DependencyInjection生命周期管理](http://www.cnblogs.com/bill-shooting/p/5550198.html)
@@ -161,6 +165,21 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
   </tr>
 </tbody>
 </table>
+
+## 開啟 Dotnet 專案時效能低落的問題
+
+使用 Dotnet CLI 時，如果遇到 `dotnet run` 很慢的情形，通常是該專案下有類似 `node_modules` 資料夾存在，這時需要將 `csproj` 內設定排除 `node_modules` 資料夾，這樣才能讓 `dotnet run` 或 `dotnet build` 速度正常
+設定項目如下：
+
+```xml
+<PropertyGroup>
+	<DefaultItemExcludes>$(DefaultItemExcludes);YOUR_PATH\node_modules\**\*</DefaultItemExcludes>
+</PropertyGroup>
+```
+
+上面程式碼中請修改 `YOUR_PATH` 成你要的路徑。
+
+從[這個提交](https://github.com/aspnet/websdk/commit/771888b40c9947b86af443238ca9427a10bf23a5#diff-81c6e234d77bce12b4c645c597b860cb)可以看出來上述的問題，是因為斜線打反了 所以會抓到 node_modules 資料夾，造成效能低落。
 
 ----------
 
