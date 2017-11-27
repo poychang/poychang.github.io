@@ -18,6 +18,34 @@ categories: [CSharp, Dotnet]
 	* 開發時執行程式，並輸出相關執行的資訊
 	* `--verbosity` 設定命令的詳細資訊層級。允許的值為 q[uiet]、m[inimal]、n[ormal]、d[etailed] 及 diag[nostic]
 
+## Entity Framework
+
+### Code First
+
+* 教學文(en)：[使用 EF Core 在 Console App 建立 新資料庫](https://docs.microsoft.com/zh-tw/ef/core/get-started/netcore/new-db-sqlite)
+	* 執行以下指令安裝所需套件
+		* `dotnet add package Microsoft.EntityFrameworkCore.Sqlite`
+		* `dotnet add package Microsoft.EntityFrameworkCore.Design`
+		* `dotnet add tool Microsoft.EntityFrameworkCore.Tools.DotNet`
+			* 目前還不支援，要手動增加
+			* `<ItemGroup><DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" /></ItemGroup>`
+	* 用程式碼表達資料庫及資料表結構，即建立 DbContext
+	* 執行以下指令建立資料庫及其資料表
+		* `dotnet ef migrations add InitialCreate` 產生 migrations 程式碼
+		* `dotnet ef database update` 執行 migrations 程式碼至資料庫
+
+### Data Annotations
+
+教學文(cht)：[建立複雜的 EF Core 資料模型](https://docs.microsoft.com/zh-tw/aspnet/core/data/ef-mvc/complex-data-model)
+
+* `[Key]` 主鍵
+* `[Required]` 必要的屬性
+* `[DataType(DataType.Date)]` 用來指定比資料庫內建類型更特殊的資料類型
+* `[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]` 屬性用來明確指定日期格式
+* `[StringLength(50)]`
+* `[RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$")]`
+* `[Column("FirstName")]`
+
 ## 佈署至 IIS
 
 參考資料：[在使用 IIS 的 Windows 上裝載 ASP.NET Core](https://docs.microsoft.com/zh-tw/aspnet/core/publishing/iis?tabs=aspnetcore2x)

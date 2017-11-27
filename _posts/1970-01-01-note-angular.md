@@ -31,6 +31,11 @@ categories: [Angular]
 
 ## 小技巧
 
+### 常用的建專案指令
+
+* `ng new PORJECT_NAME -sg -si -st --routing` 建立不含 git、不 npm install、不含測試，但有路由模組的專案
+* `ng new PORJECT_NAME --minimal` 建立極簡版專案，不產生 spec 檔案，component template 或是 style 都是 inline 模式
+
 ### 解決 import 路徑過長的問題
 
 Angular 程式寫到後面，會發現那個 import 的路徑越來越長，一路點點點下去也不是辦法，[官網文件](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping)有提供很好的解法，在 `tsconfig.json` 的 `compilerOptions` 內，可以使用 `"PATH_ALIAS": ["PATH"]` 的方式來設定路徑別名，範例如下：
