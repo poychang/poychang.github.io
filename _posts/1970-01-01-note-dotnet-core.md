@@ -42,7 +42,9 @@ categories: [CSharp, Dotnet]
 * `[Required]` 必要的屬性
 * `[DataType(DataType.Date)]` 用來指定比資料庫內建類型更特殊的資料類型
 * `[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]` 屬性用來明確指定日期格式
-* `[StringLength(50)]`
+	* `[DisplayFormat(NullDisplayText = "No grade")]`
+* `[StringLength(50, MinimumLength = 3)]`
+* `[Range(0, 5)]`
 * `[RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$")]`
 * `[Column("FirstName")]`
 

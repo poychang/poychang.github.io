@@ -174,6 +174,104 @@ public void Main()
 }
 ```
 
+## 使用 EF Core SQLite Provider 的限制
+
+參考資料：[SQLite EF Core Database Provider Limitations](https://docs.microsoft.com/zh-tw/ef/core/providers/sqlite/limitations)
+
+使用 EF Croe 來處理 SQLite 資料庫時，有一些 Migrations 的限制，請參考下表：
+
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>Operation</th>
+	<th>Supported?</th>
+	<th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>AddColumn</td>
+	<td>✔</td>
+	<td>增加欄位</td>
+  </tr>
+  <tr>
+    <td>AddForeignKey</td>
+	<td>✗</td>
+	<td>增加外來鍵</td>
+  </tr>
+  <tr>
+    <td>AddPrimaryKey</td>
+	<td>✗</td>
+	<td>增加主鍵</td>
+  </tr>
+  <tr>
+    <td>AddUniqueConstraint</td>
+	<td>✗</td>
+	<td>增加唯一限制</td>
+  </tr>
+  <tr>
+    <td>AlterColumn</td>
+	<td>✗</td>
+	<td>變更欄位</td>
+  </tr>
+  <tr>
+    <td>CreateIndex</td>
+	<td>✔</td>
+	<td>新增索引</td>
+  </tr>
+  <tr>
+    <td>CreateTable</td>
+	<td>✔</td>
+	<td>新增資料表</td>
+  </tr>
+  <tr>
+    <td>DropColumn</td>
+	<td>✗</td>
+	<td>刪除欄位</td>
+  </tr>
+  <tr>
+    <td>DropForeignKey</td>
+	<td>✗</td>
+	<td>刪除外來鍵</td>
+  </tr>
+  <tr>
+    <td>DropIndex</td>
+	<td>✔</td>
+	<td>刪除索引</td>
+  </tr>
+  <tr>
+    <td>DropPrimaryKey</td>
+	<td>✗</td>
+	<td>刪除主鍵</td>
+  </tr>
+  <tr>
+    <td>DropTable</td>
+	<td>✔</td>
+	<td>刪除資料表</td>
+  </tr>
+  <tr>
+    <td>DropUniqueConstraint</td>
+	<td>✗</td>
+	<td>刪除唯一限制</td>
+  </tr>
+  <tr>
+    <td>RenameColumn</td>
+	<td>✗</td>
+	<td>變更欄位名稱</td>
+  </tr>
+  <tr>
+    <td>RenameIndex</td>
+	<td>✗</td>
+	<td>變更索引名稱</td>
+  </tr>
+  <tr>
+    <td>RenameTable</td>
+	<td>✔</td>
+	<td>變更資料表名稱</td>
+  </tr>
+</tbody>
+</table>
+
 ## SQLite 批次 INSERT in C#
 
 SQLite [FAQ#19](http://www.sqlite.org/faq.html#q19) 提到，一秒最快能完成 50,000 筆以上的 INSERT，但一秒只能完成幾十筆 Transation，因此如果需要大量寫入資料，可參考[黑暗執行緒 - SQLite 批次 INSERT 的蝸牛陷阱](http://blog.darkthread.net/post-2017-07-16-sqlite-insert-slow.aspx)下列寫法。
