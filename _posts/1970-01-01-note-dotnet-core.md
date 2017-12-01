@@ -27,7 +27,7 @@ categories: [CSharp, Dotnet]
 		* `dotnet add package Microsoft.EntityFrameworkCore.Sqlite`
 		* `dotnet add package Microsoft.EntityFrameworkCore.Design`
 		* `dotnet add tool Microsoft.EntityFrameworkCore.Tools.DotNet`
-			* 目前還不支援，要手動增加
+			* 目前還不支援，要手動在 `.csproj` 中增加
 			* `<ItemGroup><DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" /></ItemGroup>`
 	* 用程式碼表達資料庫及資料表結構，即建立 DbContext
 	* 執行以下指令建立資料庫及其資料表
