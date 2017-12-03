@@ -13,7 +13,7 @@ categories: [Tools]
 
 [Node.js LTS Roadmap](https://github.com/nodejs/LTS) 可以參考下圖：
 
-![Node.js Long-term Support Schedule](http://i.imgur.com/8LJ41al.png)
+![Node.js Long-term Support Schedule](https://i.imgur.com/pQpwEHb.png)
 
 NVM 是管理 Node.js 版本的工具，但不同系統有對應的工具
 
