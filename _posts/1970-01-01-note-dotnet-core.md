@@ -48,6 +48,24 @@ categories: [CSharp, Dotnet]
 * `[RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$")]`
 * `[Column("FirstName")]`
 
+## Http StatusCode
+
+你可以使用 `StatusCode(???)` 回傳任何 HTTP status code。或者可以使用以下方法：
+
+* Success
+	* return `Ok()`          ← Http status code 200
+	* return `Created()`     ← Http status code 201
+	* return `NoContent()`   ← Http status code 204
+* Client Error:
+	* return BadRequest()`   ← Http status code 400
+	* return Unauthorized()` ← Http status code 401
+	* return NotFound()`     ← Http status code 404
+* 更多方法請參考
+	* [ControllerBase](https://docs.microsoft.com/en-us/aspnet/core/api/microsoft.aspnetcore.mvc.controllerbase#Microsoft_AspNetCore_Mvc_ControllerBase)
+	* [StatusCodes.cs](https://github.com/aspnet/HttpAbstractions/blob/dev/src/Microsoft.AspNetCore.Http.Abstractions/StatusCodes.cs)
+
+參考資料：[How to return a specific status code and no contents from Controller?](https://stackoverflow.com/questions/37690114/how-to-return-a-specific-status-code-and-no-contents-from-controller)
+
 ## 佈署至 IIS
 
 參考資料：[在使用 IIS 的 Windows 上裝載 ASP.NET Core](https://docs.microsoft.com/zh-tw/aspnet/core/publishing/iis?tabs=aspnetcore2x)
