@@ -14,8 +14,8 @@ categories: [Angular, Tools]
 
 ## 常用指令
 
-* 預覽新專案：`ng new AppName --routing -si -st -d`
-* 建立新專案：`ng new AppName --routing -si -st`
+* 預覽新專案：`ng new AppName --routing -si -st --style=scss -d`
+* 建立新專案：`ng new AppName --routing -si -st --style=scss`
 * 啟動：`ng serve`
 
 ## ng new
@@ -28,6 +28,9 @@ categories: [Angular, Tools]
 	* `--dry-run`
 		* 只輸出會建立的檔案名稱，不會真的產生檔案
 		* 別名：`-d`
+	* `--skip-git`
+		* 此專案不建立 git 庫
+		* 別名：`-sg`
 	* `--skip-install`
 		* 當專案建立後，不執行任何 npm/yarn 安裝指令
 		* 別名：`-si`
@@ -37,15 +40,14 @@ categories: [Angular, Tools]
 	* `--skip-e2e`
 		* 當專案建立後，不增加 e2e 測試檔案
 		* 別名：`-se`
-	* `--skip-git`
-		* 此專案不建立 git 庫
-		* 別名：`-sg`
 	* `--directory`
 		* 設定專案要建立在哪個資料夾內
 		* 如果要將產生的專案放在當前資料夾，可這樣下參數 `--directory ./`
 	* `--verbose`
 		* 輸出更多資訊
 		* 別名：`-v`
+	* `--style=scss`
+		* 改使用 SCSS 設計 CSS 樣式
 
 ## ng init
 
