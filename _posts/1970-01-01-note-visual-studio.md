@@ -70,6 +70,16 @@ Visual Studio 2017 的方案屬性頁中，有個`輕量型載入`的選項，�
 
 ![開啟專案時](http://i.imgur.com/W6LATdB.png)
 
+## 關閉 npm 套件自動還原
+
+當使用 Visual Studio 開啟前端專案的時候，Visual Studio 會很貼心的自動幫你把 bower 和 npm 套件自動還原，不過這些套件通常都很多，下載安裝會需要一段時間，如果你想要關閉這個行為了話，可以參考下面步驟：
+
+1. 工具列上的 [工具] > [選項]
+2. [專案和方案] > [Web Package Management] > [套件還原]
+3. 將 [在專案開啟時還原] 改成 `false` (參考下圖)
+
+![套件還原](https://i.imgur.com/xRgrLqI.png)
+
 ----------
 
 參考資料：

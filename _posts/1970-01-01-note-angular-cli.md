@@ -96,6 +96,7 @@ categories: [Angular, Tools]
 	* `route <route/to/route-component>` Generates a route. The name should be the route used in the RouteConfig.
 	* `pipe <path/to/pipe-name>` Generates a pipe.
 	* `service <path/to/service-name>` Generates a service.
+	* `app-shell [ --universal-app <universal-app-name>] [ --route <route>]` 建立 App Shell
 
 每個產生的元件有各自的資料夾，除非使用 `--flat` 選項
 
