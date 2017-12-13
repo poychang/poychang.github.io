@@ -8,9 +8,19 @@ categories: [Angular, Tools]
 ---
 開發 Angular 就不能不知道 Angular CLI 這個超級好用的命令列工具，有了這個工具，原本渾沌的開發環境，頓時清晰，許多繁瑣的瑣事，一個命令就搞定！這邊是我自己的操作筆記，讓記憶力不佳的我，有個地方可以方便查詢。
 
-這裡的內容不保證最新，但會盡量持續更新。
+>這裡的內容不保證最新，但會盡量持續更新。
 
-最即時的文件請參考 Angular CLI 在 Github 上的文件，例如要查 `ng new` 這個指令的用法，請參考這個[連結](https://github.com/angular/angular-cli/blob/master/docs/documentation/new.md)。
+>最即時的文件請參考 Angular CLI 在 Github 上的文件，例如要查 `ng new` 這個指令的用法，請參考這個[連結](https://github.com/angular/angular-cli/blob/master/docs/documentation/new.md)。
+
+## 安裝
+
+建議使用 [Node.js](https://nodejs.org/en/) 的 npm 套件管理工具來安裝 Angular CLI，請使用以下指令安裝：
+
+```bash
+npm install -g angular-cli
+```
+
+>Angular CLI 需要 Node 4.X 和 NPM 3.X 以上的版本支援。
 
 ## 常用指令
 
@@ -56,14 +66,24 @@ categories: [Angular, Tools]
 * 選項：
 	* `--dry-run`
 		* 只輸出會建立的檔案名稱，不會真的產生檔案
-		* 別名：`d`
+		* 別名：`-d`
 	* `--verbose`
 		* 輸出更多資訊
-		* 別名：`v`
+		* 別名：`-v`
 	* `--skip-npm`
 		* 當專案建立後，不執行任何 npm 指令
 	* `--name`
 		* 設定專案名稱
+
+## ng serve
+
+在專案資料夾中執行 `ng serve`，將編譯 Angular 專案並自動在瀏覽器中打開預設網址 `http://localhost:4200/`，執行後如果修改了專案中的程式碼，網頁會自動重新整理。
+
+也可以使用以下指令，自訂要配置的 IP 和 Port 號：
+
+```bash
+ng serve --host 0.0.0.0 --port 4201 --live-reload-port 49123
+```
 
 ## ng completion
 
@@ -88,24 +108,47 @@ categories: [Angular, Tools]
 ## ng generate
 
 * 指令：`ng generate <type> [options]`
-* 說明：Generate new code inside your project.
+* 說明：在專案中產生新的程式碼
 * 別名：`g`
 * 有效類型：
-	* `component <path/to/component-name>` Generates a component.
-	* `directive <path/to/directive-name>` Generates a directive.
-	* `route <route/to/route-component>` Generates a route. The name should be the route used in the RouteConfig.
-	* `pipe <path/to/pipe-name>` Generates a pipe.
-	* `service <path/to/service-name>` Generates a service.
-	* `app-shell [ --universal-app <universal-app-name>] [ --route <route>]` 建立 App Shell
+	* `ng g component my-new-component` 產生 Component 元件程式碼
+	* `ng g directive my-new-directive` 產生 Directive 指令程式碼
+	* `ng g pipe my-new-pipe` 產生 Pipe 管道程式碼
+	* `ng g service my-new-service` 產生 Service 服務程式碼
+	* `ng g class my-new-class` 產生 Class 程式碼
+	* `ng g interface my-new-interface` 產生 Interface 介面程式碼
+	* `ng g enum my-new-enum` 產生 Enum 程式碼
+	* `ng g module my-module` 產生 Module 模組程式碼
+	* `ng g guard my-guard` 產生 Guard 守衛程式碼
+	* `ng g app-shell [ --universal-app <universal-app-name>] [ --route <route>]` 建立 App Shell
 
 每個產生的元件有各自的資料夾，除非使用 `--flat` 選項
 
 * 選項：
 	* `--flat` 不建立資料夾
-	* `--route=<route>` Specify the parent route. Only for generating components and routes. Default to the path specified.
-	* `--skip-router-generation` Skip generating the route config for the parent. Only usable for routes.
-	* `--default` Specify that the route should be a default route.
-	* `--lazy` Specify that the route is lazy. Default to true.
+	* `--route=<route>` 指令父路由，僅用於產生元件和路由，預設使用指定的路徑
+	* `--skip-router-generation` 跳過產生父路由配置，只能用於路由命令
+	* `--default` 指定路由為預設路由
+	* `--lazy` 指定路由為延遲載入
+
+## ng build
+
+將專案編譯至輸出資料夾，預設為 `dist`。
+
+`ng build` 可以指定輸出目標（`--target=production` 或 `--target=development`）和要使用的環境文件（`--environment=dev` 或 `--environment=prod`）。預設情況下，會使用開發目標和環境。
+
+```bash
+# 這是正式環境的編譯
+ng build --target=production --environment=prod
+ng build --prod --env=prod
+ng build --prod
+
+# 這是開發環境的編譯
+ng build --target=development --environment=dev
+ng build --dev --e=dev
+ng build --dev
+ng build
+```
 
 ## ng get
 
