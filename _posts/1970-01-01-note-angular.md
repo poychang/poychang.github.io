@@ -140,4 +140,4 @@ import SharedModule as PrimeSharedModule from "primeng/common/shared";
 
 參考資料：
 
-* []()
+* [Angular FAQ](https://github.com/semlinker/angular-faq)
