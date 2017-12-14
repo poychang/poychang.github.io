@@ -8,7 +8,7 @@ categories: [Angular]
 ---
 強大的 Angular 團隊在 Github 上有個專案叫做 [angular/flex-layout](https://github.com/angular/flex-layout)，將 FlexBox CSS 包裝成一個個 Directive 來使用，這個 Flex Layout 專案輔助 Angular (v4.1 以上版本) 用更方便的方式來佈局 HTML 樣板。
 
->因為 [angular/material2](https://github.com/angular/material2) 不包含 Flex 版面佈局系統，如果想要在 Material2 進行排版時，建議安裝 [angular/flex-layout](https://github.com/angular/flex-layout) 此工具。 
+>因為 [angular/material2](https://github.com/angular/material2) 不包含 Flex 版面佈局系統，如果想要在 Material2 進行排版時，可以安裝 [angular/flex-layout](https://github.com/angular/flex-layout) 此工具來處理版面布局。 
 
 從 [caniuse](https://caniuse.com/#feat=flexbox) 可以看到目前各大瀏覽器都支援 FlexBox CSS 樣式，但請注意 IE 10 以上版本僅部分支援。
 
@@ -74,14 +74,14 @@ FlexBox 主要角色為主容器（flex-container）和子元素（flex-item）�
 	* 最大化子元素，將子元素的 width 和 height 撐到最大
 	* 範例：`<div fxFlexFill></div>`
 
-`fxFlex` 由三個屬性組合而成，依照先後順序分別是 `flex-grow`、`flex-shrink` 和 `flex-basis`，三個屬性的解釋如下：
+>`fxFlex` 由三個屬性組合而成，依照先後順序分別是 `flex-grow`、`flex-shrink` 和 `flex-basis`，三個屬性的解釋如下：
 
 * `flex-grow`
 	* 當子元素的 flex-basis 長度**小於**它從父元素分配到的長度，按照數字做相對應的**伸展**比例分配
 	* 數字，無單位，預設值為 1，設為 0 的話不會進行彈性變化，不可為負值
 * `flex-shrink`
-	* 當子元素的 flex-basis 長度**大於**它從父元素分配到的長度，按照數字做相對應的壓**縮**比例分配
-	* 數字，無單位預設值為 1，設為 0 的話不會進行彈性變化，不可為負值
+	* 當子元素的 flex-basis 長度**大於**它從父元素分配到的長度，按照數字做相對應的**壓縮**比例分配
+	* 數字，無單位，預設值為 1，設為 0 的話不會進行彈性變化，不可為負值
 * `flex-basis`
 	* 子元素的基本大小，作為父元素的大小比較基準
 	* 預設值為 0，flex-basis 也可以設為 auto，表示子元素以自己的基本大小為單位
@@ -105,7 +105,9 @@ FlexBox CSS 本身無法控制 DOM 的顯示與否，透過此特殊響應功能
 
 ## 響應斷點
 
-![版面斷點](https://i.imgur.com/PkWCZP1.png)
+<a href="https://i.imgur.com/PkWCZP1.png" target="_blank">
+  ![版面斷點](https://i.imgur.com/PkWCZP1.png)
+</a>
 
 響應式的關鍵在於控制斷點，上圖中間藍色那行就是定義斷點的範圍，而在上面的範例中你可能會看到像是 `fxLayout.xs` 這樣的寫法，這就是在控制主容器在 `xs` 斷點下的布局方式，斷點設定方式及適用範圍請參考下表：
 
@@ -194,3 +196,5 @@ FlexBox CSS 本身無法控制 DOM 的顯示與否，透過此特殊響應功能
 * [angular4 Flex Layout開發實踐](http://blog.csdn.net/j_bleach/article/details/77513213)
 * [Material Layout Principles](https://material.io/guidelines/layout/principles.html)
 * [深入解析 CSS Flexbox](http://www.oxxostudio.tw/articles/201501/css-flexbox.html)
+* [Flexbox in CSS](http://cssreference.io/flexbox/)
+* [Angular Connect - Responsive Layouts with @angular/Flex-Layout](https://www.youtube.com/watch?v=geqjUtKJX5s)
