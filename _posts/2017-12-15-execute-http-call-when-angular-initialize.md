@@ -85,7 +85,7 @@ export class AppModule { }
 
 ## 本篇完整範例程式碼
 
-<iframe src="https://stackblitz.com/edit/angular-app-initializer-load-config?embed=1&file=app/app.module.ts&view=editor" height="400" width="100%" frameborder="0"></iframe>
+<iframe src="https://stackblitz.com/edit/angular-app-initializer-load-config?embed=1&file=app/app.module.ts&view=editor" height="500" width="100%" frameborder="0"></iframe>
 
 ----------
 
