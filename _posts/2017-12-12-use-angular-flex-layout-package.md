@@ -36,6 +36,11 @@ FlexBox 主要角色為主容器（flex-container）和子元素（flex-item）�
 	* 定義容器內子元素的排版方式
 	* 範例：`<div fxLayout="row" fxLayout.xs="column"> </div>`
 	* 設定值：`row`、`column`、`row-reverse`、`column-reverse`、`wrap`
+		* `row`：預設值，由左到右，從上到下
+		* `column`：從上到下，再由左到右
+		* `row-reverse`：與 row 相反
+		* `column-reverse`：與 column 相反
+		* `wrap`：多行
 * `fxLayoutWrap`
 	* 定義容器內子元素的排版方式採用多行方式排列
 	* 範例：`<div fxLayoutWrap> </div>`
@@ -197,4 +202,5 @@ FlexBox CSS 本身無法控制 DOM 的顯示與否，透過此特殊響應功能
 * [Material Layout Principles](https://material.io/guidelines/layout/principles.html)
 * [深入解析 CSS Flexbox](http://www.oxxostudio.tw/articles/201501/css-flexbox.html)
 * [Flexbox in CSS](http://cssreference.io/flexbox/)
+* [理解 CSS Flexbox](https://github.com/neal1991/articles-translator/blob/master/%E7%90%86%E8%A7%A3CSS%20Flexbox.md)
 * [Angular Connect - Responsive Layouts with @angular/Flex-Layout](https://www.youtube.com/watch?v=geqjUtKJX5s)
