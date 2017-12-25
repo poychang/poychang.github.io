@@ -50,7 +50,7 @@ export class ConfigService {
 
 ### 修改 AppModule
 
-接著需要修改 `AppModule` 將剛剛建立的 `ConfigService` 註冊，並設定初始化時我們想要執行的動作。
+接著在 `AppModule` 中，註冊剛剛建立的 `ConfigService`，並設定初始化時我們想要執行的動作。
 
 這邊的重點在於如何在 Provider 中註冊 `APP_INITIALIZER` Token，一樣有三個重點要說明：
 

@@ -33,7 +33,7 @@ FlexBox 主要角色為主容器（flex-container）和子元素（flex-item）�
 建立一個 FlexBox 容器，其中可包含一個以上的巢狀 Flex 子元素。
 
 * `fxLayout`
-	* 定義容器內子元素的排版方式
+	* 控制容器內子元素的排版方向
 	* 範例：`<div fxLayout="row" fxLayout.xs="column"> </div>`
 	* 設定值：`row`、`column`、`row-reverse`、`column-reverse`、`wrap`
 		* `row`：預設值，由左到右，從上到下
@@ -42,23 +42,23 @@ FlexBox 主要角色為主容器（flex-container）和子元素（flex-item）�
 		* `column-reverse`：與 column 相反
 		* `wrap`：多行
 * `fxLayoutWrap`
-	* 定義容器內子元素的排版方式採用多行方式排列
+	* 控制容器內子元素的排版方式採用多行方式排列
 	* 範例：`<div fxLayoutWrap> </div>`
 * `fxLayoutGap`
-	* 定義容器內子元素的間隔
+	* 控制容器內子元素的間隔
 	* 範例：`<div fxLayoutGap="10px"> </div>`
 	* 設定值：可接受這些單位 %、px、vw、vh
 * `fxLayoutAlign`
-	* 定義容器內子元素的對齊方式
+	* 控制容器內子元素的對齊方式
 	* 範例：`<div fxLayoutAlign="start stretch"> </div>`
 	* 設定值：
-		* main-aixs: `start`、`center`、`end`、`space-around`、`pace-between` 
+		* main-aixs: `start`、`center`、`end`、`space-around`、`space-between` 
 		* cross-axis: `start`、`center`、`end`、`stretch`
 
 ### 子元素類 Child Elements within Containers
 
 * `fxFlex`
-	* 定義子元素將如何相對於父容器和容器內的其他子元素調整其大小，增長或收縮
+	* 控制子元素大小，以及如何自動增長或收縮大小
 	* 範例：`<div fxFlex="1 2 calc(15em + 20px)"></div>`
 	* 設定值：
 		* 可接受這些單位 %、px、vw、vh
