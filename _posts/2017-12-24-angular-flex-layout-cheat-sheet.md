@@ -12,11 +12,7 @@ categories: [Angular]
   ![Angular Flex Layout Cheat Sheet - AngularTaiwan](https://i.imgur.com/H3BVfPZ.png)
 </a>
 
-[下載 PDF 版](https://1drv.ms/b/s!Aiwtjhj5fofrkIFxjS-Egn5AZFRBKg)
-
-<a href="https://desktop.github.com/images/github-desktop-icon.png" target="_blank">
-  ![Image of Octocat](https://desktop.github.com/images/github-desktop-icon.png)
-</a>
+>[下載 Angular Flex-Layout Cheat Sheet PDF 版](https://1drv.ms/b/s!Aiwtjhj5fofrkIFxjS-Egn5AZFRBKg)
 
 ## 後記
 
