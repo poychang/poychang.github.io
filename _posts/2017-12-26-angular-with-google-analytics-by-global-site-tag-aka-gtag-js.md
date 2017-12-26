@@ -6,7 +6,7 @@ author: Poy Chang
 comments: true
 categories: [Typescript, Angular]
 ---
-2017 8 月開始，Google Analytics 推出新的追蹤流量工具 Global Site Tag (gtag.js) 來接收網頁流量數據，此工具除了提供更強大的資料收集 API 外，還對 SPA (Single Page Application) 網站提出了更簡單使用的 API。這篇將示範如何在 Angular 專案中加入 Global Site Tag 網站追蹤程式碼。
+2017 年 8 月開始，Google Analytics 推出新的追蹤流量工具 Global Site Tag (gtag.js) 來接收網頁流量數據，此工具除了提供更強大的資料收集 API 外，還對 SPA (Single Page Application) 網站提出了更簡單使用的 API。這篇將示範如何在 Angular 專案中加入 Global Site Tag 網站追蹤程式碼。
 
 >官方文件：[Add gtag.js to your site](https://developers.google.com/analytics/devguides/collection/gtagjs/)
  
@@ -100,7 +100,7 @@ export class AppModule {
 
 完成上述的設定後，我們希望在每次路由變更的時候，能夠發送瀏覽數據給 GA，這裡我們可以從啟動的根元件 `AppComponent` 下手。
 
-我們可以透過監聽路由的 `NavigationEnd` 事件，當成功完成路由變更時，觸發發送瀏覽數據的事件方法 `gtag('event', 'page_view', { 'page_path': x.url }); })`，將當前的網頁位置傳送過去。
+我們可以透過監聽路由的 `NavigationEnd` 事件，當成功完成路由變更時，觸發發送瀏覽數據的事件方法 `gtag('event', 'page_view', { 'page_path': x.url }); })`，並且將當前的網址路徑傳送過去。
 
 ```typescript
 import {Component, OnInit} from '@angular/core';
@@ -131,9 +131,9 @@ export class AppComponent implements OnInit {
 }
 ```
 
-順道一提，這邊使用 RxJS 的 `distinctUntilChanged` 操作符，`distinctUntilChanged` 跟 `distinct` 一樣會把相同的元素過濾掉，但 `distinctUntilChanged` 只會跟最後一次送出的元素比較，不會每個都比。因此 `distinctUntilChanged` 只會暫存一個元素，不像 `distinct` 會在背後產生一個暫存用的 Set，當用在一個無限的 observable 時，這個 Set 可能會撐爆你的記憶體。
+>這邊使用 RxJS 的 `distinctUntilChanged` 操作符，`distinctUntilChanged` 跟 `distinct` 一樣會把相同的元素過濾掉，但 `distinctUntilChanged` 只會跟最後一次送出的元素比較，不會每個都比。因此 `distinctUntilChanged` 只會暫存一個元素，不像 `distinct` 會在背後產生一個暫存用的 Set，當用在一個無限的 observable 時，這個 Set 可能會撐爆你的記憶體。
 
-再順道一提，Pageview Event 有三個參數可以傳送：
+順道一提，Pageview Event 有三個參數可以傳送：
 
 <table class="table table-striped">
 <thead>
@@ -198,7 +198,7 @@ gtag('config', 'GA_TRACKING_ID', {'page_path': '/new-page.html'});
 
 參考資料：
 
-* [https://developers.google.com/analytics/devguides/collection/gtagjs/](https://developers.google.com/analytics/devguides/collection/gtagjs/)
+* [Add gtag.js to your site](https://developers.google.com/analytics/devguides/collection/gtagjs/)
 * [Tracking Google Analytics Page Views in Angular2](https://stackoverflow.com/questions/37655898/tracking-google-analytics-page-views-in-angular2)
 * [GA 追蹤碼安裝指南](https://training.pada-x.com/docs/article.jsp?key=google-analytics-tracking-code)
 * [30 天精通 RxJS(15): Observable Operators - distinct, distinctUntilChanged](https://ithelp.ithome.com.tw/articles/10188194)
