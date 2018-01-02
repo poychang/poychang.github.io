@@ -26,6 +26,7 @@ npm install -g angular-cli
 
 * 預覽新專案：`ng new AppName --routing -si -st --style=scss -d`
 * 建立新專案：`ng new AppName --routing -si -st --style=scss`
+* 建立 PWA 專案：`ng new AppName --routing -si -st --style=scss --service-worker`
 * 啟動：`ng serve`
 
 ## 專案升級步驟
@@ -74,6 +75,9 @@ npm install -g angular-cli
 		* 別名：`-v`
 	* `--style=scss`
 		* 改使用 SCSS 設計 CSS 樣式
+	* `--service-worker`
+		* 建立 PWA 專案
+		* 別名：`-sw`
 
 ## ng init
 
