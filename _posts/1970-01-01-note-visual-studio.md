@@ -4,7 +4,7 @@ title: Visual Studio 筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: [Tools]
+categories: [Note, Tools]
 ---
 本篇作為書籤用途，紀錄網路上的 Visual Studio 相關資訊
 

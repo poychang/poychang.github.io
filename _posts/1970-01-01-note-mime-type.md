@@ -4,7 +4,7 @@ title: MIME 一覽表
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: []
+categories: [Note]
 ---
 瀏覽器顯示的內容有 HTML、XML、GIF...等等，那，瀏覽器是如何區分它們，決定什麼內容用什麼形式來顯示呢？答案就是 MIME Type，也就是該資源的媒體類型。
 

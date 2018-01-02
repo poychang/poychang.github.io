@@ -4,7 +4,7 @@ title: Javascript Array 操作筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: []
+categories: [Javascript, Note]
 ---
 
 使用 javascript 操作 JSON時，使用內建陣列的操作功能，不管是在陣列上的資料儲存、過濾、排序、組合，都是超級無敵好用

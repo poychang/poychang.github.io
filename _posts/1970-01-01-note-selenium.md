@@ -4,7 +4,7 @@ title: Selenium 操作筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: [Tools]
+categories: [Note, Tools]
 ---
 在大數據時代中的工程師，一定要學會爬蟲這項技能，透過學習 Selenium 模擬瀏覽器的工具，不僅可以在浩瀚的網際網路中，爬到所需要的數據，更可以學會如何做 E2E 測試，一舉多得。
 

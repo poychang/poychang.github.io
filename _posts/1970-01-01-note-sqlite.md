@@ -4,7 +4,7 @@ title: SQLite 操作筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: []
+categories: [Note]
 ---
 # SQLite
 

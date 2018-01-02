@@ -4,7 +4,7 @@ title: SQL 指令筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: []
+categories: [Note]
 ---
 ## LocalDB 連線
 

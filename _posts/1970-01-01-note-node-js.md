@@ -4,7 +4,7 @@ title: Node.js 筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: []
+categories: [Note]
 ---
 
 官方網站：[https://nodejs.org/](https://nodejs.org/)

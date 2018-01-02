@@ -4,7 +4,7 @@ title: PlantUML 筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: [Typescript, Javascript, CSharp, Dotnet, SQL, App, Angular, WebAPI, Azure, Develop, Tools, Test, Uncategorized]
+categories: [Note, Develop]
 ---
 PlantUML 是一個可以透過直觀的文字描述產生對應 UML 的模型生成工具，官方網站已經提供了詳細的範例以及說明，相關語法其實不用一開始就先死背，需要時至網站查詢即可，上手難度不大。
 

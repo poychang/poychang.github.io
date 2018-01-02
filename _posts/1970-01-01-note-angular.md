@@ -4,7 +4,7 @@ title: Angular 筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: [Angular]
+categories: [Note, Angular]
 ---
 本篇作為書籤用途，紀錄網路上的 Angular 參考資料
 
