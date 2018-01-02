@@ -28,6 +28,22 @@ npm install -g angular-cli
 * 建立新專案：`ng new AppName --routing -si -st --style=scss`
 * 啟動：`ng serve`
 
+## 專案升級步驟
+
+參考：[簡介 Angular 4 如何升級至 Angular 5 最新版本](https://www.slideshare.net/WillHuangTW/angular-5-angular-4-angular-5)
+
+1. 查詢最新版的版本
+	* `ng -v` 查詢目前 Angular CLI 版本
+	* `npm show @angular/core@* version --json` 查詢 Angular 版本
+2. 更新 Angular
+	* 修正 `package.json` 中 所有 `@angular/*` 套件版本至最新版，例 `^5.0.0`
+3. 更新相依套件
+	* `npm install @angular/cli@1.5`
+	* `npm install typescript@2.4`
+	* `npm install rxjs@5.5`
+	* `npm install codelyzer@4`
+4. `npm install` 重新安裝套件
+
 ## ng new
 
 * 指令：`ng new <project-name> [options]`
