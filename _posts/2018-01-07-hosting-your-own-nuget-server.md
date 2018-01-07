@@ -18,7 +18,7 @@ NuGet 對於 .NET 開發人員的重要如同喝咖啡一般，當你開發了�
 3. [NuGet Gallery](https://github.com/NuGet/NuGetGallery#build-and-run-the-gallery-in-arbitrary-number-easy-steps)
 	* 架設如同 [nuget.org](https://www.nuget.org/) 的網站，除了提供 NuGet 服務外，還包含網站介面等探索功能
 
-內部的使用通常不需要網站介面，能夠存取 Private NuGet Server 上的套件就可以了，這裡用 [NuGet Server Core](http://nugetserver.net/) 這套件使用 Dotnet Core 來時做的 NuGet Server 來架設。
+內部的使用通常不需要網站介面，能夠存取私有 NuGet Server 上的套件就可以了，這裡用 [NuGet Server](http://nugetserver.net/) 這套件來架設。
 
 以下分三個段落：
 
