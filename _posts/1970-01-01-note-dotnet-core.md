@@ -229,6 +229,11 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 
 從[這個提交](https://github.com/aspnet/websdk/commit/771888b40c9947b86af443238ca9427a10bf23a5#diff-81c6e234d77bce12b4c645c597b860cb)可以看出來上述的問題，是因為斜線打反了 所以會抓到 node_modules 資料夾，造成效能低落。
 
+## Web Depoly
+
+* [下載 Web Deploy 安裝檔](https://www.microsoft.com/zh-tw/download/details.aspx?id=43717)
+* [ASP.NET MVC - 使用Web Deploy佈署MVC應用程式到IIS](http://blog.sanc.idv.tw/2014/08/aspnet-web-deploymvciis.html)
+
 ----------
 
 參考資料：
