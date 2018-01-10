@@ -4,7 +4,7 @@ title: 使用最新版的 C# 編譯器
 date: 2018-01-04 07:52
 author: Poy Chang
 comments: true
-categories: [CSharp, Dotne, Tools]
+categories: [CSharp, Dotnet, Tools]
 ---
 在 C# 7.1 開始加入了非同步 `Main()` 的寫法，更方便我們寫非同步的程式，而且 Visual Studio 2017 (Version 15.3) 已經內建 C# 7.1 的功能，不過預設專案會使用最新主要版本，也就是 C# 7.0，因此在享用 C# 7.1 新的語法糖前，要先知道如何指定 C# 版本。
 
