@@ -14,6 +14,8 @@ categories: [Note, Tools]
 	* 可快速跳到 Solution Explorer 該檔的所在位置
 * `alt` + `上下的方向鍵`
 	* 快速將程式碼上、下搬動
+* `ctrl` + `K` + `D`
+	* 格式化文件
 
 ## 必裝套件
 
