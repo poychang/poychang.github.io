@@ -10,12 +10,20 @@ categories: [Note, Tools]
 
 ## 快捷鍵
 
-* `ctrl` + `]` , `s`
+* `Ctrl` + `]` , `S`
 	* 可快速跳到 Solution Explorer 該檔的所在位置
-* `alt` + `上下的方向鍵`
+* `Alt` + `上下的方向鍵`
 	* 快速將程式碼上、下搬動
-* `ctrl` + `K` + `D`
+* `Ctrl` + `K, D`
 	* 格式化文件
+* `Ctrl` + `Space`
+	* IntelliSense 程式碼自動完成
+* `Ctrl` + `K, C`
+	* 註解程式碼
+* `Ctrl` + `K, U`
+	* 取消註解程式碼
+* `Ctrl` + `R, R`
+	* 重新命名
 
 ## 必裝套件
 
