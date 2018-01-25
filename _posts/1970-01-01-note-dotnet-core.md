@@ -214,6 +214,35 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 </tbody>
 </table>
 
+## 執行(發佈)模式
+
+### Framework Dependent Deployment(FDD)
+
+程式碼編譯出來的是 dll，不是預期中的 exe 檔案，必須由電腦安裝的Dotnet Runtime 去執行對應的程式。
+
+* [官方介紹 Framework Dependent Deployment](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs#framework-dependent-deployment)
+* [Alan Tsai 的學習筆記 - 了解 Framework Dependent Deployment(FDD) 執行(發佈)模式](http://blog.alantsai.net/2017/10/event-net-conf-workshop-02-1-net-core-console-with-FDD-publish.html)
+
+### Self Contained Deployment(SCD)
+
+要做到自封式部署，可透過修改專案檔 `.csproj` 將裡面的 `PropertyGroup` 改成如下：
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+</Project>
+```
+主要是加上 `RuntimeIdentifiers` 這個設定，上述範例會產生出 Windows x64 和 Linux x64 環境適用的可執行檔。
+
+更多 Runtime IDentifiers 請參考官方文件 [.NET Core RID Catalog](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog)。
+
+* [官方介紹 Self Contained Deployment](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs#simpleSelf)
+* [Alan Tsai 的學習筆記 - 了解 Self Contained Deployment(SCD) 執行(發佈)模式](http://blog.alantsai.net/2017/10/event-net-conf-workshop-02-2-net-core-console-with-SCD-publish.html)
+
 ## 開啟 Dotnet 專案時效能低落的問題
 
 使用 Dotnet CLI 時，如果遇到 `dotnet run` 很慢的情形，通常是該專案下有類似 `node_modules` 資料夾存在，這時需要將 `csproj` 內設定排除 `node_modules` 資料夾，這樣才能讓 `dotnet run` 或 `dotnet build` 速度正常
