@@ -10,6 +10,8 @@ categories: [Dotnet, Develop]
 
 >LDAP 對很多公司來說是非常常用的驗證技術，大家可以到這個 [#2089 issues](https://github.com/dotnet/corefx/issues/2089) 加一，讓微軟知道您的想法。
 
+>更新！[System.DirectoryServices](https://www.nuget.org/packages/System.DirectoryServices) 已經支援 Dotnet Core 囉！使用前請先確認您的目標框架是符合 .NET Standard 2.0 的 Dotnet 框架。
+
 LDAP 的簡介請參考[這篇](/ldap-introduction/)。
 
 ## 測試環境
