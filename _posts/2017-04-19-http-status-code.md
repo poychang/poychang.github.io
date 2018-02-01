@@ -98,3 +98,4 @@ HTTP 狀態碼指的是從伺服器端回應(HTTP Response)的狀態，對於狀
 * [List of HTTP status codes - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 * [ASP.NET Core - How to return a specific status code and no contents from Controller?](http://stackoverflow.com/questions/37690114/asp-net-core-how-to-return-a-specific-status-code-and-no-contents-from-control)
 * [保哥：網頁開發人員應瞭解的 HTTP 狀態碼](http://blog.miniasp.com/post/2009/01/16/Web-developer-should-know-about-HTTP-Status-Code.aspx)
+* [!false 技術客 - HTTP 狀態碼 (Status Codes)](https://notfalse.net/48/http-status-codes)
