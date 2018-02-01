@@ -8,6 +8,20 @@ categories: [Note, Tools]
 ---
 Windows 叫做命令提示字元（cmd.exe, Command Line），Unix-like OS 叫做終端機（Terminal），這是一個以文字為主的應用程式，可以查看、處理並且控制你電腦裡的檔案，系統原生提供了很多好用的指令和用法，隨手筆記之。
 
+## 命令列也有快捷鍵
+
+![命令列快捷鍵](https://i.imgur.com/WSiW3Eb.png)
+
+個人覺得必學的有：
+
+* `Ctrl` + `←` 或 `→` 以字組作為跳動距離來移動游標
+* `Ctrl` + `A` 移動游標至最前面
+* `Ctrl` + `E` 移動游標至最後面
+* `Alt` + `B` 移動游標至該字組的最前面
+* `Alt` + `F` 移動游標至該字組的最後面
+
+REF:[Moving efficiently in the CLI](https://clementc.github.io/blog/2018/01/25/moving_cli/)
+
 ### Net Use
 
 NET 指令是 Windows NT 中的一個功能強大的工具，可以管理網路環境、各種服務程序的執行和配置、進行用戶和登入管理等。
