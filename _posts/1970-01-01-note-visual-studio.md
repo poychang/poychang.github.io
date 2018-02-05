@@ -61,6 +61,9 @@ categories: [Note, Tools]
 * [Macros for Visual Studio ](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MacrosforVisualStudio)
 	* [DEMO 大的介紹文](http://demo.tc/post/833#.WGomoFFb9cM.facebook)
 	* 由於巨集腳本沒有同步功能，建議參考「DEMO 大的介紹文」設定透過 OneDrive 同步
+* [Snippet Designer](https://marketplace.visualstudio.com/items?itemName=vs-publisher-2795.SnippetDesigner)
+	* 自己寫一個 Code Snippets Template 來產生自己要的程式碼區段
+	* [介紹文 - Code Snippets 產生常用程式碼 Template](http://limitedcode.blogspot.tw/2015/10/visual-studio-code-snippetstemplate.html)
 
 ## 圖示描述
 
