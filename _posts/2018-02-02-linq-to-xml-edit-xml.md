@@ -101,6 +101,8 @@ xmlDocument.Root?.Elements().Remove();
 
 這裡的 `xmlDocument.Root` 等價於 `xmlDocument.Element("Students")`，也就是整份 XML 文件的根結點。若是要表示 XML 文件的起始，建議使用 `xmlDocument.Root` 來操作會比較符合語意且直覺。
 
+>請參考 `04-ModifyXmlDocument` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/04-ModifyXmlDocument/Program.cs)
+
 ----------
 
 參考資料：
