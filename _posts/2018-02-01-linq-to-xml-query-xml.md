@@ -10,10 +10,10 @@ categories: [CSharp, Dotnet]
 
 目錄：
 
-* 基本操作
-* 建立 XML 檔案
-* 查詢 XML 資料
-* 修改 XML 資料
+* [基本操作](https://poychang.github.io/linq-to-xml-basic-usage/)
+* [建立 XML 檔案](https://poychang.github.io/linq-to-xml-create-xml-file)
+* [查詢 XML 資料](https://poychang.github.io/linq-to-xml-query-xml/)
+* [修改 XML 資料](https://poychang.github.io/linq-to-xml-edit-xml)
 * 轉換 XML 資料
 * 驗證 XML 資料
 * 取得 CDATA 資料
