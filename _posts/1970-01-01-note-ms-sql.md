@@ -59,6 +59,17 @@ WHERE Date IN (
 		)
 ```
 
+## 執行計畫
+
+參考資料：[SQL 觀看執行計畫重點](http://jengting.blogspot.tw/2013/12/executionplan-keypoint.html)
+
+在分析執行計畫時，我們不能只單看成本(CBO)，應該將 Statistics I/O、Statistics Time 也列入分析中，可以先執行以下 SQL 來觀察 Logical Read 最高是發生在哪一個
+
+```sql
+SET STATISTICS IO ON;
+SET STATISTICS TIME ON;
+```
+
 ## 查詢 SQL Server 目前使用者連線數
 
 查詢目前連線數

@@ -10,20 +10,52 @@ categories: [Note, Tools]
 
 ## 快捷鍵
 
-* `Ctrl` + `]` , `S`
-	* 可快速跳到 Solution Explorer 該檔的所在位置
-* `Alt` + `上下的方向鍵`
-	* 快速將程式碼上、下搬動
-* `Ctrl` + `K, D`
-	* 格式化文件
-* `Ctrl` + `Space`
-	* IntelliSense 程式碼自動完成
-* `Ctrl` + `K, C`
-	* 註解程式碼
-* `Ctrl` + `K, U`
-	* 取消註解程式碼
-* `Ctrl` + `R, R`
-	* 重新命名
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>快速鍵</th>
+    <th>說明</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><kbd>Ctrl</kbd> + <kbd>]</kbd> , <kbd>S</kbd></td>
+    <td>可快速跳到 Solution Explorer 該檔的所在位置</td>
+  </tr>
+  <tr>
+    <td><kbd>Alt</kbd> + <kbd>上下的方向鍵</kbd></td>
+    <td>快速將程式碼上、下搬動</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl</kbd> + <kbd>K</kbd>, <kbd>D</kbd></td>
+    <td>格式化文件</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl</kbd> + <kbd>Space</kbd></td>
+    <td>IntelliSense 程式碼自動完成</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl</kbd> + <kbd>K</kbd>, <kbd>C</kbd></td>
+    <td>註解程式碼</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl</kbd> + <kbd>K</kbd>, <kbd>U</kbd></td>
+    <td>取消註解程式碼</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl</kbd> + <kbd>R</kbd>, <kbd>R</kbd></td>
+    <td>重新命名</td>
+  </tr>
+  <tr>
+    <td><kbd>F12</kbd></td>
+    <td>移至定義</td>
+  </tr>
+  <tr>
+    <td><kbd>Ctrl</kbd> + <kbd>-</kbd></td>
+    <td>搭配 `F12` 移至定義，此為返回至原位置</td>
+  </tr>
+</tbody>
+</table>
 
 ## 必裝套件
 
