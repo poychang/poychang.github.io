@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LINQ to XML 使用筆記 - 基本操作
+title: LINQ to XML - 基本操作
 date: 2018-01-30 23:58
 author: Poy Chang
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LINQ to XML 使用筆記 - 查詢 XML 資料
+title: LINQ to XML - 查詢 XML 資料
 date: 2018-02-01 20:18
 author: Poy Chang
 comments: true

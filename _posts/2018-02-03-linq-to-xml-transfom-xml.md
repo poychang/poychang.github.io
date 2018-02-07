@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LINQ to XML 使用筆記 - 轉換 XML 資料
+title: LINQ to XML - 轉換 XML 資料
 date: 2018-02-03 00:00
 author: Poy Chang
 comments: true

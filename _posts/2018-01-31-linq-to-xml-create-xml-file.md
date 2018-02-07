@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LINQ to XML 使用筆記 - 建立 XML 資料
+title: LINQ to XML - 建立 XML 資料
 date: 2018-01-31 00:38
 author: Poy Chang
 comments: true
