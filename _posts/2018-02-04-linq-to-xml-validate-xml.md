@@ -38,7 +38,27 @@ XML 本身的彈性很大，可以自由地建立你想要的元素名稱及屬�
 	* `Gender`
 	* `TotalMarks`
 
-<script src="https://raw.githubusercontent.com/poychang/Demo-Linq-To-Xml/master/sample.xsd"></script>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Students">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Student" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="Gender" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="TotalMarks" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="Id" type="xs:integer" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
 
 ### 驗證
 
