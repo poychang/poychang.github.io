@@ -86,6 +86,16 @@ HTTP 狀態碼指的是從伺服器端回應(HTTP Response)的狀態，對於狀
 * `504` Gateway Timeout - 閘道逾時。
 * `505` HTTP Version Not Supported - 不支援的 HTTP 版本。
 
+## 後記
+
+網路上有人畫出了 HTTP 狀態的決策流程圖，詳細可看看這個專案 [for-GET/http-decision-diagram](https://github.com/for-GET/http-decision-diagram)，或是直接點開下圖：
+
+<a href="https://i.imgur.com/xnHCY8H.png" target="_blank">
+  ![HTTP Decision Diagram](https://i.imgur.com/xnHCY8H.png)
+</a>
+
+畫出這決策流程的人，真的很強大耶！
+
 ----------
 
 參考資料：
