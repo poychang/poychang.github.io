@@ -143,6 +143,53 @@ shutdown -r -t 0
 
 * route 指令加上 `-p` 代表加入永久的路由設定，不會因為重開機而清除
 
+## curl 指令用法
+
+參考資料：[curl 指令用法](http://evelynnote.blogspot.tw/2011/03/curl.html)
+
+curl 是 Linux 下一個很強大的 http 命令列工具
+
+1. 取得網頁內容，螢幕輸出
+	`$ curl http://www.linuxidc.com`
+2. `-o`: 取得網頁內容，檔案輸出
+	`$ curl -o page.html http://www.linuxidc.com`
+3. `-O`: 使用伺服器上的檔案名，存在本地 
+	`$ curl -O http://cgi2.tky.3web.ne.jp/~zzh/screen1.JPG`
+4. 可使用 Regular Expression 抓取所有 match 的檔案，指定 match 的群組內容為新檔名
+	`$ curl -O http://cgi2.tky.3web.ne.jp/~zzh/screen[1-10].JPG`
+	`$ curl -o #2-#1.jpg http://cgi2.tky.3web.ne.jp/~{zzh,nick}/[001-201].JPG`
+原來： ~zzh/001.JPG -> 下載後：001-zzh.JPG 
+原來： ~nick/001.JPG -> 下載後：001-nick.JPG
+5. `-c`: 續傳 (只能用在原本是 curl 傳輸的檔案)
+	`$ curl -c -O http://cgi2.tky.3wb.ne.jp/~zzh/screen1.JPG`
+6. `-u`: 指定 FTP 帳號密碼
+	`$ curl -u name:passwd ftp://ip:port/path/file`
+	`$ curl ftp://name:passwd@ip:port/path/file`
+7. `-T`: 上傳檔案
+	`$ curl -T localfile -u name:passwd ftp://upload_site:port/path/`
+	`$ curl -T localfile http://cgi2.tky.3web.ne.jp/~zzh/abc.cgi`
+(注意這時候使用的協定是 HTTP 的 PUT method)
+
+8.  Http GET 與 POST 模式
+GET 模式什麼 option 都不用，只需要把變數寫在 url 裡面就可以了比如：
+	`$ curl http://www.linuxidc.com/login.cgi?user=nickwolfe&password=12345`
+而 POST 模式的 option 則是 -d
+	`$ curl -d "user=nickwolfe&password=12345" http://www.linuxidc.com/login.cgi`
+到底該用 GET 模式還是 POST 模式，要看對面伺服器的程式設定。比如 POST 模式下的文件上傳
+	```
+	<form action="http://cgi2.tky.3web.ne.jp/~zzh/up_file.cgi" enctype="multipar/form-data" method="POST">
+	<input name="upload" type="file"/>
+	<input name="nick" type="submit" value="go"/></form>
+	```
+這樣一個 HTTP 表單，我們要用 curl 進行模擬，就該是這樣的語法：
+	`$ curl -F upload=@localfile -F nick=go http://cgi2.tky.3web.ne.jp/~zzh/up_file.cgi`
+
+9. https 使用本地認證
+	`$ curl -E localcert.pem https://remote_server`
+
+10. 通過 dict 協定去查字典
+	`$ curl dict://dict.org/d:computer`
+
 ----------
 
 參考資料：
