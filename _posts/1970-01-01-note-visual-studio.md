@@ -62,6 +62,9 @@ categories: [Note, Tools]
 * [Whack Whack Terminal](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal)
 	* 終端機模擬器，讓你可以在 Visual Studio 中開啟各種終端機，如 command prompt、powershell、WSL bash
 	* 快速鍵 `Ctrl` + `\`, `Ctrl` + `\`
+* [BuiltinCmd](https://marketplace.visualstudio.com/items?itemName=lkytal.BuiltinCmd)
+	* 終端機模擬器
+	* 快速鍵 `Ctrl` + `Shift` + `T` 
 * [CodeMaid](https://marketplace.visualstudio.com/items?itemName=SteveCadwallader.CodeMaid)
 	* 自動程式排版，快速鍵 `Ctrl` + `M`, `空白鍵`
 	* 檢視各個 Method 的循環複雜度
@@ -107,6 +110,8 @@ categories: [Note, Tools]
 
 ## 輕量型載入
 
+[官方文件](https://docs.microsoft.com/zh-tw/visualstudio/ide/optimize-visual-studio-startup-time)提到 Visual Studio 2017 15.5 版和更新版本不再提供這項功能。
+
 Visual Studio 2017 的方案屬性頁中，有個`輕量型載入`的選項，可以讓你在開啟方案時，不用一次把底下所有的專案都開啟
 
 ![輕量型載入](http://i.imgur.com/kpWaP6S.png)
@@ -124,6 +129,11 @@ Visual Studio 2017 的方案屬性頁中，有個`輕量型載入`的選項，�
 3. 將 [在專案開啟時還原] 改成 `false` (參考下圖)
 
 ![套件還原](https://i.imgur.com/xRgrLqI.png)
+
+## NuGet
+
+Source: https://api.nuget.org/v3/index.json
+API: https://www.nuget.org/api/v2/
 
 ----------
 

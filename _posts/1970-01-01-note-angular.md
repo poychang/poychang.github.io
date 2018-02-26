@@ -36,6 +36,43 @@ categories: [Note, Angular]
 * `ng new PORJECT_NAME -sg -si -st --routing` 建立不含 git、不 npm install、不含測試，但有路由模組的專案
 * `ng new PORJECT_NAME --minimal` 建立極簡版專案，不產生 spec 檔案，component template 或是 style 都是 inline 模式
 
+### 使用 Proxy 呼叫 API
+
+1. 在專案根目錄下新增一個 `proxy.config.json` 設定檔，設定檔內容如下：
+	```josn
+	{
+	  "/api": {
+	    "target": "http://your.apiwebsite",
+	    "secure": false
+	  }
+	}
+	```
+	
+	請注意：
+	* 這裡的 target 是目標 API 的網址，不能加上路徑部分
+	* 這裡的 `/api` 是我們要鏡像的網址 Prefix，所有連到 `http://localhost:4200/api/aaa` 網址，都會自動轉發到 `http://your.apiwebsite/api/aaa`，以此類推！
+2. 接著開啟 `package.json` 修改 "script" 區段中的 "start" 命令，加上 `--proxy-config proxy.config.json` 參數，如下內容：
+	```json
+	"scripts": {
+	  "ng": "ng",
+	  "start": "ng serve --proxy-config proxy.config.json",
+	  "build": "ng build",
+	  "build-prod": "ng build --prod --base-href /BasePath/",
+	},
+	```
+
+### 任意屬性
+
+```typescript
+export interface ModelName {
+  errors: {[key: string]: string};
+  [propName: string]: any;
+}
+```
+
+* `errors: {[key: string]: string};` 定義了 errors 這個屬性下可以有任意屬性為 string 類型的值
+* `[propName: string]: any;` 定義了任意屬性為 string 類型的值，定義後該 Class 或 Interface 的屬性必須為該任意屬性的子屬性，以此例來說只能為 string 屬性
+
 ### 解決 import 路徑過長的問題
 
 Angular 程式寫到後面，會發現那個 import 的路徑越來越長，一路點點點下去也不是辦法，[官網文件](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping)有提供很好的解法，在 `tsconfig.json` 的 `compilerOptions` 內，可以使用 `"PATH_ALIAS": ["PATH"]` 的方式來設定路徑別名，範例如下：
@@ -103,12 +140,6 @@ Mastering Angular 課程目錄([點此搜尋更多](https://mva.microsoft.com/se
 ### 學習資源
 * [TypeScript 和字段初始化器](https://gxnotes.com/article/137971.html)
 * [TypeScript 入门教程](https://ts.xcatliu.com/basics/type-of-object-interfaces.html)
-
-### 小技巧
-
-* 任意屬性
-	* `[propName: string]: any;`
-	* 上列定義了任意屬性為 string 類型的值，定義後該 Class 或 Interface 的屬性必須為該任意屬性的子屬性，以此例來說只能為 string 屬性
 
 ## TypeScript - tsconfig.json 設定
 

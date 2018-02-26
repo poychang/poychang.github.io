@@ -59,6 +59,21 @@ WHERE Date IN (
 		)
 ```
 
+## 資料庫定序
+
+SQL Server 的預設定序
+
+* 台灣地區 `Chinese_Taiwan_Stroke_CI_AS`
+* 美國地區 `SQL_Latin1_General_CP1_CI_AS`
+
+縮寫
+
+* Case Sensitivity    CI 指定不區分大小寫，CS 指定區分大小寫
+* Accent Sensitivity  AI 指定不區分腔調字，AS 指定區分腔調字(通常用在歐洲語系，如法文)
+* Kana Sensitivity    KS 指定區分假名(用在日文)
+* Width Sensitivity   WS 指定區分全半形，不寫就表示不區分
+
+
 ## 執行計畫
 
 參考資料：[SQL 觀看執行計畫重點](http://jengting.blogspot.tw/2013/12/executionplan-keypoint.html)
