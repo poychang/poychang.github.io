@@ -51,6 +51,10 @@ categories: [Note, Tools]
     <td>移至定義</td>
   </tr>
   <tr>
+    <td><kbd>Ctrl</kbd> + <kbd>F12</kbd></td>
+    <td>移至實作</td>
+  </tr>
+  <tr>
     <td><kbd>Ctrl</kbd> + <kbd>-</kbd></td>
     <td>搭配 `F12` 移至定義，此為返回至原位置</td>
   </tr>
