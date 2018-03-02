@@ -12,6 +12,8 @@ categories: [Angular]
 
 從 [caniuse](https://caniuse.com/#feat=flexbox) 可以看到目前各大瀏覽器都支援 FlexBox CSS 樣式，但請注意 IE 10 以上版本僅部分支援。
 
+安裝套件指令：`npm i @angular/flex-layout`
+
 ## Flex Layout
 
 Angular Flex Layout 使用 FlexBox CSS + mediaQuery 達成版面布局的設計，FlexBox 的基本模型請參考下圖：
