@@ -9,6 +9,7 @@
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
         appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
+        appendString += '<small>' + item.date + '...</small>';
         appendString += '<p>' + item.content.substring(0, 100) + '...</p></li>';
       }
 
