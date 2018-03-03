@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular CLI 操作筆記
-date: 2017-01-01 12:00
+date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note, Angular, Tools]
