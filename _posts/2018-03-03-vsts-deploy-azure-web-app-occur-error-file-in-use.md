@@ -6,7 +6,7 @@ author: Poy Chang
 comments: true
 categories: [Azure, Tools]
 ---
-Visual Studio Team Services 所提供的 CI/CD 功能非常強大且很容易使用，內建了很多任務 (Task) 可以直接取用，甚至還提供許多設計好的範本讓你直接套用，相當方便，例如 Azure Web App 範本，可以幫你從做了一套從還原套件至編譯然後佈署至 Azure 一系列的流程。不過對於持續運行的站台，使用這個 CI/CD 範本可能在佈署至 Azure 這段發生 `ERROR_FILE_IN_USE` 錯誤。
+[Visual Studio Team Service](https://www.visualstudio.com/vso/) 所提供的 CI/CD 功能非常強大且很容易使用，內建了很多任務 (Task) 可以直接取用，甚至還提供許多設計好的範本讓你直接套用，相當方便，例如 Azure Web App 範本，可以幫你從做了一套從還原套件至編譯然後佈署至 Azure 一系列的流程。不過對於持續運行的站台，使用這個 CI/CD 範本可能在佈署至 Azure 這段發生 `ERROR_FILE_IN_USE` 錯誤。
 
 `ERROR_FILE_IN_USE` 的錯誤訊息如下：
 
@@ -67,4 +67,5 @@ Swap Slots 這個動作必須搭配 Standard 以上的 Azure App Service 方案�
 參考資料：
 
 * [Can Azure Web App Deployment have an option to stop/start web app?](https://github.com/Microsoft/vsts-tasks/issues/1233)
+* [使用 Visual Studio Team Services 和 IIS 建立持續整合管線](https://docs.microsoft.com/zh-tw/azure/virtual-machines/windows/tutorial-vsts-iis-cicd)
 
