@@ -12,11 +12,29 @@ categories: [Angular]
 
 從 [caniuse](https://caniuse.com/#feat=flexbox) 可以看到目前各大瀏覽器都支援 FlexBox CSS 樣式，但請注意 IE 10 以上版本僅部分支援。
 
-安裝套件指令：`npm i @angular/flex-layout`
+## 安裝
 
-## Flex Layout
+要在 Angular CLI 專案使用相當簡單，只有兩個步驟：
 
-Angular Flex Layout 使用 FlexBox CSS + mediaQuery 達成版面布局的設計，FlexBox 的基本模型請參考下圖：
+1. 安裝套件指令：`npm install @angular/flex-layout`
+2. 將 Angular Flex-Layout 匯入至 `app.module` 中
+	```typescipt
+	// src/app/app.module.ts
+	
+	import {NgModule} from '@angular/core';
+	import {FlexLayoutModule} from '@angular/flex-layout';
+	@NgModule({
+	  imports: [FlexLayoutModule],
+	  ...
+	})
+	export class PizzaPartyAppModule {}
+	```
+
+官方 Wiki 連結：[Using Angular CLI](https://github.com/angular/flex-layout/wiki/Using-Angular-CLI)
+
+## Angular Flex Layout 簡介
+
+Angular Flex Layout 底層使用 FlexBox CSS + mediaQuery 達成版面布局的設計，FlexBox 的基本模型請參考下圖：
 
 ![CSS3 FlexBox 模型](https://i.imgur.com/vdOtzAr.jpg)
 
