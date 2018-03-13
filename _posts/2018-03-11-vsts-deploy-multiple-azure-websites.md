@@ -23,7 +23,7 @@ categories: [Azure, Tools]
 
 同一個方案檔，建立兩個網站 `A.WebApp`、`B.WebApp`。
 
->如果想自己玩玩看了話，可以直接 Clone 這個 [poychang/Demo-Deploy-Multiple-Azure-WebApp-With-VSTS](https://github.com/poychang/Demo-Deploy-Multiple-Azure-WebApp-With-VSTS) 範例專案，這樣妳就不用從頭建專案了。
+>如果想自己玩玩看了話，可以直接 Clone 這個 [poychang/Demo-Deploy-Multiple-Azure-WebApp-With-VSTS](https://github.com/poychang/Demo-Deploy-Multiple-Azure-WebApp-With-VSTS) 範例專案，這樣你就不用從頭建專案了。
 
 ![建立兩個網站](https://i.imgur.com/0fr5LFR.png)
 
