@@ -8,6 +8,8 @@ categories: [Note, Angular]
 ---
 本篇作為書籤用途，紀錄網路上的 Angular 參考資料
 
+* Angular.io Search URL `https://angular.io/api?query={q}` 其中 `{q}` 可替換成要搜尋的文字
+
 ## 發布 Angular 至 IIS 應用程式中
 
 * [Tips for Running an Angular app in IIS](https://blogs.msdn.microsoft.com/premier_developer/2017/06/14/tips-for-running-an-angular-app-in-iis/)

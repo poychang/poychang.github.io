@@ -17,6 +17,10 @@ Azure 已在全球 36 個區域正式運作，也計畫宣佈增加 6 個區域�
 * [TWNIC 台灣網路資訊中心](http://map.twnic.net.tw/)可查詢各電信業者及機構的連線頻寬圖
 * [Submarine Cable Map 全球海底纜線分佈圖](http://www.submarinecablemap.com/)
 
+## 其他資源
+
+* Microsoft Azure, Cloud and Enterprise Symbol / Icon Set, [下載位置](https://www.microsoft.com/en-us/download/details.aspx?id=41937)
+
 ----------
 
 參考資料：
