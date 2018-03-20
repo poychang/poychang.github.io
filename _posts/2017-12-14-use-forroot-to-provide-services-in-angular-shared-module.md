@@ -50,16 +50,18 @@ import { MyService } from './my.service';
   ...
 })
 export class SharedModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(providers = []): ModuleWithProviders {
     return {
       ngModule: SharedModule,
-      providers: [ MyService ]
+      providers: [ ...providers, MyService ]
     };
   }
 }
 ``` 
 
 在 SharedModule 的 ngModule 照原本的方式做宣告(`declarations`)、匯入(`imports`)、匯出(`exports`)的動作，但不處理提供服務(`providers`)，而在裡面定義一個靜態的 `forRoot()` 方法，這方法會返回 `ModuleWithProviders` 對象並包含要提供的單一實例服務。
+
+另外，這裡的 `forRoot()` 方法可以傳入一個 `providers` 參數，這用途是讓根模組也有機會注入服務。
 
 >`forRoot()` 方法是什麼？這是一個約定的用法，你可以把他視為一個只提供給根模組做配置的設定方法，因此我們也只能在根模組中使用 `forRoot()`。此外還有一個 `forChild()` 約定用法，給子模組做配置。
 
