@@ -72,8 +72,12 @@ categories: [Note, CSharp, Dotnet]
 
 重點：
 
-* 安裝 Donet Core Runtime（[載點](https://www.microsoft.com/net/download/windows)）
-* 安裝 Dotnet Core Windows Server Hosting 模組（[載點](https://www.microsoft.com/net/download/windows)）
+* 至 [.NET 網站](https://www.microsoft.com/net/download/windows)下載相關安裝檔
+* 下載並安裝 .NET Core Runtime ([v2.0.6 載點](https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.6-windows-x64-installer))
+* 下載並安裝 .NET Core Windows Server Hosting 模組
+	* 在 .NET 網站中先點選[All Downloads](https://www.microsoft.com/net/download/all)
+	* 選擇你的 .NET Core Runtime
+	* 選擇並下載 Windows 的 Server Hosting Installer ([v2.0.6 載點](https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.6-windows-server-hosting-installer))
 
 ## 開發時自動編譯
 
