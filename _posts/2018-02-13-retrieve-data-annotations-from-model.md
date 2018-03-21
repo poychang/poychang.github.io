@@ -90,9 +90,15 @@ public class Program
 
 ## Sample Code
 
+<iframe width="100%" height="900" src="https://dotnetfiddle.net/Widget/6ET5mj" frameborder="0"></iframe>
+
+## Retrieve Data Annotations Gist
+
+以下為針對 `Object` 和 `Type` 這兩個類型的擴充方法，方便取用資料模型的屬性設定。
+
 <script src="https://gist.github.com/poychang/801e785e3556e0928fc7fbb990a46dc9.js"></script>
 
-<iframe width="100%" height="900" src="https://dotnetfiddle.net/Widget/6ET5mj" frameborder="0"></iframe>
+
 
 ----------
 
