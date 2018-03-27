@@ -8,6 +8,8 @@ categories: [Note, CSharp, Dotnet]
 ---
 本篇作為筆記用途，紀錄 Dotnet Core 參考資料
 
+真正跨平台之前，還是多利用 .NET Portability Analyzer 分析你的專案是否用到了不支援的 API 比較保險
+
 ## 指令
 
 * [dotnet core 命令列介面 (CLI) 工具](https://docs.microsoft.com/zh-tw/dotnet/core/tools/)
