@@ -10,13 +10,13 @@ Visual Studio Code 提供了極大的彈性讓我們自訂想要的編輯器樣�
 
 >這篇主要是我個人偏好的設定
 
-首先可以使用快速鍵 `Ctrl` + `,` 開啟 `settings.json` 使用者設定檔，或從選單列中點選`檔案` > `喜好設定` > `設定`。
+首先可以使用快速鍵 <kbd>Ctrl</kbd> + <kbd>,</kbd> 開啟 `settings.json` 使用者設定檔，或從選單列中點選`檔案` > `喜好設定` > `設定`。
 
 ## Global 常用設定
 
 * `editor.fontFamily` 設定字型偏好
 	* 唯一選擇 [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
-	* 連字符號字型可選擇 [Hasklig](https://github.com/i-tu/Hasklig) 或 [FiraCode](https://github.com/tonsky/FiraCode) 擇一使用
+	* 連字符號字型可選擇 [Hasklig](https://github.com/i-tu/Hasklig) 或 [FiraCode](https://github.com/tonsky/FiraCode) 擇一使用(個人偏好 Hasklig)
 	* 設定值：`"editor.fontFamily": "Hasklig, 'Source Code Pro', Consolas, 'Microsoft JhengHei', 'Courier New', monospace",`
 * `editor.fontLigatures` 開啟連字符號
 	* Hasklig 字型有提供連字符號的功能，例如 `=>` 會變成箭頭符號
