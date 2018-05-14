@@ -108,9 +108,16 @@ categories: [Note, Tools]
 
 [類別檢視和物件瀏覽器圖示](https://msdn.microsoft.com/zh-tw/library/y47ychfe.aspx)
 
+Visual Studio 2017 完整的 Icon 圖示請[下載此連結的 PDF 檔案](https://docs.microsoft.com/en-us/visualstudio/designers/the-visual-studio-image-library)
+
 [類別檢視] 和 [物件瀏覽器] 會顯示代表程式碼實體 (Entity) 的圖示，例如：命名空間 (Namespace)、類別 (Class)、函式和變數。下表說明這些圖示：
 
 ![Visual Studio 圖示描述](http://i.imgur.com/GkxBvNG.jpg)
+
+在方案總管中識別版本控制項目狀態：
+
+![Visual Studio 版控項目狀態的圖示描述](https://i.imgur.com/Ghc8EmI.png)
+
 
 ## 輕量型載入
 
