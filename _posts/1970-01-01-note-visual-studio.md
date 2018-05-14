@@ -58,6 +58,10 @@ categories: [Note, Tools]
     <td><kbd>Ctrl</kbd> + <kbd>-</kbd></td>
     <td>搭配 `F12` 移至定義，此為返回至原位置</td>
   </tr>
+  <tr>
+    <td><kbd>F8</kbd></td>
+    <td>移至下一個錯誤位置</td>
+  </tr>
 </tbody>
 </table>
 
