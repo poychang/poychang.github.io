@@ -32,7 +32,7 @@ categories: [Dotnet, Develop, Tools]
 
 接著再專案檔最後加上以下程式碼，告訴 MSBuild 在編譯專案之後，執行 `TransformXml` 這個任務，這會載入 `Microsoft.Web.Publishing.Tasks.dll`，並且根據組態檔名稱，來選擇要置換設定的檔案。
 
->沒錯！ `Web.config` 也適用這個 dll 來處理同樣的事情。
+>沒錯！ `Web.config` 也是用這個 dll 來處理同樣的事情。
 
 ```xml
 <UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Web\Microsoft.Web.Publishing.Tasks.dll" />
