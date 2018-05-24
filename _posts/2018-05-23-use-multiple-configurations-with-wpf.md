@@ -99,7 +99,7 @@ categories: [Dotnet, Develop, Tools]
 
 [Configuration Transform](https://marketplace.visualstudio.com/items?itemName=GolanAvraham.ConfigurationTransform) 這個擴充套件還提供了預覽替換結果的功能，在要使用的設定檔按滑鼠右鍵，選擇 *Preview Config Transforms*。
 
-![Imgur](https://i.imgur.com/qePOKJF.png)
+![選擇 Preview Config Transforms](https://i.imgur.com/qePOKJF.png)
 
 就會出現使用 `App.Debug.config` 做轉換的預覽畫面，讓你一目了然轉換後的結果。
 
