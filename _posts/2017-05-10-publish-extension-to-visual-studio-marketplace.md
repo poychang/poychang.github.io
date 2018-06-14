@@ -28,7 +28,9 @@ Extension Marketplace 上的擴充套件是透過 Visual Studio Team Services �
 
 ![選擇新增 Token](http://i.imgur.com/ymh6XZ4.png)
 
-接著請輸入該 Token 的描述及有效期，這裡要注意 `Accounts` 欄位要選擇 `All accessible accounts`，然後 `Authorized Scopes` 要選擇 `All scopes`，這樣才能順利使用。
+接著請輸入該 Token 的描述及有效期。
+
+>要注意 `Accounts` 欄位要選擇 `All accessible accounts`，然後 `Authorized Scopes` 要選擇 `All scopes`，這樣才能順利使用。
 
 ![新增 Token](http://i.imgur.com/gmDKr6d.png)
 
