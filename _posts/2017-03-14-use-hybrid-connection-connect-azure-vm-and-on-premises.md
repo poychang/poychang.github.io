@@ -8,6 +8,8 @@ categories: [Azure, Tools]
 ---
 在傳統企業環境中要使用雲端服務，應該會經常被問到雲端能不能存取地端（On-Promises）的伺服器，畢竟企業內部有些資源、資料是企業主不想放在別人家的，而這問題的標準答案絕對是 YES，BizTalk 的 Hybrid Connection 是一個不錯的解決方案。
 
+>BizTalk Hybrid Connections 已於 May 31, 2018 停止服務，剩下 Azure App Service 中可繼續使用 Hybrid Connections 服務，也就是只支援 PaaS 服務使用。
+
 ## Hybrid Connections
 
 先來看看 Hybrid Connections 的示意圖：
