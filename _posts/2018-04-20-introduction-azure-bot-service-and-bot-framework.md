@@ -63,6 +63,8 @@ Azure Bot Service 是一個開發、運行對話機器人的整合環境，然�
 * [Bot Controller](http://aka.ms/bf-bc-vscontrollertemplate)
 * [Bot Dialog](http://aka.ms/bf-bc-vsdialogtemplate)
 
+>或者直接從 Visual Studio 中的擴充管理員搜尋 Bot Builder Template，會有官方的樣板套件。選擇時請注意，目前有分 v3 和 v4 版。
+
 接者可以參考*使用 Bot Builder SDK 建立對話機器人*的官方快速上手文件：
 
 * [Create a bot with the Bot Builder SDK for .NET](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-quickstart)
