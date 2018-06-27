@@ -4,7 +4,7 @@ title: Azure Bot Service 快速建立對話機器人的服務介紹
 date: 2018-04-20 01:13
 author: Poy Chang
 comments: true
-categories: [Dotnet, Develop]
+categories: [Dotnet, Develop, Bot]
 ---
 Azure Bot Service 是一套專用於開發、運行對話機器人的整合環境，也可以說是一個解決方案，裡面關聯到的功能、服務相當多元，從建置機器人對話服務、連結至各對話頻道、測試對話功能，甚至佈署與管理，都包含在 Azure Bot Service 中。
 
