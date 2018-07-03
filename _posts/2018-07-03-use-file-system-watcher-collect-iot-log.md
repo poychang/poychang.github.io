@@ -168,6 +168,8 @@ categories: [CSharp, Dotnet, Develop, IoT]
 
 接著我們來模擬一個 IoT 情境，假設我們有一個機台約 1 秒的時間間隔會產生一筆資料，並將資料持續寫進檔案，因此我們先寫一隻作為模擬機台感測到資料，並將資料寫入 Log 中的程式。
 
+這裡假設欄位結構會像這樣：`序號`,`日期`,`數值1`,`數值2`,`數值3`。
+
 ```csharp
 private static void AppendTextSimulator(string filePah)
 {
@@ -184,7 +186,11 @@ private static void AppendTextSimulator(string filePah)
 }
 ```
 
-上面的程式會產生如下的資料：
+上面的程式執行如下：
+
+![產生亂數資料的執行畫面](https://i.imgur.com/AmqlfAd.png)
+
+所產生的資料會長得像這樣：
 
 ```
 0,7/2/2018,8,79,0.1
@@ -327,7 +333,9 @@ static void Main(string[] args)
 
 >完整程式碼請參考 [poychang/Demo-FileSystemWatcher](https://github.com/poychang/Demo-FileSystemWatcher) 中的 FileSystemWatcherConsoleApp 專案。
 
-最後可以先執行 ContinuousWriteFileApp 專案，模擬持續寫入資料到指定檔案，再執行 FileSystemWatcherConsoleApp 專案，監看檔案的變化，並輸出檔案中最後一筆紀錄。
+最後可以先執行 ContinuousWriteFileApp 專案，模擬持續寫入資料到指定檔案，再執行 FileSystemWatcherConsoleApp 專案，監看檔案的變化，並只輸出檔案中最後一筆紀錄。
+
+[執行 ContinuousWriteFileApp 專案](https://i.imgur.com/yFK1fU4.png)
 
 透過這樣的模擬情境，對於早就有感測器，也早就會吐出相關的資料出來的老舊機台，我們只要持續監控 Log 的變化，回拋分析系統，老機台也可以 4.0 唷。
 
