@@ -8,6 +8,8 @@ categories: [CSharp, Dotnet, Develop, IoT]
 ---
 工業 4.0 最早從 2011 年德國的漢諾瓦工業博覽會提出，台灣在 2014 年也提出[生產力 4.0 發展方案](https://poychangstorage.blob.core.windows.net/poychangblog/%E8%A1%8C%E6%94%BF%E9%99%A2%E7%94%9F%E7%94%A2%E5%8A%9B4_0%E7%99%BC%E5%B1%95%E6%96%B9%E6%A1%88.pdf)，不管是哪個 4.0 都會出現 IoT 物聯網的概念，然而大多數現行的機台上，即便有感測器去蒐集資料，但往往只是單純的做 Log 儲存成**檔案**，供後續有心人接續利用，離我們自動化蒐集感測資料，連網上傳資料進行分析作業，有一段不知如何跨越的距離，但其實我們只要做到持續監看 Log 的變化，並轉交由分析系統，傳統的機台也是可以沾點工業 4.0 的光，.NET 提供的 FileSystemWatcher 類別正是讓傳統機台發光的黑魔法。
 
+![使用 FileSystemWatcher 監看機台 Log 檔案的變化](https://i.imgur.com/sEu107A.jpg)
+
 ## FileSystemWatcher 基本用法
 
 要做到監看檔案系統的變化，可以透過 `System.IO` 這個命名空間之下的 `FileSystemWatcher` 物件來幫我們簡單達成。
@@ -335,7 +337,7 @@ static void Main(string[] args)
 
 最後可以先執行 ContinuousWriteFileApp 專案，模擬持續寫入資料到指定檔案，再執行 FileSystemWatcherConsoleApp 專案，監看檔案的變化，並只輸出檔案中最後一筆紀錄。
 
-[執行 ContinuousWriteFileApp 專案](https://i.imgur.com/yFK1fU4.png)
+![執行 ContinuousWriteFileApp 專案](https://i.imgur.com/yFK1fU4.png)
 
 透過這樣的模擬情境，對於早就有感測器，也早就會吐出相關的資料出來的老舊機台，我們只要持續監控 Log 的變化，回拋分析系統，老機台也可以 4.0 唷。
 
