@@ -45,9 +45,26 @@ Install-Package Microsoft.ML
     * 特徵選擇器: `FeatureSelectorByCount` 和 `FeatureSelectorByMutualInformation`
     
 * 適用於各種任務的學習器 (用來訓練機器學習的模型):
-    * 二元分群(Binary classification): `FastTreeBinaryClassifier`、`StochasticDualCoordinateAscentBinaryClassifier`、`AveragedPerceptronBinaryClassifier`、`BinaryLogisticRegressor`、`FastForestBinaryClassifier`、 `LinearSvmBinaryClassifier` 和 `GeneralizedAdditiveModelBinaryClassifier`
-    * 多類分群(Multiclass classification): `StochasticDualCoordinateAscentClassifier`、`LogisticRegressor` 和`NaiveBayesClassifier`
-    * 迴歸(Regression): `FastTreeRegressor`、`FastTreeTweedieRegressor`、`StochasticDualCoordinateAscentRegressor`、`OrdinaryLeastSquaresRegressor`、`OnlineGradientDescentRegressor`、`PoissonRegressor` 和 `GeneralizedAdditiveModelRegressor`
+    * 二元分群(Binary classification)
+        * `FastTreeBinaryClassifier`
+        * `StochasticDualCoordinateAscentBinaryClassifier`
+        * `AveragedPerceptronBinaryClassifier`
+        * `BinaryLogisticRegressor`
+        * `FastForestBinaryClassifier`
+        * `LinearSvmBinaryClassifier`
+        * `GeneralizedAdditiveModelBinaryClassifier`
+    * 多類分群(Multiclass classification)
+        * `StochasticDualCoordinateAscentClassifier`
+        * `LogisticRegressor`
+        * `NaiveBayesClassifier`
+    * 迴歸(Regression)
+        * `FastTreeRegressor`
+        * `FastTreeTweedieRegressor`
+        * `StochasticDualCoordinateAscentRegressor`
+        * `OrdinaryLeastSquaresRegressor`
+        * `OnlineGradientDescentRegressor`
+        * `PoissonRegressor`
+        * `GeneralizedAdditiveModelRegressor`
     
 * 評估器 (檢測模型是否運作良好):
     * `BinaryClassificationEvaluator` 可用於二元分群(Binary classification)
