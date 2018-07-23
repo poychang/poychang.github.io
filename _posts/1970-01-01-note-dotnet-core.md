@@ -222,12 +222,15 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 
 ## 執行(發佈)模式
 
+* 設定 `<TargetFramework>` 區段的設定值參考資料：[目標 Framework](https://docs.microsoft.com/zh-tw/dotnet/standard/frameworks)
+* 設定 `<RuntimeIdentifiers>` 區段的設定值參考資料：[.NET Core RID Catalog](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog)
+
 ### Framework Dependent Deployment(FDD)
 
 程式碼編譯出來的是 dll，不是預期中的 exe 檔案，必須由電腦安裝的Dotnet Runtime 去執行對應的程式。
 
 * [官方介紹 Framework Dependent Deployment](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs#framework-dependent-deployment)
-* [Alan Tsai 的學習筆記 - 了解 Framework Dependent Deployment(FDD) 執行(發佈)模式](http://blog.alantsai.net/2017/10/event-net-conf-workshop-02-1-net-core-console-with-FDD-publish.html)
+* [Alan Tsai 的學習筆記 - 了解 Framework Dependent Deployment(FDD) 執行(發佈)模式](https://blog.alantsai.net/posts/2017/10/event-net-conf-workshop-02-1-net-core-console-with-fdd-publish)
 
 ### Self Contained Deployment(SCD)
 
@@ -317,6 +320,21 @@ Windows 內建版本
 * CLR1 - .NET Framework 1.1
 * CLR2 - .NET Framework 3.5
 * CLR4 - .NET Framework 4.X
+
+## 單元測試命名方法
+
+http://teddy-chen-tw.blogspot.com/2016/05/blog-post_12.html
+
+* 待測函數名稱加上測試狀態與預期行為
+  * `MethodName_StateUnderTest_ExpectedBehavior`
+  * 函數名稱（method name）、執行測試案例的狀態（state under test），以及預期行為（expected behavior）
+  * 開發人員比較容易從測試案例的名字去推敲這個測試案例的用途，有助於縮短除錯的時間。
+* GWT 格式
+  * `Given_StateUnderTest_When_ActionUnderTest_Then_ExpectedOutcomes`
+  * 行為驅動開發（Behavior-Driven Development；BDD） 普遍使用的 Given-When-Then 格式做為單元測試案例的名稱
+  * 接近口語但是寫起來卻是一長串
+
+>C# 的測試名稱可以用中文來寫，更容易閱讀。
 
 ----------
 
