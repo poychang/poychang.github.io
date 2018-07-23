@@ -29,3 +29,4 @@ Scrum 是開發和維護複雜產品的框架，也是一種敏捷軟體開發�
 參考資料：
 
 * [Wiki - Scrum](https://zh.wikipedia.org/wiki/Scrum)
+* [SCRUM@SCALE指南](http://www.scrumcn.com/agile/scrumatscale.html)
