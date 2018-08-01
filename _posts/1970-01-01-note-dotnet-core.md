@@ -336,6 +336,49 @@ http://teddy-chen-tw.blogspot.com/2016/05/blog-post_12.html
 
 >C# 的測試名稱可以用中文來寫，更容易閱讀。
 
+## Class 類別
+
+在 C# 中，所有的程式碼都必須寫在 class 裡面，並放置於副檔名為 `*.cs` 的檔案中。
+
+![C# Class 存取範圍](https://i.imgur.com/CN7lJVb.png)
+
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>已宣告存取範圍</th>
+    <th>意義</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>public</td>
+    <td>未限制存取</td>
+  </tr>
+  <tr>
+    <td>protected</td>
+    <td>存取限於包含類別或衍生自包含類別的類型</td>
+  </tr>
+  <tr>
+    <td>internal</td>
+    <td>存取限於目前組件</td>
+  </tr>
+  <tr>
+    <td>protected internal</td>
+    <td>存取限於目前組件或衍生自包含類別的類型</td>
+  </tr>
+  <tr>
+    <td>private</td>
+    <td>存取限於包含類型</td>
+  </tr>
+  <tr>
+    <td>private protected</td>
+    <td>存取限於目前組件內包含類別或衍生自包含類別的類型(自 C# 7.2 起可用)</td>
+  </tr>
+</tbody>
+</table>
+
+REF: [存取範圍層級 (C# 參考)](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/accessibility-levels)
+
 ----------
 
 參考資料：

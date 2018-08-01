@@ -34,6 +34,21 @@ categories: [Note, Docker]
 
 若要從 Docker Hub Pull 指定的 Docker Image，請執行 `docker pull Docker-Hub-Account/Image-Name`。
 
+## 推送至 Azure 私人 Docker 容器登錄
+
+[官方文件](https://docs.microsoft.com/zh-tw/azure/container-registry/container-registry-get-started-docker-cli)
+
+1. 登入 Azure Container Registry，下面指令擇一
+  * `az acr login --name myregistry`
+  * `docker login myregistry.azurecr.io -u xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -p myPassword`
+2. 取得映像檔 
+  * `docker pull nginx`
+3. 建立別名
+  * `docker tag nginx myregistry.azurecr.io/samples/nginx`
+4. 將映像推送至您的登錄庫
+  * `docker push myregistry.azurecr.io/samples/nginx`
+
+
 ## Misc.
 
 * [Docker Compose 初步閱讀與學習記錄](http://blog.maxkit.com.tw/2017/03/docker-compose.html)
