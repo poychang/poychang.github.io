@@ -8,7 +8,7 @@ categories: [SQL, Tools]
 ---
 有時候在看 MSDN 的文件練習 SQL 語法時，會看到官方的範例 SQL，如果你想要執行該 SQL 試試看了話，你必須要先有一個 SQL Server 和一個資料庫，我通常會用 SQL Server Express 搭配 LocalDB 來當作測試環境，而官方的範例資料幾乎都是用 Adventure Works 的資料（以前是用NorthWind），那我們怎樣快速還原資料庫呢？請看下去。
 
-要還原 Adventure Works 資料庫的資料，方法很多種，可以用 Script 還原或用資料庫還原的方式，不管哪種方式，你所需要的檔案都可以從[這裡下載](https://msftdbprodsamples.codeplex.com/)到，下載時要注意你`所需要的版本`和`還原的方式`就是了。
+>要還原 Adventure Works 資料庫的資料，方法很多種，可以用 Script 還原或用資料庫還原的方式，不管哪種方式，你所需要的檔案都可以從[這裡下載](https://msftdbprodsamples.codeplex.com/)或到[Sql Server Samples GitHub](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)，下載時要注意你`所需要的版本`和`還原的方式`就是了。
 
 我個人偏好使用 Script 的方式安裝，主要是因為下載的檔案比較小，感覺會比較快完成測試環境建置。
 
