@@ -379,6 +379,37 @@ http://teddy-chen-tw.blogspot.com/2016/05/blog-post_12.html
 
 REF: [存取範圍層級 (C# 參考)](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/accessibility-levels)
 
+## 取得當前名稱空間、類名和方法名稱
+
+```csharp
+public string GetMethodInfo()
+{
+    var info = string.Empty;
+
+    // 取得當前方法命名空間
+    info += "命名空間名:" + System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Namespace + "\n";
+    // 取得當前方法類全名，包括命名空間
+    info += "類名:" + System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName + "\n";
+    // 取得當前方法名
+    info += "方法名:" + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n";
+    info += "\n";
+
+    // 父方法
+    System.Diagnostics.StackTrace ss = new System.Diagnostics.StackTrace(true);
+    System.Reflection.MethodBase mb = ss.GetFrame(1).GetMethod();
+    // 取得父方法命名空間
+    info += mb.DeclaringType.Namespace + "\n";
+    // 取得父方法類名
+    info += mb.DeclaringType.Name + "\n";
+    // 取得父方法類全名
+    info += mb.DeclaringType.FullName + "\n";
+    // 取得父方法名
+    info += mb.Name + "\n";
+
+    return info;
+}
+```
+
 ----------
 
 參考資料：
