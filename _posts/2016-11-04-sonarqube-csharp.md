@@ -29,44 +29,44 @@ SonarQube 程式碼品質分析工具用 7 個維度來分析程式碼品質，�
 SonarQube 是使用 Java 開發開源專案，支援 Windows、Mac、Linux 多種平台，這裡以 Windows 來作為操作環境。
 
 * 安裝 Java SE Development Kit 8
-	* 下載位置：[http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+  * 下載位置：[http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 * 更新 Microsoft JDBC Drivers （非必要）
-	* 下載位置：[https://www.microsoft.com/zh-tw/download/details.aspx?id=11774](https://www.microsoft.com/zh-tw/download/details.aspx?id=11774)
-	* SonarQube 安裝檔中已經有自帶 Microsoft JDBC Drivers，因此這項非必要
+  * 下載位置：[https://www.microsoft.com/zh-tw/download/details.aspx?id=11774](https://www.microsoft.com/zh-tw/download/details.aspx?id=11774)
+  * SonarQube 安裝檔中已經有自帶 Microsoft JDBC Drivers，因此這項非必要
 * SonarQube 必須搭配一套資料庫系統
-	* 請參考[官方建議清單](http://docs.sonarqube.org/display/SONAR/Requirements)
-	* 目前只支援 2012、2014
+  * 請參考[官方建議清單](http://docs.sonarqube.org/display/SONAR/Requirements)
+  * 目前只支援 2012、2014
 * 設定資料庫（以 SQL Server 2014 為例）
-	* 建立資料庫帳號 `sonar`
-	* 建立名稱為 `SonarQube` 的資料庫 
-	* 建立需選擇正確的**定序**
-		* Case-Sensitive (CS) 和 Accent-Sensitive (AS) (例: `Chinese_Taiwan_Stroke_CS_AS`)
-		* 備註：繁體中文預設定序為 `Chinese_Taiwan_Stroke_CI_AS`
-	* SQL Server 組態管理員
-		* 需要啟動 TCP/IP 通訊協定服務
-		* 其中要設定 TCP 通訊埠：1433 （如下圖）
+  * 建立資料庫帳號 `sonar`
+  * 建立名稱為 `SonarQube` 的資料庫，並將上面的資料庫帳號 `sonar` 設定為資料庫擁有者
+  * 建立需選擇正確的**定序**
+    * Case-Sensitive (CS) 和 Accent-Sensitive (AS) (例: `Chinese_Taiwan_Stroke_CS_AS`)
+    * 備註：繁體中文預設定序為 `Chinese_Taiwan_Stroke_CI_AS`
+  * SQL Server 組態管理員
+    * 需要啟動 TCP/IP 通訊協定服務
+    * 其中要設定 TCP 通訊埠：1433 （如下圖）
 
 ![](http://i.imgur.com/pt0za2I.png)
 
 ## 安裝 SonarQube
 
 * 下載
-	* [SonarQube](http://www.sonarqube.org/downloads/)
-	* [SonarQube Scanner for MSBuild](http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild)
+  * [SonarQube](http://www.sonarqube.org/downloads/)
+  * [SonarQube Scanner for MSBuild](http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild)
 * 安裝
-	* 將 `SonarQube` 壓縮檔解壓縮到指定目錄，例如 `c:\sonarqube\`
-	* 將 `SonarQube Scanner for MSBuild` 壓縮檔解壓縮到指定目錄，例如 `C:\sonarqube\bin\sonar-scanner\`
-	* 這裡的安裝目錄可自訂
+  * 將 `SonarQube` 壓縮檔解壓縮到指定目錄，例如 `c:\SonarQube\`
+  * 將 `SonarQube Scanner for MSBuild` 壓縮檔解壓縮到指定目錄，例如 `C:\SonarQube\bin\sonar-scanner\`
+  * 這裡的安裝目錄可自訂
 * 設定環境變數
-	* 推薦使用 [Rapid Environment Editor](http://www.rapidee.com/en/about) 修改系統環境變數
-	* 在使用者變數的 `Path` 中加入 `C:\sonarqube\bin\sonar-scanner\` 方便後續使用 `MSBuild.SonarQube.Runner.exe`
+  * 推薦使用 [Rapid Environment Editor](http://www.rapidee.com/en/about) 修改系統環境變數
+  * 在使用者變數的 `Path` 中加入 `C:\SonarQube\bin\sonar-scanner\` 方便後續使用 `MSBuild.SonarQube.Runner.exe`
 * 修改 `SonarQube` 設定檔 `\conf\sonar.properties` 主要修改下列三個參數
-	* `sonar.jdbc.username` 資料庫連線帳號
-	* `soanr.jdbc.password` 資料庫連線密碼
-	* `sonar.jdbc.url` 資料庫連線字串(使用 JDBC)
-	* 參考下列範例，正式環境建議另外建立一個 DB 使用帳戶，並使用後者方式
+  * `sonar.jdbc.username` 資料庫連線帳號
+  * `soanr.jdbc.password` 資料庫連線密碼
+  * `sonar.jdbc.url` 資料庫連線字串(使用 JDBC)
+  * 參考下列範例，正式環境建議另外建立一個 DB 使用帳戶，並使用後者方式
 
-```
+```bash
 # 使用 Integrated Security 時
 sonar.jdbc.url=jdbc:sqlserver://localhost;databaseName=SonarQube;integratedSecurity=true
 
@@ -79,29 +79,30 @@ sonar.jdbc.password=sonarpassword
 ## 啟動 SonarQube
 
 * 測試啟動 SonarQube
-	* 執行 `C:\sonarqube\bin\windows-x86-64\StartSonar.bat`
-	* 第一次執行會需要一點時間讓資料庫初始化
+  * 執行 `C:\SonarQube\bin\windows-x86-64\StartSonar.bat`
+  * 第一次執行會需要一點時間讓資料庫初始化
 * 把 SonarQube 安裝成 Windows Service，使之可以背景自動啟動
-	* 執行 `C:\sonarqube\bin\windows-x86-64\InstallNTService.bat`
+  * 執行 `C:\SonarQube\bin\windows-x86-64\InstallNTService.bat` 安裝服務
+  * 執行 `C:\SonarQube\bin\windows-x86-64\StartNTService.bat` 啟動服務
 * 預設 SonarQube 網站網址為 [http://localhost:9000/](http://localhost:9000/)
-	* 這可以在 `\conf\sonar.properties` 的 `WEB SERVER` 區段調整
-	* 若要讓非本機用戶使用，記得要再防火牆中開啟對外的 9000 埠
+  * 這可以在 `\conf\sonar.properties` 的 `WEB SERVER` 區段調整
+  * 若要讓非本機用戶使用，記得要再防火牆中開啟對外的 9000 埠
 * 網站預設管理員（[參考](http://docs.sonarqube.org/display/SONAR/Authentication#Authentication-AdminCredentialsDefaultAdminCredentials)）
-	* 帳號：admin
-	* 密碼：admin
+  * 帳號：admin
+  * 密碼：admin
 
 ## 測試
 
 * 要分析 C# Code 我們要需要 SonarQube Scanner for MSBuild，我們下載回來之後解壓縮到我們自己指定的目錄。
-	*  參考**下載及安裝**段落
-	*  也可以將 Scanner 安裝其他開發者的機器裡機，讓開發者可以在自己的電腦上執行掃描
-		*  需修改 `SonarQube.Analysis.xml` 檔案
-		*  `sonar.host.url` SonarQube 伺服器位置
-		*  `sonar.login` 使用者帳號
-		*  `sonar.password` 使用者密碼
+  *  參考**下載及安裝**段落
+  *  也可以將 Scanner 安裝其他開發者的機器裡機，讓開發者可以在自己的電腦上執行掃描
+    *  需修改 `SonarQube.Analysis.xml` 檔案
+    *  `sonar.host.url` SonarQube 伺服器位置
+    *  `sonar.login` 使用者帳號
+    *  `sonar.password` 使用者密碼
 * 以下為執行掃描的指令（[參考](http://docs.sonarqube.org/display/SCAN/From+the+Command+Line)）
 
-```
+```bash
 # 建立掃描專案，會在目錄下新增 `.sonarqube` 資料夾
 # /k 為 SonarQube 專案 Key
 # /n 為 SonarQube 專案名稱
