@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 傳統機台也可以 IoT：使用 FileSystemWatcher 監看檔案或資料夾變化
-date: 2018-07-03 21:07
+date: 2018-07-03 01:07
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, Develop, IoT]
