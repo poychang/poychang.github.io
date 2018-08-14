@@ -77,7 +77,7 @@ inst: 1,mgr: Inactive, queue: 73, qu=6, qs=67, qc=0, wr=1/1, in=0/0
     <td>bytes/activereaders</td>
   </tr>
   <tr>
-    <td colspan="4">For more information, please see this [link](https://gist.github.com/JonCole/db0e90bedeb3fc4823c2)</td>
+    <td colspan="4">For more information, please see this <a href="https://gist.github.com/JonCole/db0e90bedeb3fc4823c2">link</a></td>
   </tr>
 </tbody>
 </table>
