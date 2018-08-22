@@ -48,6 +48,23 @@ categories: [Note, Docker]
 4. 將映像推送至您的登錄庫
   * `docker push myregistry.azurecr.io/samples/nginx`
 
+## 遠端操作 Docker
+
+有時候不想登入 Docker 的伺服器，想透過自己的電腦做遠端操作，可以使用 `-H` 並指定連線位置，然後下指令執行。
+
+例如下面這個指令，是遠端操作 `DOCKER_REMOTE_SERVER` 這台伺服器，執行 `docker logs --tail 100 WebApp` 印出 `WebApp` 這個 Container 最後 100 行的 Log 資料。
+
+```bash
+docker -H=DOCKER_REMOTE_SERVER logs --tail 100 WebApp
+```
+
+如果經常需要這樣操作了話，可以透過 `alias` 來建立別名指令：
+
+```bash
+alias dockerx="docker -H=DOCKER_REMOTE_SERVER"
+```
+
+REF: [Run commands on remote Docker host](https://gist.github.com/kekru/4e6d49b4290a4eebc7b597c07eaf61f2)
 
 ## Misc.
 
