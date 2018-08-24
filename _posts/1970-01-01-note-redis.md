@@ -6,12 +6,13 @@ author: Poy Chang
 comments: true
 categories: [Note, Develop]
 ---
+
 本篇作為筆記用途，紀錄 Redis 參考資料
 
 ## Error Code 說明
 
-* REF: [ASP.NET Thread Pool 與 Redis Timeout Exception](https://blog.marsen.me/2016/11/21/aspdotnet_threadpool_and_redis/)
-* REF: [Investigating timeout exceptions in StackExchange.Redis for Azure Redis Cache](https://azure.microsoft.com/zh-tw/blog/investigating-timeout-exceptions-in-stackexchange-redis-for-azure-redis-cache/)
+- REF: [ASP.NET Thread Pool 與 Redis Timeout Exception](https://blog.marsen.me/2016/11/21/aspdotnet_threadpool_and_redis/)
+- REF: [Investigating timeout exceptions in StackExchange.Redis for Azure Redis Cache](https://azure.microsoft.com/zh-tw/blog/investigating-timeout-exceptions-in-stackexchange-redis-for-azure-redis-cache/)
 
 ```
 System.TimeoutException: Timeout performing MGET 2728cc84-58ae-406b-8ec8-3f962419f641,
@@ -82,8 +83,8 @@ inst: 1,mgr: Inactive, queue: 73, qu=6, qs=67, qc=0, wr=1/1, in=0/0
 </tbody>
 </table>
 
-----------
+---
 
 參考資料：
 
-* [StackExchange.Redis - Configuration](https://stackexchange.github.io/StackExchange.Redis/Configuration.html)
+- [StackExchange.Redis - Configuration](https://stackexchange.github.io/StackExchange.Redis/Configuration.html)

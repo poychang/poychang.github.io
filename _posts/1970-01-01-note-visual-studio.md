@@ -6,6 +6,7 @@ author: Poy Chang
 comments: true
 categories: [Note, Tools]
 ---
+
 本篇作為書籤用途，紀錄網路上的 Visual Studio 相關資訊
 
 ## 快捷鍵
@@ -67,46 +68,37 @@ categories: [Note, Tools]
 
 ## 必裝套件
 
-* [Whack Whack Terminal](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal)
-	* 終端機模擬器，讓你可以在 Visual Studio 中開啟各種終端機，如 command prompt、powershell、WSL bash
-	* 快速鍵 `Ctrl` + `\`, `Ctrl` + `\`
-* [BuiltinCmd](https://marketplace.visualstudio.com/items?itemName=lkytal.BuiltinCmd)
-	* 終端機模擬器
-	* 快速鍵 `Ctrl` + `Shift` + `T` 
-* [CodeMaid](https://marketplace.visualstudio.com/items?itemName=SteveCadwallader.CodeMaid)
-	* 自動程式排版，快速鍵 `Ctrl` + `M`, `空白鍵`
-	* 檢視各個 Method 的循環複雜度
-* [Visual Studio Spell Checker](https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellCheckerVS2017andLater)
-	* 檢查程式碼英文拼寫是否正確
-	* [介紹文](https://poychang.github.io/visual-studio-spell-checker/)
-* [Web Essentials](http://vswebessentials.com/)
-	* Web Essentials 是增強 Visual Studio 在 Web、CSS、JavaScript開發上的方便性
-	* 再加裝 [Web Extension Pack](https://visualstudiogallery.msdn.microsoft.com/f3b504c6-0095-42f1-a989-51d5fc2a8459?SRC=Home) 裡面包含很多好用的工具
-		* Browser Sync for Visual Studio 可以使用 `CTRL` + `Alt` + `Enter` 來啟動
-* [C# Essentials](https://visualstudiogallery.msdn.microsoft.com/a4445ad0-f97c-41f9-a148-eae225dcc8a5)
-* [SideWaffle Templates for Visual Studio 2015](http://sidewaffle.com/)
-* [Productivity Power Tools](https://visualstudiogallery.msdn.microsoft.com/d0d33361-18e2-46c0-8ff2-4adea1e34fef)
-	* 可以取代已經不維護的 VSCommands for Visual Studio
-* [Developer Assistant](https://visualstudiogallery.msdn.microsoft.com/a1166718-a2d9-4a48-a5fd-504ff4ad1b65)
-	* 寫程式時，IntelliSense列出Method外，還會列出Sample Code
-* [tangible T4 Editor 2.3.0 plus modeling tools](http://t4-editor.tangible-engineering.com/T4-Editor-Visual-T4-Editing.html)
-	* 程式碼產生器編輯器
-* [Force UTF8](https://visualstudiogallery.msdn.microsoft.com/d94a3ad9-0549-4641-89b7-d858407bd6e9)
-	* 存檔時自動轉UTF8 with BOM
-* ~~[VSCommands for Visual Studio](http://vscommands.squaredinfinity.com/)~~(已停止維護)
-	* 利用VSCommands 可以讓 Visual Studio 變的更聰明些，因為此套件功能相當的多，筆者無法一一介紹，所以就這在裡介紹一些較為亮眼的功能。
-* [Snippet Designer](https://github.com/mmanela/SnippetDesigner)
-	* 用更人性化的方式管理我們常用的或內建的 Code Snippet 程式碼片段
-* [Glyphfriend](https://visualstudiogallery.msdn.microsoft.com/5fd24afb-b3b2-4cec-9b03-1cfcec6123aa?SRC=Home)
-	* 讓 Intellisense 顯示方便辨識的圖示
-* [JavaScript Snippet Pack](https://visualstudiogallery.msdn.microsoft.com/423eb4a3-215f-4a8f-9287-1512618ffda3?SRC=Home)
-	* JavaScript 的 Code Snippet
-* [Macros for Visual Studio ](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MacrosforVisualStudio)
-	* [DEMO 大的介紹文](http://demo.tc/post/833#.WGomoFFb9cM.facebook)
-	* 由於巨集腳本沒有同步功能，建議參考「DEMO 大的介紹文」設定透過 OneDrive 同步
-* [Snippet Designer](https://marketplace.visualstudio.com/items?itemName=vs-publisher-2795.SnippetDesigner)
-	* 自己寫一個 Code Snippets Template 來產生自己要的程式碼區段
-	* [介紹文 - Code Snippets 產生常用程式碼 Template](http://limitedcode.blogspot.tw/2015/10/visual-studio-code-snippetstemplate.html)
+- [Whack Whack Terminal](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal)
+  _ 終端機模擬器，讓你可以在 Visual Studio 中開啟各種終端機，如 command prompt、powershell、WSL bash
+  _ 快速鍵 `Ctrl` + `\`, `Ctrl` + `\`
+- [BuiltinCmd](https://marketplace.visualstudio.com/items?itemName=lkytal.BuiltinCmd)
+  _ 終端機模擬器
+  _ 快速鍵 `Ctrl` + `Shift` + `T`
+- [CodeMaid](https://marketplace.visualstudio.com/items?itemName=SteveCadwallader.CodeMaid)
+  _ 自動程式排版，快速鍵 `Ctrl` + `M`, `空白鍵`
+  _ 檢視各個 Method 的循環複雜度
+- [Visual Studio Spell Checker](https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellCheckerVS2017andLater)
+  _ 檢查程式碼英文拼寫是否正確
+  _ [介紹文](https://poychang.github.io/visual-studio-spell-checker/)
+- [Web Essentials](http://vswebessentials.com/)
+  _ Web Essentials 是增強 Visual Studio 在 Web、CSS、JavaScript 開發上的方便性
+  _ 再加裝 [Web Extension Pack](https://visualstudiogallery.msdn.microsoft.com/f3b504c6-0095-42f1-a989-51d5fc2a8459?SRC=Home) 裡面包含很多好用的工具 \* Browser Sync for Visual Studio 可以使用 `CTRL` + `Alt` + `Enter` 來啟動
+- [C# Essentials](https://visualstudiogallery.msdn.microsoft.com/a4445ad0-f97c-41f9-a148-eae225dcc8a5)
+- [SideWaffle Templates for Visual Studio 2015](http://sidewaffle.com/)
+- [Productivity Power Tools](https://visualstudiogallery.msdn.microsoft.com/d0d33361-18e2-46c0-8ff2-4adea1e34fef) \* 可以取代已經不維護的 VSCommands for Visual Studio
+- [Developer Assistant](https://visualstudiogallery.msdn.microsoft.com/a1166718-a2d9-4a48-a5fd-504ff4ad1b65) \* 寫程式時，IntelliSense 列出 Method 外，還會列出 Sample Code
+- [tangible T4 Editor 2.3.0 plus modeling tools](http://t4-editor.tangible-engineering.com/T4-Editor-Visual-T4-Editing.html) \* 程式碼產生器編輯器
+- [Force UTF8](https://visualstudiogallery.msdn.microsoft.com/d94a3ad9-0549-4641-89b7-d858407bd6e9) \* 存檔時自動轉 UTF8 with BOM
+- ~~[VSCommands for Visual Studio](http://vscommands.squaredinfinity.com/)~~(已停止維護) \* 利用 VSCommands 可以讓 Visual Studio 變的更聰明些，因為此套件功能相當的多，筆者無法一一介紹，所以就這在裡介紹一些較為亮眼的功能。
+- [Snippet Designer](https://github.com/mmanela/SnippetDesigner) \* 用更人性化的方式管理我們常用的或內建的 Code Snippet 程式碼片段
+- [Glyphfriend](https://visualstudiogallery.msdn.microsoft.com/5fd24afb-b3b2-4cec-9b03-1cfcec6123aa?SRC=Home) \* 讓 Intellisense 顯示方便辨識的圖示
+- [JavaScript Snippet Pack](https://visualstudiogallery.msdn.microsoft.com/423eb4a3-215f-4a8f-9287-1512618ffda3?SRC=Home) \* JavaScript 的 Code Snippet
+- [Macros for Visual Studio ](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MacrosforVisualStudio)
+  _ [DEMO 大的介紹文](http://demo.tc/post/833#.WGomoFFb9cM.facebook)
+  _ 由於巨集腳本沒有同步功能，建議參考「DEMO 大的介紹文」設定透過 OneDrive 同步
+- [Snippet Designer](https://marketplace.visualstudio.com/items?itemName=vs-publisher-2795.SnippetDesigner)
+  _ 自己寫一個 Code Snippets Template 來產生自己要的程式碼區段
+  _ [介紹文 - Code Snippets 產生常用程式碼 Template](http://limitedcode.blogspot.tw/2015/10/visual-studio-code-snippetstemplate.html)
 
 ## 圖示描述
 
@@ -121,7 +113,6 @@ Visual Studio 2017 完整的 Icon 圖示請[下載此連結的 PDF 檔案](https
 在方案總管中識別版本控制項目狀態：
 
 ![Visual Studio 版控項目狀態的圖示描述](https://i.imgur.com/Ghc8EmI.png)
-
 
 ## 輕量型載入
 
@@ -150,8 +141,13 @@ Visual Studio 2017 的方案屬性頁中，有個`輕量型載入`的選項，�
 Source: https://api.nuget.org/v3/index.json
 API: https://www.nuget.org/api/v2/
 
-----------
+---
 
 參考資料：
 
-* []()
+- [快捷鍵](#%E5%BF%AB%E6%8D%B7%E9%8D%B5)
+- [必裝套件](#%E5%BF%85%E8%A3%9D%E5%A5%97%E4%BB%B6)
+- [圖示描述](#%E5%9C%96%E7%A4%BA%E6%8F%8F%E8%BF%B0)
+- [輕量型載入](#%E8%BC%95%E9%87%8F%E5%9E%8B%E8%BC%89%E5%85%A5)
+- [關閉 npm 套件自動還原](#%E9%97%9C%E9%96%89-npm-%E5%A5%97%E4%BB%B6%E8%87%AA%E5%8B%95%E9%82%84%E5%8E%9F)
+- [NuGet](#nuget)

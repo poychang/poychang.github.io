@@ -35,12 +35,12 @@ categories: [Note, Docker]
 ## 常用的 Docker Image
 
 - [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/)
-  - microsoft/dotnet:2.1-sdk (Windows Server 1803)
-  - microsoft/dotnet:2.1.3-aspnetcore-runtime (Windows Server 1803)
+  - `microsoft/dotnet:2.1-sdk` (Windows Server 1803)
+  - `microsoft/dotnet:2.1.3-aspnetcore-runtime` (Windows Server 1803)
 - [microsoft/nanoserver](https://hub.docker.com/r/microsoft/nanoserver/)
-  - microsoft/nanoserver:1803
+  - `microsoft/nanoserver:1803`
 - [node](https://hub.docker.com/r/library/node/tags/)
-  - node:8.11.4 (LTS)
+  - `node:8.11.4` (LTS)
 
 ## Push Docker Image Push 到 Docker Hub
 

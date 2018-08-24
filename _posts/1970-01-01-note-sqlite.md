@@ -6,19 +6,20 @@ author: Poy Chang
 comments: true
 categories: [Note]
 ---
+
 # SQLite
 
 官方網站：[SQLite](https://www.sqlite.org/)
 
-## 取得資料庫裡的Table名稱
+## 取得資料庫裡的 Table 名稱
 
-* 相關欄位：type, name, tbl_name, rootpage, sql
+- 相關欄位：type, name, tbl_name, rootpage, sql
 
 ```sql
 SELECT * FROM sqlite_master Where Type In ('table','view')
 ```
 
-* 取得Table裡的欄位資料
+- 取得 Table 裡的欄位資料
 
 ```sql
 PRAGMA table_info(Table名稱)
@@ -30,8 +31,8 @@ PRAGMA table_info(Table名稱)
 CREATE TABLE IF NOT EXISTS TableName (
   ID INTEGER PRIMARY KEY,
   Title TEXT, Subtitle TEXT,
-  Content TEXT, 
-  Icon TEXT, 
+  Content TEXT,
+  Icon TEXT,
   Date TEXT
 )
 ```
@@ -184,95 +185,95 @@ public void Main()
 <thead>
   <tr>
     <th>Operation</th>
-	<th>Supported?</th>
-	<th></th>
+  <th>Supported?</th>
+  <th></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>AddColumn</td>
-	<td>✔</td>
-	<td>增加欄位</td>
+  <td>✔</td>
+  <td>增加欄位</td>
   </tr>
   <tr>
     <td>AddForeignKey</td>
-	<td>✗</td>
-	<td>增加外來鍵</td>
+  <td>✗</td>
+  <td>增加外來鍵</td>
   </tr>
   <tr>
     <td>AddPrimaryKey</td>
-	<td>✗</td>
-	<td>增加主鍵</td>
+  <td>✗</td>
+  <td>增加主鍵</td>
   </tr>
   <tr>
     <td>AddUniqueConstraint</td>
-	<td>✗</td>
-	<td>增加唯一限制</td>
+  <td>✗</td>
+  <td>增加唯一限制</td>
   </tr>
   <tr>
     <td>AlterColumn</td>
-	<td>✗</td>
-	<td>變更欄位</td>
+  <td>✗</td>
+  <td>變更欄位</td>
   </tr>
   <tr>
     <td>CreateIndex</td>
-	<td>✔</td>
-	<td>新增索引</td>
+  <td>✔</td>
+  <td>新增索引</td>
   </tr>
   <tr>
     <td>CreateTable</td>
-	<td>✔</td>
-	<td>新增資料表</td>
+  <td>✔</td>
+  <td>新增資料表</td>
   </tr>
   <tr>
     <td>DropColumn</td>
-	<td>✗</td>
-	<td>刪除欄位</td>
+  <td>✗</td>
+  <td>刪除欄位</td>
   </tr>
   <tr>
     <td>DropForeignKey</td>
-	<td>✗</td>
-	<td>刪除外來鍵</td>
+  <td>✗</td>
+  <td>刪除外來鍵</td>
   </tr>
   <tr>
     <td>DropIndex</td>
-	<td>✔</td>
-	<td>刪除索引</td>
+  <td>✔</td>
+  <td>刪除索引</td>
   </tr>
   <tr>
     <td>DropPrimaryKey</td>
-	<td>✗</td>
-	<td>刪除主鍵</td>
+  <td>✗</td>
+  <td>刪除主鍵</td>
   </tr>
   <tr>
     <td>DropTable</td>
-	<td>✔</td>
-	<td>刪除資料表</td>
+  <td>✔</td>
+  <td>刪除資料表</td>
   </tr>
   <tr>
     <td>DropUniqueConstraint</td>
-	<td>✗</td>
-	<td>刪除唯一限制</td>
+  <td>✗</td>
+  <td>刪除唯一限制</td>
   </tr>
   <tr>
     <td>RenameColumn</td>
-	<td>✗</td>
-	<td>變更欄位名稱</td>
+  <td>✗</td>
+  <td>變更欄位名稱</td>
   </tr>
   <tr>
     <td>RenameIndex</td>
-	<td>✗</td>
-	<td>變更索引名稱</td>
+  <td>✗</td>
+  <td>變更索引名稱</td>
   </tr>
   <tr>
     <td>RenameTable</td>
-	<td>✔</td>
-	<td>變更資料表名稱</td>
+  <td>✔</td>
+  <td>變更資料表名稱</td>
   </tr>
 </tbody>
 </table>
 
-## SQLite 批次 INSERT in C#
+## SQLite 批次 INSERT in C
 
 SQLite [FAQ#19](http://www.sqlite.org/faq.html#q19) 提到，一秒最快能完成 50,000 筆以上的 INSERT，但一秒只能完成幾十筆 Transation，因此如果需要大量寫入資料，可參考[黑暗執行緒 - SQLite 批次 INSERT 的蝸牛陷阱](http://blog.darkthread.net/post-2017-07-16-sqlite-insert-slow.aspx)下列寫法。
 
@@ -300,8 +301,7 @@ using (var cnSqlite = new SQLiteConnection(csSqlite))
 }
 ```
 
-
 參考資料：
 
-* [How to do IF NOT EXISTS in SQLite](http://stackoverflow.com/questions/531035/how-to-do-if-not-exists-in-sqlite)
-* [Finisar.SQLite](http://adodotnetsqlite.sourceforge.net/)
+- [How to do IF NOT EXISTS in SQLite](http://stackoverflow.com/questions/531035/how-to-do-if-not-exists-in-sqlite)
+- [Finisar.SQLite](http://adodotnetsqlite.sourceforge.net/)

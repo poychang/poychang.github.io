@@ -6,11 +6,12 @@ author: Poy Chang
 comments: true
 categories: [Note]
 ---
+
 # 手動啟動 IIS
 
 ## 好處
 
-使用指定啟動 IIS Express 可在命令列中顯示所有HTTP Request 和 Response 的內容，便於查看網站運作時的 log 資訊
+使用指定啟動 IIS Express 可在命令列中顯示所有 HTTP Request 和 Response 的內容，便於查看網站運作時的 log 資訊
 
 在開發 WebAPI 的時候特別好用，可以從中看到每動作的 HTTP 狀態碼以及 Request, Response
 
@@ -26,13 +27,13 @@ C:\Users\12258\Documents\IISExpress\config\applicationhost.config
 
 ```xml
 <site name="iAppAPI" id="2">
-	<application path="/">
-		<virtualDirectory path="/" physicalPath="C:\Users\12258\Documents\Code\Gitlab\iAppAPI\iAppAPI" />
-	</application>
-	<bindings>
-		<binding protocol="http" bindingInformation="*:63592:localhost" />
-		<binding protocol="http" bindingInformation="*:63592:172.16.2.138" />
-	</bindings>
+  <application path="/">
+    <virtualDirectory path="/" physicalPath="C:\Users\12258\Documents\Code\Gitlab\iAppAPI\iAppAPI" />
+  </application>
+  <bindings>
+    <binding protocol="http" bindingInformation="*:63592:localhost" />
+    <binding protocol="http" bindingInformation="*:63592:172.16.2.138" />
+  </bindings>
 </site>
 ```
 
@@ -59,6 +60,7 @@ $ appcmd.exe list site
 ## 手動啟動
 
 ### IIS Express
+
 執行檔位於 c:\Program Files\IIS Express，切換至此目錄後，執行下列指令
 
 ```bash
@@ -79,21 +81,21 @@ C:\Users\{UserName}\Documents\IISExpress\config\applicationhost.config
 
 ```xml
 <site name="WebSite1" id="1" serverAutoStart="true">
-	<application path="/">
-		<virtualDirectory path="/" physicalPath="%IIS_SITES_HOME%\WebSite1" />
-	</application>
-	<bindings>
-		<binding protocol="http" bindingInformation=":8080:localhost" />
-	</bindings>
+  <application path="/">
+    <virtualDirectory path="/" physicalPath="%IIS_SITES_HOME%\WebSite1" />
+  </application>
+  <bindings>
+    <binding protocol="http" bindingInformation=":8080:localhost" />
+  </bindings>
 </site>
 ```
 
 ### IIS
 
-*	需先安裝 [Advanced Logging](http://www.iis.net/downloads/microsoft/advanced-logging) 擴充模組
-	*	它可以整合現有在 IIS 上的 W3C 記錄檔的內容，同時也可以允許管理人員由不同的來源的資料寫入記錄檔中，以備日後可能的問題追踪之用
-	*	適用於 IIS 7, IIS 7.5, IIS 8
-*	參考[此篇開啟 Real-Time Logging即時記錄](http://www.iis.net/learn/extensions/advanced-logging-module/advanced-logging-for-iis-real-time-logging#module)
+- 需先安裝 [Advanced Logging](http://www.iis.net/downloads/microsoft/advanced-logging) 擴充模組
+  - 它可以整合現有在 IIS 上的 W3C 記錄檔的內容，同時也可以允許管理人員由不同的來源的資料寫入記錄檔中，以備日後可能的問題追踪之用
+  - 適用於 IIS 7, IIS 7.5, IIS 8
+- 參考[此篇開啟 Real-Time Logging 即時記錄](http://www.iis.net/learn/extensions/advanced-logging-module/advanced-logging-for-iis-real-time-logging#module)
 
 開啟命令提示自元後，可使用下列指令來及時顯示檔案的變化
 
@@ -105,8 +107,9 @@ $ tail -f <File Path>
 
 ## VS2015 + IISExpress 10 注意事項
 
-注意！從 VS2015 開始，開發團隊把原本集中式管理的 applicationHost.config 改為**分散式管理**。未來由 VS2015 新增的網站專案都會多一個.vs目錄，裡面會存放此專案的 applicationHost.config 組態檔。
->[VS2015 的 IISEXPRESS 10 的 APPLICATIONHOST.CONFIG 換位置](http://blog.kkbruce.net/2015/07/where-vs2015-iisexpress-10-applicationhostconfig.html#.Vsm6HZx96M8)
+注意！從 VS2015 開始，開發團隊把原本集中式管理的 applicationHost.config 改為**分散式管理**。未來由 VS2015 新增的網站專案都會多一個.vs 目錄，裡面會存放此專案的 applicationHost.config 組態檔。
+
+> [VS2015 的 IISEXPRESS 10 的 APPLICATIONHOST.CONFIG 換位置](http://blog.kkbruce.net/2015/07/where-vs2015-iisexpress-10-applicationhostconfig.html#.Vsm6HZx96M8)
 
 在還沒有更簡單的啟動方法前，可使用下列方式啟動：
 
@@ -120,9 +123,9 @@ $ iisexpress /config:config-file
 $ iisexpress /config:C:\Users\poypo\Documents\Code\poycode\Personal\PCWebAPI\.vs\config\applicationhost.config /siteid:2
 ```
 
-----------
+---
 
 參考資料：
 
-* [設定本機 Web 伺服器以允許連接到本機行動服務](https://azure.microsoft.com/zh-tw/documentation/articles/mobile-services-dotnet-backend-how-to-configure-iis-express/)
-* [Running IIS Express from the Command Line](http://www.iis.net/learn/extensions/using-iis-express/running-iis-express-from-the-command-line)
+- [設定本機 Web 伺服器以允許連接到本機行動服務](https://azure.microsoft.com/zh-tw/documentation/articles/mobile-services-dotnet-backend-how-to-configure-iis-express/)
+- [Running IIS Express from the Command Line](http://www.iis.net/learn/extensions/using-iis-express/running-iis-express-from-the-command-line)

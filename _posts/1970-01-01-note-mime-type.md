@@ -6,16 +6,17 @@ author: Poy Chang
 comments: true
 categories: [Note]
 ---
+
 瀏覽器顯示的內容有 HTML、XML、GIF...等等，那，瀏覽器是如何區分它們，決定什麼內容用什麼形式來顯示呢？答案就是 MIME Type，也就是該資源的媒體類型。
 
 ## 常用的 MIME
 
-* `.json`：`application/json`
-* `.woff`：`application/x-font-woff`
-* `.woff2`：`>application/x-font-woff`
-* 未知檔案的媒體類型：`application/octet-stream`
-* HTML Form 表單（含檔案）：`multipart/form-data`
-* HTML Form 表單（純資料）：`application/x-www-form-urlencoded`
+- `.json`：`application/json`
+- `.woff`：`application/x-font-woff`
+- `.woff2`：`>application/x-font-woff`
+- 未知檔案的媒體類型：`application/octet-stream`
+- HTML Form 表單（含檔案）：`multipart/form-data`
+- HTML Form 表單（純資料）：`application/x-www-form-urlencoded`
 
 ## MIME 一覽表
 
@@ -23,7 +24,7 @@ categories: [Note]
 <thead>
   <tr>
     <th>Suffixes applicable</th>
-	<th>Media type and subtype(s)</th>
+  <th>Media type and subtype(s)</th>
   </tr>
 </thead>
 <tbody>
@@ -687,9 +688,9 @@ categories: [Note]
 </tbody>
 </table>
 
-----------
+---
 
 參考資料：
 
-* [多用途網際網路郵件擴展](https://zh.wikipedia.org/wiki/%E5%A4%9A%E7%94%A8%E9%80%94%E4%BA%92%E8%81%AF%E7%B6%B2%E9%83%B5%E4%BB%B6%E6%93%B4%E5%B1%95)
-* [System.Net.Mime.MediaTypeNames.Application 類別](https://msdn.microsoft.com/zh-tw/library/system.net.mime.mediatypenames.application.aspx)
+- [多用途網際網路郵件擴展](https://zh.wikipedia.org/wiki/%E5%A4%9A%E7%94%A8%E9%80%94%E4%BA%92%E8%81%AF%E7%B6%B2%E9%83%B5%E4%BB%B6%E6%93%B4%E5%B1%95)
+- [System.Net.Mime.MediaTypeNames.Application 類別](https://msdn.microsoft.com/zh-tw/library/system.net.mime.mediatypenames.application.aspx)

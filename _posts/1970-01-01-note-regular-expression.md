@@ -6,6 +6,7 @@ author: Poy Chang
 comments: true
 categories: [Note]
 ---
+
 正規表示式通常被稱為一個模式（pattern），為用來描述或者符合一系列符合某個句法規則的字串，透過他我們可以快速搜尋符合指定模式的文字。
 
 ## 效能
@@ -24,15 +25,15 @@ readonly static Regex regex = new Regex("[ABC]", RegexOptions.Compiled);
 
 另外還有一些設定項，可以參考看看，但不確定是否影響執行速度：
 
-* `RegexOptions.IgnoreCase` 不區分大小寫，只限用在英文字
-* `RegexOptions.Multiline` 多行模式
-* `RegexOptions.Singleline` 單行模式
+- `RegexOptions.IgnoreCase` 不區分大小寫，只限用在英文字
+- `RegexOptions.Multiline` 多行模式
+- `RegexOptions.Singleline` 單行模式
 
 ### 小技巧
 
-* 善用 `^` 標示起始位置，如 `Regex("^Abc")` 只會找 `Abc` 開頭的字串，而 `aAbc` 就忽略
-* 善用 `\b` 偵測字元邊界，和 `^` 意思很類似
-* 善用 `.*?` 忽略後續字串，如 `Regex("^A.*?")` 只比對字串第一個字是否為 `A`，後面忽略
+- 善用 `^` 標示起始位置，如 `Regex("^Abc")` 只會找 `Abc` 開頭的字串，而 `aAbc` 就忽略
+- 善用 `\b` 偵測字元邊界，和 `^` 意思很類似
+- 善用 `.*?` 忽略後續字串，如 `Regex("^A.*?")` 只比對字串第一個字是否為 `A`，後面忽略
 
 ## 正規表示式說明
 
@@ -364,88 +365,123 @@ readonly static Regex regex = new Regex("[ABC]", RegexOptions.Compiled);
 
 ## 常用範例
 
-* IPv4
+- IPv4
+
 ```regex
 /^((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))*$/
 ```
-* MAC
-	* IEEE 802 MAC-48 標準格式
-	* 6 組由 `:` 或 `-` 做區隔的雙位數 16 進制數字
+
+- MAC
+  _ IEEE 802 MAC-48 標準格式
+  _ 6 組由 `:` 或 `-` 做區隔的雙位數 16 進制數字
+
 ```
 /^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$/
 ```
-* 驗證使用者帳號，第一個字不為數字，只接受 大小寫字母、數字及底線
+
+- 驗證使用者帳號，第一個字不為數字，只接受 大小寫字母、數字及底線
+
 ```regex
 /^[a-zA-Z]\w*$/
 ```
-* 密碼
-	* 高強度密碼，6 位數以上，並且至少包含**大寫字母**、**小寫字母**、**數字**、**符號**各一
-	* 若需要調整，將其對應的小括號內容拿掉即可
+
+- 密碼
+  _ 高強度密碼，6 位數以上，並且至少包含**大寫字母**、**小寫字母**、**數字**、**符號**各一
+  _ 若需要調整，將其對應的小括號內容拿掉即可
+
 ```regex
 /^(?=.*[^a-zA-Z0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{6,}$/
 ```
-* 電子郵件，以下的範例並沒有相容 RFC5322 規範，但是已經可以驗證大多數的電子郵件
+
+- 電子郵件，以下的範例並沒有相容 RFC5322 規範，但是已經可以驗證大多數的電子郵件
+
 ```regex
 /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4})*$/
 ```
-* URL 網址，允許 http, https, ftp 協定，並且可取出 Protocol, Domain, Path, Query
+
+- URL 網址，允許 http, https, ftp 協定，並且可取出 Protocol, Domain, Path, Query
+
 ```regex
 /^(?:(https?|ftp):\/\/)?((?:[a-zA-Z0-9.\-]+\.)+(?:[a-zA-Z0-9]{2,4}))((?:/[\w+=%&.~\-]*)*)\??([\w+=%&.~\-]*)$/
 ```
-* 主流信用卡
+
+- 主流信用卡
+
 ```regex
 /^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6011[0-9]{12}|622((12[6-9]|1[3-9][0-9])|([2-8][0-9][0-9])|(9(([0-1][0-9])|(2[0-5]))))[0-9]{10}|64[4-9][0-9]{13}|65[0-9]{14}|3(?:0[0-5]|[68][0-9])[0-9]{11}|3[47][0-9]{13})*$/
 ```
-* 美國運通信用卡
+
+- 美國運通信用卡
+
 ```regex
 /^(3[47][0-9]{13})*$/
 ```
-* MasterCard
+
+- MasterCard
+
 ```regex
 /^(5[1-5][0-9]{14})*$/
 ```
-* Visa 卡
+
+- Visa 卡
+
 ```regex
 /^(4[0-9]{12}(?:[0-9]{3})?)*$/
 ```
-* 日期 (MM/DD/YYYY)
+
+- 日期 (MM/DD/YYYY)
+
 ```regex
 /^((0?[1-9]|1[012])[- /.](0?[1-9]|[12][0-9]|3[01])[- /.](19|20)?[0-9]{2})*$/
 ```
-* 日期 (YYYY/MM/DD)
+
+- 日期 (YYYY/MM/DD)
+
 ```regex
 /^(((?:19|20)[0-9]{2})[- /.](0?[1-9]|1[012])[- /.](0?[1-9]|[12][0-9]|3[01]))*$/
 ```
-* 台灣手機號碼
+
+- 台灣手機號碼
+
 ```regex
 /^09\d{2}-?\d{3}-?\d{3}$/
 ```
-* 中文 (Unicode)
+
+- 中文 (Unicode)
+
 ```regex
 [\u4e00-\u9fa5]
 ```
-* 簡易驗證台灣身份證，仍然需要一些進階的檢查，如*驗證檢查碼*，或前往[內政部戶政司](http://www.ris.gov.tw/zh_TW/307)驗證
+
+- 簡易驗證台灣身份證，仍然需要一些進階的檢查，如*驗證檢查碼*，或前往[內政部戶政司](http://www.ris.gov.tw/zh_TW/307)驗證
+
 ```regex
 /^[A-Za-z][1-2]\d{8}$/
 ```
-* 正整數
+
+- 正整數
+
 ```regex
 /^\+?\d+$/
 ```
-* 整數
+
+- 整數
+
 ```regex
 /^[+-]?\d+$/
 ```
-* float
+
+- float
+
 ```regex
 /^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?$/
 ```
 
-----------
+---
 
 參考資料：
 
-* [RegExr - Regular Expression Online](http://regexr.com/)
-* [就是愛程式 - 正規表示式 Regular Expression](https://atedev.wordpress.com/2007/11/23/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%A4%BA%E5%BC%8F-regular-expression/)
-* [A Single Page Perl Regular Expression Quick Reference](http://www.erudil.com/pdf/preqr.pdf)
-* [What special characters must be escaped in regular expressions?](https://stackoverflow.com/questions/399078/what-special-characters-must-be-escaped-in-regular-expressions?answertab=active#tab-top)
+- [RegExr - Regular Expression Online](http://regexr.com/)
+- [就是愛程式 - 正規表示式 Regular Expression](https://atedev.wordpress.com/2007/11/23/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%A4%BA%E5%BC%8F-regular-expression/)
+- [A Single Page Perl Regular Expression Quick Reference](http://www.erudil.com/pdf/preqr.pdf)
+- [What special characters must be escaped in regular expressions?](https://stackoverflow.com/questions/399078/what-special-characters-must-be-escaped-in-regular-expressions?answertab=active#tab-top)

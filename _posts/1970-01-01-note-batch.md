@@ -6,6 +6,7 @@ author: Poy Chang
 comments: true
 categories: [Note, Tools]
 ---
+
 想要將指令集合起來並且自動化執行，批次檔絕對是你不可或缺的技能之一。
 
 在 stackoverflow 上有個回答包含了很完整的批次檔樣板，[template.bat](https://stackoverflow.com/a/45070967/3803939)，可以從這個樣版上學到很多技巧，值得一看。
@@ -18,17 +19,17 @@ categories: [Note, Tools]
 
 ### 副檔名
 
-預設有下面這2種，在DOS與Windows 9x 時代副檔名為 `.bat`，在Windows NT 之後則改用 `.cmd`，表示在視窗模式下的命令提示字元(`cmd.exe`)執行。
+預設有下面這 2 種，在 DOS 與 Windows 9x 時代副檔名為 `.bat`，在 Windows NT 之後則改用 `.cmd`，表示在視窗模式下的命令提示字元(`cmd.exe`)執行。
 
-* bat
-* cmd
+- bat
+- cmd
 
 ### 註解方式
 
 標準是使用 `rem`，大小寫沒差別，另外可使用 2 個冒號來當註解符號。
 
-* `rem`
-* `::`
+- `rem`
+- `::`
 
 ### 顯示訊息
 
@@ -43,11 +44,11 @@ echo Today is %date% %time%
 pause
 ```
 
-* 停止下達的指令顯示在螢幕上 => `echo off`
-* 空一行 => `echo.`
-* 顯示當前目錄 => `echo %cd%`
-* 顯示日期 => `echo %date%`
-* 顯示時間 => `echo %time%`
+- 停止下達的指令顯示在螢幕上 => `echo off`
+- 空一行 => `echo.`
+- 顯示當前目錄 => `echo %cd%`
+- 顯示日期 => `echo %date%`
+- 顯示時間 => `echo %time%`
 
 後面三個指令主要是使用 Windows 環境變數來輸出資訊。
 
@@ -57,13 +58,15 @@ pause
 
 ### 暫停
 
-* `pause` 程式暫停，提示按任意鍵繼續
+- `pause` 程式暫停，提示按任意鍵繼續
+
 ```
 echo This Program is running...
 pause
 ```
 
-* `timeout [/T | time]`，程式暫停指定的秒數
+- `timeout [/T | time]`，程式暫停指定的秒數
+
 ```
 echo Please wait for a while...
 timeout 6
@@ -141,9 +144,9 @@ test.cmd c:\windows\notepad.exe c:\windows\write.exe
 
 ### 跳行與結束程式
 
-* `goto 標籤` (須定義標籤，標籤須單獨一行，並以冒號開頭，例如 `:header`)
-* `goto :eof` (無須定義標籤，直接結束程式之意)
-* `exit /b [回傳值]`
+- `goto 標籤` (須定義標籤，標籤須單獨一行，並以冒號開頭，例如 `:header`)
+- `goto :eof` (無須定義標籤，直接結束程式之意)
+- `exit /b [回傳值]`
 
 使用 `exit /b` 可停止批次檔或副程式的執行，若結束後需要提供回傳值讓 `if` 指令檢查 `errorlevel` 變數，可於其後面加上想要的回傳數值。
 
@@ -159,22 +162,26 @@ dir & pause
 
 ### 切換目錄：CD
 
-* 路徑中含有空白字元時，請使用雙引號括起來
+- 路徑中含有空白字元時，請使用雙引號括起來
+
 ```
 cd "\winnt\profiles\username\programs\start menu"
 ```
 
-* 切換工作目錄至批次檔所在目錄
+- 切換工作目錄至批次檔所在目錄
+
 ```
 cd /d "%~dp0"
 ```
 
-* 顯示目前工作目錄
+- 顯示目前工作目錄
+
 ```
 echo %CD%
 ```
 
-* 顯示目前磁碟機
+- 顯示目前磁碟機
+
 ```
 echo %CD:~0,3%
 ```
@@ -188,9 +195,9 @@ ping 168.95.192.1 > nul
 if errorlevel 1 echo ping target fail >> pinglog.txt
 ```
 
-----------
+---
 
 參考資料：
 
-* [批次檔的精要學習手冊](https://www.gitbook.com/book/peterju/cmddoc)
-* [How do I pass command line parameters to a batch file?](https://stackoverflow.com/questions/26551/how-do-i-pass-command-line-parameters-to-a-batch-file)
+- [批次檔的精要學習手冊](https://www.gitbook.com/book/peterju/cmddoc)
+- [How do I pass command line parameters to a batch file?](https://stackoverflow.com/questions/26551/how-do-i-pass-command-line-parameters-to-a-batch-file)

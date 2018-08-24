@@ -6,13 +6,14 @@ author: Poy Chang
 comments: true
 categories: [Note, MachineLearning]
 ---
+
 本篇作為書籤用途，紀錄網路上的 Machine Learning 參考資料
 
-* [使用Python進行資料分析](https://ithelp.ithome.com.tw/users/20107514/ironman/1399)
+- [使用 Python 進行資料分析](https://ithelp.ithome.com.tw/users/20107514/ironman/1399)
 
-----------
+---
 
 參考資料：
 
-* [ML.NET](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet)
-* [Github - dotnet/machinelearning ML.NET Source Code](https://github.com/dotnet/machinelearning)
+- [ML.NET](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet)
+- [Github - dotnet/machinelearning ML.NET Source Code](https://github.com/dotnet/machinelearning)
