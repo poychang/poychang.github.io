@@ -125,8 +125,9 @@ alias dockerx="docker -H=DOCKER_REMOTE_SERVER"
 
 REF: [Run commands on remote Docker host](https://gist.github.com/kekru/4e6d49b4290a4eebc7b597c07eaf61f2)
 
-## Misc.
+## Docker Compose
 
+- [官方文件 - Compose file version 3 reference](https://docs.docker.com/compose/compose-file/)
 - [Docker Compose 初步閱讀與學習記錄](http://blog.maxkit.com.tw/2017/03/docker-compose.html)
 
 ---
