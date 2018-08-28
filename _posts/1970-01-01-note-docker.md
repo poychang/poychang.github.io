@@ -11,24 +11,53 @@ categories: [Note, Docker]
 
 - docs.docker.com Search URL `https://docs.docker.com/search/?q={q}` 其中 `{q}` 可替換成要搜尋的文字
 
+## 重點名詞
+
+- Layer: 層，一組唯讀的文件或命令，描述如何在容器下設置底層系統。層 (Layer) 構建在彼此之上，每個層代表對文件系統的更改
+- Image: 映像檔，一個不可變的層 (Layer)，形成容器的基礎
+- Container: 容器，可以作為獨立執行應用程式的映像檔實例。容器具有可變層，該可變層位於映像檔的頂部並且與底層相分離
+- Registry: 註冊伺服器，用於散佈 Docker 映像檔的存儲系統
+- Repository: 倉庫，一組相關相同應用程式但不同版本的 Docker 映像檔儲存倉庫
+
 ## 基本指令
 
-映像檔相關：
+Docker CLI 官方文件：[Use the Docker command line](https://docs.docker.com/engine/reference/commandline/cli/)
 
-- `docker images` 顯示本機已有的映像檔
-- `docker build` 建立一個新的映像檔
-- `docker login` 登錄 Docker Hub 或私有 Docker Registry
-- `docker push` 把自己建立的映像檔上傳到倉庫中來共享
-- `docker pull` 從倉庫取得所需要的映像檔
+開發 Docker 容器相關：
 
-容器相關：
+- `docker create [image]`: Create a new container from a particular image.
+- `docker login`: 登錄 Docker Hub 或私有的 Docker 註冊伺服器
+- `docker build`: 建立一個新的映像檔 [doc](https://docs.docker.com/engine/reference/commandline/build/)
+- `docker pull [image]`: 從倉庫取得所需要的映像檔
+- `docker push [username/image]`: 把自己建立的映像檔上傳到倉庫中來共享
+- `docker search [term]`: Search the Docker Hub repository for a particular term.
+- `docker tag [source] [target]`: 為目標映像檔新增標籤或匿名 (alias)
 
-- `docker run` 啟動容器
-- `docker start` 將一個已經終止的容器啟動執行
-- `docker stop` 來終止一個執行中的容器
-- `docker tag` 命令修改映像檔的標籤
-- `docker rmi` 移除本地端的映像檔
-- `docker rm` 本地端的容器
+執行 Docker 容器相關：
+
+- `docker start [container]`: 啟動一個已經停止的容器
+- `docker stop [container]`: 停止一個執行中的容器
+- `docker exec -ti [container] [command]`: Run a shell command inside a particular container.
+- `docker run [image]` 啟動容器 [doc](https://docs.docker.com/engine/reference/commandline/run/)
+- `docker run -ti — image [image] [container] [command]`: 建立並啟動容器，並在內部執行指令
+- `docker run -ti — rm — image [image] [container] [command]`: 建立並啟動容器，並在內部執行指令，指令完成後自動移除此容器
+- `docker pause [container]`: Pause all processes running within a particular container.
+
+使用 Docker 工具：
+
+- `docker history [image]`: Display the history of a particular image.
+- `docker images`: 顯示所有儲存在本機的映像檔 [doc](https://docs.docker.com/engine/reference/commandline/image/)
+- `docker inspect [object]`: Display low-level information about a particular Docker object.
+- `docker ps`: 列出當前正在運行的所有容器 [doc](https://docs.docker.com/engine/reference/commandline/ps/)
+- `docker version`: 顯示系統上當前安裝的 Docker 版本
+
+清理 Docker 環境：
+
+- `docker kill [container]`: Kill a particular container. [doc](https://docs.docker.com/engine/reference/commandline/kill/)
+- `docker kill $(docker ps -q)`: Kill all containers that are currently running.
+- `docker rm [container]`: 移除本地端未執行的容器 [doc](https://docs.docker.com/engine/reference/commandline/rm/)
+- `docker rm $(docker ps -a -q)`:移除本地端所有未執行的容器
+- `docker rmi [image]` 移除本地端的映像檔 [doc](https://docs.docker.com/engine/reference/commandline/rmi/)
 
 > Docker Image 名稱必須是小寫，否則會無法編譯。
 
@@ -107,3 +136,4 @@ REF: [Run commands on remote Docker host](https://gist.github.com/kekru/4e6d49b4
 - [Docker Docs](https://hub.docker.com)
 - [用 30 天來介紹和使用 Docker 系列](https://ithelp.ithome.com.tw/users/20103456/ironman/1320)
 - [Docker —— 從入門到實踐 ­](https://philipzheng.gitbooks.io/docker_practice/content/)
+- [Docker Commands — The Ultimate Cheat Sheet](https://hackernoon.com/docker-commands-the-ultimate-cheat-sheet-994ac78e2888)
