@@ -9,6 +9,11 @@ categories: [Note, Develop]
 
 本篇作為筆記用途，紀錄 Redis 參考資料
 
+## StackExchange.Redis - Configuration
+
+REF: [StackExchange.Redis - Configuration](https://stackexchange.github.io/StackExchange.Redis/Configuration.html)
+
+
 ## Error Code 說明
 
 - REF: [ASP.NET Thread Pool 與 Redis Timeout Exception](https://blog.marsen.me/2016/11/21/aspdotnet_threadpool_and_redis/)
@@ -87,4 +92,5 @@ inst: 1,mgr: Inactive, queue: 73, qu=6, qs=67, qc=0, wr=1/1, in=0/0
 
 參考資料：
 
-- [StackExchange.Redis - Configuration](https://stackexchange.github.io/StackExchange.Redis/Configuration.html)
+- [StackExchange.Redis - Configuration](#stackexchangeredis---configuration)
+- [Error Code 說明](#error-code-%E8%AA%AA%E6%98%8E)

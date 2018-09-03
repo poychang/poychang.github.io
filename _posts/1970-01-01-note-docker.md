@@ -19,6 +19,18 @@ categories: [Note, Docker]
 - Registry: 註冊伺服器，用於散佈 Docker 映像檔的存儲系統
 - Repository: 倉庫，一組相關相同應用程式但不同版本的 Docker 映像檔儲存倉庫
 
+## 啟動 Docker 容器內的命令列
+
+一般來說我們可以使用 `docker attach` 來將 Docker 運行中的容器附加到終端機上，讓我們能夠在容器內操作指令，但如果這個容器是一個運行中的 Web 服務，這只應會讓你附加到 Web Server Process，你只會看到 Web Server Process 所透過 `stdout` 輸出的訊息，這時我們便無法做更多操作。
+
+如果你想要在一個運行 Web 服務的伺服器進行操作，可以使用以下指令來啟動該容器內的伺服器 `cmd` 指令：
+
+`docker exec -it <YOUR_CONTAINER_ID_OR_NAME> cmd`
+
+>如果你的容器是使用 Linux，可以將 `cmd` 改成 `bash`。
+
+REF: https://stackoverflow.com/questions/30172605/how-do-i-get-into-a-docker-container
+
 ## 基本指令
 
 Docker CLI 官方文件：[Use the Docker command line](https://docs.docker.com/engine/reference/commandline/cli/)
@@ -123,7 +135,10 @@ docker -H=DOCKER_REMOTE_SERVER logs --tail 100 WebApp
 alias dockerx="docker -H=DOCKER_REMOTE_SERVER"
 ```
 
-REF: [Run commands on remote Docker host](https://gist.github.com/kekru/4e6d49b4290a4eebc7b597c07eaf61f2)
+REF:
+
+* [Run commands on remote Docker host](https://gist.github.com/kekru/4e6d49b4290a4eebc7b597c07eaf61f2)
+* [使用 DosKey 簡化操作遠端 Docker 的指令](http://poychang.github.io/use-doskey-to-alias-docker-command/)
 
 ## Docker Compose
 
