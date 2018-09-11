@@ -204,6 +204,26 @@ curl 是 Linux 下一個很強大的 http 命令列工具
 10. 通過 dict 協定去查字典
     `$ curl dict://dict.org/d:computer`
 
+## Unix 與 MS-DOS 指令對照表
+
+REF: [Unix 與 MS-DOS 指令對照表](https://market.cloud.edu.tw/content/primary/info_edu/cy_sa/LinuxY/cmd/dos2unixcmd.htm)
+
+Unix           | MS-DOS          | 說明
+-------------- | --------------- | ------
+`cd`           | `cd`            | 進入目錄
+`mkdir`        | `md`            | 開子目錄
+`pwd`          | `cd`            | 顯示目前目錄
+`env`          | `set`           | 顯示目前環境變數
+`setenv`       | `set`           | 設定環境變數
+`rm`           | `del`           | 殺檔案
+`cat` / `more` | `type`          | 顯示檔案內容
+`ls`           | `dir`           | 顯示檔案
+`lp`           | `print`         | 列印檔案
+`cp`           | `copy`          | 複製檔案
+`date`         | `date` / `time` | 時間顯示.設定
+`mv`           | `ren`           | 移動,重新命名檔案
+`man`          | help`           | 線上指令查詢
+
 ---
 
 參考資料：
@@ -216,3 +236,4 @@ curl 是 Linux 下一個很強大的 http 命令列工具
 - [修改 Windows 路由表](#%E4%BF%AE%E6%94%B9-windows-%E8%B7%AF%E7%94%B1%E8%A1%A8)
   - [雙網卡設定案例](#%E9%9B%99%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A%E6%A1%88%E4%BE%8B)
 - [curl 指令用法](#curl-%E6%8C%87%E4%BB%A4%E7%94%A8%E6%B3%95)
+- [Unix 與 MS-DOS 指令對照表](#unix-%E8%88%87-ms-dos-%E6%8C%87%E4%BB%A4%E5%B0%8D%E7%85%A7%E8%A1%A8)

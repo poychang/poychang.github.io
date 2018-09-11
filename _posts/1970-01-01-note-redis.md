@@ -13,6 +13,9 @@ categories: [Note, Develop]
 
 REF: [StackExchange.Redis - Configuration](https://stackexchange.github.io/StackExchange.Redis/Configuration.html)
 
+## Redis 命令参考
+
+REF: [Redis 命令参考](http://redisdoc.com/)
 
 ## Error Code 說明
 
@@ -93,4 +96,5 @@ inst: 1,mgr: Inactive, queue: 73, qu=6, qs=67, qc=0, wr=1/1, in=0/0
 參考資料：
 
 - [StackExchange.Redis - Configuration](#stackexchangeredis---configuration)
+- [Redis 命令参考](#redis-%E5%91%BD%E4%BB%A4%E5%8F%82%E8%80%83)
 - [Error Code 說明](#error-code-%E8%AA%AA%E6%98%8E)
