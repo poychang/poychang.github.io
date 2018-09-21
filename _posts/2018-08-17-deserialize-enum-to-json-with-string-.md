@@ -84,7 +84,7 @@ public class Startup
 }
 ```
 
-不過這個解法我沒有很喜歡，我喜歡下面這一種，不在這麼頂從得地方處理，而是在靠近模型的地方操作，這樣對我來說比較容易記憶用途。
+不過這個解法我沒有很喜歡，我喜歡下面這一種，不在這麼頂層的地方處理，而是在靠近模型的地方操作，這樣對我來說比較容易記憶用途。
 
 因此在不修改 `Startup.cs` 檔案的前提下，Enum 可以使用 Json.NET 的 `JsonConverter` 搭配內建的 `StringEnumConverter` 處理，參考下面的寫法：
 
@@ -125,7 +125,7 @@ namespace API.Models
 
 是不是變得比較容易閱讀了。
 
-如果你想要自訂輸出的文字，Enum 可以加上 `System.Runtime.Serialization` 的 `EnumMemberAttribute` 來做覆寫，參考下面的寫法：
+如果你想要自訂輸出的文字，`Enum` 可以加上 `System.Runtime.Serialization` 的 `EnumMemberAttribute` 來做覆寫，參考下面的寫法：
 
 ```csharp
 using System.Runtime.Serialization;

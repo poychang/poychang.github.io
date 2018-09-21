@@ -35,7 +35,7 @@ categories: [CSharp, Dotnet]
 
 除了上面 3 個套件外，建議多安裝下面這個：
 
-- `Microsoft.Extensions.Configuration.Binder` 提供綁定資料與物件的擴充方法，搭配 POCO 讓組態設定更容易被使用（祥參考下面的範例）
+- `Microsoft.Extensions.Configuration.Binder` 提供綁定資料與物件的擴充方法，搭配 POCO 讓組態設定更容易被使用（詳參考下面的範例）
 
 ## 讀取組態
 
