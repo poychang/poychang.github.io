@@ -9,6 +9,24 @@ categories: [Note, Tools]
 
 Windows PowerShell 是以 .NET Framework 為基礎所建置，而且是以工作為基礎的命令列殼層和指令碼語言；專為系統管理員和進階使用者所設計，可快速自動化管理多個作業系統 (Linux、OSX、Unix 和 Windows)，以及與在這些作業系統上執行之應用程式相關的程序。
 
+## 版本
+
+PowerShell 的執行環境是有分版本的，結至 2018 年最新版本為 6.1，你可以在 PowerShell 中執行 `Get-Host` 命令來確認您的本機 PowerShell 版本。
+
+最原始的設計中，指令檔的副檔名是會區分版本的，例如 `.ps1`、`.ps2`，但為了讓之後的使用上能兼容舊版本，所以全部統一使用 `.ps1` 作為 PowerShell 的指令檔附檔名。
+
+版本不同所提供的功能或指令就會有些不同，因此如果你要確保指令檔是在某特定版本下執行時，在撰寫 `.ps1` 檔的時候，建議在開頭加上 `#REQUIRES` 並註明該指令碼所使用的版本，例如：
+
+```ps1
+#REQUIRES -Version 2
+
+param([string]$BasePath="", [string]$FolderName="")
+$location="D:\" + $BasePath + "\" + $FolderName
+Set-Location $location
+# ignore...
+<# Version 2 Comment #>
+```
+
 ## 常用指令
 
 - `$PSVersionTable.PSVersion` 查看 PowerShell 版本
