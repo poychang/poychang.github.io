@@ -27,6 +27,8 @@ Set-Location $location
 <# Version 2 Comment #>
 ```
 
+REF: [CTP: PowerShell Versioning](https://blogs.msdn.microsoft.com/powershell/2007/11/02/ctp-versioning/)
+
 ## 常用指令
 
 - `$PSVersionTable.PSVersion` 查看 PowerShell 版本

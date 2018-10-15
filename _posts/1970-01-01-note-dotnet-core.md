@@ -18,24 +18,24 @@ categories: [Note, CSharp, Dotnet]
 ### 常用指令
 
 - `dotnet run --verbosity normal`
-  _ 開發時執行程式，並輸出相關執行的資訊
-  _ `--verbosity` 設定命令的詳細資訊層級。允許的值為 q[uiet]、m[inimal]、n[ormal]、d[etailed] 及 diag[nostic]
+  - 開發時執行程式，並輸出相關執行的資訊
+  - `--verbosity` 設定命令的詳細資訊層級。允許的值為 q[uiet]、m[inimal]、n[ormal]、d[etailed] 及 diag[nostic]
 
 ## Entity Framework
 
 ### Code First
 
 - 教學文(en)：[使用 EF Core 在 Console App 建立 新資料庫](https://docs.microsoft.com/zh-tw/ef/core/get-started/netcore/new-db-sqlite)
-  _ 執行以下指令安裝所需套件
-  _ `dotnet add package Microsoft.EntityFrameworkCore.Sqlite`
-  _ `dotnet add package Microsoft.EntityFrameworkCore.Design`
-  _ `dotnet add tool Microsoft.EntityFrameworkCore.Tools.DotNet`
-  _ 目前還不支援，要手動在 `.csproj` 中增加
-  _ `<ItemGroup><DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" /></ItemGroup>`
-  _ 用程式碼表達資料庫及資料表結構，即建立 DbContext
-  _ 執行以下指令建立資料庫及其資料表
-  _ `dotnet ef migrations add InitialCreate` 產生 migrations 程式碼
-  _ `dotnet ef database update` 執行 migrations 程式碼至資料庫
+  - 執行以下指令安裝所需套件
+  - `dotnet add package Microsoft.EntityFrameworkCore.Sqlite`
+  - `dotnet add package Microsoft.EntityFrameworkCore.Design`
+  - `dotnet add tool Microsoft.EntityFrameworkCore.Tools.DotNet`
+  - 目前還不支援，要手動在 `.csproj` 中增加
+  - `<ItemGroup><DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" /></ItemGroup>`
+  - 用程式碼表達資料庫及資料表結構，即建立 DbContext
+  - 執行以下指令建立資料庫及其資料表
+  - `dotnet ef migrations add InitialCreate` 產生 migrations 程式碼
+  - `dotnet ef database update` 執行 migrations 程式碼至資料庫
 
 ### Data Annotations
 
@@ -55,14 +55,14 @@ categories: [Note, CSharp, Dotnet]
 你可以使用 `StatusCode(???)` 回傳任何 HTTP status code。或者可以使用以下方法：
 
 - Success
-  _ return `Ok()` ← Http status code 200
-  _ return `Created()` ← Http status code 201 \* return `NoContent()` ← Http status code 204
+  - return `Ok()` ← Http status code 200
+  - return `Created()` ← Http status code 201 \* return `NoContent()` ← Http status code 204
 - Client Error:
-  _ return BadRequest()` ← Http status code 400
-  _ return Unauthorized()`← Http status code 401 * return NotFound()` ← Http status code 404
+  - return BadRequest()` ← Http status code 400
+  - return Unauthorized()`← Http status code 401 * return NotFound()` ← Http status code 404
 - 更多方法請參考
-  _ [ControllerBase](https://docs.microsoft.com/en-us/aspnet/core/api/microsoft.aspnetcore.mvc.controllerbase#Microsoft_AspNetCore_Mvc_ControllerBase)
-  _ [StatusCodes.cs](https://github.com/aspnet/HttpAbstractions/blob/dev/src/Microsoft.AspNetCore.Http.Abstractions/StatusCodes.cs)
+  - [ControllerBase](https://docs.microsoft.com/en-us/aspnet/core/api/microsoft.aspnetcore.mvc.controllerbase#Microsoft_AspNetCore_Mvc_ControllerBase)
+  - [StatusCodes.cs](https://github.com/aspnet/HttpAbstractions/blob/dev/src/Microsoft.AspNetCore.Http.Abstractions/StatusCodes.cs)
 
 參考資料：[How to return a specific status code and no contents from Controller?](https://stackoverflow.com/questions/37690114/how-to-return-a-specific-status-code-and-no-contents-from-controller)
 
@@ -75,8 +75,8 @@ categories: [Note, CSharp, Dotnet]
 - 至 [.NET 網站](https://www.microsoft.com/net/download/windows)下載相關安裝檔
 - 下載並安裝 .NET Core Runtime ([v2.0.6 載點](https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.6-windows-x64-installer))
 - 下載並安裝 .NET Core Windows Server Hosting 模組
-  _ 在 .NET 網站中先點選[All Downloads](https://www.microsoft.com/net/download/all)
-  _ 選擇你的 .NET Core Runtime \* 選擇並下載 Windows 的 Server Hosting Installer ([v2.0.6 載點](https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.6-windows-server-hosting-installer))
+  - 在 .NET 網站中先點選[All Downloads](https://www.microsoft.com/net/download/all)
+  - 選擇你的 .NET Core Runtime \* 選擇並下載 Windows 的 Server Hosting Installer ([v2.0.6 載點](https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.6-windows-server-hosting-installer))
 
 ## 開發時自動編譯
 
@@ -86,7 +86,7 @@ categories: [Note, CSharp, Dotnet]
 
 ```xml
 <ItemGroup>
- <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
+  <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
 </ItemGroup>
 ```
 
@@ -96,21 +96,21 @@ categories: [Note, CSharp, Dotnet]
 <thead>
   <tr>
     <th>Command</th>
-	<th>Command with watch</th>
+  <th>Command with watch</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-	<td>dotnet run</td>
-	<td>dotnet watch run</td>
+  <td>dotnet run</td>
+  <td>dotnet watch run</td>
   </tr>
   <tr>
-	<td>dotnet run -f net451</td>
-	<td>dotnet watch run -f net451</td>
+  <td>dotnet run -f net451</td>
+  <td>dotnet watch run -f net451</td>
   </tr>
   <tr>
-	<td>dotnet test</td>
-	<td>dotnet watch test</td>
+  <td>dotnet test</td>
+  <td>dotnet watch test</td>
   </tr>
 </tbody>
 </table>
@@ -171,49 +171,49 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 <thead>
   <tr>
     <th>.NET Standard</th>
-	<th>1.0</th>
-	<th>1.1</th>
-	<th>1.2</th>
-	<th>1.3</th>
-	<th>1.4</th>
-	<th>1.5</th>
-	<th>1.6</th>
-	<th>2.0</th>
+  <th>1.0</th>
+  <th>1.1</th>
+  <th>1.2</th>
+  <th>1.3</th>
+  <th>1.4</th>
+  <th>1.5</th>
+  <th>1.6</th>
+  <th>2.0</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>.NET Core</td>
-	<td>1.0</td>
-	<td>1.0</td>
+  <td>1.0</td>
+  <td>1.0</td>
     <td>1.0</td>
-	<td>1.0</td>
-	<td>1.0</td>
+  <td>1.0</td>
+  <td>1.0</td>
     <td>1.0</td>
-	<td>1.0</td>
-	<td>2.0</td>
+  <td>1.0</td>
+  <td>2.0</td>
   </tr>
   <tr>
     <td>.NET Framework (含 .NET Core 1.x SDK)</td>
-	<td>4.5</td>
-	<td>4.5</td>
+  <td>4.5</td>
+  <td>4.5</td>
     <td>4.5.1</td>
-	<td>4.6</td>
-	<td>4.6.1</td>
+  <td>4.6</td>
+  <td>4.6.1</td>
     <td>4.6.2</td>
-	<td></td>
-	<td></td>
+  <td></td>
+  <td></td>
   </tr>
   <tr>
     <td>.NET Framework (含 .NET Core 2.0 SDK)</td>
-	<td>4.5</td>
-	<td>4.5</td>
+  <td>4.5</td>
+  <td>4.5</td>
     <td>4.5.1</td>
-	<td>4.6</td>
-	<td>4.6.1</td>
+  <td>4.6</td>
+  <td>4.6.1</td>
     <td>4.6.1</td>
-	<td>4.6.1</td>
-	<td>4.6.1</td>
+  <td>4.6.1</td>
+  <td>4.6.1</td>
   </tr>
 </tbody>
 </table>
@@ -258,7 +258,7 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 
 ```xml
 <PropertyGroup>
-	<DefaultItemExcludes>$(DefaultItemExcludes);YOUR_PATH\node_modules\**\*</DefaultItemExcludes>
+  <DefaultItemExcludes>$(DefaultItemExcludes);YOUR_PATH\node_modules\**\*</DefaultItemExcludes>
 </PropertyGroup>
 ```
 
@@ -276,30 +276,30 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 以下下載連結都來自微軟官方網站：
 
 - .NET Framework 4.7
-  _ [.NET Framework 4.7.1 x86+x64](https://download.microsoft.com/download/9/E/6/9E63300C-0941-4B45-A0EC-0008F96DD480/NDP471-KB4033342-x86-x64-AllOS-ENU.exe)
-  _ [.NET Framework 4.7 x86+x64](http://download.microsoft.com/download/D/D/3/DD35CC25-6E9C-484B-A746-C5BE0C923290/NDP47-KB3186497-x86-x64-AllOS-ENU.exe)
+  - [.NET Framework 4.7.1 x86+x64](https://download.microsoft.com/download/9/E/6/9E63300C-0941-4B45-A0EC-0008F96DD480/NDP471-KB4033342-x86-x64-AllOS-ENU.exe)
+  - [.NET Framework 4.7 x86+x64](http://download.microsoft.com/download/D/D/3/DD35CC25-6E9C-484B-A746-C5BE0C923290/NDP47-KB3186497-x86-x64-AllOS-ENU.exe)
 - .NET Framework 4.6
-  _ [.NET Framework 4.6.2 x86+x64](https://download.microsoft.com/download/F/9/4/F942F07D-F26F-4F30-B4E3-EBD54FABA377/NDP462-KB3151800-x86-x64-AllOS-ENU.exe)
-  _ [.NET Framework 4.6.1 x86+x64](https://download.microsoft.com/download/E/4/1/E4173890-A24A-4936-9FC9-AF930FE3FA40/NDP461-KB3102436-x86-x64-AllOS-ENU.exe) \* [.NET Framework 4.6 x86+x64](https://download.microsoft.com/download/C/3/A/C3A5200B-D33C-47E9-9D70-2F7C65DAAD94/NDP46-KB3045557-x86-x64-AllOS-ENU.exe)
+  - [.NET Framework 4.6.2 x86+x64](https://download.microsoft.com/download/F/9/4/F942F07D-F26F-4F30-B4E3-EBD54FABA377/NDP462-KB3151800-x86-x64-AllOS-ENU.exe)
+  - [.NET Framework 4.6.1 x86+x64](https://download.microsoft.com/download/E/4/1/E4173890-A24A-4936-9FC9-AF930FE3FA40/NDP461-KB3102436-x86-x64-AllOS-ENU.exe) \* [.NET Framework 4.6 x86+x64](https://download.microsoft.com/download/C/3/A/C3A5200B-D33C-47E9-9D70-2F7C65DAAD94/NDP46-KB3045557-x86-x64-AllOS-ENU.exe)
 - .NET Framework 4.5
-  _ [.NET Framework 4.5.3 x86+x64](http://download.microsoft.com/download/2/8/7/2870C339-3C77-49CF-8DDF-AD6189AB8597/NDP453-KB2969351-x86-x64-AllOS-ENU.exe)
-  _ [.NET Framework 4.5.2 x86+x64](http://download.microsoft.com/download/E/2/1/E21644B5-2DF2-47C2-91BD-63C560427900/NDP452-KB2901907-x86-x64-AllOS-ENU.exe)
-  _ [.NET Framework 4.5.1 x86+x64](http://download.microsoft.com/download/1/6/7/167F0D79-9317-48AE-AEDB-17120579F8E2/NDP451-KB2858728-x86-x64-AllOS-ENU.exe)
-  _ [.NET Framework 4.5 x86+x64](http://download.microsoft.com/download/b/a/4/ba4a7e71-2906-4b2d-a0e1-80cf16844f5f/dotnetfx45_full_x86_x64.exe)
+  - [.NET Framework 4.5.3 x86+x64](http://download.microsoft.com/download/2/8/7/2870C339-3C77-49CF-8DDF-AD6189AB8597/NDP453-KB2969351-x86-x64-AllOS-ENU.exe)
+  - [.NET Framework 4.5.2 x86+x64](http://download.microsoft.com/download/E/2/1/E21644B5-2DF2-47C2-91BD-63C560427900/NDP452-KB2901907-x86-x64-AllOS-ENU.exe)
+  - [.NET Framework 4.5.1 x86+x64](http://download.microsoft.com/download/1/6/7/167F0D79-9317-48AE-AEDB-17120579F8E2/NDP451-KB2858728-x86-x64-AllOS-ENU.exe)
+  - [.NET Framework 4.5 x86+x64](http://download.microsoft.com/download/b/a/4/ba4a7e71-2906-4b2d-a0e1-80cf16844f5f/dotnetfx45_full_x86_x64.exe)
 - .NET Framework 4.0 \* [.NET Framework 4.0 x86+x64](http://download.microsoft.com/download/9/5/A/95A9616B-7A37-4AF6-BC36-D6EA96C8DAAE/dotNetFx40_Full_x86_x64.exe)
 - .NET Framework 3.5 (包含 3.0 和 2.0)
-  _ [.NET Framework 3.5 SP1 x86+x64](http://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe)
-  _ [.NET Framework 3.5 x86+x64](http://download.microsoft.com/download/6/0/f/60fc5854-3cb8-4892-b6db-bd4f42510f28/dotnetfx35.exe)
+  - [.NET Framework 3.5 SP1 x86+x64](http://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe)
+  - [.NET Framework 3.5 x86+x64](http://download.microsoft.com/download/6/0/f/60fc5854-3cb8-4892-b6db-bd4f42510f28/dotnetfx35.exe)
 - .NET Framework 2.0
-  _ [.NET Framework 2.0 SP2 x64](http://download.microsoft.com/download/c/6/e/c6e88215-0178-4c6c-b5f3-158ff77b1f38/NetFx20SP2_x64.exe)
-  _ [.NET Framework 2.0 SP2 x86](http://download.microsoft.com/download/c/6/e/c6e88215-0178-4c6c-b5f3-158ff77b1f38/NetFx20SP2_x86.exe)
-  _ [.NET Framework 2.0 SP1 x64](http://download.microsoft.com/download/9/8/6/98610406-c2b7-45a4-bdc3-9db1b1c5f7e2/NetFx20SP1_x64.exe)
-  _ [.NET Framework 2.0 SP1 x86](http://download.microsoft.com/download/0/8/c/08c19fa4-4c4f-4ffb-9d6c-150906578c9e/NetFx20SP1_x86.exe)
-  _ [.NET Framework 2.0 x64](http://download.microsoft.com/download/a/3/f/a3f1bf98-18f3-4036-9b68-8e6de530ce0a/NetFx64.exe)
-  _ [.NET Framework 2.0 x86](http://download.microsoft.com/download/5/6/7/567758a3-759e-473e-bf8f-52154438565a/dotnetfx.exe)
+  - [.NET Framework 2.0 SP2 x64](http://download.microsoft.com/download/c/6/e/c6e88215-0178-4c6c-b5f3-158ff77b1f38/NetFx20SP2_x64.exe)
+  - [.NET Framework 2.0 SP2 x86](http://download.microsoft.com/download/c/6/e/c6e88215-0178-4c6c-b5f3-158ff77b1f38/NetFx20SP2_x86.exe)
+  - [.NET Framework 2.0 SP1 x64](http://download.microsoft.com/download/9/8/6/98610406-c2b7-45a4-bdc3-9db1b1c5f7e2/NetFx20SP1_x64.exe)
+  - [.NET Framework 2.0 SP1 x86](http://download.microsoft.com/download/0/8/c/08c19fa4-4c4f-4ffb-9d6c-150906578c9e/NetFx20SP1_x86.exe)
+  - [.NET Framework 2.0 x64](http://download.microsoft.com/download/a/3/f/a3f1bf98-18f3-4036-9b68-8e6de530ce0a/NetFx64.exe)
+  - [.NET Framework 2.0 x86](http://download.microsoft.com/download/5/6/7/567758a3-759e-473e-bf8f-52154438565a/dotnetfx.exe)
 - .NET Framework 1.1
-  _ [.NET Framework 1.1 SP1 x86](https://download.microsoft.com/download/8/b/4/8b4addd8-e957-4dea-bdb8-c4e00af5b94b/NDP1.1sp1-KB867460-X86.exe)
-  _ [.NET Framework 1.1](http://download.microsoft.com/download/a/a/c/aac39226-8825-44ce-90e3-bf8203e74006/dotnetfx.exe)
+  - [.NET Framework 1.1 SP1 x86](https://download.microsoft.com/download/8/b/4/8b4addd8-e957-4dea-bdb8-c4e00af5b94b/NDP1.1sp1-KB867460-X86.exe)
+  - [.NET Framework 1.1](http://download.microsoft.com/download/a/a/c/aac39226-8825-44ce-90e3-bf8203e74006/dotnetfx.exe)
 - .NET Framework 1.0 \* [.NET Framework 1.0](http://download.microsoft.com/download/e/b/2/eb247c2a-e6b3-4694-98a2-b27111d233dd/dotnetredist.exe)
 
 Windows 內建版本
@@ -410,4 +410,25 @@ public string GetMethodInfo()
 
 參考資料：
 
-- []()
+- [指令](#指令)
+  - [常用指令](#常用指令)
+- [Entity Framework](#entity-framework)
+  - [Code First](#code-first)
+  - [Data Annotations](#data-annotations)
+- [Http StatusCode](#http-statuscode)
+- [佈署至 IIS](#佈署至-iis)
+- [開發時自動編譯](#開發時自動編譯)
+- [ASP.NET Core 教學 - Middleware](#aspnet-core-教學---middleware)
+- [ASP.NET Core 框架揭秘 by Artech](#aspnet-core-框架揭秘-by-artech)
+- [ASP.NET Core 原始碼閱讀筆記 by Bill Shooting](#aspnet-core-原始碼閱讀筆記-by-bill-shooting)
+- [計算程式執行時間](#計算程式執行時間)
+- [.NET 實作支援](#net-實作支援)
+- [執行(發佈)模式](#執行發佈模式)
+  - [Framework Dependent Deployment(FDD)](#framework-dependent-deploymentfdd)
+  - [Self Contained Deployment(SCD)](#self-contained-deploymentscd)
+- [開啟 Dotnet 專案時效能低落的問題](#開啟-dotnet-專案時效能低落的問題)
+- [Web Depoly](#web-depoly)
+- [下載 .NET Framework 離線安裝檔](#下載-net-framework-離線安裝檔)
+- [單元測試命名方法](#單元測試命名方法)
+- [Class 類別](#class-類別)
+- [取得當前名稱空間、類名和方法名稱](#取得當前名稱空間類名和方法名稱)
