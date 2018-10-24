@@ -276,6 +276,7 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 以下下載連結都來自微軟官方網站：
 
 - .NET Framework 4.7
+  - [.NET Framework 4.7.2 x86+x64](https://download.microsoft.com/download/6/E/4/6E48E8AB-DC00-419E-9704-06DD46E5F81D/NDP472-KB4054530-x86-x64-AllOS-ENU.exe)
   - [.NET Framework 4.7.1 x86+x64](https://download.microsoft.com/download/9/E/6/9E63300C-0941-4B45-A0EC-0008F96DD480/NDP471-KB4033342-x86-x64-AllOS-ENU.exe)
   - [.NET Framework 4.7 x86+x64](http://download.microsoft.com/download/D/D/3/DD35CC25-6E9C-484B-A746-C5BE0C923290/NDP47-KB3186497-x86-x64-AllOS-ENU.exe)
 - .NET Framework 4.6
