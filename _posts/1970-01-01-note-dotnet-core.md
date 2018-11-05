@@ -271,6 +271,27 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 - [下載 Web Deploy 安裝檔](https://www.microsoft.com/zh-tw/download/details.aspx?id=43717)
 - [ASP.NET MVC - 使用 Web Deploy 佈署 MVC 應用程式到 IIS](http://blog.sanc.idv.tw/2014/08/aspnet-web-deploymvciis.html)
 
+## 判斷 Windows 目前安裝的 .NET Framework 版本
+
+REF: [如何：判斷安裝的 .NET Framework 版本](https://docs.microsoft.com/zh-tw/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed)
+
+1. `regedit.exe`
+2. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full`
+3. 查看 `Release` 的 DWORD 值
+
+| Release DWORD 的值                | 版本                                                                      |
+| -------------------------------- | ------------------------------------------------------------------------- |
+|378389                            | .NET Framework 4.5                                                        |
+|378675                            | 隨 Windows 8.1 或 Windows Server 2012 R2 安裝的 .NET Framework 4.5.1        |
+|378758                            | Windows 8、Windows 7 SP1 或 Windows Vista SP2 上安裝的 .NET Framework 4.5.1 |
+|379893                            | .NET Framework 4.5.2                                                      |
+|僅限 Windows 10 系統：393295<br /><br /> 所有其他作業系統版本：393297                       | .NET Framework 4.6   |
+|僅限 Windows 10 11 月更新系統：394254<br /><br /> 所有其他作業系統版本：394271               | .NET Framework 4.6.1 |
+|Windows 10 年度更新版及 Windows Server 2016：394802<br /><br /> 所有其他作業系統版本：394806 | .NET Framework 4.6.2 | 
+|僅限 Windows 10 Creators Update：460798<br/><br/> 所有其他作業系統版本：460805              | .NET Framework 4.7   |
+|僅限 Windows 10 Fall Creators Update：461308<br/><br/> 所有其他作業系統版本：461310         | .NET Framework 4.7.1 |
+|僅限 Windows 10 2018 4 月更新：461808<br/><br/> 所有其他作業系統版本：461814                 | .NET Framework 4.7.2 |
+
 ## 下載 .NET Framework 離線安裝檔
 
 以下下載連結都來自微軟官方網站：
@@ -429,6 +450,7 @@ public string GetMethodInfo()
   - [Self Contained Deployment(SCD)](#self-contained-deploymentscd)
 - [開啟 Dotnet 專案時效能低落的問題](#開啟-dotnet-專案時效能低落的問題)
 - [Web Depoly](#web-depoly)
+- [判斷 Windows 目前安裝的 .NET Framework 版本](#判斷-windows-目前安裝的-net-framework-版本)
 - [下載 .NET Framework 離線安裝檔](#下載-net-framework-離線安裝檔)
 - [單元測試命名方法](#單元測試命名方法)
 - [Class 類別](#class-類別)
