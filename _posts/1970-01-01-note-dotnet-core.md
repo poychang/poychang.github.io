@@ -428,6 +428,66 @@ public string GetMethodInfo()
 }
 ```
 
+## LINQ
+
+- REF: [依據執行方式將標準查詢運算式分類](https://docs.microsoft.com/zh-tw/previous-versions/visualstudio/visual-studio-2008/bb882641(v=vs.90))
+- REF: [Enumerable Class](https://docs.microsoft.com/zh-tw/dotnet/api/system.linq.enumerable?view=netcore-2.1)
+
+幾乎所有返回類型為 `IEnumerable<T>` 或 `IOrderedEnumerable<TElement>` 的標準查詢運算符都以延遲方式執行。如下表我們可以看到 `where` 時，返回的IEnumerable是延遲加載的。
+
+標準查詢運算子                  | 傳回型別                      | 立即執行 | 延後資料流執行 | 延後非資料流執行
+----------------------------- | ---------------------------- | ------ | ------------ | -------------
+`Aggregate`                   | TSource                      | √      |              |
+`All<TSource>`                | Boolean                      | √      |              |
+`Any`                         | Boolean                      | √      |              |
+`AsEnumerable<TSource>`       | IEnumerable<T>               |        | √            |
+`Average`                     | 單一數值                      | √      |              |
+`Cast<TResult>`               | IEnumerable<T>               |        | √            |
+`Concat<TSource>`             | IEnumerable<T>               |        | √            |
+`Contains`                    | Boolean                      | √      |              |
+`Count`                       | Int32                        | √      |              |
+`DefaultIfEmpty`              | IEnumerable<T>               |        | √            |
+`Distinct`                    | IEnumerable<T>               |        | √            |
+`ElementAt<TSource>`          | TSource                      | √      |              |
+`ElementAtOrDefault<TSource>` | TSource                      | √      |              |
+`Empty<TResult>`              | IEnumerable<T>               | √      |              |
+`Except`                      | IEnumerable<T>               |        | √            | √
+`First`                       | TSource                      | √      |              | 
+`FirstOrDefault`              | TSource                      | √      |              | 
+`GroupBy`                     | IEnumerable<T>               |        |              | √
+`GroupJoin`                   | IEnumerable<T>               |        | √            | √
+`Intersect`                   | IEnumerable<T>               |        | √            | √
+`Join`                        | IEnumerable<T>               |        | √            | √
+`Last`                        | TSource                      | √      |              |
+`LastOrDefault`               | TSource                      | √      |              |
+`LongCount`                   | Int64                        | √      |              |
+`Max`                         | 單一數值、TSource 或 TResult  | √       |              |
+`Min`                         | 單一數值、TSource 或 TResult  | √       |              |
+`OfType<TResult>`             | IEnumerable<T>               |        | √            |
+`OrderBy`                     | IOrderedEnumerable<TElement> |        |              | √
+`OrderByDescending`           | IOrderedEnumerable<TElement> |        |              | √
+`Range`                       | IEnumerable<T>               |        | √            |
+`Repeat<TResult>`             | IEnumerable<T>               |        | √            |
+`Reverse<TSource>`            | IEnumerable<T>               |        |              | √
+`Select`                      | IEnumerable<T>               |        | √            |
+`SelectMany`                  | IEnumerable<T>               |        | √            |
+`SequenceEqual`               | Boolean                      | √      |              |
+`Single`                      | TSource                      | √      |              |
+`SingleOrDefault`             | TSource                      | √      |              |
+`Skip<TSource>`               | IEnumerable<T>               |        | √            |
+`SkipWhile`                   | IEnumerable<T>               |        | √            |
+`Sum`                         | 單一數值                      | √      |              |
+`Take<TSource>`               | IEnumerable<T>               |        | √            |
+`TakeWhile`                   | IEnumerable<T>               |        | √            |
+`ThenBy`                      | IOrderedEnumerable<TElement> |        |              | √
+`ThenByDescending`            | IOrderedEnumerable<TElement> |        |              | √
+`ToArray<TSource>`            | TSource 陣列                 | √       |             |
+`ToDictionary`                | Dictionary<TKey, TValue>     | √      |              |
+`ToList<TSource>`             | IList<T>                     | √      |              |
+`ToLookup`                    | ILookup<TKey, TElement>      | √      |              |
+`Union`                       | IEnumerable<T>               |        | √            |
+`Where`                       | IEnumerable<T>               |        | √            |
+
 ---
 
 參考資料：
@@ -455,3 +515,4 @@ public string GetMethodInfo()
 - [單元測試命名方法](#單元測試命名方法)
 - [Class 類別](#class-類別)
 - [取得當前名稱空間、類名和方法名稱](#取得當前名稱空間類名和方法名稱)
+- [LINQ](#linq)
