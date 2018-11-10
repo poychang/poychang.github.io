@@ -98,3 +98,4 @@ inst: 1,mgr: Inactive, queue: 73, qu=6, qs=67, qc=0, wr=1/1, in=0/0
 - [StackExchange.Redis - Configuration](#stackexchangeredis---configuration)
 - [Redis 命令参考](#redis-%E5%91%BD%E4%BB%A4%E5%8F%82%E8%80%83)
 - [Error Code 說明](#error-code-%E8%AA%AA%E6%98%8E)
+- [如何监控Redis的工作状态——INFO命令详解](http://ghoulich.xninja.org/2016/10/15/how-to-monitor-redis-status/)
