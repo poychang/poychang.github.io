@@ -56,6 +56,8 @@ GitHub 除了提供版控的功能，還有一個服務叫做 [GitHub Pages](htt
 
 要做到這效果，我們執行 Angular CLI 建置命令時要加上 `--base-href` 參數，如 `ng build --prod --base-href /angular-tour-of-heroes/`，使之在建置時幫我們修改 `index.html` 中的 `base href`。
 
+>請注意！這裡所設定 base-href 要跟 GitHub 專案名稱一樣，且要注意大小寫。
+
 ![建置專案並設定 base href](https://i.imgur.com/2pbrUTF.png)
 
 ### 佈署至該專案的 GitHub Pages
