@@ -51,8 +51,8 @@ Docker CLI 官方文件：[Use the Docker command line](https://docs.docker.com/
 - `docker stop [container]`: 停止一個執行中的容器
 - `docker exec -ti [container] [command]`: Run a shell command inside a particular container.
 - `docker run [image]` 啟動容器 [doc](https://docs.docker.com/engine/reference/commandline/run/)
-- `docker run -ti — image [image] [container] [command]`: 建立並啟動容器，並在內部執行指令
-- `docker run -ti — rm — image [image] [container] [command]`: 建立並啟動容器，並在內部執行指令，指令完成後自動移除此容器
+- `docker run -ti -image [image] [container] [command]`: 建立並啟動容器，並在內部執行指令
+- `docker run -ti -rm -image [image] [container] [command]`: 建立並啟動容器，並在內部執行指令，指令完成後自動移除此容器
 - `docker pause [container]`: Pause all processes running within a particular container.
 
 使用 Docker 工具：
@@ -151,5 +151,5 @@ REF:
 
 - [Docker Docs](https://hub.docker.com)
 - [用 30 天來介紹和使用 Docker 系列](https://ithelp.ithome.com.tw/users/20103456/ironman/1320)
-- [Docker —— 從入門到實踐 ­](https://philipzheng.gitbooks.io/docker_practice/content/)
-- [Docker Commands — The Ultimate Cheat Sheet](https://hackernoon.com/docker-commands-the-ultimate-cheat-sheet-994ac78e2888)
+- [Docker -- 從入門到實踐 ­](https://philipzheng.gitbooks.io/docker_practice/content/)
+- [Docker Commands - The Ultimate Cheat Sheet](https://hackernoon.com/docker-commands-the-ultimate-cheat-sheet-994ac78e2888)
