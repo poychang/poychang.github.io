@@ -27,7 +27,7 @@ categories: [Note, Docker]
 
 `docker exec -it <YOUR_CONTAINER_ID_OR_NAME> cmd`
 
->如果你的容器是使用 Linux，可以將 `cmd` 改成 `bash`。
+> 如果你的容器是使用 Linux，可以將 `cmd` 改成 `bash`。
 
 REF: https://stackoverflow.com/questions/30172605/how-do-i-get-into-a-docker-container
 
@@ -137,10 +137,16 @@ alias dockerx="docker -H=DOCKER_REMOTE_SERVER"
 
 REF:
 
-* [Run commands on remote Docker host](https://gist.github.com/kekru/4e6d49b4290a4eebc7b597c07eaf61f2)
-* [使用 DosKey 簡化操作遠端 Docker 的指令](http://poychang.github.io/use-doskey-to-alias-docker-command/)
+- [Run commands on remote Docker host](https://gist.github.com/kekru/4e6d49b4290a4eebc7b597c07eaf61f2)
+- [使用 DosKey 簡化操作遠端 Docker 的指令](http://poychang.github.io/use-doskey-to-alias-docker-command/)
 
 ## Docker Compose
+
+使用指定的 docker-compose.yml 設定檔來啟動遠端的容器。注意，指定遠端主機的地方要加上 2375 的 Port 號。
+
+```bash
+docker-compose.exe -H REMOTE_DOCKER_IP:2375 -f docker/command/docker-compose.yml up
+```
 
 - [官方文件 - Compose file version 3 reference](https://docs.docker.com/compose/compose-file/)
 - [Docker Compose 初步閱讀與學習記錄](http://blog.maxkit.com.tw/2017/03/docker-compose.html)
