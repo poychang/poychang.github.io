@@ -29,6 +29,19 @@ Set-Location $location
 
 REF: [CTP: PowerShell Versioning](https://blogs.msdn.microsoft.com/powershell/2007/11/02/ctp-versioning/)
 
+## 快速鍵
+
+REF: [Windows PowerShell ISE 的鍵盤快速鍵](https://docs.microsoft.com/zh-tw/powershell/scripting/core-powershell/ise/keyboard-shortcuts-for-the-windows-powershell-ise?view=powershell-6)
+
+動作                    | 鍵盤快速鍵
+---------------------- | ------------
+顯示/隱藏指令碼窗格       | CTRL + R
+將指令碼窗格移至上方      | CTRL + 1
+將指令碼窗格移至右方      | CTRL + 2
+最大化指令碼窗格          | CTRL + 3
+關閉 PowerShell 索引標籤 | CTRL + W
+新增 PowerShell 索引標籤 | CTRL + T
+
 ## 常用指令
 
 - `$PSVersionTable.PSVersion` 查看 PowerShell 版本
@@ -64,6 +77,8 @@ PowerShell 會自動從以下這 4 個檔名路徑依序載入設定檔，如果
 - `Get-ChildItemColor` 輸出帶有顏色標示的目錄資訊
   _ [joonro/Get-ChildItemColor](https://github.com/joonro/Get-ChildItemColor)
   _ 安裝指令：`Install-Module Get-ChildItemColor -Scope CurrentUser` \* 建議別名：`Set-Alias ll Get-ChildItemColor -option AllScope`
+
+PowerShell ISE 有 Add-On 可以安裝，[這篇文章](https://social.technet.microsoft.com/wiki/contents/articles/2969.windows-powershell-ise-add-on-tools.aspx)提供了很多資訊，社群提供的 Add-On 到如何自己寫一個 Add-On。
 
 ---
 
