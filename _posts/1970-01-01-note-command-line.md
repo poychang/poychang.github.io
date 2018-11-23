@@ -4,7 +4,7 @@ title: 系統命令筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: [Note, Tools]
+categories: [Note, PowerShell, Tools]
 ---
 
 Windows 叫做命令提示字元（cmd.exe, Command Line），Unix-like OS 叫做終端機（Terminal），這是一個以文字為主的應用程式，可以查看、處理並且控制你電腦裡的檔案，系統原生提供了很多好用的指令和用法，隨手筆記之。

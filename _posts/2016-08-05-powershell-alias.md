@@ -4,7 +4,7 @@ title: 設定 PowerShell 的 Alias
 date: 2016-08-05 09:26
 author: Poy Chang
 comments: true
-categories: [Tools]
+categories: [PowerShell, Tools]
 ---
 不管使用哪一種 Command Line Tool 都會遇到的問題，自訂指令的別名。PowerShell 當然可以自訂，方法也很簡單，使用 `Set-Alias` 指令就可以辦到，只是這個別名的生命週期只有這一次的 Session 有效，那要怎麼讓它成為永久的別名呢？。
 

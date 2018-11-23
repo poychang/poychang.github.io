@@ -4,7 +4,7 @@ title: PowerShell 筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
-categories: [Note, Tools]
+categories: [Note, PowerShell, Tools]
 ---
 
 Windows PowerShell 是以 .NET Framework 為基礎所建置，而且是以工作為基礎的命令列殼層和指令碼語言；專為系統管理員和進階使用者所設計，可快速自動化管理多個作業系統 (Linux、OSX、Unix 和 Windows)，以及與在這些作業系統上執行之應用程式相關的程序。
