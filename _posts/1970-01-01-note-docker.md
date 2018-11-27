@@ -49,10 +49,10 @@ Docker CLI 官方文件：[Use the Docker command line](https://docs.docker.com/
 
 - `docker start [container]`: 啟動一個已經停止的容器
 - `docker stop [container]`: 停止一個執行中的容器
-- `docker exec -ti [container] [command]`: Run a shell command inside a particular container.
+- `docker exec -it [container] [command]`: Run a shell command inside a particular container.
 - `docker run [image]` 啟動容器 [doc](https://docs.docker.com/engine/reference/commandline/run/)
-- `docker run -ti -image [image] [container] [command]`: 建立並啟動容器，並在內部執行指令
-- `docker run -ti -rm -image [image] [container] [command]`: 建立並啟動容器，並在內部執行指令，指令完成後自動移除此容器
+- `docker run -it -image [image] [container] [command]`: 建立並啟動容器，並在內部執行指令
+- `docker run -it -rm -image [image] [container] [command]`: 建立並啟動容器，並在內部執行指令，指令完成後自動移除此容器
 - `docker pause [container]`: Pause all processes running within a particular container.
 
 使用 Docker 工具：
