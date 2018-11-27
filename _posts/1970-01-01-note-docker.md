@@ -73,6 +73,39 @@ Docker CLI 官方文件：[Use the Docker command line](https://docs.docker.com/
 
 > Docker Image 名稱必須是小寫，否則會無法編譯。
 
+## DockerFile
+
+使用 Dockerfile 讓使用者可以建立自定義的映像檔。
+
+Dockerfile 分為四部分：
+
+- 基底映像檔資訊、
+- 維護者資訊
+- 映像檔操作指令和
+- 容器啟動時執行指令
+
+範例：
+
+```dockerfile
+FROM microsoft/dotnet:2.1-aspnetcore-runtime
+WORKDIR /app 
+ADD /apppublish/ .
+ENTRYPOINT ["dotnet", "MyClass.dll"]
+```
+
+### ADD 和 COPY 的差別
+
+先說結論，根據官方文件 [Docker Doc - ADD or COPY](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#add-or-copy) 建議使用 `COPY`，因為使用上會比較直覺且指令的意思和一般使用上的預期結果一致。
+
+`COPY` 指令相對單純，只會將來源參數的檔案，複製至目的地路徑。
+
+`ADD` 指令做的事情比較多，如下：
+
+- 可以使用 URL 作為來源參數，通過 URL 下載文件並且複製到目的地路徑
+- 若來源參數是一個壓縮檔格式（tar, gzip, bzip2, etc），會自動解壓縮並存至目的地路徑
+
+使用 `ADD` 的時候，你可能會遇到有時解壓縮，有時又不會的奇妙現象，因此建議使用單純一點的 `COPY` 指令，讓行為比較符合預期。如果你明確知道要用 `ADD` 來達成下載遠端檔案的行為，這時候 `ADD` 是你的好幫手。
+
 ## 常用的 Docker Image
 
 - [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/)
