@@ -6,19 +6,20 @@ author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
 ---
+
 接續上篇的基本操作，這篇主要使用 LINQ to XML 來取得 CDATA 標籤內的資料內容。
 
 目錄：
 
-* [基本操作](https://poychang.github.io/linq-to-xml-basic-usage/)
-* [建立 XML 檔案](https://poychang.github.io/linq-to-xml-create-xml-file)
-* [查詢 XML 資料](https://poychang.github.io/linq-to-xml-query-xml/)
-* [修改 XML 資料](https://poychang.github.io/linq-to-xml-edit-xml)
-* [轉換 XML 資料](https://poychang.github.io/linq-to-xml-transfom-xml)
-* [驗證 XML 資料](https://poychang.github.io/linq-to-xml-validate-xml)
-* [取得 CDATA 資料](https://poychang.github.io/2018-02-05-linq-to-xml-extract-data-from-cdata)
+- [基本操作](https://poychang.github.io/linq-to-xml-basic-usage/)
+- [建立 XML 檔案](https://poychang.github.io/linq-to-xml-create-xml-file)
+- [查詢 XML 資料](https://poychang.github.io/linq-to-xml-query-xml/)
+- [修改 XML 資料](https://poychang.github.io/linq-to-xml-edit-xml)
+- [轉換 XML 資料](https://poychang.github.io/linq-to-xml-transfom-xml)
+- [驗證 XML 資料](https://poychang.github.io/linq-to-xml-validate-xml)
+- [取得 CDATA 資料](https://poychang.github.io/2018-02-05-linq-to-xml-extract-data-from-cdata)
 
->系列文完整範例程式碼請參考 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml)。
+> 系列文完整範例程式碼請參考 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml)。
 
 XML 標準中提供了 CDATA 區段，做為一種通知剖析器的方法，當 XML 剖析器遇到開頭的 `<![CDATA[` 時，會將接下來的內容當成字元，而不會嘗試將其解譯成 XML 標籤實體。
 
@@ -40,11 +41,11 @@ foreach (var data in queryCData)
 
 這個使用方式很常會遇到，在使用 XML 作為通訊格式時，為了清楚標示傳輸的"文字內容"在哪裡，就會使用 CDATA 區段作為標識，因此這個技巧一定要知道。
 
->請參考 `08-ExtractDataFromCData` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/08-ExtractDataFromCData/Program.cs)
+> 請參考 `08-ExtractDataFromCData` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/08-ExtractDataFromCData/Program.cs)
 
-----------
+---
 
 參考資料：
 
-* [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
-* [MSDN - XCData 類別](https://msdn.microsoft.com/zh-tw/library/system.xml.linq.xcdata.aspx)
+- [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
+- [MSDN - XCData 類別](https://msdn.microsoft.com/zh-tw/library/system.xml.linq.xcdata.aspx)

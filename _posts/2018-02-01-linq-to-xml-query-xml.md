@@ -6,19 +6,20 @@ author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
 ---
+
 接續上篇的基本操作，這篇主要使用 LINQ to XML 來查詢 XML 檔案內的資料。
 
 目錄：
 
-* [基本操作](https://poychang.github.io/linq-to-xml-basic-usage/)
-* [建立 XML 檔案](https://poychang.github.io/linq-to-xml-create-xml-file)
-* [查詢 XML 資料](https://poychang.github.io/linq-to-xml-query-xml/)
-* [修改 XML 資料](https://poychang.github.io/linq-to-xml-edit-xml)
-* [轉換 XML 資料](https://poychang.github.io/linq-to-xml-transfom-xml)
-* [驗證 XML 資料](https://poychang.github.io/linq-to-xml-validate-xml)
-* [取得 CDATA 資料](https://poychang.github.io/2018-02-05-linq-to-xml-extract-data-from-cdata)
+- [基本操作](https://poychang.github.io/linq-to-xml-basic-usage/)
+- [建立 XML 檔案](https://poychang.github.io/linq-to-xml-create-xml-file)
+- [查詢 XML 資料](https://poychang.github.io/linq-to-xml-query-xml/)
+- [修改 XML 資料](https://poychang.github.io/linq-to-xml-edit-xml)
+- [轉換 XML 資料](https://poychang.github.io/linq-to-xml-transfom-xml)
+- [驗證 XML 資料](https://poychang.github.io/linq-to-xml-validate-xml)
+- [取得 CDATA 資料](https://poychang.github.io/2018-02-05-linq-to-xml-extract-data-from-cdata)
 
->系列文完整範例程式碼請參考 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml)。
+> 系列文完整範例程式碼請參考 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml)。
 
 ## 查詢 XML 資料
 
@@ -48,7 +49,7 @@ foreach (var elememt in XDocument.Load(filePath).Descendants())
 }
 ```
 
->Descendant 這個英文單字是**後代**的意思，泛指從某一來源派生（或傳下）的東西。
+> Descendant 這個英文單字是**後代**的意思，泛指從某一來源派生（或傳下）的東西。
 
 `Descendants()` 同樣的也可以設定想要過濾的元素名稱，例如 `XDocument.Load(filePath).Descendants("Student")`。
 
@@ -79,12 +80,12 @@ foreach (var elememt in XDocument.Load(filePath).Descendants())
 
 請注意 `DescendantNodes()` 無法設定過濾的名稱（畢竟他的目標是節點，不是元素）。
 
->除了 DescendantNodes()，請參考 `03-QueryXmlDocument` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/03-QueryXmlDocument/Program.cs)
+> 除了 DescendantNodes()，請參考 `03-QueryXmlDocument` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/03-QueryXmlDocument/Program.cs)
 
-----------
+---
 
 參考資料：
 
-* [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
-* [YouTube - LINQ to XML Tutorial](https://www.youtube.com/playlist?list=PL6n9fhu94yhX-U0Ruy_4eIG8umikVmBrk)
-* [LINQ to XML Tutorial](http://csharp-video-tutorials.blogspot.tw/2014/08/linq-to-xml-tutorial.html)
+- [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
+- [YouTube - LINQ to XML Tutorial](https://www.youtube.com/playlist?list=PL6n9fhu94yhX-U0Ruy_4eIG8umikVmBrk)
+- [LINQ to XML Tutorial](http://csharp-video-tutorials.blogspot.tw/2014/08/linq-to-xml-tutorial.html)

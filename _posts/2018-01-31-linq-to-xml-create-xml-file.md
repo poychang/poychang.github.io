@@ -6,19 +6,20 @@ author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
 ---
+
 接續上篇的基本操作，這篇主要使用 LINQ to XML 來建立 XML 檔案。
 
 目錄：
 
-* [基本操作](https://poychang.github.io/linq-to-xml-basic-usage/)
-* [建立 XML 檔案](https://poychang.github.io/linq-to-xml-create-xml-file)
-* [查詢 XML 資料](https://poychang.github.io/linq-to-xml-query-xml/)
-* [修改 XML 資料](https://poychang.github.io/linq-to-xml-edit-xml)
-* [轉換 XML 資料](https://poychang.github.io/linq-to-xml-transfom-xml)
-* [驗證 XML 資料](https://poychang.github.io/linq-to-xml-validate-xml)
-* [取得 CDATA 資料](https://poychang.github.io/2018-02-05-linq-to-xml-extract-data-from-cdata)
+- [基本操作](https://poychang.github.io/linq-to-xml-basic-usage/)
+- [建立 XML 檔案](https://poychang.github.io/linq-to-xml-create-xml-file)
+- [查詢 XML 資料](https://poychang.github.io/linq-to-xml-query-xml/)
+- [修改 XML 資料](https://poychang.github.io/linq-to-xml-edit-xml)
+- [轉換 XML 資料](https://poychang.github.io/linq-to-xml-transfom-xml)
+- [驗證 XML 資料](https://poychang.github.io/linq-to-xml-validate-xml)
+- [取得 CDATA 資料](https://poychang.github.io/2018-02-05-linq-to-xml-extract-data-from-cdata)
 
->系列文完整範例程式碼請參考 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml)。
+> 系列文完整範例程式碼請參考 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml)。
 
 ## 建立 XML 檔
 
@@ -64,7 +65,7 @@ var xmlDocument = new XDocument(
 
 建立完 XML 資料後，`XDocument` 實體會有 `save()` 方法可以呼叫，將所建立的 XML 資料儲存成檔案。
 
->請參考 `01-CreateXmlDocument` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/01-CreateXmlDocument/Program.cs)
+> 請參考 `01-CreateXmlDocument` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/01-CreateXmlDocument/Program.cs)
 
 ## 資料來源
 
@@ -87,12 +88,12 @@ var xmlDocument = new XDocument(
 
 上述程式碼範例第 5 開始，`Student.GetAllStudents()` 一個資料陣列，這會被當作 LINQ 的資料來源，接著就是使用 LINQ 表示式來操作，並建立我們想要的 XML 元素。
 
->請參考 `02-CreateXmlDocument` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/02-CreateXmlDocument/Program.cs)
+> 請參考 `02-CreateXmlDocument` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/02-CreateXmlDocument/Program.cs)
 
-----------
+---
 
 參考資料：
 
-* [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
-* [YouTube - LINQ to XML Tutorial](https://www.youtube.com/playlist?list=PL6n9fhu94yhX-U0Ruy_4eIG8umikVmBrk)
-* [LINQ to XML Tutorial](http://csharp-video-tutorials.blogspot.tw/2014/08/linq-to-xml-tutorial.html)
+- [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
+- [YouTube - LINQ to XML Tutorial](https://www.youtube.com/playlist?list=PL6n9fhu94yhX-U0Ruy_4eIG8umikVmBrk)
+- [LINQ to XML Tutorial](http://csharp-video-tutorials.blogspot.tw/2014/08/linq-to-xml-tutorial.html)

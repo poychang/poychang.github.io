@@ -6,19 +6,20 @@ author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
 ---
+
 接續上篇的基本操作，這篇主要使用 LINQ to XML 來驗證 XML 資料。
 
 目錄：
 
-* [基本操作](https://poychang.github.io/linq-to-xml-basic-usage/)
-* [建立 XML 檔案](https://poychang.github.io/linq-to-xml-create-xml-file)
-* [查詢 XML 資料](https://poychang.github.io/linq-to-xml-query-xml/)
-* [修改 XML 資料](https://poychang.github.io/linq-to-xml-edit-xml)
-* [轉換 XML 資料](https://poychang.github.io/linq-to-xml-transfom-xml)
-* [驗證 XML 資料](https://poychang.github.io/linq-to-xml-validate-xml)
-* [取得 CDATA 資料](https://poychang.github.io/2018-02-05-linq-to-xml-extract-data-from-cdata)
+- [基本操作](https://poychang.github.io/linq-to-xml-basic-usage/)
+- [建立 XML 檔案](https://poychang.github.io/linq-to-xml-create-xml-file)
+- [查詢 XML 資料](https://poychang.github.io/linq-to-xml-query-xml/)
+- [修改 XML 資料](https://poychang.github.io/linq-to-xml-edit-xml)
+- [轉換 XML 資料](https://poychang.github.io/linq-to-xml-transfom-xml)
+- [驗證 XML 資料](https://poychang.github.io/linq-to-xml-validate-xml)
+- [取得 CDATA 資料](https://poychang.github.io/2018-02-05-linq-to-xml-extract-data-from-cdata)
 
->系列文完整範例程式碼請參考 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml)。
+> 系列文完整範例程式碼請參考 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml)。
 
 ## 驗證 XML 資料
 
@@ -26,7 +27,7 @@ XML 本身的彈性很大，可以自由地建立你想要的元素名稱及屬�
 
 ### 建立 XSD
 
->這裡只用範例簡單介紹 XDS 的寫法。
+> 這裡只用範例簡單介紹 XDS 的寫法。
 
 請參考 `sample.xsd` 程式碼範例，裡面建立了以下規則：
 
@@ -34,9 +35,9 @@ XML 本身的彈性很大，可以自由地建立你想要的元素名稱及屬�
 2. 根元素包含至少 1 個 `Student` 元素(`minOccurs="1"`)，且無上限(`maxOccurs="unbounded"`)
 3. `Student` 元素必須設定 `Id` 屬性
 4. 每個元素必須包含以下 3 個子元素
-	* `Name`
-	* `Gender`
-	* `TotalMarks`
+   - `Name`
+   - `Gender`
+   - `TotalMarks`
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -92,14 +93,14 @@ xmlDocument.Validate(schema, (sender, event) =>
 
 而 `ValidationEventHandler` 這個委派在驗證過程中，如果有發生錯誤才會被執行，而這個委派參數如果設定成 null，則會在驗證發生錯誤時，會吐出執行例外。
 
->請參考 `07-ValidateWithXSD` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/07-ValidateWithXSD/Program.cs)
+> 請參考 `07-ValidateWithXSD` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/07-ValidateWithXSD/Program.cs)
 
-----------
+---
 
 參考資料：
 
-* [Wiki - XML Schema](https://zh.wikipedia.org/wiki/XML_Schema)
-* [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
-* [YouTube - LINQ to XML Tutorial](https://www.youtube.com/playlist?list=PL6n9fhu94yhX-U0Ruy_4eIG8umikVmBrk)
-* [LINQ to XML Tutorial](http://csharp-video-tutorials.blogspot.tw/2014/08/linq-to-xml-tutorial.html)
-* [XML Schema Tutorial](https://www.liquid-technologies.com/xml-schema-tutorial/xsd-elements-attributes)
+- [Wiki - XML Schema](https://zh.wikipedia.org/wiki/XML_Schema)
+- [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
+- [YouTube - LINQ to XML Tutorial](https://www.youtube.com/playlist?list=PL6n9fhu94yhX-U0Ruy_4eIG8umikVmBrk)
+- [LINQ to XML Tutorial](http://csharp-video-tutorials.blogspot.tw/2014/08/linq-to-xml-tutorial.html)
+- [XML Schema Tutorial](https://www.liquid-technologies.com/xml-schema-tutorial/xsd-elements-attributes)

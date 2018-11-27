@@ -6,19 +6,20 @@ author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
 ---
+
 接續上篇的基本操作，這篇主要使用 LINQ to XML 來修改 XML 資料。
 
 目錄：
 
-* [基本操作](https://poychang.github.io/linq-to-xml-basic-usage/)
-* [建立 XML 檔案](https://poychang.github.io/linq-to-xml-create-xml-file)
-* [查詢 XML 資料](https://poychang.github.io/linq-to-xml-query-xml/)
-* [修改 XML 資料](https://poychang.github.io/linq-to-xml-edit-xml)
-* [轉換 XML 資料](https://poychang.github.io/linq-to-xml-transfom-xml)
-* [驗證 XML 資料](https://poychang.github.io/linq-to-xml-validate-xml)
-* [取得 CDATA 資料](https://poychang.github.io/2018-02-05-linq-to-xml-extract-data-from-cdata)
+- [基本操作](https://poychang.github.io/linq-to-xml-basic-usage/)
+- [建立 XML 檔案](https://poychang.github.io/linq-to-xml-create-xml-file)
+- [查詢 XML 資料](https://poychang.github.io/linq-to-xml-query-xml/)
+- [修改 XML 資料](https://poychang.github.io/linq-to-xml-edit-xml)
+- [轉換 XML 資料](https://poychang.github.io/linq-to-xml-transfom-xml)
+- [驗證 XML 資料](https://poychang.github.io/linq-to-xml-validate-xml)
+- [取得 CDATA 資料](https://poychang.github.io/2018-02-05-linq-to-xml-extract-data-from-cdata)
 
->系列文完整範例程式碼請參考 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml)。
+> 系列文完整範例程式碼請參考 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml)。
 
 LINQ to XML 已經幫我們內建了新增、 修改、刪除所需要的方法，我們只要簡單的調用他們，就可以輕鬆完成修改 XML 資料的的目的。
 
@@ -101,12 +102,12 @@ xmlDocument.Root?.Elements().Remove();
 
 這裡的 `xmlDocument.Root` 等價於 `xmlDocument.Element("Students")`，也就是整份 XML 文件的根結點。若是要表示 XML 文件的起始，建議使用 `xmlDocument.Root` 來操作會比較符合語意且直覺。
 
->請參考 `04-ModifyXmlDocument` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/04-ModifyXmlDocument/Program.cs)
+> 請參考 `04-ModifyXmlDocument` 專案的 [Program.cs](https://github.com/poychang/Demo-Linq-To-Xml/blob/master/04-ModifyXmlDocument/Program.cs)
 
-----------
+---
 
 參考資料：
 
-* [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
-* [YouTube - LINQ to XML Tutorial](https://www.youtube.com/playlist?list=PL6n9fhu94yhX-U0Ruy_4eIG8umikVmBrk)
-* [LINQ to XML Tutorial](http://csharp-video-tutorials.blogspot.tw/2014/08/linq-to-xml-tutorial.html)
+- [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
+- [YouTube - LINQ to XML Tutorial](https://www.youtube.com/playlist?list=PL6n9fhu94yhX-U0Ruy_4eIG8umikVmBrk)
+- [LINQ to XML Tutorial](http://csharp-video-tutorials.blogspot.tw/2014/08/linq-to-xml-tutorial.html)
