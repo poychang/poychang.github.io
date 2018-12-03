@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在 Powershell 中執行 C# 程式碼或 DLL 檔的方法
+title: 在 PowerShell 中執行 C# 程式碼或 DLL 檔的方法
 date: 2018-11-22 23:11
 author: Poy Chang
 comments: true

@@ -152,6 +152,34 @@ Visual Studio 2017 的方案屬性頁中，有個`輕量型載入`的選項，�
 Source: https://api.nuget.org/v3/index.json
 API: https://www.nuget.org/api/v2/
 
+### NuGet 設定 Proxy
+
+REF: [NuGet Behind Proxy](https://stackoverflow.com/questions/9232160/nuget-behind-proxy)
+
+使用 NuGet.exe 來設定，指令如下：
+
+```bash
+nuget.exe config -set http_proxy=http://my.proxy.address:port
+nuget.exe config -set http_proxy.user=mydomain\myUserName
+nuget.exe config -set http_proxy.password=mySuperSecretPassword
+```
+
+> 如果需要設定帳號、密碼，需要用指令來加入，因為此方式會將密碼加密。
+
+所執行的相關設定會儲存至 `C:\Users\{username}\AppData\Roaming\NuGet\NuGet.Config` 檔案中，當然你也可以直接修改該設定檔，只要加入以下設定：
+
+```xml
+<configuration>
+    <config>
+        <add key="http_proxy" value="http://my.proxy.address:port" />
+    </config>
+</configuration>
+```
+
+上述的路徑會是全域的，如果只想針對某個專案或方案來設定，可以再該資料夾下加入 `NuGet.Config` 檔案即可。
+
+> 設定完成後，要重新開啟 Visual Studio 使其設定生效。
+
 ---
 
 參考資料：
@@ -162,3 +190,4 @@ API: https://www.nuget.org/api/v2/
 - [輕量型載入](#%E8%BC%95%E9%87%8F%E5%9E%8B%E8%BC%89%E5%85%A5)
 - [關閉 npm 套件自動還原](#%E9%97%9C%E9%96%89-npm-%E5%A5%97%E4%BB%B6%E8%87%AA%E5%8B%95%E9%82%84%E5%8E%9F)
 - [NuGet](#nuget)
+  - [NuGet 設定 Proxy](#nuget-%E8%A8%AD%E5%AE%9A-proxy)
