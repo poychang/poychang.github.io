@@ -6,6 +6,7 @@ author: Poy Chang
 comments: true
 categories: [Dotnet]
 ---
+
 建立資料模型時，我們可以透過 Data Annotations 的方式來設定該資料模型的資料欄位屬性，藉此增加資料欄位的特性，例如使用 `DisplayAttribute` 標示該資料欄位要顯示的字樣，在用 ASP.NET MVC 時常透過這樣的方式來設定資料模型，甚至在 Entity Framework 中，也會用這樣的方式來設定欄位屬性，但我們怎樣用程式來抓到這屬性的值呢？
 
 假設我們建立了一個 `Student` 資料模型如下：
@@ -13,11 +14,11 @@ categories: [Dotnet]
 ```csharp
 public class Student
 {
-	[Display(Name = "姓名")]
-	public string Name { get; set; }
+    [Display(Name = "姓名")]
+    public string Name { get; set; }
 
-	[Display(Name = "生日")]
-	public DateTime Birthday { get; set; }
+    [Display(Name = "生日")]
+    public DateTime Birthday { get; set; }
 }
 ```
 
@@ -26,17 +27,17 @@ public class Student
 ```csharp
 public class Program
 {
-	public static void Main()
-	{
-		var obj = new Student()
-		{
-			Name = "王大明",
-			Birthday = DateTime.Now
-		};
+    public static void Main()
+    {
+        var obj = new Student()
+        {
+            Name = "王大明",
+            Birthday = DateTime.Now
+        };
 
-		Console.WriteLine(obj.Name);
-		Console.WriteLine(obj.Birthday);
-	}
+        Console.WriteLine(obj.Name);
+        Console.WriteLine(obj.Birthday);
+    }
 }
 ```
 
@@ -45,13 +46,13 @@ public class Program
 ```csharp
 public static class ObjectExtension
 {
-	public static T GetAttributeFrom<T>(this object instance, string propertyName) where T : Attribute
-	{
-		var attributeType = typeof(T);
-		var property = instance.GetType().GetProperty(propertyName);
-		if (property == null) return null;
-		return (T)property.GetCustomAttributes(attributeType, false).First();
-	}
+    public static T GetAttributeFrom<T>(this object instance, string propertyName) where T : Attribute
+    {
+        var attributeType = typeof(T);
+        var property = instance.GetType().GetProperty(propertyName);
+        if (property == null) return null;
+        return (T)property.GetCustomAttributes(attributeType, false).First();
+    }
 }
 ```
 
@@ -60,31 +61,31 @@ public static class ObjectExtension
 1. 使用 `GetType()` 判斷實體物件的類型，並透過 `GetProperty()` 取得指定的資料欄位(`propertyName`)
 2. 如果沒有指定的資料欄位，回傳 `null`
 3. 取到指定的資料欄位後，透過 `GetCustomAttributes()` 取得自訂屬性的陣列，接收以下參數：
-	* `attributeType` 要搜尋的屬性成員的型別
-	* `inherit` 是否透過繼承鏈結一路搜尋到這個屬性成員
+   - `attributeType` 要搜尋的屬性成員的型別
+   - `inherit` 是否透過繼承鏈結一路搜尋到這個屬性成員
 
 注意，這個擴充方法所接受的泛型對象(`T`)，請限定必須是繼承至 `Attribute` 的類型。
 
->擴充方法的寫法，可以參考這份[官方文件](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)。
+> 擴充方法的寫法，可以參考這份[官方文件](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)。
 
 如此一來，就可輕鬆使用我們自訂的擴充方法 `GetAttributeFrom()` 來取得資料欄位的屬性值：
 
 ```csharp
 public class Program
 {
-	public static void Main()
-	{
-		var obj = new Student()
-		{
-			Name = "王大明",
-			Birthday = DateTime.Now
-		};
+    public static void Main()
+    {
+        var obj = new Student()
+        {
+            Name = "王大明",
+            Birthday = DateTime.Now
+        };
 
-		Console.WriteLine(obj.GetAttributeFrom<DisplayAttribute>(nameof(Student.Name)).Name);
-		Console.WriteLine(obj.Name);
-		Console.WriteLine(obj.GetAttributeFrom<DisplayAttribute>(nameof(Student.Birthday)).Name);
-		Console.WriteLine(obj.Birthday);
-	}
+        Console.WriteLine(obj.GetAttributeFrom<DisplayAttribute>(nameof(Student.Name)).Name);
+        Console.WriteLine(obj.Name);
+        Console.WriteLine(obj.GetAttributeFrom<DisplayAttribute>(nameof(Student.Birthday)).Name);
+        Console.WriteLine(obj.Birthday);
+    }
 }
 ```
 
@@ -98,11 +99,10 @@ public class Program
 
 <script src="https://gist.github.com/poychang/801e785e3556e0928fc7fbb990a46dc9.js"></script>
 
-
-
-----------
+---
 
 參考資料：
 
-* [How to retrieve Data Annotations from code?](https://stackoverflow.com/questions/7027613/how-to-retrieve-data-annotations-from-code-programmatically)
-* [屬性中的屬性: 自訂 Attributes](https://dotblogs.com.tw/johnny/2015/07/31/csharp-custom-attributes)
+- [How to retrieve Data Annotations from code?](https://stackoverflow.com/questions/7027613/how-to-retrieve-data-annotations-from-code-programmatically)
+- [屬性中的屬性: 自訂 Attributes](https://dotblogs.com.tw/johnny/2015/07/31/csharp-custom-attributes)
+- [Microsoft/referencesource - DataAnnotations/DisplayAttribute.cs](https://github.com/Microsoft/referencesource/blob/master/System.ComponentModel.DataAnnotations/DataAnnotations/DisplayAttribute.cs)
