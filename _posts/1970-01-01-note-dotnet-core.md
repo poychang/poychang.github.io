@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dotnet Core 筆記
+title: .NET Core 筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
