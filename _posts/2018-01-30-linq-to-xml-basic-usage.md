@@ -37,11 +37,24 @@ XML(eXtensible Markup Language) 可擴展標記語言常作為各種資訊交換
 
 ## 基本操作
 
-LINQ to XML 屬於記憶體內操作 XML 資料，因此在做任何操作前，都必須先載入 XML 資料至記憶體中，使用 `XDocuments.Load()` 進行載入：
+LINQ to XML 屬於記憶體內操作 XML 資料，因此在做任何操作前，都必須先載入 XML 資料至記憶體中，使用 `XDocuments.Load()` 進行載入 XML 檔案內容（[文件](https://docs.microsoft.com/en-us/dotnet/api/system.xml.linq.xdocument.load?view=netcore-2.1)）：
 
 ```csharp
 // 載入 sample.xml 檔
 XDocument xmlDocument = XDocuments.Load("sample.xml");
+```
+
+如果想透過字串來載入，可以使用 `XDocument.Parse()` 這個方法來處理（[文件](https://docs.microsoft.com/en-us/dotnet/api/system.xml.linq.xdocument.parse?redirectedfrom=MSDN&view=netcore-2.1#overloads)）：
+
+```csharp
+var content = @"
+<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes""?>
+<Student Id=""101"">
+    <Name>Mark</Name>
+    <Gender>Male</Gender>
+    <TotalMarks>800</TotalMarks>
+</Student>";
+XDocument xmlDocument = XDocuments.Parse(content);
 ```
 
 取得節點內特定單一元素，可使用 `Element()`，若要取得節點內多元素，則使用 `Elements()`，這裡會取得 `IEnumerable<XElement>` 資料型別的列舉資料：

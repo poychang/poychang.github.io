@@ -234,3 +234,4 @@ namespace ApplicationInsightsConsole
 - [適用於 .NET 主控台應用程式的 Application Insights](https://docs.microsoft.com/zh-tw/azure/application-insights/application-insights-console)
 - [Microsoft/ApplicationInsights-Home](https://github.com/Microsoft/ApplicationInsights-Home)
 - [DevOps - 透過 Application Insights 將遙測最佳化](https://msdn.microsoft.com/magazine/mt808502)
+- [Azure Application Insights REST API](https://dev.applicationinsights.io/)

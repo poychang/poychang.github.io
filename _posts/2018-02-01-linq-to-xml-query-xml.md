@@ -33,7 +33,15 @@ categories: [CSharp, Dotnet]
 
 ### Elements()
 
-`Elements()` 可以從一個指定節點中，取得底下的所有子元素，作為資料集合。也可以設定想要過濾的元素名稱，只抓符合該名稱的元素，例如 `XDocument.Load(filePath).Elements("Students").Elements("Student")` 代表從 XML 文件中找到 `Students` 節點底下，名稱符合 `Student` 的元素，一筆筆的讀出來作為資料集合。
+`Elements()` 可以從一個指定節點中，取得底下的所有子元素，作為資料集合。也可以設定想要過濾的元素名稱，只抓符合該名稱的元素，例如：
+
+```csharp
+IEnumerable<string> students = XDocument.Load(filePath)
+    .Elements("Students")
+    .Elements("Student");
+```
+
+代表從 XML 文件中找到 `Students` 節點底下，名稱符合 `Student` 的元素，一筆筆的讀出來作為資料集合，這個資料集合會是 `IEnumerable`，因此接著你就可以透過 LINQ 的方式接續處理資料。
 
 ### Descendants()
 
@@ -42,9 +50,9 @@ categories: [CSharp, Dotnet]
 這方法所組成的資料集合比較不容易解釋，建議使用下面程式碼，修改 `filePath` 檔案路徑後，執行看看所產生出的資料會有那些東西，有看到實際產生的資料，會比較有感覺。
 
 ```csharp
-foreach (var elememt in XDocument.Load(filePath).Descendants())
+foreach (var element in XDocument.Load(filePath).Descendants())
 {
-    Console.WriteLine(elememt);
+    Console.WriteLine(element);
     Console.WriteLine("----------");
 }
 ```
