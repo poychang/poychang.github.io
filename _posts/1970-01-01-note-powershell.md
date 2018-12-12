@@ -46,6 +46,7 @@ REF: [Windows PowerShell ISE 的鍵盤快速鍵](https://docs.microsoft.com/zh-t
 
 - `$PSVersionTable.PSVersion` 查看 PowerShell 版本
 - `Get-ChildItem Env:` 查看環境變數 \* `$Env:USERPROFILE` 查看環境變數中 USERPROFILE 的內容值
+- `Format-List` 透過這個指令來格式化輸出的資訊，例如 `Get-EventLog -Log System -Newest 10 | Format-List -Property *` 列出最新 10 筆系統事件紀錄，並將所有屬性格式化成表單作呈現，方便閱讀。
 
 ## 載入設定檔
 
