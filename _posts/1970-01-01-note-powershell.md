@@ -81,6 +81,25 @@ PowerShell 會自動從以下這 4 個檔名路徑依序載入設定檔，如果
 
 PowerShell ISE 有 Add-On 可以安裝，[這篇文章](https://social.technet.microsoft.com/wiki/contents/articles/2969.windows-powershell-ise-add-on-tools.aspx)提供了很多資訊，社群提供的 Add-On 到如何自己寫一個 Add-On。
 
+## 比較運算子
+
+PowerShell 的比較運算子有分**字串**及**數字**的比較，字串又分為**限制大小寫**及**不限制大小寫**的比較，若是要限制比較字串的大小寫時，則在運算子前面加上 `c` 字元，如 `-cle` 即可。
+
+| 運算子        | 說明      | 範例                                | 備註 |
+| ------------ | -------- | ------------------------------------|  |
+| -le          | 小於或等於 | `10 –le 10` true                    | 字串不限大小寫 |
+| -lt          | 小於      | `10 –lt 10` false                   | 字串不限大小寫 |
+| -ge          | 大於或等於 | `10 –ge 10` true                    | 字串不限大小寫 |
+| -gt          | 大於      | `10 –ge 10` false                   | 字串不限大小寫 |
+| -eq          | 等於      | `10 –eq 10` true                    | 字串不限大小寫 |
+| -ne          | 不等於    | `10 –en 10` false                   | 字串不限大小寫 |
+| -like        | 相似      | `"ABC" –like "abc"` true            | 字串可用 `＊` 和 `?` 替代，並不限大小寫 |
+| -notlike     | 不相似    | `"ABC" –notlike "abc"` false        | 字串可用 `＊` 和 `?` 替代，並不限大小寫 |
+| -match       | 符合      | `"ABC" -match "[AE]"` true          | 字串不限大小寫，並不限大小寫 |
+| -notmatch    | 不符合    | `"ABC" –notmatch "A"` true          | 字串不限大小寫，並不限大小寫 |
+| -contains    | 包含      | `"A","B","C" –contains "A"` true    | 運算子的左邊含有右邊的值，並不限大小寫 |
+| -notcontains | 不包含    | `"A","B","C" notcontains "A"` false | 運算子的左邊含有右邊的值，並不限大小寫 |
+
 ---
 
 參考資料：
