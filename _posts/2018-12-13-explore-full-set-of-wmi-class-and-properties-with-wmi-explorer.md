@@ -73,7 +73,7 @@ WMI Explorer 上方可以看到所有 WMI 的物件，而下方就是該物件�
 
 ![WMI Explorer 查詢介面](https://i.imgur.com/2w09Lwa.png)
 
-這個工具對於要查詢或操作 WMI 的開發者來說，是不是很方便呢！[下載頁面](https://www.ks-soft.net/hostmon.eng/downpage.htm)在這 :)
+這個工具對於要查詢或操作 WMI 的開發者來說，是不是很方便呢！[下載連結](https://www.ks-soft.net/download/wmiexplorer.zip)在這 :)
 
 ----------
 
@@ -81,4 +81,5 @@ WMI Explorer 上方可以看到所有 WMI 的物件，而下方就是該物件�
 
 * [WMI (Windows Management Instrumentation) 介紹及應用](http://www.syscom.com.tw/ePaper_Content_EPArticledetail.aspx?id=76&EPID=159&j=4&HeaderName=%E7%A0%94%E7%99%BC%E6%96%B0%E8%A6%96%E7%95%8C)
 * [程式範例 - 快速列出 Windows 執行中程式 CPU%、記憶體用量與執行身分](https://blog.darkthread.net/blog/get-task-manager-list-with-csharp/)
+* [Microsoft Docs - ManagementObjectSearcher Class](https://docs.microsoft.com/zh-tw/dotnet/api/system.management.managementobjectsearcher)
 * [WMI Explorer](https://www.ks-soft.net/hostmon.eng/wmi/index.htm)
