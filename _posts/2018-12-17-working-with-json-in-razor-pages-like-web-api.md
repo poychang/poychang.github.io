@@ -100,6 +100,8 @@ public class UserModel : PageModel
 
 >參考完整範例程式碼 [poychang/Demo-Razor-Pages-Json-API](https://github.com/poychang/Demo-Razor-Pages-Json-API) 中的 `UserWithRouteParam`。
 
+如果想用此方法接多個路由參數，可以用 `@page "{name?}/{id?}"` 這樣的設定方式，就可以使用像 `/API/User/foo/3` 這樣的方式來呼叫。
+
 ## HTTP POST 動作
 
 那我們可以如法炮製做 HTTP POST 的動作嗎？結果是不行的。
