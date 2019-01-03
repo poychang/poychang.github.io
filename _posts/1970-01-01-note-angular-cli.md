@@ -51,50 +51,50 @@ npm install -g angular-cli
 - 指令：`ng new <project-name> [options]`
 - 說明：建立 Angular 專案，預設此專案會建立在目前的路徑下
 - 選項：
-  _ `--routing`
-  _ 使用路由機制，並建立路由檔
-  _ `--dry-run`
-  _ 只輸出會建立的檔案名稱，不會真的產生檔案
-  _ 別名：`-d`
-  _ `--skip-git`
-  _ 此專案不建立 git 庫
-  _ 別名：`-sg`
-  _ `--skip-install`
-  _ 當專案建立後，不執行任何 npm/yarn 安裝指令
-  _ 別名：`-si`
-  _ `--skip-tests`
-  _ 當專案建立後，不增加單元測試檔案
-  _ 別名：`-st`
-  _ `--skip-e2e`
-  _ 當專案建立後，不增加 e2e 測試檔案
-  _ 別名：`-se`
-  _ `--directory`
-  _ 設定專案要建立在哪個資料夾內
-  _ 如果要將產生的專案放在當前資料夾，可這樣下參數 `--directory ./`
-  _ `--verbose`
-  _ 輸出更多資訊
-  _ 別名：`-v`
-  _ `--style=scss`
-  _ 改使用 SCSS 設計 CSS 樣式
-  _ `--service-worker`
-  _ 建立 PWA 專案
-  _ 別名：`-sw`
+  - `--routing`
+    - 使用路由機制，並建立路由檔
+  - `--dry-run`
+    - 只輸出會建立的檔案名稱，不會真的產生檔案
+    - 別名：`-d`
+  - `--skip-git`
+    - 此專案不建立 git 庫
+    - 別名：`-sg`
+  - `--skip-install`
+    - 當專案建立後，不執行任何 npm/yarn 安裝指令
+    - 別名：`-si`
+  - `--skip-tests`
+    - 當專案建立後，不增加單元測試檔案
+    - 別名：`-st`
+  - `--skip-e2e`
+    - 當專案建立後，不增加 e2e 測試檔案
+    - 別名：`-se`
+  - `--directory`
+    - 設定專案要建立在哪個資料夾內
+    - 如果要將產生的專案放在當前資料夾，可這樣下參數 `--directory ./`
+  - `--verbose`
+    - 輸出更多資訊
+    - 別名：`-v`
+  - `--style=scss`
+    - 改使用 SCSS 設計 CSS 樣式
+  - `--service-worker`
+    - 建立 PWA 專案
+    - 別名：`-sw`
 
 ## ng init
 
 - 指令：`ng init <project-name> [options]`
 - 說明：在目前資料夾下建立 Angular 專案（不會產生資料夾）
 - 選項：
-  _ `--dry-run`
-  _ 只輸出會建立的檔案名稱，不會真的產生檔案
-  _ 別名：`-d`
-  _ `--verbose`
-  _ 輸出更多資訊
-  _ 別名：`-v`
-  _ `--skip-npm`
-  _ 當專案建立後，不執行任何 npm 指令
-  _ `--name`
-  _ 設定專案名稱
+  - `--dry-run`
+    - 只輸出會建立的檔案名稱，不會真的產生檔案
+    - 別名：`-d`
+  - `--verbose`
+    - 輸出更多資訊
+    - 別名：`-v`
+  - `--skip-npm`
+    - 當專案建立後，不執行任何 npm 指令
+  - `--name`
+    - 設定專案名稱
 
 ## ng serve
 
@@ -132,24 +132,24 @@ ng serve --host 0.0.0.0 --port 4201 --live-reload-port 49123
 - 說明：在專案中產生新的程式碼
 - 別名：`g`
 - 有效類型：
-  _ `ng g component my-new-component` 產生 Component 元件程式碼
-  _ `ng g directive my-new-directive` 產生 Directive 指令程式碼
-  _ `ng g pipe my-new-pipe` 產生 Pipe 管道程式碼
-  _ `ng g service my-new-service` 產生 Service 服務程式碼
-  _ `ng g class my-new-class` 產生 Class 程式碼
-  _ `ng g interface my-new-interface` 產生 Interface 介面程式碼
-  _ `ng g enum my-new-enum` 產生 Enum 程式碼
-  _ `ng g module my-module` 產生 Module 模組程式碼
-  _ `ng g guard my-guard` 產生 Guard 守衛程式碼
-  _ `ng g app-shell [ --universal-app <universal-app-name>] [ --route <route>]` 建立 App Shell
+  - `ng g component my-new-component` 產生 Component 元件程式碼
+  - `ng g directive my-new-directive` 產生 Directive 指令程式碼
+  - `ng g pipe my-new-pipe` 產生 Pipe 管道程式碼
+  - `ng g service my-new-service` 產生 Service 服務程式碼
+  - `ng g class my-new-class` 產生 Class 程式碼
+  - `ng g interface my-new-interface` 產生 Interface 介面程式碼
+  - `ng g enum my-new-enum` 產生 Enum 程式碼
+  - `ng g module my-module` 產生 Module 模組程式碼
+  - `ng g guard my-guard` 產生 Guard 守衛程式碼
+  - `ng g app-shell [ --universal-app <universal-app-name>] [ --route <route>]` 建立 App Shell
 
 每個產生的元件有各自的資料夾，除非使用 `--flat` 選項
 
 - 選項：
-  _ `--flat` 不建立資料夾
-  _ `--route=<route>` 指令父路由，僅用於產生元件和路由，預設使用指定的路徑
-  _ `--skip-router-generation` 跳過產生父路由配置，只能用於路由命令
-  _ `--default` 指定路由為預設路由 \* `--lazy` 指定路由為延遲載入
+  - `--flat` 不建立資料夾
+  - `--route=<route>` 指令父路由，僅用於產生元件和路由，預設使用指定的路徑
+  - `--skip-router-generation` 跳過產生父路由配置，只能用於路由命令
+  - `--default` 指定路由為預設路由 \* `--lazy` 指定路由為延遲載入
 
 ## ng build
 
@@ -187,12 +187,12 @@ ng build
 - 指令：`ng github-pages:deploy [options]`
 - 說明：Build the application for production, setup the GitHub repository, then publish the app.
 - 選項：
-  _ `--message=<message>` Commit message to include with the build. Defaults to "new gh-pages version".
-  _ `--environment=<env>` The Angular environment to build. Defaults to "production".
-  _ `--branch=<branch-name>` The git branch to push the pages to. Defaults to "gh-branch".
-  _ `--skip-build` Skip building the project before publishing.
-  _ `--gh-token=<token>` API token to use to deploy. Required.
-  _ `--gh-username=<username>` The Github username to use. Required.
+  - `--message=<message>` Commit message to include with the build. Defaults to "new gh-pages version".
+  - `--environment=<env>` The Angular environment to build. Defaults to "production".
+  - `--branch=<branch-name>` The git branch to push the pages to. Defaults to "gh-branch".
+  - `--skip-build` Skip building the project before publishing.
+  - `--gh-token=<token>` API token to use to deploy. Required.
+  - `--gh-username=<username>` The Github username to use. Required.
 
 ## ng lint
 
@@ -204,8 +204,8 @@ ng build
 - 指令：`ng test [options]`
 - 說明：使用 karma 執行單元測試
 - 選項：
-  _ `--watch` Keep running the tests. Default to true.
-  _ `--browsers`, `--colors`, `--reporters`, `--port`, `--log-level` Those arguments are passed directly to karma.
+  - `--watch` Keep running the tests. Default to true.
+  - `--browsers`, `--colors`, `--reporters`, `--port`, `--log-level` Those arguments are passed directly to karma.
 
 ## ng version
 
