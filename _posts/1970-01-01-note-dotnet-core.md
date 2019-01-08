@@ -488,6 +488,132 @@ public string GetMethodInfo()
 `Union`                       | IEnumerable<T>               |        | √            |
 `Where`                       | IEnumerable<T>               |        | √            |
 
+## HttpClient
+
+REF:
+- [使用 HttpClient 來存取 GET,POST,PUT,DELETE,PATCH 網路資源](https://blog.yowko.com/httpclient/)
+- [探討 HttpClient 可能的問題](https://blog.yowko.com/httpclient-issue/)
+
+
+
+### GET
+
+```csharp
+var client = new HttpClient() { BaseAddress= new Uri("http://xxx/") };
+// 使用 async 方法從網路 url 上取得回應
+using (var response = await client.GetAsync("posts"))
+// 將網路取得回應的內容設定給 httpcontent，可省略，直接使用 response.Content
+using (var content = response.Content)
+{
+    // 將 httpcontent 轉為 string
+    var result = await content.ReadAsStringAsync();
+    // linqpad 顯示資料用
+    if (result != null)
+        result.Dump();
+}
+```
+
+```csharp
+var client = new HttpClient() { BaseAddress = new Uri("xxx/") };
+//使用 async 方法從網路 url 上取得回應
+var response = await client.GetAsync("posts");
+//如果 httpstatus code 不是 200 時會直接丟出 exception
+response.EnsureSuccessStatusCode();
+// 將 response 內容 轉為 string
+string result = await response.Content.ReadAsStringAsync();
+// linqpad 顯示資料用
+result.Dump();
+```
+
+使用 `SendAsync` 的寫法：
+
+```csharp
+var client = new HttpClient() { BaseAddress = new Uri("xxx/") };
+//指定 request 的 method 與 detail url
+using (var request = new HttpRequestMessage(HttpMethod.Get, "posts"))
+{
+    // 發出 post 並將回應內容轉為 string 再透過 linqpad 輸出
+    await client.SendAsync(request)
+        .ContinueWith(responseTask =>
+        {
+            responseTask.GetAwaiter().GetResult().Content.ReadAsStringAsync().Dump();
+        });
+}
+```
+
+### POST
+
+```csharp
+var client = new HttpClient(){BaseAddress=new Uri("https://xxx/")};
+// 指定 authorization header
+client.DefaultRequestHeaders.Add("authorization", "token {api token}");
+    
+// 準備寫入的 data (自己建立的型別)
+var postData = new PostData() { userId = 123422, title = "data 中文", body = "data test body 中文" };
+// 將 data 轉為 json
+var json = JsonConvert.SerializeObject(postData);
+// 將轉為 string 的 json 依編碼並指定 content type 存為 httpcontent
+var contentPost = new StringContent(json, Encoding.UTF8, "application/json");
+// 發出 post 並取得結果
+var response = client.PostAsync("test", contentPost).GetAwaiter().GetResult();
+// 將回應結果內容取出並轉為 string 再透過 linqpad 輸出
+response.Content.ReadAsStringAsync().GetAwaiter().GetResult().Dump();
+```
+
+使用 `SendAsync` 的寫法：
+
+```csharp
+HttpClient client = new HttpClient();
+// 指定 base url 
+client.BaseAddress = new Uri("https://xxx/");
+// 指定 authorization header
+client.DefaultRequestHeaders.Add("authorization", "token {api token}");
+// 指定 request 的 method 與 detail url
+HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "data/test");
+// 準備寫入的 data
+PostData postData = new PostData() { userId = 1, title = "data 中文", body = "data test body 中文" };
+// 將 data 轉為 json
+string json = JsonConvert.SerializeObject(postData);
+// 將轉為 string 的 json 依編碼並指定 content type 存為 httpcontent
+request.Content = new StringContent(json, Encoding.UTF8, "application/json");
+// 發出 post 並將回應內容轉為 string 再透過 linqpad 輸出
+await client.SendAsync(request)
+    .ContinueWith(responseTask =>
+    {
+        responseTask.GetAwaiter().GetResult().Content.ReadAsStringAsync().Dump();
+    });
+```
+
+### Proxy
+
+```csharp
+// 建立 HttpClientHandler
+var handler = new HttpClientHandler()
+{
+    // 指定 proxy uri
+    Proxy = new WebProxy("http://127.0.0.1:8888"),
+    // 指定 proxy Credentials
+    Credentials = new NetworkCredential("{username}", "{password}"),
+    // 使用 proxy
+    UseProxy = true,
+};
+//建立 HttpClient
+var client = new HttpClient(handler) { BaseAddress = new Uri("https://jsonbin.org/yowko/") };
+// 指定 authorization header
+client.DefaultRequestHeaders.Add("authorization", "token {api token}");
+// 準備寫入的 data
+var postData = new PostData() { userId = 1, title = "yowko1", body = "yowko test body 中文" };
+// 將 data 轉為 json
+var json = JsonConvert.SerializeObject(postData);
+// 將轉為 string 的 json 依編碼並指定 content type 存為 httpcontent
+var contentPost = new StringContent(json, Encoding.UTF8, "application/json");
+// 發出 post 並取得結果
+var response = await client.PostAsync("test", contentPost);
+// 將回應結果內容取出並轉為 string 再透過 linqpad 輸出
+response.Content.ReadAsStringAsync().GetAwaiter().GetResult().Dump();
+```
+
+
 ---
 
 參考資料：

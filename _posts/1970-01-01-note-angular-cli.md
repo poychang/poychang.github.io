@@ -25,9 +25,9 @@ npm install -g angular-cli
 
 ## 常用指令
 
-- 預覽新專案：`ng new AppName --routing -si -st --style=scss -d`
-- 建立新專案：`ng new AppName --routing -si -st --style=scss`
-- 建立 PWA 專案：`ng new AppName --routing -si -st --style=scss --service-worker`
+- 預覽新專案：`ng new AppName --routing --skip-tests --style=scss -d`
+- 建立新專案：`ng new AppName --routing --skip-tests --style=scss`
+- 建立 PWA 專案：`ng new AppName --routing --skip-tests --style=scss --service-worker`
 - 啟動：`ng serve`
 
 ## 專案升級步驟
