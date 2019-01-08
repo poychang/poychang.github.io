@@ -88,6 +88,18 @@ dependencies
 
 Application Insights 收集了數量龐大，維度多元的遙測資料，如何將這些數據轉換成有價值的資訊，是一個需要花時間研究的議題，搭配 Azure Log Analytics 強大的查詢工具，能讓我們更輕鬆的在茫茫數據海中找到，有價值的數據，進而回饋給我們作為監控、預測或開發更高品質的程式。
 
+## 後記
+
+下面這個查詢語法很好用，主要是查 30 分鐘內的事件，並且每 5 分鐘做一個計數的區間，用 `events_count` 這個欄位名稱來存放值。
+
+```cs
+Event
+| where TimeStamp > ago(30m)
+| summarize events_count=count() by bin(TimeGenerated, 5m) 
+```
+
+參考資料在這 [依時間間隔的彙總與貯體處理](https://docs.microsoft.com/zh-tw/azure/azure-monitor/log-query/datetime-operations#aggregations-and-bucketing-by-time-intervals)
+
 ----------
 
 參考資料：

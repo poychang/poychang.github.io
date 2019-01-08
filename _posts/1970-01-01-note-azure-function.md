@@ -59,8 +59,13 @@ Function App 是指佈署的一個單位，可以將很多 Functions 聚在一�
 
 參考資料：[適用於 Azure Functions 2.x 的 host.json 參考](https://docs.microsoft.com/zh-tw/azure/azure-functions/functions-host-json)
 
+## 範例程式碼
+
+- [azure-functions-durable-extension](https://github.com/Azure/azure-functions-durable-extension)
+- [azure-functions-templates](https://github.com/Azure/azure-functions-templates)
+
 ---
 
 參考資料：
 
-- [Github - Azure Function 的範例程式碼](https://github.com/Azure/azure-functions-templates)
+- []()
