@@ -98,7 +98,9 @@ Event
 | summarize events_count=count() by bin(TimeGenerated, 5m) 
 ```
 
-參考資料在這 [依時間間隔的彙總與貯體處理](https://docs.microsoft.com/zh-tw/azure/azure-monitor/log-query/datetime-operations#aggregations-and-bucketing-by-time-intervals)
+參考資料在這 [依時間間隔的彙總與貯體處理](https://docs.microsoft.com/zh-tw/azure/azure-monitor/log-query/datetime-operations#aggregations-and-bucketing-by-time-intervals)。
+
+另外，如果你要使用 Application Insights 的 REST API 來查詢資料了話，可以參考[這個官方網站](https://dev.applicationinsights.io/quickstart)，有介紹如何使用 Application Insights 的 REST API 搭配上述介紹到的 Query 語法來查詢資料，滿好用的。
 
 ----------
 
