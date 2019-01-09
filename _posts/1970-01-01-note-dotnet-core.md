@@ -488,13 +488,28 @@ public string GetMethodInfo()
 `Union`                       | IEnumerable<T>               |        | √            |
 `Where`                       | IEnumerable<T>               |        | √            |
 
+## Threads vs. Tasks 
+
+### Thread
+Thread 類別產生的是一個 OS-level thread 擁有自己的堆疊和內容，擁有比較高的控制權，可對執行緒停止、暫止、恢復執行等等......。可指定為前台執行緒或是背景執行緒。還可指定堆疊大小，各執行緒的文化特性。問題在於 Thread 類別產生的執行緒，是屬於 OS 層級，所以成本消耗比較大。
+
+### ThreadPool
+.NET 執行緒池，是指由 CLR 管理的執行緒池，當一個執行緒被使用完畢後並不會立刻銷毀，所以在執行緒池當中會存在一些沒有被銷毀的執行緒，而當應用程式需要一個新的執行緒時，就可以從執行緒池中直接獲取一個已經存在的執行緒。
+
+.NET 執行緒池你可以控制執行緒池的大小，但是沒辦法控制執行緒池何時開始執行工作。並且執行緒池所有執行緒，都是屬於背景執行緒。
+
+### Task
+執行緒池的使用還是有些許缺點，例如並不知道操作什麼時候會結束，無法有回傳值。所以 .NET Framework 提供了一個 Task 的概念，Task 可以知道工作什麼時候結束，而且結束的時候可以回傳一個 Result。  Task 雖然是一個非同步的概念，但是依然可以使用 wait() 的方法，讓程式停在 Wait 的地方同步執行。當 Tasks 執行在 ThreadPool 時，如果執行的時間太長，且工作量又很多，也會導致執行緒池滿載 (基本上不太可能)，因此 Task 有提供 LongRunning option，讓 TaskScheduler 知道這是一件很長的工作，所以會建立一個新的執行緒，而不會從執行緒池中取得執行緒。
+
+>Task 幾乎是非同步執行的最好選擇，提供了很多強而有力的 API，且可避免 OS-level Thread 的成本消耗。
+
+參考來源：http://blog.slaks.net/2013-10-11/threads-vs-tasks/
+
 ## HttpClient
 
 REF:
 - [使用 HttpClient 來存取 GET,POST,PUT,DELETE,PATCH 網路資源](https://blog.yowko.com/httpclient/)
 - [探討 HttpClient 可能的問題](https://blog.yowko.com/httpclient-issue/)
-
-
 
 ### GET
 
