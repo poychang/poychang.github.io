@@ -58,8 +58,8 @@ title: About Poy Chang
     <p class="spinner-text monospace">Loading...</p>
 </div>
 
-<script>
+<script defer>
     GitHubCalendar(".calendar", "poychang");
-    document.onload = () => { document.getElementById('user-activity-overview').setAttribute('style', 'display:none;'); };
+    window.onload = () => { document.getElementById('user-activity-overview').setAttribute('style', 'display:none;'); };
 </script>
 <!-- github-calendar end -->
