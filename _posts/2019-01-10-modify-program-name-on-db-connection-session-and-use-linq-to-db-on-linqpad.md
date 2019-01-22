@@ -87,7 +87,7 @@ Application Name = 'Your Application Name'
 
 ![看不到連線工具的名稱](https://i.imgur.com/p5Tbjiq.png)
 
-此時他會記錄所使用的 Data Provider Client 名稱，所以 `program_name` 跟 `client_interface_name` 這兩個欄位會是同樣的值，這是因為 LINQ to DB 他背後其實是個通用連線資料庫的 NuGet 函示庫套件([linq2db](https://www.nuget.org/packages/linq2db/))，因此在設計上他的不會有**程式名稱**，而是用 Data Provider Client 來替代。
+此時他會記錄所使用的 Data Provider Client 名稱，所以 `program_name` 跟 `client_interface_name` 這兩個欄位會是同樣的值 `.NET SqlClient Data Provider`，這是因為 LINQ to DB 他背後其實是個通用連線資料庫的 NuGet 函示庫套件([linq2db](https://www.nuget.org/packages/linq2db/))，因此在設計上他的不會有**程式名稱**，而是用 Data Provider Client 來替代。
 
 >如果你想玩玩看這個 LINQ to DB 通用資料庫連線函示庫，可以看看她的官方網站 [https://linq2db.github.io/](https://linq2db.github.io/) 或者他在 GitHub上 的 [Wiki 文件](https://github.com/linq2db/linq2db/wiki/Introduction)，裡面各種用法寫得相當清楚。
 
