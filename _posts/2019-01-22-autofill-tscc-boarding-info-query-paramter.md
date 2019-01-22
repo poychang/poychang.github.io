@@ -33,7 +33,6 @@ categories: [Javascript]
 
 ```js
 javascript:!function(){var t="https://queryweb.tscc.com.tw/thsrc_web/";if(location.href===t){var e=document.getElementById("txtCardID"),c=document.getElementById("txtBirth");e.value="YOUR_CARD_ID",c.value="YOUR_BIRTHDAY"}else location.href=t}();
-
 ```
 
 ### 步驟三
