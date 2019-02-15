@@ -87,6 +87,35 @@ deploy:              # 部署
     tags: true       # tags设置为true表示只有在有tag的情况下才部署
 ```
 
+## 部屬到 NuGet.org
+
+參考 Repo: [adamovic-cw/travis-nuget-test](https://github.com/adamovic-cw/travis-nuget-test)
+
+```yml
+language: csharp
+sudo: false
+mono:
+  - latest
+env: TEST_VERSION=1.0.8
+solution: Travis.Nuget.Example.sln
+script:
+  - /bin/sh ./build.sh
+  - /bin/sh ./test.sh
+deploy:
+  skip_cleanup: true
+  provider: script
+  script:
+    - /bin/sh ./deploy.sh
+  on:
+    tags: true
+```
+
+```sh
+#!/usr/bin/env bash
+mono nuget.exe pack Travis.Nuget.Example/Travis.Nuget.Example.nuspec -Version $TEST_VERSION -Verbosity detailed && \
+mono nuget.exe push Travis.Nuget.Example.$TEST_VERSION.nupkg -ApiKey $NUGET_API_KEY -Verbosity detailed -Source nuget.org
+```
+
 ---
 
 參考資料：
