@@ -59,7 +59,7 @@ categories: [Dotnet, Develop, Tools]
 
 藉此我們可以輕鬆在 .NET 專案中使用 Application Insights 的服務。
 
-這裡我們想要建立一個適用於各種應用程式的 Application Insights 遙測工具使用方式，透過 [DotNet Base](https://github.com/Microsoft/ApplicationInsights-dotnet) 搭配最基本的主控台應用程式來做範例。
+這裡我們想要建立一個適用於各種應用程式的 Application Insights 遙測工具使用方式，使用 [Application Insights for .NET 套件](https://github.com/Microsoft/ApplicationInsights-dotnet) 並搭配最基本的主控台應用程式來做範例。
 
 ### 安裝套件
 
@@ -235,3 +235,4 @@ namespace ApplicationInsightsConsole
 - [Microsoft/ApplicationInsights-Home](https://github.com/Microsoft/ApplicationInsights-Home)
 - [DevOps - 透過 Application Insights 將遙測最佳化](https://msdn.microsoft.com/magazine/mt808502)
 - [Azure Application Insights REST API](https://dev.applicationinsights.io/)
+- [Microsoft/ApplicationInsights-dotnet](https://github.com/Microsoft/ApplicationInsights-dotnet)
