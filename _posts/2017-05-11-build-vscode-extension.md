@@ -91,4 +91,4 @@ OK！這樣其實就大功告成了，後續發布和封裝的動作，請參考
 
 * [Extension Authoring Example - Hello World](https://code.visualstudio.com/docs/extensions/example-hello-world)
 * [Workspace Recommended Extensions](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)
-* [五個 Visual Studio Code 的實用工具與技巧 | How-To | Editor 編輯者 #9](https://www.youtube.com/watch?v=zzon9KS90Dk)
+* [五個 Visual Studio Code 的實用工具與技巧 - Editor 編輯者 #9](https://www.youtube.com/watch?v=zzon9KS90Dk)
