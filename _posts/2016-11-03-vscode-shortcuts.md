@@ -56,6 +56,7 @@ John Papa 寫了一篇超值得記憶的重構快速鍵文章，但是是以 Mac
 - `Ctrl` + `K`, `Ctrl` + `J` 取消摺疊所有程式碼
 - `Shift` + `Alt` + `→` 智慧型擴展選擇 Expand AST Select
 - `Shift` + `Alt` + `←` 智慧型縮減選擇 Shrink AST Select
+- `Shift` + `Alt` + `.` 開啟 Auto Fix 選單
 
 ## 官方寫的 VS Code 技巧清單（English）
 
