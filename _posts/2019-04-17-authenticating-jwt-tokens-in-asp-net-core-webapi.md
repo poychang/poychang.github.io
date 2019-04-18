@@ -6,6 +6,7 @@ author: Poy Chang
 comments: true
 categories: [Dotnet, WebAPI]
 ---
+
 為了保護 WebAPI 僅提供合法的使用者存取，有很多機制可以做，透過 JWT (JSON Web Token) 便是其中一種方式，這篇示範如何使用官方所提供的 `System.IdentityModel.Tokens.Jwt` 擴充套件，處理呼叫 API 的來源是否為合法的使用者身分。
 
 順道一提，要產生 JWT Token 有很多套件可以幫助開發者快速建立，[JWT](https://github.com/jwt-dotnet/jwt) 這個 NuGet 套件就是其中一個，但這裡我使用官方所提供的 `System.IdentityModel.Tokens.Jwt` 擴充套件來處理，雖然這是官方提供的版本，但寫起來一點也不困難。
