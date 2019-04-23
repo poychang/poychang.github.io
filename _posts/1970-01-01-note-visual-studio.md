@@ -67,6 +67,10 @@ categories: [Note, Tools]
     <td><kbd>Shift</kbd> + <kbd>Delete</kbd></td>
     <td>刪除整行</td>
   </tr>
+  <tr>
+    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + Click</td>
+    <td>選取多個游標位置</td>
+  </tr>
 </tbody>
 </table>
 
@@ -188,7 +192,6 @@ nuget.exe config -set http_proxy.password=mySuperSecretPassword
 
 參考資料：
 
-- [categories: [Note, Tools]](#categories-note-tools)
 - [快捷鍵](#%E5%BF%AB%E6%8D%B7%E9%8D%B5)
 - [必裝套件](#%E5%BF%85%E8%A3%9D%E5%A5%97%E4%BB%B6)
 - [圖示描述](#%E5%9C%96%E7%A4%BA%E6%8F%8F%E8%BF%B0)
