@@ -292,53 +292,6 @@ REF: [如何：判斷安裝的 .NET Framework 版本](https://docs.microsoft.com
 |僅限 Windows 10 Fall Creators Update：461308<br/><br/> 所有其他作業系統版本：461310         | .NET Framework 4.7.1 |
 |僅限 Windows 10 2018 4 月更新：461808<br/><br/> 所有其他作業系統版本：461814                 | .NET Framework 4.7.2 |
 
-## 下載 .NET Framework 離線安裝檔
-
-以下下載連結都來自微軟官方網站：
-
-- .NET Framework 4.7
-  - [.NET Framework 4.7.2 x86+x64](https://download.microsoft.com/download/6/E/4/6E48E8AB-DC00-419E-9704-06DD46E5F81D/NDP472-KB4054530-x86-x64-AllOS-ENU.exe)
-  - [.NET Framework 4.7.1 x86+x64](https://download.microsoft.com/download/9/E/6/9E63300C-0941-4B45-A0EC-0008F96DD480/NDP471-KB4033342-x86-x64-AllOS-ENU.exe)
-  - [.NET Framework 4.7 x86+x64](http://download.microsoft.com/download/D/D/3/DD35CC25-6E9C-484B-A746-C5BE0C923290/NDP47-KB3186497-x86-x64-AllOS-ENU.exe)
-- .NET Framework 4.6
-  - [.NET Framework 4.6.2 x86+x64](https://download.microsoft.com/download/F/9/4/F942F07D-F26F-4F30-B4E3-EBD54FABA377/NDP462-KB3151800-x86-x64-AllOS-ENU.exe)
-  - [.NET Framework 4.6.1 x86+x64](https://download.microsoft.com/download/E/4/1/E4173890-A24A-4936-9FC9-AF930FE3FA40/NDP461-KB3102436-x86-x64-AllOS-ENU.exe) \* [.NET Framework 4.6 x86+x64](https://download.microsoft.com/download/C/3/A/C3A5200B-D33C-47E9-9D70-2F7C65DAAD94/NDP46-KB3045557-x86-x64-AllOS-ENU.exe)
-- .NET Framework 4.5
-  - [.NET Framework 4.5.3 x86+x64](http://download.microsoft.com/download/2/8/7/2870C339-3C77-49CF-8DDF-AD6189AB8597/NDP453-KB2969351-x86-x64-AllOS-ENU.exe)
-  - [.NET Framework 4.5.2 x86+x64](http://download.microsoft.com/download/E/2/1/E21644B5-2DF2-47C2-91BD-63C560427900/NDP452-KB2901907-x86-x64-AllOS-ENU.exe)
-  - [.NET Framework 4.5.1 x86+x64](http://download.microsoft.com/download/1/6/7/167F0D79-9317-48AE-AEDB-17120579F8E2/NDP451-KB2858728-x86-x64-AllOS-ENU.exe)
-  - [.NET Framework 4.5 x86+x64](http://download.microsoft.com/download/b/a/4/ba4a7e71-2906-4b2d-a0e1-80cf16844f5f/dotnetfx45_full_x86_x64.exe)
-- .NET Framework 4.0 \* [.NET Framework 4.0 x86+x64](http://download.microsoft.com/download/9/5/A/95A9616B-7A37-4AF6-BC36-D6EA96C8DAAE/dotNetFx40_Full_x86_x64.exe)
-- .NET Framework 3.5 (包含 3.0 和 2.0)
-  - [.NET Framework 3.5 SP1 x86+x64](http://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe)
-  - [.NET Framework 3.5 x86+x64](http://download.microsoft.com/download/6/0/f/60fc5854-3cb8-4892-b6db-bd4f42510f28/dotnetfx35.exe)
-- .NET Framework 2.0
-  - [.NET Framework 2.0 SP2 x64](http://download.microsoft.com/download/c/6/e/c6e88215-0178-4c6c-b5f3-158ff77b1f38/NetFx20SP2_x64.exe)
-  - [.NET Framework 2.0 SP2 x86](http://download.microsoft.com/download/c/6/e/c6e88215-0178-4c6c-b5f3-158ff77b1f38/NetFx20SP2_x86.exe)
-  - [.NET Framework 2.0 SP1 x64](http://download.microsoft.com/download/9/8/6/98610406-c2b7-45a4-bdc3-9db1b1c5f7e2/NetFx20SP1_x64.exe)
-  - [.NET Framework 2.0 SP1 x86](http://download.microsoft.com/download/0/8/c/08c19fa4-4c4f-4ffb-9d6c-150906578c9e/NetFx20SP1_x86.exe)
-  - [.NET Framework 2.0 x64](http://download.microsoft.com/download/a/3/f/a3f1bf98-18f3-4036-9b68-8e6de530ce0a/NetFx64.exe)
-  - [.NET Framework 2.0 x86](http://download.microsoft.com/download/5/6/7/567758a3-759e-473e-bf8f-52154438565a/dotnetfx.exe)
-- .NET Framework 1.1
-  - [.NET Framework 1.1 SP1 x86](https://download.microsoft.com/download/8/b/4/8b4addd8-e957-4dea-bdb8-c4e00af5b94b/NDP1.1sp1-KB867460-X86.exe)
-  - [.NET Framework 1.1](http://download.microsoft.com/download/a/a/c/aac39226-8825-44ce-90e3-bf8203e74006/dotnetfx.exe)
-- .NET Framework 1.0 \* [.NET Framework 1.0](http://download.microsoft.com/download/e/b/2/eb247c2a-e6b3-4694-98a2-b27111d233dd/dotnetredist.exe)
-
-Windows 內建版本
-
-- Windows 10 自帶 .NET Framework 4.6
-- Windows 8.1 自帶 .NET Framework 4.5.1
-- Windows 8 自帶 .NET Framework 4.5
-- Windows 7 自帶 .NET Framework 3.5(2.0/1.1)
-
-可以透過 [.NET Version Detector](http://www.asoft.be/prod_netver.html) 這個軟體來查看電腦安裝了那些 .NET Framework。
-
-.NET Framework 基本上分三類，只要安裝各類中最新版的即可，對應版號如下：
-
-- CLR1 - .NET Framework 1.1
-- CLR2 - .NET Framework 3.5
-- CLR4 - .NET Framework 4.X
-
 ## 單元測試命名方法
 
 http://teddy-chen-tw.blogspot.com/2016/05/blog-post_12.html
@@ -633,27 +586,34 @@ response.Content.ReadAsStringAsync().GetAwaiter().GetResult().Dump();
 
 參考資料：
 
-- [指令](#指令)
-  - [常用指令](#常用指令)
+- [指令](#%E6%8C%87%E4%BB%A4)
+  - [常用指令](#%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4)
 - [Entity Framework](#entity-framework)
   - [Code First](#code-first)
   - [Data Annotations](#data-annotations)
 - [Http StatusCode](#http-statuscode)
-- [佈署至 IIS](#佈署至-iis)
-- [開發時自動編譯](#開發時自動編譯)
-- [ASP.NET Core 教學 - Middleware](#aspnet-core-教學---middleware)
-- [ASP.NET Core 框架揭秘 by Artech](#aspnet-core-框架揭秘-by-artech)
-- [ASP.NET Core 原始碼閱讀筆記 by Bill Shooting](#aspnet-core-原始碼閱讀筆記-by-bill-shooting)
-- [計算程式執行時間](#計算程式執行時間)
-- [.NET 實作支援](#net-實作支援)
-- [執行(發佈)模式](#執行發佈模式)
+- [佈署至 IIS](#%E4%BD%88%E7%BD%B2%E8%87%B3-iis)
+- [開發時自動編譯](#%E9%96%8B%E7%99%BC%E6%99%82%E8%87%AA%E5%8B%95%E7%B7%A8%E8%AD%AF)
+- [ASP.NET Core 教學 - Middleware](#aspnet-core-%E6%95%99%E5%AD%B8---middleware)
+- [ASP.NET Core 框架揭秘 by Artech](#aspnet-core-%E6%A1%86%E6%9E%B6%E6%8F%AD%E7%A7%98-by-artech)
+- [ASP.NET Core 原始碼閱讀筆記 by Bill Shooting](#aspnet-core-%E5%8E%9F%E5%A7%8B%E7%A2%BC%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98-by-bill-shooting)
+- [計算程式執行時間](#%E8%A8%88%E7%AE%97%E7%A8%8B%E5%BC%8F%E5%9F%B7%E8%A1%8C%E6%99%82%E9%96%93)
+- [.NET 實作支援](#net-%E5%AF%A6%E4%BD%9C%E6%94%AF%E6%8F%B4)
+- [執行(發佈)模式](#%E5%9F%B7%E8%A1%8C%E7%99%BC%E4%BD%88%E6%A8%A1%E5%BC%8F)
   - [Framework Dependent Deployment(FDD)](#framework-dependent-deploymentfdd)
   - [Self Contained Deployment(SCD)](#self-contained-deploymentscd)
-- [開啟 Dotnet 專案時效能低落的問題](#開啟-dotnet-專案時效能低落的問題)
+- [開啟 Dotnet 專案時效能低落的問題](#%E9%96%8B%E5%95%9F-dotnet-%E5%B0%88%E6%A1%88%E6%99%82%E6%95%88%E8%83%BD%E4%BD%8E%E8%90%BD%E7%9A%84%E5%95%8F%E9%A1%8C)
 - [Web Depoly](#web-depoly)
-- [判斷 Windows 目前安裝的 .NET Framework 版本](#判斷-windows-目前安裝的-net-framework-版本)
-- [下載 .NET Framework 離線安裝檔](#下載-net-framework-離線安裝檔)
-- [單元測試命名方法](#單元測試命名方法)
-- [Class 類別](#class-類別)
-- [取得當前名稱空間、類名和方法名稱](#取得當前名稱空間類名和方法名稱)
+- [判斷 Windows 目前安裝的 .NET Framework 版本](#%E5%88%A4%E6%96%B7-windows-%E7%9B%AE%E5%89%8D%E5%AE%89%E8%A3%9D%E7%9A%84-net-framework-%E7%89%88%E6%9C%AC)
+- [單元測試命名方法](#%E5%96%AE%E5%85%83%E6%B8%AC%E8%A9%A6%E5%91%BD%E5%90%8D%E6%96%B9%E6%B3%95)
+- [Class 類別](#class-%E9%A1%9E%E5%88%A5)
+- [取得當前名稱空間、類名和方法名稱](#%E5%8F%96%E5%BE%97%E7%95%B6%E5%89%8D%E5%90%8D%E7%A8%B1%E7%A9%BA%E9%96%93%E9%A1%9E%E5%90%8D%E5%92%8C%E6%96%B9%E6%B3%95%E5%90%8D%E7%A8%B1)
 - [LINQ](#linq)
+- [Threads vs. Tasks](#threads-vs-tasks)
+  - [Thread](#thread)
+  - [ThreadPool](#threadpool)
+  - [Task](#task)
+- [HttpClient](#httpclient)
+  - [GET](#get)
+  - [POST](#post)
+  - [Proxy](#proxy)
