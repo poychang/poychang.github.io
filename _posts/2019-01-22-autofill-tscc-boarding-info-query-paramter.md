@@ -51,7 +51,7 @@ javascript:!function(){var t="https://queryweb.tscc.com.tw/thsrc_web/";if(locati
 
 ## 程式碼
 
-這個小功能的原理可以參考 [WiKi 上對 JavaScript 書籤小程式 (bookmarklet)的說明](https://zh.wikipedia.org/wiki/%E5%B0%8F%E4%B9%A6%E7%AD%BE)，如果對這篇的程式碼有興趣請參考這裡 [poychang/tscc-query-autofill](https://github.com/poychang/tscc-query-autofill)。
+這個小功能的原理可以參考 [WiKi 上對 JavaScript 書籤小程式 (bookmarklet)的說明](https://zh.wikipedia.org/wiki/%E5%B0%8F%E4%B9%A6%E7%AD%BE)，如果對這篇的程式碼有興趣請參考這裡 [poychang/tscc-query-autofill-bookmarklet](https://github.com/poychang/tscc-query-autofill-bookmarklet)。
 
 ----------
 
