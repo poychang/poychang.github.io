@@ -11,6 +11,15 @@ categories: [Note, Docker]
 
 - docs.docker.com Search URL `https://docs.docker.com/search/?q={q}` 其中 `{q}` 可替換成要搜尋的文字
 
+## 容器基礎架構
+
+![Container Architecture](https://i.imgur.com/MdajDvj.png)
+
+## CheatSheet
+
+- [Docker 官方 CheatSheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
+- [docker CLI & Dockerfile Cheat Sheet](http://design.jboss.org/redhatdeveloper/marketing/docker_cheatsheet/cheatsheet/images/docker_cheatsheet_r3v2.pdf)
+
 ## 重點名詞
 
 - Layer: 層，一組唯讀的文件或命令，描述如何在容器下設置底層系統。層 (Layer) 構建在彼此之上，每個層代表對文件系統的更改
