@@ -18,7 +18,10 @@ categories: [Note, Docker]
 ## CheatSheet
 
 - [Docker 官方 CheatSheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
+- [Docker 官方 CheatSheet 繁中翻譯版](https://1drv.ms/b/s!Aiwtjhj5fofrk8tQBTZ6wZzRpR0yqQ)
 - [docker CLI & Dockerfile Cheat Sheet](http://design.jboss.org/redhatdeveloper/marketing/docker_cheatsheet/cheatsheet/images/docker_cheatsheet_r3v2.pdf)
+
+![Docker 官方 CheatSheet 繁中翻譯版](https://i.imgur.com/Dle3hqm.png)
 
 ## 重點名詞
 
