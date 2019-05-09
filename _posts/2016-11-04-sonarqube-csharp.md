@@ -35,7 +35,7 @@ SonarQube 是使用 Java 開發開源專案，支援 Windows、Mac、Linux 多�
   * SonarQube 安裝檔中已經有自帶 Microsoft JDBC Drivers，因此這項非必要
 * SonarQube 必須搭配一套資料庫系統
   * 請參考[官方建議清單](http://docs.sonarqube.org/display/SONAR/Requirements)
-  * 目前只支援 2012、2014
+  * 目前只支援 SQL Server 2014 以上版本
 * 設定資料庫（以 SQL Server 2014 為例）
   * 建立資料庫帳號 `sonar`
   * 建立名稱為 `SonarQube` 的資料庫，並將上面的資料庫帳號 `sonar` 設定為資料庫擁有者
