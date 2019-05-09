@@ -12,7 +12,7 @@ SonarQube 是一套分析程式碼品質的工具，支援超過 25 種程式語
 
 SonarQube 程式碼品質分析工具用 7 個維度來分析程式碼品質，包括：
 
-* 程式架構　Architecture & Desig
+* 程式架構　Architecture & Design
 * 冗餘程式　Duplications
 * 單元測試　Unit tests
 * 複雜度　　Complexity
