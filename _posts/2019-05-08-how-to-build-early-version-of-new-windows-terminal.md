@@ -66,6 +66,8 @@ git submodule update --init --recursive
 2. `.\Terminal\src\renderer\base\thread.hpp`
 3. `.\Terminal\src\terminal\parser\ut_parser\InputEngineTest.cpp`
 4. `.\Terminal\src\tools\vtpipeterm\main.cpp`
+5. `.\Terminal\src\host\ut_host\ClipboardTests.cpp`
+6. `.\Terminal\src\inc\test\CommonState.hpp`
 
 #### 遇到字串編碼問題
 
@@ -85,6 +87,7 @@ git submodule update --init --recursive
 
 ![Windows Terminal (Preview) 出現了！](https://i.imgur.com/VDROLOP.png)
 
+![Windows Terminal (Preview) 出現了！](https://i.imgur.com/Xd4mDgE.png)
 
 ----------
 
