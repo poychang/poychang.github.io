@@ -39,14 +39,17 @@ SonarQube 是使用 Java 開發開源專案，支援 Windows、Mac、Linux 多�
 * 設定資料庫（以 SQL Server 2014 為例）
   * 建立資料庫帳號 `sonar`
   * 建立名稱為 `SonarQube` 的資料庫，並將上面的資料庫帳號 `sonar` 設定為資料庫擁有者
-  * 建立需選擇正確的**定序**
-    * Case-Sensitive (CS) 和 Accent-Sensitive (AS) (例: `Chinese_Taiwan_Stroke_CS_AS`)
+  * 建立時務必選擇正確的**定序**
+    * Case-Sensitive (CS) 和 Accent-Sensitive (AS) (例: `Chinese_Taiwan_Stroke_CI_AS`)
     * 備註：繁體中文預設定序為 `Chinese_Taiwan_Stroke_CI_AS`
-  * SQL Server 組態管理員
+  * 建立時務必開啟 READ_COMMITTED_SNAPSHOT
+    * 開啟指令 `ALTER DATABASE [YourSonarQubeDatabase] SET READ_COMMITTED_SNAPSHOT ON WITH ROLLBACK IMMEDIATE;`
+    * 避免 MS SQL 資料庫的交易鎖定造成死結問題
+  * 啟動 SQL Server 組態管理員
     * 需要啟動 TCP/IP 通訊協定服務
-    * 其中要設定 TCP 通訊埠：1433 （如下圖）
+    * 其中要設定 TCP 通訊埠為 1433 （如下圖）
 
-![](http://i.imgur.com/pt0za2I.png)
+    ![設定 TCP 通訊埠為 1433](http://i.imgur.com/pt0za2I.png)
 
 ## 安裝 SonarQube
 
@@ -54,7 +57,7 @@ SonarQube 是使用 Java 開發開源專案，支援 Windows、Mac、Linux 多�
   * [SonarQube](http://www.sonarqube.org/downloads/)
   * [SonarQube Scanner for MSBuild](http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild)
 * 安裝
-  * 將 `SonarQube` 壓縮檔解壓縮到指定目錄，例如 `c:\SonarQube\`
+  * 將 `SonarQube` 壓縮檔解壓縮到指定目錄，例如 `C:\SonarQube\`
   * 將 `SonarQube Scanner for MSBuild` 壓縮檔解壓縮到指定目錄，例如 `C:\SonarQube\bin\sonar-scanner\`
   * 這裡的安裝目錄可自訂
 * 設定環境變數
