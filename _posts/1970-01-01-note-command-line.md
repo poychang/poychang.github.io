@@ -229,11 +229,12 @@ Unix           | MS-DOS          | 說明
 參考資料：
 
 - [命令列也有快捷鍵](#%E5%91%BD%E4%BB%A4%E5%88%97%E4%B9%9F%E6%9C%89%E5%BF%AB%E6%8D%B7%E9%8D%B5)
-  - [Net Use](#net-use)
-  - [使用 UNC 路徑](#%E4%BD%BF%E7%94%A8-unc-%E8%B7%AF%E5%BE%91)
-  - [刪除 Mac OS 自動生成隱藏檔案（.\_DS_Store）](#%E5%88%AA%E9%99%A4-mac-os-%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E9%9A%B1%E8%97%8F%E6%AA%94%E6%A1%88dsstore)
-  - [其他待整理指令](#%E5%85%B6%E4%BB%96%E5%BE%85%E6%95%B4%E7%90%86%E6%8C%87%E4%BB%A4)
+- [Net Use](#net-use)
+- [使用 UNC 路徑](#%E4%BD%BF%E7%94%A8-unc-%E8%B7%AF%E5%BE%91)
+- [刪除 Mac OS 自動生成隱藏檔案（.\_DS_Store）](#%E5%88%AA%E9%99%A4-mac-os-%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E9%9A%B1%E8%97%8F%E6%AA%94%E6%A1%88dsstore)
+- [其他待整理指令](#%E5%85%B6%E4%BB%96%E5%BE%85%E6%95%B4%E7%90%86%E6%8C%87%E4%BB%A4)
 - [修改 Windows 路由表](#%E4%BF%AE%E6%94%B9-windows-%E8%B7%AF%E7%94%B1%E8%A1%A8)
-  - [雙網卡設定案例](#%E9%9B%99%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A%E6%A1%88%E4%BE%8B)
+- [雙網卡設定案例](#%E9%9B%99%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A%E6%A1%88%E4%BE%8B)
 - [curl 指令用法](#curl-%E6%8C%87%E4%BB%A4%E7%94%A8%E6%B3%95)
 - [Unix 與 MS-DOS 指令對照表](#unix-%E8%88%87-ms-dos-%E6%8C%87%E4%BB%A4%E5%B0%8D%E7%85%A7%E8%A1%A8)
+- [命令列的藝術](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh-Hant.md)

@@ -201,3 +201,4 @@ if errorlevel 1 echo ping target fail >> pinglog.txt
 
 - [批次檔的精要學習手冊](https://www.gitbook.com/book/peterju/cmddoc)
 - [How do I pass command line parameters to a batch file?](https://stackoverflow.com/questions/26551/how-do-i-pass-command-line-parameters-to-a-batch-file)
+- [命令列的藝術](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh-Hant.md)

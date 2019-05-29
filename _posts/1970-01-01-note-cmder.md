@@ -98,4 +98,6 @@ DOSKEY e=explorer .
 參考資料：
 
 - [介紹好用工具：Cmder ( 具有 Linux 溫度的 Windows 命令提示字元工具 )](https://blog.miniasp.com/post/2015/09/27/Useful-tool-Cmder)
+- [介紹好用工具：WSLtty (Mintty as a terminal for WSL)](https://blog.miniasp.com/post/2019/02/09/Useful-tool-WSLtty-Mintty-as-a-terminal-for-WSL)
 - [以WSL+UBUNTU+ZSH打造WINDOWS上高富帥的命令列模式](https://blog.kkbruce.net/2019/03/wsl-ubuntu-zsh-windows-command-line.html#.XO3Q6j7iuUk)
+- [命令列的藝術](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh-Hant.md)
