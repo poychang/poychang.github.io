@@ -23,7 +23,7 @@ categories: [Tools]
 
 ## 安裝方式
 
-用系統管理者權限開啟 PowerShell，並執行下列指令安裝：
+用**系統管理者權限**開啟 PowerShell，並執行下列指令安裝：
 
 ```bash
 npm install --global --production windows-build-tools

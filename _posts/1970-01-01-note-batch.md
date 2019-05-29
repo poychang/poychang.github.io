@@ -9,7 +9,7 @@ categories: [Note, Tools]
 
 想要將指令集合起來並且自動化執行，批次檔絕對是你不可或缺的技能之一。
 
-在 stackoverflow 上有個回答包含了很完整的批次檔樣板，[template.bat](https://stackoverflow.com/a/45070967/3803939)，可以從這個樣版上學到很多技巧，值得一看。
+在 StackOverflow 上有個回答包含了很完整的批次檔樣板，[template.bat](https://stackoverflow.com/a/45070967/3803939)，可以從這個樣版上學到很多技巧，值得一看。
 
 ## 批次檔基本介紹與語法
 
