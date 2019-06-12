@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在 .NET Core 中全域捕捉未處理的例外
+title: 在 .NET Core 主控台應用程式中全域捕捉未處理的例外
 date: 2019-06-12 12:53
 author: Poy Chang
 comments: true
@@ -76,3 +76,4 @@ void Main()
 
 * [.NET Core Global exception handler in console application](https://stackoverflow.com/questions/43639601/net-core-global-exception-handler-in-console-application)
 * [.NET Core 2.1 Doc - AppDomain.UnhandledException Event](https://docs.microsoft.com/zh-tw/dotnet/api/system.appdomain.unhandledexception?view=netcore-2.1)
+* [如何正確捕捉 Task 例外](https://dotblogs.com.tw/sean_liao/2018/01/09/taskexceptionshandling)
