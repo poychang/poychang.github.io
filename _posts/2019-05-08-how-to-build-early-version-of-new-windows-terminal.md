@@ -79,9 +79,9 @@ git submodule update --init --recursive
 
 ![開啟 Windows 開發者模式](https://i.imgur.com/QOSnal9.png)
 
-因為這是早期自行建置的版本，所以不會有相關的憑證，所以必須透過 Visual Studio 進行部屬安裝，你可以在方案中的 `Terminal` 資料夾中找到 `CascadiaPackage`，可以點選這個檔案並從滑鼠右鍵的清單中找到 `Delpoy` 功能進行部屬安裝，請參考下圖位置：
+因為這是早期自行建置的版本，所以不會有相關的憑證，所以必須透過 Visual Studio 進行佈署安裝，你可以在方案中的 `Terminal` 資料夾中找到 `CascadiaPackage`，可以點選這個檔案並從滑鼠右鍵的清單中找到 `Delpoy` 功能進行佈署安裝，請參考下圖位置：
 
-![從 Visual Studio 進行部屬安裝](https://i.imgur.com/r7cGjxK.png)
+![從 Visual Studio 進行佈署安裝](https://i.imgur.com/r7cGjxK.png)
 
 接著你就可以在系統的開啟清單中找到 Windows Terminal (Preview) 程式囉！🎉🎉🎉
 
