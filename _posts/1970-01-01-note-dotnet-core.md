@@ -581,39 +581,61 @@ var response = await client.PostAsync("test", contentPost);
 response.Content.ReadAsStringAsync().GetAwaiter().GetResult().Dump();
 ```
 
+## DateTime
+
+注意 `2019/06/20 13:20:30` 這個時間格式為 `yyyy/MM/dd HH:mm:ss` 的格式，其中"小時"容易搞混，`hh` 表示 12 小時制的時間，應該要用 `HH` 表示 24 小時制。
+
+使用時間格式的通用轉換方法：
+
+```csharp
+var dateString = "2019/06/20";
+var date = DateTime.ParseExact(sDate , "yyyy/MM/dd", null, System.Globalization.DateTimeStyles.AllowWhiteSpaces);
+```
+
+| 時間格式 | 說明               |
+| ------ | ------------------ |
+| y      | 年份                |
+| M      | 月份                |
+| d      | 日期                |
+| h / H  | 12 小時制 / 24 小時制 |
+| m      | 分鐘                |
+| s      | 秒                  |
+
+
 
 ---
 
 參考資料：
 
-- [指令](#%E6%8C%87%E4%BB%A4)
-  - [常用指令](#%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4)
-- [Entity Framework](#entity-framework)
-  - [Code First](#code-first)
-  - [Data Annotations](#data-annotations)
-- [Http StatusCode](#http-statuscode)
-- [佈署至 IIS](#%E4%BD%88%E7%BD%B2%E8%87%B3-iis)
-- [開發時自動編譯](#%E9%96%8B%E7%99%BC%E6%99%82%E8%87%AA%E5%8B%95%E7%B7%A8%E8%AD%AF)
-- [ASP.NET Core 教學 - Middleware](#aspnet-core-%E6%95%99%E5%AD%B8---middleware)
-- [ASP.NET Core 框架揭秘 by Artech](#aspnet-core-%E6%A1%86%E6%9E%B6%E6%8F%AD%E7%A7%98-by-artech)
-- [ASP.NET Core 原始碼閱讀筆記 by Bill Shooting](#aspnet-core-%E5%8E%9F%E5%A7%8B%E7%A2%BC%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98-by-bill-shooting)
-- [計算程式執行時間](#%E8%A8%88%E7%AE%97%E7%A8%8B%E5%BC%8F%E5%9F%B7%E8%A1%8C%E6%99%82%E9%96%93)
-- [.NET 實作支援](#net-%E5%AF%A6%E4%BD%9C%E6%94%AF%E6%8F%B4)
-- [執行(發佈)模式](#%E5%9F%B7%E8%A1%8C%E7%99%BC%E4%BD%88%E6%A8%A1%E5%BC%8F)
-  - [Framework Dependent Deployment(FDD)](#framework-dependent-deploymentfdd)
-  - [Self Contained Deployment(SCD)](#self-contained-deploymentscd)
-- [開啟 Dotnet 專案時效能低落的問題](#%E9%96%8B%E5%95%9F-dotnet-%E5%B0%88%E6%A1%88%E6%99%82%E6%95%88%E8%83%BD%E4%BD%8E%E8%90%BD%E7%9A%84%E5%95%8F%E9%A1%8C)
-- [Web Depoly](#web-depoly)
-- [判斷 Windows 目前安裝的 .NET Framework 版本](#%E5%88%A4%E6%96%B7-windows-%E7%9B%AE%E5%89%8D%E5%AE%89%E8%A3%9D%E7%9A%84-net-framework-%E7%89%88%E6%9C%AC)
-- [單元測試命名方法](#%E5%96%AE%E5%85%83%E6%B8%AC%E8%A9%A6%E5%91%BD%E5%90%8D%E6%96%B9%E6%B3%95)
-- [Class 類別](#class-%E9%A1%9E%E5%88%A5)
-- [取得當前名稱空間、類名和方法名稱](#%E5%8F%96%E5%BE%97%E7%95%B6%E5%89%8D%E5%90%8D%E7%A8%B1%E7%A9%BA%E9%96%93%E9%A1%9E%E5%90%8D%E5%92%8C%E6%96%B9%E6%B3%95%E5%90%8D%E7%A8%B1)
-- [LINQ](#linq)
-- [Threads vs. Tasks](#threads-vs-tasks)
-  - [Thread](#thread)
-  - [ThreadPool](#threadpool)
-  - [Task](#task)
-- [HttpClient](#httpclient)
-  - [GET](#get)
-  - [POST](#post)
-  - [Proxy](#proxy)
+- [指令](#指令)
+  - [常用指令](#常用指令)
+- [Entity Framework](#Entity-Framework)
+  - [Code First](#Code-First)
+  - [Data Annotations](#Data-Annotations)
+- [Http StatusCode](#Http-StatusCode)
+- [佈署至 IIS](#佈署至-IIS)
+- [開發時自動編譯](#開發時自動編譯)
+- [ASP.NET Core 教學 - Middleware](#ASPNET-Core-教學---Middleware)
+- [ASP.NET Core 框架揭秘 by Artech](#ASPNET-Core-框架揭秘-by-Artech)
+- [ASP.NET Core 原始碼閱讀筆記 by Bill Shooting](#ASPNET-Core-原始碼閱讀筆記-by-Bill-Shooting)
+- [計算程式執行時間](#計算程式執行時間)
+- [.NET 實作支援](#NET-實作支援)
+- [執行(發佈)模式](#執行發佈模式)
+  - [Framework Dependent Deployment(FDD)](#Framework-Dependent-DeploymentFDD)
+  - [Self Contained Deployment(SCD)](#Self-Contained-DeploymentSCD)
+- [開啟 Dotnet 專案時效能低落的問題](#開啟-Dotnet-專案時效能低落的問題)
+- [Web Depoly](#Web-Depoly)
+- [判斷 Windows 目前安裝的 .NET Framework 版本](#判斷-Windows-目前安裝的-NET-Framework-版本)
+- [單元測試命名方法](#單元測試命名方法)
+- [Class 類別](#Class-類別)
+- [取得當前名稱空間、類名和方法名稱](#取得當前名稱空間類名和方法名稱)
+- [LINQ](#LINQ)
+- [Threads vs. Tasks](#Threads-vs-Tasks)
+  - [Thread](#Thread)
+  - [ThreadPool](#ThreadPool)
+  - [Task](#Task)
+- [HttpClient](#HttpClient)
+  - [GET](#GET)
+  - [POST](#POST)
+  - [Proxy](#Proxy)
+- [DateTime](#DateTime)
