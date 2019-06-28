@@ -47,7 +47,7 @@ public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
 
 重點在這裡，接著我們增加一個 `LoggingMiddleware.cs` 中介程序，這裡面將會是實作整個處理 HTTP Request 並將其記錄下來的關鍵。
 
->關於 ASP.NET Core 中介程序的用途說明及基本寫法，請參考[這篇官方文件](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/middleware/)。
+>關於 ASP.NET Core 中介程序的用途說明及基本寫法，請參考[這篇官方文件](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/middleware/write)。
 
 我們預期的動作會像下圖這樣，request 進入到此中介程序時，會將該 request 複製一份給 Logger 記錄器做處理，同時也把一樣的 request 往下傳遞。
 
