@@ -108,7 +108,7 @@ public async Task Invoke(HttpContext context)
 
 ## 啟用客製的 Logging Middleware 中介程序
 
-為了優雅的啟用我們客製的 Logging Middleware 中介程序，在範例程式碼中做了一個 LoggingMiddlewareExtensions 擴充方法：
+為了優雅的啟用我們客製的 Logging Middleware 中介程序，在範例程式碼中做了一個 `LoggingMiddlewareExtensions` 擴充方法：
 
 ```csharp
 public static class LoggingMiddlewareExtensions
