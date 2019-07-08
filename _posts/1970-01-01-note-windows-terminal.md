@@ -7,11 +7,42 @@ comments: true
 categories: [Develop, Tools]
 ---
 
-本篇作為書籤用途，紀錄網路上的 Visual Studio 相關資訊
+本篇作為書籤用途，紀錄網路上的 Windows Terminal 相關資訊
 
 ## WLS 的高富帥
 
-參考這篇：[以WSL + Ubuntu + zsh打造Windows上高富帥的命令列模式](https://blog.kkbruce.net/2019/03/wsl-ubuntu-zsh-windows-command-line.html)
+- [以WSL + Ubuntu + zsh打造Windows上高富帥的命令列模式](https://blog.kkbruce.net/2019/03/wsl-ubuntu-zsh-windows-command-line.html)
+- [Windows Subsystem for Linux (WSL) 環境設定](https://hackmd.io/@tf-z1zFMTIC8ADhxEcGJEA/BJByCIUHf)
+
+## 調整 ls 資料夾背景顏色
+
+[What causes this green background in ls output?](https://unix.stackexchange.com/questions/94498/what-causes-this-green-background-in-ls-output?newreg=e23f5b22156d4316a2dd522b69141684)
+
+```bash
+dircolors -p > ~/.dircolors
+```
+
+修改下面這行
+
+```
+OTHER_WRITABLE 30;41 # dir that is other-writable (o+w) and not sticky
+```
+
+改成
+
+```
+OTHER_WRITABLE 30;41 # dir that is other-writable (o+w) and not sticky
+```
+
+套用變更
+
+```bash
+eval "$(dircolors ~/.dircolors)";
+```
+
+![修改前](https://i.imgur.com/nRxt29o.png)
+
+![修改後](https://i.imgur.com/MSpd6xz.png)
 
 ## WLS .bashrc 設定
 
@@ -60,6 +91,12 @@ echo -ne "Hello, $USER. Today is, "; date
     "yellow" : "#B58900"
 }
 ```
+
+## Windows Subsystem for Linux (WSL) 環境設定
+
+[Windows Subsystem for Linux (WSL) 環境設定](https://hackmd.io/@tf-z1zFMTIC8ADhxEcGJEA/BJByCIUHf?type=view)
+
+
 
 ----------
 
