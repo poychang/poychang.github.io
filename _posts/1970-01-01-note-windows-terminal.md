@@ -25,7 +25,7 @@ dircolors -p > ~/.dircolors
 修改下面這行
 
 ```
-OTHER_WRITABLE 30;41 # dir that is other-writable (o+w) and not sticky
+OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
 ```
 
 改成
@@ -39,6 +39,8 @@ OTHER_WRITABLE 30;41 # dir that is other-writable (o+w) and not sticky
 ```bash
 eval "$(dircolors ~/.dircolors)";
 ```
+
+如果要之後都套用此設定，可以修改 `~/.bashrc` 檔，在裡面執行 `eval "$(dircolors ~/.dircolors)";`，讓每次啟動時，自動套用設定。
 
 ![修改前](https://i.imgur.com/nRxt29o.png)
 
