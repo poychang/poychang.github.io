@@ -7,7 +7,7 @@ comments: true
 categories: [Note]
 ---
 
-本篇作為筆記用途，紀錄 Travis CI 參考資料
+本篇作為筆記用途，記錄 Travis CI 參考資料
 
 ## Script
 

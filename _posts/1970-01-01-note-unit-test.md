@@ -7,7 +7,7 @@ comments: true
 categories: [Note, CSharp, Dotnet]
 ---
 
-本篇作為筆記用途，紀錄 .NET Unit Test 參考資料
+本篇作為筆記用途，記錄 .NET Unit Test 參考資料
 
 
 ## .NET Core Option 模式

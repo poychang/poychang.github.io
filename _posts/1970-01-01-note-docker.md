@@ -7,7 +7,7 @@ comments: true
 categories: [Note, Docker]
 ---
 
-本篇作為書籤用途，紀錄網路上的 Docker 參考資料
+本篇作為書籤用途，記錄網路上的 Docker 參考資料
 
 - docs.docker.com Search URL `https://docs.docker.com/search/?q={q}` 其中 `{q}` 可替換成要搜尋的文字
 

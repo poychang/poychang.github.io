@@ -7,7 +7,7 @@ comments: true
 categories: [Note, Tools]
 ---
 
-本篇作為書籤用途，紀錄網路上的 Visual Studio 相關資訊
+本篇作為書籤用途，記錄網路上的 Visual Studio 相關資訊
 
 ## 快捷鍵
 
@@ -192,10 +192,10 @@ nuget.exe config -set http_proxy.password=mySuperSecretPassword
 
 參考資料：
 
-- [快捷鍵](#%E5%BF%AB%E6%8D%B7%E9%8D%B5)
-- [必裝套件](#%E5%BF%85%E8%A3%9D%E5%A5%97%E4%BB%B6)
-- [圖示描述](#%E5%9C%96%E7%A4%BA%E6%8F%8F%E8%BF%B0)
-- [輕量型載入](#%E8%BC%95%E9%87%8F%E5%9E%8B%E8%BC%89%E5%85%A5)
-- [關閉 npm 套件自動還原](#%E9%97%9C%E9%96%89-npm-%E5%A5%97%E4%BB%B6%E8%87%AA%E5%8B%95%E9%82%84%E5%8E%9F)
+- [快捷鍵](#%e5%bf%ab%e6%8d%b7%e9%8d%b5)
+- [必裝套件](#%e5%bf%85%e8%a3%9d%e5%a5%97%e4%bb%b6)
+- [圖示描述](#%e5%9c%96%e7%a4%ba%e6%8f%8f%e8%bf%b0)
+- [輕量型載入](#%e8%bc%95%e9%87%8f%e5%9e%8b%e8%bc%89%e5%85%a5)
+- [關閉 npm 套件自動還原](#%e9%97%9c%e9%96%89-npm-%e5%a5%97%e4%bb%b6%e8%87%aa%e5%8b%95%e9%82%84%e5%8e%9f)
 - [NuGet](#nuget)
-  - [NuGet 設定 Proxy](#nuget-%E8%A8%AD%E5%AE%9A-proxy)
+  - [NuGet 設定 Proxy](#nuget-%e8%a8%ad%e5%ae%9a-proxy)

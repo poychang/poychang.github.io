@@ -7,7 +7,7 @@ comments: true
 categories: [Note, Angular]
 ---
 
-本篇作為書籤用途，紀錄網路上的 Angular 參考資料
+本篇作為書籤用途，記錄網路上的 Angular 參考資料
 
 - Angular.io Search URL `https://angular.io/api?query={q}` 其中 `{q}` 可替換成要搜尋的文字
 

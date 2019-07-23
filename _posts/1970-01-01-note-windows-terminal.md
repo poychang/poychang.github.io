@@ -7,7 +7,7 @@ comments: true
 categories: [Develop, Tools]
 ---
 
-本篇作為書籤用途，紀錄網路上的 Windows Terminal 相關資訊
+本篇作為書籤用途，記錄網路上的 Windows Terminal 相關資訊
 
 ## WLS 的高富帥
 

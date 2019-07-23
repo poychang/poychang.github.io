@@ -7,7 +7,7 @@ comments: true
 categories: [CSharp, Dotnet, Note]
 ---
 
-本篇作為書籤用途，紀錄 .NET IL 指令查詢
+本篇作為書籤用途，記錄 .NET IL 指令查詢
 
 | 名稱            | 說明 |
 | -------------- | -------------- |

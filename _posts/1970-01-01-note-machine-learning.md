@@ -7,7 +7,7 @@ comments: true
 categories: [Note, MachineLearning]
 ---
 
-本篇作為書籤用途，紀錄網路上的 Machine Learning 參考資料
+本篇作為書籤用途，記錄網路上的 Machine Learning 參考資料
 
 - [使用 Python 進行資料分析](https://ithelp.ithome.com.tw/users/20107514/ironman/1399)
 

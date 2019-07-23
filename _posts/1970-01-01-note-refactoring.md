@@ -7,7 +7,7 @@ comments: true
 categories: [Note]
 ---
 
-本篇作為書籤用途，紀錄網路上的 Refactoring 參考資料
+本篇作為書籤用途，記錄網路上的 Refactoring 參考資料
 
 ## Martin Fowler
 

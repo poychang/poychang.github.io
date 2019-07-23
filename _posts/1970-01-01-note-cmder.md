@@ -7,7 +7,7 @@ comments: true
 categories: [Note]
 ---
 
-本篇作為書籤用途，紀錄網路上的 Cmder 參考資料
+本篇作為書籤用途，記錄網路上的 Cmder 參考資料
 
 >直接到 Cmder 官網（[http://cmder.net/](http://cmder.net/)）下載此工具。
 

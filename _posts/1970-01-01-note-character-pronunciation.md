@@ -6,6 +6,7 @@ author: Poy Chang
 comments: true
 categories: [Note]
 ---
+
 有時候知道一些數學、拉丁或標記符號的念法，會讓你更顯專業（帥） 😁
 
 ## 數學符號

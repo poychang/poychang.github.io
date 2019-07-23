@@ -79,6 +79,10 @@ public static class ExceptionHandleMiddlewareExtensions
 
 >本篇完整範例程式碼請參考 [poychang/Demo-Global-Exception-Handle-WebApp](https://github.com/poychang/Demo-Global-Exception-Handle-WebApp)。
 
+## 後記
+
+如果你要透果這個處理方式，將每次呼叫的 Request Body 所夾帶的資料（通常是 JSON）記錄下來
+
 ----------
 
 參考資料：
