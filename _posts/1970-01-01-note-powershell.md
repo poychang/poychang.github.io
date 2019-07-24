@@ -48,6 +48,18 @@ REF: [Windows PowerShell ISE 的鍵盤快速鍵](https://docs.microsoft.com/zh-t
 - `Get-ChildItem Env:` 查看環境變數 \* `$Env:USERPROFILE` 查看環境變數中 USERPROFILE 的內容值
 - `Format-List` 透過這個指令來格式化輸出的資訊，例如 `Get-EventLog -Log System -Newest 10 | Format-List -Property *` 列出最新 10 筆系統事件紀錄，並將所有屬性格式化成表單作呈現，方便閱讀。
 
+## 發送 HTTP Requesting
+
+要透過 Powershell 發送 HTTP Request 來測試 API 主要透過 `Invoke-WebRequest` 命令，參考下列做法：
+
+```ps1
+$JSON = @'
+{"name":"PoyChang","email":"","message":"Okay, I'm here.","property":{"key1":"value1","key2":"value2"}}
+'@
+
+Invoke-WebRequest -UseBasicParsing [YOUR_URL] -ContentType "application/json" -Method POST -Body $JSON
+```
+
 ## 載入設定檔
 
 PowerShell 會自動從以下這 4 個檔名路徑依序載入設定檔，如果找不到檔案也會自動跳過：
