@@ -27,7 +27,7 @@ XML 標準中提供了 CDATA 區段，做為一種通知剖析器的方法，當
 
 ## 取得 CDATA 資料
 
-混和前面幾篇文章的操作技巧，載入檔案後，先使用 `DescendantNodes()` 取得所有 XML 的解點資料，透過 LINQ 方式找到節點類類型 `XmlNodeType.CDATA` 的節點(更多節點類型請[參考這裡](https://docs.microsoft.com/zh-tw/dotnet/api/system.xml.xmlnodetype?view=netframework-4.7.1))，再將內容取出來即可。
+混和前面幾篇文章的操作技巧，載入檔案後，先使用 `DescendantNodes()` 取得所有 XML 的節點資料，透過 LINQ 方式找到節點類類型 `XmlNodeType.CDATA` 的節點(更多節點類型請[參考這裡](https://docs.microsoft.com/zh-tw/dotnet/api/system.xml.xmlnodetype?view=netframework-4.7.1))，再將內容取出來即可。
 
 ```csharp
 var queryCData = from element in XDocument.Load(filePath).DescendantNodes()

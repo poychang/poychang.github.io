@@ -9,6 +9,8 @@ categories: [Dotnet, Develop, Tools]
 
 今天在使用 Azure DevOps 搭配 SonarQube 做程式碼分析的時候，遇到執行分析時找不到 .NET Core 專案的錯誤，但是過去明明就可以對 .NET Core 專案程式碼作分析，怎麼會報出 `No analysable projects were found` 的錯誤訊息呢？
 
+## 錯誤訊息
+
 遇到的錯誤訊息畫面如下：
 
 ![No analysable projects were found](https://i.imgur.com/tpsvArM.png)
@@ -38,6 +40,8 @@ WARNING: Duplicate ProjectGuid: "00000000-0000-0000-0000-000000000000". The proj
 
 .NET Core 所使用的專案檔（`.csproj`）已經和過去 .NET Framework 所使用的專案檔格式不一樣了，現在的專案檔內容相當簡潔易讀，但也少了一個 SonarQube 用於辨識專案的 `ProjectGuid` 屬性，因此 SonarQube 會預設給他 `00000000-0000-0000-0000-000000000000` 當作 `ProjectGuid`，但當我們要分析一個由多專案所組成的解決方案時，每個專案的 `ProjectGuid` 都是一樣的值時，就出現問題了，這時有兩個解決方案。
 
+## 解決方案一
+
 第一個解決方案就是打開每個 .NET Core 專案的專案檔，把 `ProjectGuid` 補回去，讓專案檔長的像下面這樣：
 
 ```xml
@@ -52,6 +56,8 @@ WARNING: Duplicate ProjectGuid: "00000000-0000-0000-0000-000000000000". The proj
 這裡的 GUID 可以是你隨便設定的，可以透過 [Online GUID Generator](https://www.guidgenerator.com/online-guid-generator.aspx) 這個線上產生 GUID 工具幫我們產生一個。這樣一來 SonarQube 就不會抱怨了。
 
 但這方式太手動了，而且要改每一個專案檔，又要塞一個沒啥意義的 GUID 進去，很奇怪。
+
+## 解決方案二
 
 第二個解決方案則是透過 Visual Studio 的方案檔（`.sln`）來建置 .NET Core 專案即可，因為在 Visual Studio 的方案檔中，其實就會建立底下各個專案的 GUID，你用編輯器打開方案檔可以看到類似下面這樣的程式碼：
 
