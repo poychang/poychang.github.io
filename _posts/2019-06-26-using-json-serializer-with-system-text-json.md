@@ -11,6 +11,8 @@ categories: [CSharp, Dotnet]
 
 >目前 `System.Text.Json` 還在 Preview 版本，如果你是使用最新的 .NET Core 3，此函示庫已經包含在裡面了。當然你也可以自行透過 NuGet 來安裝 Preview 版本的 [System.Text.Json](https://nuget.org/packages/System.Text.Json) 擴充套件來使用。
 
+>2019/07/23 推出了 Preview 7，這版有 Breaking Change，已修正此文章。
+
 Json.NET 最常被使用的功能莫過於 `JsonConvert.SerializeObject()` 將物件序列化，以及 `JsonConvert.DeserializeObject()` 將 JSON 文字反序列化成物件，這兩個功能，我們就先來看看這兩個功能對應到 `System.Text.Json` 該如何使用。
 
 `System.Text.Json` 底下有另一個專門在處理序列化的命名空間 `System.Text.Json.serialization`，可以參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/api/system.text.json.serialization)查看他所提供的 API 方法。
@@ -26,14 +28,14 @@ class Student {
 }
 ```
 
-可以透過 `JsonSerializer.ToString()` 這個靜態方法將物件序列化成 JSON 文字，用法如下：
+可以透過 `JsonSerializer.Serialize()` 這個靜態方法將物件序列化成 JSON 文字，用法如下：
 
 ```csharp
 var student = new Student {
     Name = "Poy Chang",
     Age = 20
 };
-var json = JsonSerializer.ToString<Student>(student);
+var json = JsonSerializer.Serialize<Student>(student);
 ```
 
 序列化的結果就會是像這樣：
@@ -49,7 +51,7 @@ var options = new JsonSerializerOptions
 {
     WriteIndented = true
 };
-var json = JsonSerializer.ToString<Student>(student, options);
+var json = JsonSerializer.Serialize<Student>(student, options);
 ```
 
 如此一來輸出的 JSON 就會被格式化，讓我們能輕鬆閱讀。
@@ -65,18 +67,18 @@ var json = JsonSerializer.ToString<Student>(student, options);
 
 ## 將文字反序列化成物件
 
-反過來，要將 JSON 文字轉換成物件也是經常遇到的情境，可以透過 `JsonSerializer.Parse()` 這個靜態方法將物件序列化成 JSON 文字，用法如下：
+反過來，要將 JSON 文字轉換成物件也是經常遇到的情境，可以透過 `JsonSerializer.Deserialize()` 這個靜態方法將物件序列化成 JSON 文字，用法如下：
 
 ```csharp
 var json = "{\"Name\":\"Poy Chang\",\"Age\":20}";
-var student = JsonSerializer.Parse<Student>(json);
+var student = JsonSerializer.Deserialize<Student>(json);
 ```
 
-使用起來是不是也非常簡單、順手。
+使用起來是不是也非常簡單、順手，也幾乎和原本的 JSON.NET 一樣，看樣子可以很輕鬆的將命名空間直接從 `Newtonsoft.Json` 移轉到 `System.Text.Json`。
 
 ## JSON 屬性裝飾器
 
-如果手動調整序列化後的屬性名稱，而不想更動 C# 原本的屬性名稱，`System.Text.Json` 有提供屬性裝飾器來讓開發者自行決定序列化後的結果，使用方式只要在屬性上面掛上裝飾器並設定要輸出的名稱即可，方法如下：
+如果手動調整序列化後的屬性名稱，而不想更動 C# 原本的屬性名稱，`System.Text.Json.Serialization` 有提供屬性裝飾器來讓開發者自行決定序列化後的結果，使用方式只要在屬性上面掛上裝飾器並設定要輸出的名稱即可，方法如下：
 
 ```csharp
 class Student {
@@ -87,7 +89,7 @@ class Student {
 }
 ```
 
-如此一來，透過 `JsonSerializer.ToString()` 序列化的結過就是變成
+如此一來，透過 `JsonSerializer.Serialize()` 序列化的結過就是變成
 
 ```json
 {
