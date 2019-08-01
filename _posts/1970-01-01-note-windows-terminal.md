@@ -15,6 +15,30 @@ categories: [Develop, Tools]
 - [以WSL + Ubuntu + zsh打造Windows上高富帥的命令列模式](https://blog.kkbruce.net/2019/03/wsl-ubuntu-zsh-windows-command-line.html)
 - [Windows Subsystem for Linux (WSL) 環境設定](https://hackmd.io/@tf-z1zFMTIC8ADhxEcGJEA/BJByCIUHf)
 
+```bash
+# 讓執行 sudo 的時候免輸入密碼
+# 請記得將 poy 換成你自己的 WSL 登入帳號
+echo "poy ALL = (root) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/poy
+
+# 升級所有套件
+sudo apt-get update && sudo apt-get upgrade
+
+# 如果要安裝 Node.js 8.x 才需要執行以下命令
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# 如果要安裝 Node.js 10.x 才需要執行以下命令
+#curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+#sudo apt-get install -y nodejs
+
+# Optional: install build tools
+sudo apt-get install -y build-essential
+
+# 升級 npm
+sudo npm install -g npm
+npm --version
+```
+
 ## 調整 ls 資料夾背景顏色
 
 [What causes this green background in ls output?](https://unix.stackexchange.com/questions/94498/what-causes-this-green-background-in-ls-output?newreg=e23f5b22156d4316a2dd522b69141684)
