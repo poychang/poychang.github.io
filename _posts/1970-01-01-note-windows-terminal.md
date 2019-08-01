@@ -9,8 +9,9 @@ categories: [Develop, Tools]
 
 本篇作為書籤用途，記錄網路上的 Windows Terminal 相關資訊
 
-## WLS 的高富帥
+## WSL 設定
 
+- [保哥的 Windows Subsystem for Linux (WSL) 終極開發人員配置 - 2018 版](https://blog.miniasp.com/post/2018/06/15/My-Windows-Subsystem-for-Linux-WSL-Setup-2018)
 - [以WSL + Ubuntu + zsh打造Windows上高富帥的命令列模式](https://blog.kkbruce.net/2019/03/wsl-ubuntu-zsh-windows-command-line.html)
 - [Windows Subsystem for Linux (WSL) 環境設定](https://hackmd.io/@tf-z1zFMTIC8ADhxEcGJEA/BJByCIUHf)
 
@@ -22,13 +23,13 @@ categories: [Develop, Tools]
 dircolors -p > ~/.dircolors
 ```
 
-修改下面這行
+將下面這行
 
 ```
 OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
 ```
 
-改成
+修改成
 
 ```
 OTHER_WRITABLE 30;41 # dir that is other-writable (o+w) and not sticky
@@ -46,7 +47,7 @@ eval "$(dircolors ~/.dircolors)";
 
 ![修改後](https://i.imgur.com/MSpd6xz.png)
 
-## WLS .bashrc 設定
+## WSL .bashrc 設定
 
 原始的 `.bashrc` 有判斷如果家目錄下有 `.bash_aliases`，則會載入該檔案內的 aliases 設定，可以加入以下 aliases：
 
@@ -93,10 +94,6 @@ echo -ne "Hello, $USER. Today is, "; date
     "yellow" : "#B58900"
 }
 ```
-
-## Windows Subsystem for Linux (WSL) 環境設定
-
-[Windows Subsystem for Linux (WSL) 環境設定](https://hackmd.io/@tf-z1zFMTIC8ADhxEcGJEA/BJByCIUHf?type=view)
 
 
 
