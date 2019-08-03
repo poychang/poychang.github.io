@@ -23,6 +23,11 @@ categories: [Note, Docker]
 
 ![Docker 官方 CheatSheet 繁中翻譯版](https://i.imgur.com/Dle3hqm.png)
 
+## Best Practice
+
+- [Docker Docs - Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [Best Practices for working with Dockerfiles](https://medium.com/@nagarwal/best-practices-for-working-with-dockerfiles-fb2d22b78186)
+
 ## 重點名詞
 
 - Layer: 層，一組唯讀的文件或命令，描述如何在容器下設置底層系統。層 (Layer) 構建在彼此之上，每個層代表對文件系統的更改
@@ -42,6 +47,8 @@ categories: [Note, Docker]
 > 如果你的容器是使用 Linux，可以將 `cmd` 改成 `bash`。
 
 REF: https://stackoverflow.com/questions/30172605/how-do-i-get-into-a-docker-container
+
+透過 `docker exec -it DOCKER_NAME cmd` 可以在容器中開啟 cmd 命令列，並讓我們進行操作，如果要退出該命令列環境，可使用 `exit` 指令退出，如果你只是想要暫時退出，則要使用特殊方式，`ctrl` + `p` + `q` 來進行暫時退出。
 
 ## 基本指令
 
