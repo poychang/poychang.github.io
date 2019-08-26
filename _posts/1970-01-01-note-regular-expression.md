@@ -360,8 +360,17 @@ readonly static Regex regex = new Regex("[ABC]", RegexOptions.Compiled);
       <td>比對十六進位，其中<em>hex<em>是十六進位數目 </em></em></td>
       <td>/\xhex38/ 可比對 與 16進位的ASCII中 &#8220;38&#8221; 所相對應的字元。</td>
     </tr>
+    <tr>
+      <td>?:</td>
+      <td>不予擷取的群組，括號括住的部份不列入 Group 中</td>
+      <td>(a(b*))+ 會有 Group#1 和 Group#2 但是 (a(?:b*))+ 只會有 Group#1 一個群組</td>
+    </tr>
   </tbody>
 </table>
+
+REF:
+
+- [不予擷取的群組](https://dotblogs.com.tw/johnny/2010/03/02/13855)
 
 ## 常用範例
 

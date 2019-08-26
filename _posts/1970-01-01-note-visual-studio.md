@@ -9,6 +9,20 @@ categories: [Note, Tools]
 
 本篇作為書籤用途，記錄網路上的 Visual Studio 相關資訊
 
+## 維持 Visual Studio 2019 跑得又快又好的技巧
+
+1. 載入方案時不要重新開啟文件
+   - 預設可能會開啟大量文件，會拖慢整體載入速度。
+   - 工具 > 選項 > 專案和方案 > 一般 > 在解決方案載入時重新開啟文件
+2. 載入方案時不要還原專案階層狀態
+   - 這會記憶大量狀態，且每個都需要還原，因次可以設定預設不還原專案階層狀態。
+   - 工具 > 選項 > 專案和方案 > 一般 > 還原解決方案載入上的方案總管豬案階層狀態
+  ![載入方案時不要重新開啟文件及還原專案階層狀態](https://imgur.com/ZpFQU3w)
+3. 預設關閉所有不需要的工具窗格
+   - 因為有許多窗格預設就會開啟 (Team Explorer, Error, Output, ...) 且無法設定預設關閉，所以可安裝 [Reset Tool Windows](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ResetToolWindow) 擴充套件，它會在 VS 開啟時自動關閉這些一定會被開啟的工具窗格，節省載入時間。
+   - 工具 > 選項 > 環境 > 啟動 > Reset Tool Window
+  ![預設隱藏所有不需要的工具窗格](https://imgur.com/nFt25tj)
+
 ## 快捷鍵
 
 <table class="table table-striped">
@@ -192,6 +206,7 @@ nuget.exe config -set http_proxy.password=mySuperSecretPassword
 
 參考資料：
 
+- [維持 Visual Studio 2019 跑得又快又好的技巧](#%e7%b6%ad%e6%8c%81-visual-studio-2019-%e8%b7%91%e5%be%97%e5%8f%88%e5%bf%ab%e5%8f%88%e5%a5%bd%e7%9a%84%e6%8a%80%e5%b7%a7)
 - [快捷鍵](#%e5%bf%ab%e6%8d%b7%e9%8d%b5)
 - [必裝套件](#%e5%bf%85%e8%a3%9d%e5%a5%97%e4%bb%b6)
 - [圖示描述](#%e5%9c%96%e7%a4%ba%e6%8f%8f%e8%bf%b0)
