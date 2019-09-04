@@ -15,7 +15,7 @@ categories: [CSharp, Dotnet]
 
 Json.NET 最常被使用的功能莫過於 `JsonConvert.SerializeObject()` 將物件序列化，以及 `JsonConvert.DeserializeObject()` 將 JSON 文字反序列化成物件，這兩個功能，我們就先來看看這兩個功能對應到 `System.Text.Json` 該如何使用。
 
-`System.Text.Json` 底下有另一個專門在處理序列化的命名空間 `System.Text.Json.serialization`，可以參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/api/system.text.json.serialization)查看他所提供的 API 方法。
+`System.Text.Json` 底下有另一個專門在處理序列化的命名空間 `System.Text.Json.Serialization`，可以參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/api/system.text.json.serialization)查看他所提供的 API 方法。
 
 ## 將物件序列化
 
