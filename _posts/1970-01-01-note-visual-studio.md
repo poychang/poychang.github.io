@@ -16,7 +16,7 @@ categories: [Note, Tools]
    - 工具 > 選項 > 專案和方案 > 一般 > 在解決方案載入時重新開啟文件
 2. 載入方案時不要還原專案階層狀態
    - 這會記憶大量狀態，且每個都需要還原，因次可以設定預設不還原專案階層狀態。
-   - 工具 > 選項 > 專案和方案 > 一般 > 還原解決方案載入上的方案總管豬案階層狀態
+   - 工具 > 選項 > 專案和方案 > 一般 > 還原解決方案載入上的方案總管專案階層狀態
 ![載入方案時不要重新開啟文件及還原專案階層狀態](https://i.imgur.com/ZpFQU3w.png)
 3. 預設關閉所有不需要的工具窗格
    - 因為有許多窗格預設就會開啟 (Team Explorer, Error, Output, ...) 且無法設定預設關閉，所以可安裝 [Reset Tool Windows](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ResetToolWindow) 擴充套件，它會在 VS 開啟時自動關閉這些一定會被開啟的工具窗格，節省載入時間。
