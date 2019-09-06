@@ -28,8 +28,8 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 # 如果要安裝 Node.js 10.x 才需要執行以下命令
-#curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-#sudo apt-get install -y nodejs
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 # Optional: install build tools
 sudo apt-get install -y build-essential
@@ -37,6 +37,49 @@ sudo apt-get install -y build-essential
 # 升級 npm
 sudo npm install -g npm
 npm --version
+```
+
+## WSL 設定 Z shell (zsh)
+
+設定前可以先在 Windows 系統中安裝 [Fira Code](https://github.com/tonsky/FiraCode) 和 [Powerline](https://github.com/powerline/fonts) 字型，Powerline 我選用 Ubuntu Mono 的版本。注意！請選擇 True Type 字型 (ttf) 進行安裝。
+
+```bash
+# 下載 zsh
+sudo apt-get install zsh
+zsh --version
+
+# 將 zsh 設為預設 shell，完成後關掉 App 再重開，並直接按 0 建立空白含註解的 .zshrc
+chsh -s $(which zsh)
+
+# 安裝 oh-my-zsh（擇一）
+#sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+```bash
+# 使用 agnoster 主題
+ZSH_THEME="agnoster"
+
+# 將以下設定附加到 .zshrc 檔案後
+
+export TERM="xterm-256color"
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# ========================================
+# Welcome message
+# ========================================
+eval "$(dircolors ~/.dircolors)";
+home
+clear
+echo -ne "Hello, $USER. Today is, "; date
 ```
 
 ## 調整 ls 資料夾背景顏色
