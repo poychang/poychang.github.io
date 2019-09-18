@@ -17,7 +17,7 @@ Postman 幫助開發人員在開發時期能夠快速測試 Web API 的功能是
 
 ![Postman 的環境變數](https://i.imgur.com/MblcVvs.png)
 
-有了環境變數，我們就可以透過 `{{accessToken}}` 像這樣的方式來調用環境變數，從下圖的 HTTP Header 中可以看到我們調用了 `accessToken` 這個環境變數。
+有了環境變數，我們就可以透過 <pre>{{accessToken}}</pre> 像這樣的方式來調用環境變數，從下圖的 HTTP Header 中可以看到我們調用了 `accessToken` 這個環境變數。
 
 ![使用 Postman 環境變數](https://i.imgur.com/BsL4m2O.png)
 
