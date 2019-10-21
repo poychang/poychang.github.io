@@ -6,7 +6,7 @@ author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, SQL, WebAPI]
 ---
-後端程式存取資料庫是稀鬆平常的事，透過 Entity Framework Core 來存取資料庫，不僅可以享受 ORM 的開發效率，還可以搭配[擴充套件達成 Unit of Work](https://docs.microsoft.com/zh-tw/ef/core/extensions/unitofwork) 的效果，本篇將介紹 ASP.NET Core WebAPI 搭配 Entity Framework Core 來處理存取資料庫的作業。
+後端程式存取資料庫是稀鬆平常的事，透過 Entity Framework Core 來存取資料庫，不僅可以享受 ORM 的開發效率，還可以搭配[擴充套件達成 Unit of Work](https://docs.microsoft.com/zh-tw/ef/core/extensions/unitofwork?WT.mc_id=DT-MVP-5003022) 的效果，本篇將介紹 ASP.NET Core WebAPI 搭配 Entity Framework Core 來處理存取資料庫的作業。
 
 >完整範例程式碼請參考 [poychang/DemoEFCore](https://github.com/poychang/DemoEFCore)。
 
@@ -27,7 +27,7 @@ categories: [CSharp, Dotnet, SQL, WebAPI]
 
 ## 安裝套件
 
-Entity Framework Core 可以介接多種資料庫，從 Microsoft SQL Server 大型資料庫到 PostgreSQL NoSQL 資料庫，甚至連 SQLite 都可以支援，更多支援清單請參考[官網文件](https://docs.microsoft.com/zh-tw/ef/core/providers/)。
+Entity Framework Core 可以介接多種資料庫，從 Microsoft SQL Server 大型資料庫到 PostgreSQL NoSQL 資料庫，甚至連 SQLite 都可以支援，更多支援清單請參考[官網文件](https://docs.microsoft.com/zh-tw/ef/core/providers?WT.mc_id=DT-MVP-5003022)。
 
 這裡我們使用 SQLite 做示範。
 
@@ -70,7 +70,7 @@ public class MyDbContext : DbContext
 1. 建立對應至資料表結構的資料模型，如 `Employee`
 2. 接續 `MyDbContext`，加入 `DbSet` 並指定其型別為 `Employee`
 
-在建立資料模型時，對應的資料型別是我們需要特別注意的，錯誤的型別會造成資料存取失敗，詳細的對照表請參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/framework/data/adonet/sql-server-data-type-mappings)。
+在建立資料模型時，對應的資料型別是我們需要特別注意的，錯誤的型別會造成資料存取失敗，詳細的對照表請參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/framework/data/adonet/sql-server-data-type-mappings?WT.mc_id=DT-MVP-5003022)。
 
 另外，資料表欄位有些特性是資料庫中特有的，例如 Primary Key、資料長度，這些可以透過 `Data Annotations` 來做設定，詳細資料請參考[官方文件](https://msdn.microsoft.com/zh-tw/library/system.componentmodel.dataannotations.aspx)或[查看原始碼](https://github.com/Microsoft/referencesource/tree/master/System.ComponentModel.DataAnnotations/DataAnnotations)。
 
@@ -239,6 +239,6 @@ Entity Framework Core 提供了非常便利的使用方法來存取資料庫，�
 
 參考資料：
 
-* [Getting started with ASP.NET Core MVC and Entity Framework Core using Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro)
+* [Getting started with ASP.NET Core MVC and Entity Framework Core using Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?WT.mc_id=DT-MVP-5003022)
 * [掀起你的盖头来：Unit Of Work-工作单元](http://www.cnblogs.com/xishuai/p/3750154.html)
 * [ASP.NET Core + Angular 4 教學 - Entity Framework Core](https://blog.johnwu.cc/article/asp-net-core-angular-4-%E6%95%99%E5%AD%B8-entity-framework-core.html)

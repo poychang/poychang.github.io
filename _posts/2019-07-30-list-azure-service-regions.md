@@ -17,7 +17,7 @@ Azure 提供了豐富的雲端資源，而為了讓全球的使用者能更享�
 
 ## Azure CLI
 
-Azure 提供 Azure CLI 和 Azure Powershell 兩個命令列工具，方便我們新增或管理 Azure 資源，你可以參考[這篇官方文件](https://docs.microsoft.com/zh-tw/cli/azure/install-azure-cli)在你本機安裝 Azure CLI，或者[這篇官方文件](https://docs.microsoft.com/zh-tw/powershell/azure/install-az-ps)安裝 Azure Powershell。這裡就是利用 Azure CLI 來查詢你 Azure 訂閱帳戶可使用的地區資訊。
+Azure 提供 Azure CLI 和 Azure Powershell 兩個命令列工具，方便我們新增或管理 Azure 資源，你可以參考[這篇官方文件](https://docs.microsoft.com/zh-tw/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5003022)在你本機安裝 Azure CLI，或者[這篇官方文件](https://docs.microsoft.com/zh-tw/powershell/azure/install-az-ps?WT.mc_id=AZ-MVP-5003022)安裝 Azure Powershell。這裡就是利用 Azure CLI 來查詢你 Azure 訂閱帳戶可使用的地區資訊。
 
 但有時候在公用電腦不想安裝 Azure CLI 工具的時候，你其實還有一個選擇，Azure Cloud Shell，一個讓你在瀏覽器中執行 Azure CLI 的終端機工具，當你登入 Azure Portal 時，上方的標題列會有個像命令列工具的小圖示，參考下圖：
 
@@ -74,5 +74,5 @@ Korea South         | 35.1796    | 129.0756    | koreasouth
 參考資料：
 
 * [Azure 地區](https://azure.microsoft.com/zh-tw/global-infrastructure/regions/)
-* [安裝 Azure CLI](https://docs.microsoft.com/zh-tw/cli/azure/install-azure-cli?view=azure-cli-latest)
+* [安裝 Azure CLI](https://docs.microsoft.com/zh-tw/cli/azure/install-azure-cli?view=azure-cli-latest?WT.mc_id=AZ-MVP-5003022)
 * [Is there an API to list all Azure Regions?](https://stackoverflow.com/questions/44143981/is-there-an-api-to-list-all-azure-regions)

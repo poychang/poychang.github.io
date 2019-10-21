@@ -22,7 +22,7 @@ public class Student
 }
 ```
 
-[system.componentmodel.dataannotations](https://docs.microsoft.com/zh-tw/dotnet/api/system.componentmodel.dataannotations?view=netframework-4.7.1) 這個命名空間提供了很多資料欄位屬性給我們使用，這裡我們透過 `DisplayAttribute` 指定各個資料欄位要顯示的名稱，例如 `Name` 的顯示名稱為`姓名`，我們可以用下面的程式碼來輕鬆建立一個 `Student` 物件，並存取該物件的值：
+[system.componentmodel.dataannotations](https://docs.microsoft.com/zh-tw/dotnet/api/system.componentmodel.dataannotations?view=netframework-4.7.1&WT.mc_id=DT-MVP-5003022) 這個命名空間提供了很多資料欄位屬性給我們使用，這裡我們透過 `DisplayAttribute` 指定各個資料欄位要顯示的名稱，例如 `Name` 的顯示名稱為`姓名`，我們可以用下面的程式碼來輕鬆建立一個 `Student` 物件，並存取該物件的值：
 
 ```csharp
 public class Program
@@ -66,7 +66,7 @@ public static class ObjectExtension
 
 注意，這個擴充方法所接受的泛型對象(`T`)，請限定必須是繼承至 `Attribute` 的類型。
 
-> 擴充方法的寫法，可以參考這份[官方文件](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)。
+> 擴充方法的寫法，可以參考這份[官方文件](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/extension-methods?WT.mc_id=DT-MVP-5003022)。
 
 如此一來，就可輕鬆使用我們自訂的擴充方法 `GetAttributeFrom()` 來取得資料欄位的屬性值：
 

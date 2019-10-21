@@ -7,7 +7,7 @@ comments: true
 categories: [CSharp, Dotnet, WebAPI]
 ---
 
-[Razor Pages](https://docs.microsoft.com/zh-tw/aspnet/core/razor-pages/) 是 ASP.NET Core MVC 的一部分，他讓撰寫網頁變得非常簡單，你不用管太多關於 MVC 架構上的事情，專注在頁面的編寫即可，相當具有生產力。如果你想透過 Razor Pages 簡單使用 HTTP GET 呼叫並回傳的 JSON 資料，像是 Web API 那樣，這時因為 Razor Pages 背後其實是 MVC 的架構，因此你也可以很簡單的實現這件事。
+[Razor Pages](https://docs.microsoft.com/zh-tw/aspnet/core/razor-pages/?WT.mc_id=DT-MVP-5003022) 是 ASP.NET Core MVC 的一部分，他讓撰寫網頁變得非常簡單，你不用管太多關於 MVC 架構上的事情，專注在頁面的編寫即可，相當具有生產力。如果你想透過 Razor Pages 簡單使用 HTTP GET 呼叫並回傳的 JSON 資料，像是 Web API 那樣，這時因為 Razor Pages 背後其實是 MVC 的架構，因此你也可以很簡單的實現這件事。
 
 >因為有一次我只想做一個很簡單的頁面，但有些功能還是要透過 JavaScript 來做比較方便，又不想另外做一個 WebAPI，加上還是想保留前後端分離的架構，因此想要模擬一個 Web API 的 GET 動作來做資料處理層，所以有了這篇實驗。
 

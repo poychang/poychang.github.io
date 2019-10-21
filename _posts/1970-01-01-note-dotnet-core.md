@@ -13,7 +13,7 @@ categories: [Note, CSharp, Dotnet]
 
 ## 指令
 
-- [dotnet core 命令列介面 (CLI) 工具](https://docs.microsoft.com/zh-tw/dotnet/core/tools/)
+- [dotnet core 命令列介面 (CLI) 工具](https://docs.microsoft.com/zh-tw/dotnet/core/tools/?WT.mc_id=DT-MVP-5003022)
 
 ### 常用指令
 
@@ -25,7 +25,7 @@ categories: [Note, CSharp, Dotnet]
 
 ### Code First
 
-- 教學文(en)：[使用 EF Core 在 Console App 建立 新資料庫](https://docs.microsoft.com/zh-tw/ef/core/get-started/netcore/new-db-sqlite)
+- 教學文(en)：[使用 EF Core 在 Console App 建立 新資料庫](https://docs.microsoft.com/zh-tw/ef/core/get-started/netcore/new-db-sqlite?WT.mc_id=DT-MVP-5003022)
   - 執行以下指令安裝所需套件
   - `dotnet add package Microsoft.EntityFrameworkCore.Sqlite`
   - `dotnet add package Microsoft.EntityFrameworkCore.Design`
@@ -39,7 +39,7 @@ categories: [Note, CSharp, Dotnet]
 
 ### Data Annotations
 
-教學文(cht)：[建立複雜的 EF Core 資料模型](https://docs.microsoft.com/zh-tw/aspnet/core/data/ef-mvc/complex-data-model)
+教學文(cht)：[建立複雜的 EF Core 資料模型](https://docs.microsoft.com/zh-tw/aspnet/core/data/ef-mvc/complex-data-model?WT.mc_id=DT-MVP-5003022)
 
 - `[Key]` 主鍵
 - `[Required]` 必要的屬性
@@ -61,14 +61,14 @@ categories: [Note, CSharp, Dotnet]
   - return BadRequest()` ← Http status code 400
   - return Unauthorized()`← Http status code 401 * return NotFound()` ← Http status code 404
 - 更多方法請參考
-  - [ControllerBase](https://docs.microsoft.com/en-us/aspnet/core/api/microsoft.aspnetcore.mvc.controllerbase#Microsoft_AspNetCore_Mvc_ControllerBase)
+  - [ControllerBase](https://docs.microsoft.com/en-us/aspnet/core/api/microsoft.aspnetcore.mvc.controllerbase#Microsoft_AspNetCore_Mvc_ControllerBase?WT.mc_id=DT-MVP-5003022)
   - [StatusCodes.cs](https://github.com/aspnet/HttpAbstractions/blob/dev/src/Microsoft.AspNetCore.Http.Abstractions/StatusCodes.cs)
 
 參考資料：[How to return a specific status code and no contents from Controller?](https://stackoverflow.com/questions/37690114/how-to-return-a-specific-status-code-and-no-contents-from-controller)
 
 ## 佈署至 IIS
 
-參考資料：[在使用 IIS 的 Windows 上裝載 ASP.NET Core](https://docs.microsoft.com/zh-tw/aspnet/core/publishing/iis?tabs=aspnetcore2x)
+參考資料：[在使用 IIS 的 Windows 上裝載 ASP.NET Core](https://docs.microsoft.com/zh-tw/aspnet/core/publishing/iis?tabs=aspnetcore2x?WT.mc_id=DT-MVP-5003022)
 
 重點：
 
@@ -117,7 +117,7 @@ categories: [Note, CSharp, Dotnet]
 
 參考資料：
 
-- [Developing ASP.NET Core apps using dotnet watch](https://docs.microsoft.com/en-us/aspnet/core/tutorials/dotnet-watch)
+- [Developing ASP.NET Core apps using dotnet watch](https://docs.microsoft.com/en-us/aspnet/core/tutorials/dotnet-watch?WT.mc_id=DT-MVP-5003022)
 
 ## ASP.NET Core 教學 - Middleware
 
@@ -163,7 +163,7 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 
 ## .NET 實作支援
 
-參考資料：[.NET Standard](https://docs.microsoft.com/zh-tw/dotnet/standard/net-standard)
+參考資料：[.NET Standard](https://docs.microsoft.com/zh-tw/dotnet/standard/net-standard?WT.mc_id=DT-MVP-5003022)
 
 下表列出所有 .NET Standard 版本和支援的平台：
 
@@ -220,14 +220,14 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 
 ## 執行(發佈)模式
 
-- 設定 `<TargetFramework>` 區段的設定值參考資料：[目標 Framework](https://docs.microsoft.com/zh-tw/dotnet/standard/frameworks)
-- 設定 `<RuntimeIdentifiers>` 區段的設定值參考資料：[.NET Core RID Catalog](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog)
+- 設定 `<TargetFramework>` 區段的設定值參考資料：[目標 Framework](https://docs.microsoft.com/zh-tw/dotnet/standard/frameworks?WT.mc_id=DT-MVP-5003022)
+- 設定 `<RuntimeIdentifiers>` 區段的設定值參考資料：[.NET Core RID Catalog](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog?WT.mc_id=DT-MVP-5003022)
 
 ### Framework Dependent Deployment(FDD)
 
 程式碼編譯出來的是 dll，不是預期中的 exe 檔案，必須由電腦安裝的 Dotnet Runtime 去執行對應的程式。
 
-- [官方介紹 Framework Dependent Deployment](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs#framework-dependent-deployment)
+- [官方介紹 Framework Dependent Deployment](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs#framework-dependent-deployment?WT.mc_id=DT-MVP-5003022)
 - [Alan Tsai 的學習筆記 - 了解 Framework Dependent Deployment(FDD) 執行(發佈)模式](https://blog.alantsai.net/posts/2017/10/event-net-conf-workshop-02-1-net-core-console-with-fdd-publish)
 
 ### Self Contained Deployment(SCD)
@@ -246,9 +246,9 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 
 主要是加上 `RuntimeIdentifiers` 這個設定，上述範例會產生出 Windows x64 和 Linux x64 環境適用的可執行檔。
 
-更多 Runtime IDentifiers 請參考官方文件 [.NET Core RID Catalog](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog)。
+更多 Runtime IDentifiers 請參考官方文件 [.NET Core RID Catalog](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog?WT.mc_id=DT-MVP-5003022)。
 
-- [官方介紹 Self Contained Deployment](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs#simpleSelf)
+- [官方介紹 Self Contained Deployment](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs#simpleSelf?WT.mc_id=DT-MVP-5003022)
 - [Alan Tsai 的學習筆記 - 了解 Self Contained Deployment(SCD) 執行(發佈)模式](http://blog.alantsai.net/2017/10/event-net-conf-workshop-02-2-net-core-console-with-SCD-publish.html)
 
 ## 開啟 Dotnet 專案時效能低落的問題
@@ -273,7 +273,7 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 
 ## 判斷 Windows 目前安裝的 .NET Framework 版本
 
-REF: [如何：判斷安裝的 .NET Framework 版本](https://docs.microsoft.com/zh-tw/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed)
+REF: [如何：判斷安裝的 .NET Framework 版本](https://docs.microsoft.com/zh-tw/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed?WT.mc_id=DT-MVP-5003022)
 
 1. `regedit.exe`
 2. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full`
@@ -348,7 +348,7 @@ http://teddy-chen-tw.blogspot.com/2016/05/blog-post_12.html
 </tbody>
 </table>
 
-REF: [存取範圍層級 (C# 參考)](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/accessibility-levels)
+REF: [存取範圍層級 (C# 參考)](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/accessibility-levels?WT.mc_id=DT-MVP-5003022)
 
 ## 取得當前名稱空間、類名和方法名稱
 
@@ -383,8 +383,8 @@ public string GetMethodInfo()
 
 ## LINQ
 
-- REF: [依據執行方式將標準查詢運算式分類](https://docs.microsoft.com/zh-tw/previous-versions/visualstudio/visual-studio-2008/bb882641(v=vs.90))
-- REF: [Enumerable Class](https://docs.microsoft.com/zh-tw/dotnet/api/system.linq.enumerable?view=netcore-2.1)
+- REF: [依據執行方式將標準查詢運算式分類](https://docs.microsoft.com/zh-tw/previous-versions/visualstudio/visual-studio-2008/bb882641(v=vs.90)?WT.mc_id=DT-MVP-5003022)
+- REF: [Enumerable Class](https://docs.microsoft.com/zh-tw/dotnet/api/system.linq.enumerable?view=netcore-2.1&WT.mc_id=DT-MVP-5003022)
 
 幾乎所有返回類型為 `IEnumerable<T>` 或 `IOrderedEnumerable<TElement>` 的標準查詢運算符都以延遲方式執行。如下表我們可以看到 `where` 時，返回的IEnumerable是延遲加載的。
 

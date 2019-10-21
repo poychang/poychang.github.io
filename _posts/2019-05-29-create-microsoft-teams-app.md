@@ -44,7 +44,7 @@ categories: [Develop, Bot, Tools]
 }
 ```
 
-這份 JSON 檔中詳述了這個 Teams App 會如何整合至 Teams 之中，詳細的屬性說明可以參考這份 [Manifest schema for Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema) 屬性說明官方文件。
+這份 JSON 檔中詳述了這個 Teams App 會如何整合至 Teams 之中，詳細的屬性說明可以參考這份 [Manifest schema for Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema?WT.mc_id=DT-MVP-5003022) 屬性說明官方文件。
 
 如果你要點開上面 `manifest.json` 這個檔案的屬性說明文件，你一定會想：怎麼那麼多屬性，誰記的得呀！而且如果要手動一個個輸入完畢，那要花多久時間...
 
@@ -79,7 +79,7 @@ Teams 開發小組也明白這件事情，所以製作了 App Studio 這款 Team
 
 在 Details 裡面，要填的東西比較多，大多是為了定義你的應用程式，這包含應用程式的名稱、描述、視覺圖示等。除了 App ID 要使用 GUID 格式，以及 Package Name 要用域名反解的命名規則外，最需要注意的就是品牌圖示了。
 
-Teams 需要兩個圖示，一個是整個 Teams 在使用的 Color 圖示，必須要 192 x 192 像素，另一個是 Outline 圖示，主要用於用於收藏夾中使用，必須要是 32 x 32 像素，且盡量貼邊，不要留間隙，可以參考下圖的尺寸規範，或參考這份 [Create an app package for your Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package) 官方文件。
+Teams 需要兩個圖示，一個是整個 Teams 在使用的 Color 圖示，必須要 192 x 192 像素，另一個是 Outline 圖示，主要用於用於收藏夾中使用，必須要是 32 x 32 像素，且盡量貼邊，不要留間隙，可以參考下圖的尺寸規範，或參考這份 [Create an app package for your Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package?WT.mc_id=DT-MVP-5003022) 官方文件。
 
 ![Icon 圖示的建議尺寸和規範](https://i.imgur.com/GA0xLQy.png)
 
@@ -124,6 +124,6 @@ Messaging Extension 則是在聊天對話框下方的功能，擴充你聊天時
 
 參考資料：
 
-* [Quickly develop apps with App Studio for Microsoft Teams](https://docs.microsoft.com/zh-tw/microsoftteams/platform/get-started/get-started-app-studio)
+* [Quickly develop apps with App Studio for Microsoft Teams](https://docs.microsoft.com/zh-tw/microsoftteams/platform/get-started/get-started-app-studio?WT.mc_id=DT-MVP-5003022)
 * [Microsoft Teams Community](https://developer.microsoft.com/en-us/microsoft-teams/docs)
 * [Build the ultimate team hub with Microsoft Teams](https://www.slideshare.net/MSTechCommunity/build-the-ultimate-team-hub-with-microsoft-teams)

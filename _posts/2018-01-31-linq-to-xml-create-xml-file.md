@@ -25,7 +25,7 @@ categories: [CSharp, Dotnet]
 
 LINQ to SQL 使用函數式建構的方式來建立 XML 資料，也就是使用 `XDocument` 建構式來建立整份 XML 資料。
 
-`XDocument` 建構式使用 `params` 使其可以接收多個參數（[params 關鍵字相關文件](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/params)），如下面的例子，第一個參數為 XML 宣告，接下來的參數可以接收任意數量的物件，這時我們就可以添加各種 LINQ to XML 類別來組成 XML 資料，例如 `XComment`(XML 註解)、`XElement`(XML 元素)。
+`XDocument` 建構式使用 `params` 使其可以接收多個參數（[params 關鍵字相關文件](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/params?WT.mc_id=DT-MVP-5003022)），如下面的例子，第一個參數為 XML 宣告，接下來的參數可以接收任意數量的物件，這時我們就可以添加各種 LINQ to XML 類別來組成 XML 資料，例如 `XComment`(XML 註解)、`XElement`(XML 元素)。
 
 另外，`XElement` 本身的建構式也使用了 `params` 讓他可以設定該元素的 `XAttribute`(XML 屬性)或更深的 `XElement`(XML 元素)，一層一層的將 XML 樣貌建置出來。
 
@@ -94,6 +94,6 @@ var xmlDocument = new XDocument(
 
 參考資料：
 
-- [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
+- [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml?WT.mc_id=DT-MVP-5003022)
 - [YouTube - LINQ to XML Tutorial](https://www.youtube.com/playlist?list=PL6n9fhu94yhX-U0Ruy_4eIG8umikVmBrk)
 - [LINQ to XML Tutorial](http://csharp-video-tutorials.blogspot.tw/2014/08/linq-to-xml-tutorial.html)

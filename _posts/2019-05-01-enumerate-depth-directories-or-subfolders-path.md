@@ -19,7 +19,7 @@ categories: [CSharp, Dotnet, Develop]
 
 > 若只是要取得目錄或檔案的名稱，請使用 `Directory` 類別的列舉方法，如果是要取得目錄或檔案的其他屬性，請使用 `DirectoryInfo` 和 `FileSystemInfo` 類別。
 
-要使用 `Directory.EnumerateDirectories()` 方法取得子目錄清單很簡單，基本用法請參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/api/system.io.directory.enumeratedirectories?view=netcore-2.2)，而我這裡用的範例程式碼如下：
+要使用 `Directory.EnumerateDirectories()` 方法取得子目錄清單很簡單，基本用法請參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/api/system.io.directory.enumeratedirectories?view=netcore-2.2&WT.mc_id=DT-MVP-5003022)，而我這裡用的範例程式碼如下：
 
 ```csharp
 var path = "D:\\DepthFolder";
@@ -53,6 +53,6 @@ Directory.EnumerateDirectories(path, "*", SearchOption.AllDirectories);
 
 參考資料：
 
-* [HOW TO：列舉目錄和檔案](https://docs.microsoft.com/zh-tw/dotnet/standard/io/how-to-enumerate-directories-and-files)
-* [Directory.EnumerateDirectories Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.io.directory.enumeratedirectories?view=netcore-2.2)
-* [Directory.GetDirectories Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.io.directory.getdirectories?view=netcore-2.2)
+* [HOW TO：列舉目錄和檔案](https://docs.microsoft.com/zh-tw/dotnet/standard/io/how-to-enumerate-directories-and-files?WT.mc_id=DT-MVP-5003022)
+* [Directory.EnumerateDirectories Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.io.directory.enumeratedirectories?view=netcore-2.2&WT.mc_id=DT-MVP-5003022)
+* [Directory.GetDirectories Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.io.directory.getdirectories?view=netcore-2.2&WT.mc_id=DT-MVP-5003022)

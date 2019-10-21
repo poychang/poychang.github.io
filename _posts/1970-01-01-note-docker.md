@@ -152,7 +152,7 @@ ENTRYPOINT ["dotnet", "MyClass.dll"]
 
 ## 推送映像檔至 Azure Container Registry
 
-[官方文件](https://docs.microsoft.com/zh-tw/azure/container-registry/container-registry-get-started-docker-cli)
+[官方文件](https://docs.microsoft.com/zh-tw/azure/container-registry/container-registry-get-started-docker-cli?WT.mc_id=AZ-MVP-5003022)
 
 1. 登入 Azure Container Registry，下面指令擇一
 

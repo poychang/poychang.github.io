@@ -97,7 +97,7 @@ categories: [App, Tools]
 
 設定和流程都相當簡單、方便。
 
-Visual Studio App Center 還很佛心的提供 Analytics 使用分析的功能，只要在你的程式碼加入幾行程式碼，就可以及時掌握使用者執行你 App 的狀態資訊，有興趣的人可以玩玩看。相關 App Center Analytics 資訊請參考[此連結](https://docs.microsoft.com/en-us/appcenter/sdk/analytics/ios)。
+Visual Studio App Center 還很佛心的提供 Analytics 使用分析的功能，只要在你的程式碼加入幾行程式碼，就可以及時掌握使用者執行你 App 的狀態資訊，有興趣的人可以玩玩看。相關 App Center Analytics 資訊請參考[此連結](https://docs.microsoft.com/en-us/appcenter/sdk/analytics/ios?WT.mc_id=DT-MVP-5003022)。
 
 ----------
 

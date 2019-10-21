@@ -83,4 +83,4 @@ DOSKEY [/REINSTALL] [/LISTSIZE=size] [/MACROS[:ALL | :exename]]
 
 * [BAT批次指令： DOSKEY　的功能介紹](http://forum.twbts.com/thread-10210-1-1.html)
 * [How to set an alias in Windows Command Line?](https://superuser.com/questions/560519/how-to-set-an-alias-in-windows-command-line)
-* [Microsoft Docs - Windows Commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/doskey)
+* [Microsoft Docs - Windows Commands](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/doskey?WT.mc_id=DT-MVP-5003022)

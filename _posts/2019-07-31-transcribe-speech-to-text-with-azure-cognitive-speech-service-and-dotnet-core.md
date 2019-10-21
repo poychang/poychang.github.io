@@ -9,7 +9,7 @@ categories: [CSharp, Dotnet, Azure]
 
 Azure 認知服務平台提供了 AI as a Platform 的一站式服務，其中提供了多種認知服務，例如電腦視覺、語音服務、文字分析、異常偵測等等，官方也提供了多種程式語言的 SDK，讓開發者可以更容易地使用 SDK 來呼叫認知服務的 REST API，輕鬆應用 AI 讓應用程式變得更智能。這篇來玩玩**將語音即時轉譯為文字**的 Speech Cognitive Service。
 
-Speech Cognitive Service 語音服務可以將語音轉成文字，像是聽寫員一樣，把收到的語音資料，透過 AI 語音模型做辨識，然後轉成文字輸出，更多介紹可以參考[官方的語音服務介紹](https://docs.microsoft.com/zh-tw/azure/cognitive-services/Speech-Service/)。
+Speech Cognitive Service 語音服務可以將語音轉成文字，像是聽寫員一樣，把收到的語音資料，透過 AI 語音模型做辨識，然後轉成文字輸出，更多介紹可以參考[官方的語音服務介紹](https://docs.microsoft.com/zh-tw/azure/cognitive-services/Speech-Service/?WT.mc_id=AZ-MVP-5003022)。
 
 ## 申請 API 金鑰
 
@@ -27,7 +27,7 @@ Azure 認知服務是一個 AI 平台服務，要使用之前要先到 Azure Por
 
 ## 使用 C# 開發
 
-官方提供了很多平台和程式語言的 SDK，這裡用 Windows 10 和 C# 來做範例，關於 C# 的語音服務 SDK 文件可以參考這個連結 [https://docs.microsoft.com/zh-tw/dotnet/api/overview/azure/cognitiveservices/client/speechservice](https://docs.microsoft.com/zh-tw/dotnet/api/overview/azure/cognitiveservices/client/speechservice)。
+官方提供了很多平台和程式語言的 SDK，這裡用 Windows 10 和 C# 來做範例，關於 C# 的語音服務 SDK 文件可以參考這個連結 [https://docs.microsoft.com/zh-tw/dotnet/api/overview/azure/cognitiveservices/client/speechservice](https://docs.microsoft.com/zh-tw/dotnet/api/overview/azure/cognitiveservices/client/speechservice?WT.mc_id=DT-MVP-5003022)。
 
 使用 SDK 的整個程式運作流程如下：
 
@@ -98,5 +98,5 @@ public static async Task RecognitionWithMicrophoneAsync()
 
 參考資料：
 
-* [使用適用於 .NET Core 的語音 SDK 來辨識語音](https://docs.microsoft.com/zh-tw/azure/cognitive-services/speech-service/quickstart-csharp-dotnetcore-windows)
+* [使用適用於 .NET Core 的語音 SDK 來辨識語音](https://docs.microsoft.com/zh-tw/azure/cognitive-services/speech-service/quickstart-csharp-dotnetcore-windows?WT.mc_id=AZ-MVP-5003022)
 * [Sample code for the Microsoft Cognitive Services Speech SDK](https://github.com/Azure-Samples/cognitive-services-speech-sdk)

@@ -162,7 +162,7 @@ public class ValuesController : ControllerBase
 
 ### JwtRegisteredClaimNames 屬性說明
 
-在建立使用者的 Claims 聲明時，我們會用到很多 `JwtRegisteredClaimNames` 結構型別，來取得是先定義好的字串，在 `System.IdentityModel.Tokens.Jwt` 命名空間中的 `JwtRegisteredClaimNames` 定義了很多 JWT 會用到的聲明，但[官方文件](https://docs.microsoft.com/en-us/dotnet/api/system.identitymodel.tokens.jwt.jwtregisteredclaimnames)說明相當的少，自行整理了如下：
+在建立使用者的 Claims 聲明時，我們會用到很多 `JwtRegisteredClaimNames` 結構型別，來取得是先定義好的字串，在 `System.IdentityModel.Tokens.Jwt` 命名空間中的 `JwtRegisteredClaimNames` 定義了很多 JWT 會用到的聲明，但[官方文件](https://docs.microsoft.com/en-us/dotnet/api/system.identitymodel.tokens.jwt.jwtregisteredclaimnames?WT.mc_id=DT-MVP-5003022)說明相當的少，自行整理了如下：
 
 | 聲明欄位   | 說明                                                 | 連結                                                                  |
 | ---------- | ---------------------------------------------------- | --------------------------------------------------------------------- |
@@ -209,5 +209,5 @@ public class ValuesController : ControllerBase
 - [Asp.net Core WebApi 項目使用Jwt進行授權管理和權限驗證](http://zhaokuohaha.github.io/2017/01/07/webapijwt/)
 - [asp.net core 2.0 web api 基於 JWT 自定義策略授權](http://www.itread01.com/articles/1505620631.html)
 - [Issuing and authenticating JWT tokens in ASP.NET Core WebAPI – Part I](https://goblincoding.com/2016/07/03/issuing-and-authenticating-jwt-tokens-in-asp-net-core-webapi-part-i/)
-- [移轉的驗證和身份識別，ASP.NET Core 2.0](https://docs.microsoft.com/zh-tw/aspnet/core/migration/1x-to-2x/identity-2x)
+- [移轉的驗證和身份識別，ASP.NET Core 2.0](https://docs.microsoft.com/zh-tw/aspnet/core/migration/1x-to-2x/identity-2x?WT.mc_id=DT-MVP-5003022)
 - [RFC7519 - JSON Web Token - JWT Claims](https://tools.ietf.org/html/rfc7519#section-4)

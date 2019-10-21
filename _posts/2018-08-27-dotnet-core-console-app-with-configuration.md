@@ -157,5 +157,5 @@ public static IConfigurationRoot ReadFromAppSettings()
 
 參考資料：
 
-* [ASP.NET Core 建立、取得組態設定檔的方法](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.1&tabs=basicconfiguration)
-* [在 ASP.NET Core 開發的應用程式祕密的安全儲存體](https://docs.microsoft.com/zh-tw/aspnet/core/security/app-secrets?view=aspnetcore-2.1&tabs=windows)
+* [ASP.NET Core 建立、取得組態設定檔的方法](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.1&tabs=basicconfiguration&WT.mc_id=DT-MVP-5003022)
+* [在 ASP.NET Core 開發的應用程式祕密的安全儲存體](https://docs.microsoft.com/zh-tw/aspnet/core/security/app-secrets?view=aspnetcore-2.1&tabs=windows&WT.mc_id=DT-MVP-5003022)

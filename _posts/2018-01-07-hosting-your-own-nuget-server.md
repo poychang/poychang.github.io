@@ -8,11 +8,11 @@ categories: [Tools]
 ---
 NuGet 對於 .NET 開發人員的重要如同喝咖啡一般，當你開發了一套給自己或內部人員使用的套件時，有個 NuGet Server 幫你管理這些套件，那是多麼開心的一件事。
 
-從微軟官方文件看到一篇[如何架設私有 NuGet 伺服器](https://docs.microsoft.com/zh-tw/nuget/hosting-packages/overview)，裡面提到有三種方法：
+從微軟官方文件看到一篇[如何架設私有 NuGet 伺服器](https://docs.microsoft.com/zh-tw/nuget/hosting-packages/overview?WT.mc_id=DT-MVP-5003022)，裡面提到有三種方法：
 
-1. [Local feed](https://docs.microsoft.com/zh-tw/nuget/hosting-packages/local-feeds)
+1. [Local feed](https://docs.microsoft.com/zh-tw/nuget/hosting-packages/local-feeds?WT.mc_id=DT-MVP-5003022)
 	* 在本機透過 `nuget init` 和 `nuget add` 指令建立 NuGet 的資料夾架構，再透過分享檔案的方式來使用
-2. [NuGet Server](https://docs.microsoft.com/zh-tw/nuget/hosting-packages/nuget-server)
+2. [NuGet Server](https://docs.microsoft.com/zh-tw/nuget/hosting-packages/nuget-server?WT.mc_id=DT-MVP-5003022)
 	* 架設簡易網站提供 NuGet 服務
 	* 除了用此 [NuGet Server](http://nugetserver.net/) 套件來架設外，還可以用 [VSTS](https://www.visualstudio.com/docs/package/nuget/publish)、[MyGet](http://myget.org/)、[ProGet](http://inedo.com/proget)、[NuGet Server (Open Source)](http://nuget-server.net/) 等工具
 3. [NuGet Gallery](https://github.com/NuGet/NuGetGallery#build-and-run-the-gallery-in-arbitrary-number-easy-steps)
@@ -141,7 +141,7 @@ nuget delete [PACKAGE_ID] [PACKAGE_VERSION] [YOUR_SHARED_API_KEY] -Source https:
 
 >如果有執行剛剛的 `serApiKey`，上述指令就不用輸入 `[YOUR_SHARED_API_KEY]`。
 
-更多 NuGet CLI 詳細指令和說明請參考[官方文件](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference)，或直接執行 `nuget.exe` 就會列出所有指令。若是要查詢指令的用法可在後面加一個 `?`，例如 `nuget push ?`，就會顯示使用方式。
+更多 NuGet CLI 詳細指令和說明請參考[官方文件](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference?WT.mc_id=DT-MVP-5003022)，或直接執行 `nuget.exe` 就會列出所有指令。若是要查詢指令的用法可在後面加一個 `?`，例如 `nuget push ?`，就會顯示使用方式。
 
 >本篇完整範例程式碼請參考 [poychang/DemoPrivateNuGetServer](https://github.com/poychang/DemoPrivateNuGetServer)。
 
@@ -166,6 +166,6 @@ nuget delete [PACKAGE_ID] [PACKAGE_VERSION] [YOUR_SHARED_API_KEY] -Source https:
 
 參考資料：
 
-* [NuGet Documentation](https://docs.microsoft.com/zh-tw/nuget/)
+* [NuGet Documentation](https://docs.microsoft.com/zh-tw/nuget/?WT.mc_id=DT-MVP-5003022)
 * [NuGet.Server](http://nugetserver.net/)
 

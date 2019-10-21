@@ -7,7 +7,7 @@ comments: true
 categories: [CSharp, Dotnet]
 ---
 
-XML(eXtensible Markup Language) 可擴展標記語言常作為各種資訊交換用的通訊格式，例如用於 SOAP 通訊協定，其豐富的描述讓資料資訊表達得更完整（當然資料本身也變得比較複雜些），.Net Team 提供了方便操作 XML 的工具 [System.Xml.Linq](https://docs.microsoft.com/zh-tw/dotnet/api/system.xml.linq) 也就是 LINQ to XML，這篇介紹 LINQ to XML 的基本操作。
+XML(eXtensible Markup Language) 可擴展標記語言常作為各種資訊交換用的通訊格式，例如用於 SOAP 通訊協定，其豐富的描述讓資料資訊表達得更完整（當然資料本身也變得比較複雜些），.Net Team 提供了方便操作 XML 的工具 [System.Xml.Linq](https://docs.microsoft.com/zh-tw/dotnet/api/system.xml.linq?WT.mc_id=DT-MVP-5003022) 也就是 LINQ to XML，這篇介紹 LINQ to XML 的基本操作。
 
 目錄：
 
@@ -33,18 +33,18 @@ XML(eXtensible Markup Language) 可擴展標記語言常作為各種資訊交換
 - `XElement` 代表 XML 元素，內容可為資料或另一個 XML 元素
 - `XAttribute` 代表 XML 屬性
 
-更多 LINQ to XML 類別請參考[這份文件](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml-classes-overview)
+更多 LINQ to XML 類別請參考[這份文件](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml-classes-overview?WT.mc_id=DT-MVP-5003022)
 
 ## 基本操作
 
-LINQ to XML 屬於記憶體內操作 XML 資料，因此在做任何操作前，都必須先載入 XML 資料至記憶體中，使用 `XDocuments.Load()` 進行載入 XML 檔案內容（[文件](https://docs.microsoft.com/en-us/dotnet/api/system.xml.linq.xdocument.load?view=netcore-2.1)）：
+LINQ to XML 屬於記憶體內操作 XML 資料，因此在做任何操作前，都必須先載入 XML 資料至記憶體中，使用 `XDocuments.Load()` 進行載入 XML 檔案內容（[文件](https://docs.microsoft.com/en-us/dotnet/api/system.xml.linq.xdocument.load?view=netcore-2.1&WT.mc_id=DT-MVP-5003022)）：
 
 ```csharp
 // 載入 sample.xml 檔
 XDocument xmlDocument = XDocuments.Load("sample.xml");
 ```
 
-如果想透過字串來載入，可以使用 `XDocument.Parse()` 這個方法來處理（[文件](https://docs.microsoft.com/en-us/dotnet/api/system.xml.linq.xdocument.parse?redirectedfrom=MSDN&view=netcore-2.1#overloads)）：
+如果想透過字串來載入，可以使用 `XDocument.Parse()` 這個方法來處理（[文件](https://docs.microsoft.com/en-us/dotnet/api/system.xml.linq.xdocument.parse?redirectedfrom=MSDN&view=netcore-2.1&WT.mc_id=DT-MVP-5003022#overloads)）：
 
 ```csharp
 var content = @"
@@ -82,12 +82,12 @@ string value = element.Value;
 
 ## 注意事項
 
-在使用 LINQ to XML 進行資料操作的時候，請隨時注意會不會因為 XML 資料中沒有該元素，造成 NullException。因此在此系列文的範例程式碼 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml) 中，會用到很多 [Null 條件運算子](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/operators/null-conditional-operators)，用來測試是否為 Null，若為 Null 就不繼續往下操作。
+在使用 LINQ to XML 進行資料操作的時候，請隨時注意會不會因為 XML 資料中沒有該元素，造成 NullException。因此在此系列文的範例程式碼 [poychang/Demo-Linq-To-Xml](https://github.com/poychang/Demo-Linq-To-Xml) 中，會用到很多 [Null 條件運算子](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/operators/null-conditional-operators?WT.mc_id=DT-MVP-5003022)，用來測試是否為 Null，若為 Null 就不繼續往下操作。
 
 ---
 
 參考資料：
 
-- [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
+- [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml?WT.mc_id=DT-MVP-5003022)
 - [Wiki - XML](https://zh.wikipedia.org/wiki/XML)
 - [Linq to XML 讀取 XML 檔](http://bennett.logdown.com/posts/241690-c-linq-for-xml)

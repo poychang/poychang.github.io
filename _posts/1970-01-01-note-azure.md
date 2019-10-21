@@ -70,7 +70,7 @@ Function App 是指佈署的一個單位，可以將很多 Functions 聚在一�
 
 有點像這個 Functions 運作的設定檔案，因為我們一開始什麼 Trigger 都沒有設定，所以一開始會是空的。我們 Azure Functions 與其他服務串接的設定資料，都會寫在這個 host.json 裡。
 
-參考資料：[適用於 Azure Functions 2.x 的 host.json 參考](https://docs.microsoft.com/zh-tw/azure/azure-functions/functions-host-json)
+參考資料：[適用於 Azure Functions 2.x 的 host.json 參考](https://docs.microsoft.com/zh-tw/azure/azure-functions/functions-host-json?WT.mc_id=DT-MVP-5003022)
 
 ### 範例程式碼
 

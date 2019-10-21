@@ -349,6 +349,6 @@ static void Main(string[] args)
 
 * [Wiki - 工業 4.0](https://zh.wikipedia.org/wiki/%E5%B7%A5%E6%A5%AD4.0)
 * [Wiki - 電腦整合製造](https://zh.wikipedia.org/wiki/%E9%9B%BB%E8%85%A6%E6%95%B4%E5%90%88%E8%A3%BD%E9%80%A0)
-* [FileSystemWatcher Class](https://docs.microsoft.com/zh-tw/dotnet/api/system.io.filesystemwatcher?view=netcore-2.0)
+* [FileSystemWatcher Class](https://docs.microsoft.com/zh-tw/dotnet/api/system.io.filesystemwatcher?view=netcore-2.0&WT.mc_id=DT-MVP-5003022)
 * [C# - 使用 FileSystemWatcher 來監控資料夾下的文件](https://dotblogs.com.tw/dc690216/archive/2010/09/18/17801.aspx)
 * [Github - dotnet/corefx - FileSystemWatcher.cs](https://github.com/dotnet/corefx/blob/master/src/System.IO.FileSystem.Watcher/src/System/IO/FileSystemWatcher.cs#L19:26)

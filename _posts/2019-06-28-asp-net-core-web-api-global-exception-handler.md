@@ -25,7 +25,7 @@ categories: [CSharp, Dotnet, Develop]
 
 ## 實作 ExceptionHandleMiddleware 中介程序
 
->關於 ASP.NET Core 中介程序的用途說明及基本寫法，請參考[這篇官方文件](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/middleware/write)。
+>關於 ASP.NET Core 中介程序的用途說明及基本寫法，請參考[這篇官方文件](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/middleware/write?WT.mc_id=DT-MVP-5003022)。
 
 我們建立一個 `ExceptionHandleMiddleware.cs` 中介程序，這裡面將會是實作 HTTP Context 在 MVC 處理過程中發生例外時，要處理的對應動作。
 

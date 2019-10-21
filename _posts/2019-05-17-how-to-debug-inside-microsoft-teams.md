@@ -9,7 +9,7 @@ categories: [Develop, Bot]
 
 Microsoft Teams 是一款團隊協作工具，全球已有超過 50 萬家組織採用，對於開發者而言，要開發出滿足組織所提出的需求，試必須要開啟開發人員模式，只是要開啟 Teams 的開發人員模式，沒有這麼直接...
 
-我們知道 Teams 有一部分是用 Electron 來開發的，從官方文件 [DevTools for the Microsoft Teams Desktop Client](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/dev-preview/developer-preview-tools) 中也可以找到開啟開發者工具的方式，動作相當簡單。
+我們知道 Teams 有一部分是用 Electron 來開發的，從官方文件 [DevTools for the Microsoft Teams Desktop Client](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/dev-preview/developer-preview-tools?WT.mc_id=DT-MVP-5003022) 中也可以找到開啟開發者工具的方式，動作相當簡單。
 
 點選應用程式右上角的個人圖片來開啟選單後，在 `About` 選單下會有個 `Developer preview` 的選項，點選後就可以切換到開發人員模式。
 
@@ -44,4 +44,4 @@ Microsoft Teams 是一款團隊協作工具，全球已有超過 50 萬家組織
 參考資料：
 
 * [How to debug JavaScript code executed inside Microsoft Teams tab?](https://stackoverflow.com/questions/49857361/how-to-debug-javascript-code-executed-inside-microsoft-teams-tab)
-* [DevTools for the Microsoft Teams Desktop Client](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/dev-preview/developer-preview-tools)
+* [DevTools for the Microsoft Teams Desktop Client](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/dev-preview/developer-preview-tools?WT.mc_id=DT-MVP-5003022)

@@ -50,7 +50,7 @@ LDAP 的簡介請參考[這篇](/ldap-introduction/)。
 
 使用 [Novell.Directory.Ldap.NETStandard](https://github.com/dsbenghe/Novell.Directory.Ldap.NETStandard) 第三方套件來實現 LDAP 驗證還滿簡單的，下面我們用 Dotnet CLI 和 VS Code 來實作看看。
 
->Dotnet CLI 命令請參考[.NET Core 命令列介面工具的官方文件](https://docs.microsoft.com/zh-tw/dotnet/core/tools/?tabs=netcore2x)
+>Dotnet CLI 命令請參考[.NET Core 命令列介面工具的官方文件](https://docs.microsoft.com/zh-tw/dotnet/core/tools/?tabs=netcore2x&WT.mc_id=DT-MVP-5003022)
 
 透過 `dotnet new --list` 可以列出目前的範本清單，這裡使用主控台應用程式 `console`，執行下列指令建立專案：
 

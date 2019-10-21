@@ -7,7 +7,7 @@ comments: true
 categories: [Dotnet, Develop, Tools]
 ---
 
-自從 .NET CLI 內建了建立 NuGet 套件的功能後，要將自己寫好的類別庫專案打包成 NuGet 套件就變得非常容易，[快速入門請看這裡](https://docs.microsoft.com/zh-tw/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli)，如果今天想要在安裝你用 .NET Core 寫好的 NuGet 套件時，除了加入寫好的類別庫參考外，還要輸出靜態檔案到專案中，可以參考這篇教學。
+自從 .NET CLI 內建了建立 NuGet 套件的功能後，要將自己寫好的類別庫專案打包成 NuGet 套件就變得非常容易，[快速入門請看這裡](https://docs.microsoft.com/zh-tw/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?WT.mc_id=DT-MVP-5003022)，如果今天想要在安裝你用 .NET Core 寫好的 NuGet 套件時，除了加入寫好的類別庫參考外，還要輸出靜態檔案到專案中，可以參考這篇教學。
 
 首先要注意一件事情，如果你是使用 `packages.config` 來建立 NuGet 套件了話，要輸出的靜態檔案是要放在套件中的 `content` 資料夾，如果是用 PackageReference 的方式來處理，也就是寫在 `.csproj` 專案的中了話，則是要將靜態檔案放在 `contentFiles` 資料夾中。
 
@@ -36,7 +36,7 @@ categories: [Dotnet, Develop, Tools]
 如果你要明確設定，可以參考下列選項：
 
 - Language: `vb`、`cs`、`fs` 分別代表 Visual Basic、C#、F# 三種語言
-- Target Framework: `netcoreapp2.1`、`net471` 等（詳請參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/standard/frameworks)所列的 TFM）
+- Target Framework: `netcoreapp2.1`、`net471` 等（詳請參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/standard/frameworks?WT.mc_id=DT-MVP-5003022)所列的 TFM）
 
 ---
 
@@ -46,4 +46,4 @@ categories: [Dotnet, Develop, Tools]
 - [NuGet ContentFiles Demystified](https://blog.nuget.org/20160126/nuget-contentFiles-demystified.html)
 - [Distributing Content and Showing a ReadMe file in a .NET Core Nuget Package](https://weblog.west-wind.com/posts/2018/Jan/29/Distributing-Content-and-Showing-a-ReadMe-file-in-a-NET-Core-Nuget-Package)
 - [dotnet core nuget package copying content files on restore](https://stackoverflow.com/questions/49425012/dotnet-core-nuget-package-copying-content-files-on-restore)
-- [NuGet 封裝和還原為 MSBuild 目標 - 在套件內包含內容](https://docs.microsoft.com/zh-tw/nuget/reference/msbuild-targets#including-content-in-a-package)
+- [NuGet 封裝和還原為 MSBuild 目標 - 在套件內包含內容](https://docs.microsoft.com/zh-tw/nuget/reference/msbuild-targets?WT.mc_id=DT-MVP-5003022#including-content-in-a-package)

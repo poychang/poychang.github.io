@@ -137,7 +137,7 @@ categories: [Note, Tools]
 
 [類別檢視和物件瀏覽器圖示](https://msdn.microsoft.com/zh-tw/library/y47ychfe.aspx)
 
-Visual Studio 2017 完整的 Icon 圖示請[下載此連結的 PDF 檔案](https://docs.microsoft.com/en-us/visualstudio/designers/the-visual-studio-image-library)
+Visual Studio 2017 完整的 Icon 圖示請[下載此連結的 PDF 檔案](https://docs.microsoft.com/en-us/visualstudio/designers/the-visual-studio-image-library?WT.mc_id=DT-MVP-5003022)
 
 [類別檢視] 和 [物件瀏覽器] 會顯示代表程式碼實體 (Entity) 的圖示，例如：命名空間 (Namespace)、類別 (Class)、函式和變數。下表說明這些圖示：
 
@@ -149,7 +149,7 @@ Visual Studio 2017 完整的 Icon 圖示請[下載此連結的 PDF 檔案](https
 
 ## 輕量型載入
 
-[官方文件](https://docs.microsoft.com/zh-tw/visualstudio/ide/optimize-visual-studio-startup-time)提到 Visual Studio 2017 15.5 版和更新版本不再提供這項功能。
+[官方文件](https://docs.microsoft.com/zh-tw/visualstudio/ide/optimize-visual-studio-startup-time?WT.mc_id=DT-MVP-5003022)提到 Visual Studio 2017 15.5 版和更新版本不再提供這項功能。
 
 Visual Studio 2017 的方案屬性頁中，有個`輕量型載入`的選項，可以讓你在開啟方案時，不用一次把底下所有的專案都開啟
 

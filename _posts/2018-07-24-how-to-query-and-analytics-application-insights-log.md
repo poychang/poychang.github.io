@@ -98,7 +98,7 @@ Event
 | summarize events_count=count() by bin(TimeGenerated, 5m) 
 ```
 
-參考資料在這 [依時間間隔的彙總與貯體處理](https://docs.microsoft.com/zh-tw/azure/azure-monitor/log-query/datetime-operations#aggregations-and-bucketing-by-time-intervals)。
+參考資料在這 [依時間間隔的彙總與貯體處理](https://docs.microsoft.com/zh-tw/azure/azure-monitor/log-query/datetime-operations?WT.mc_id=AZ-MVP-5003022#aggregations-and-bucketing-by-time-intervals)。
 
 另外，如果你要使用 Application Insights 的 REST API 來查詢資料了話，可以參考[這個官方網站](https://dev.applicationinsights.io/quickstart)，有介紹如何使用 Application Insights 的 REST API 搭配上述介紹到的 Query 語法來查詢資料，滿好用的。
 
@@ -106,8 +106,8 @@ Event
 
 參考資料：
 
-* [什麼是 Azure Log Analytics](https://docs.microsoft.com/zh-tw/azure/log-analytics/log-analytics-overview)
+* [什麼是 Azure Log Analytics](https://docs.microsoft.com/zh-tw/azure/log-analytics/log-analytics-overview?WT.mc_id=AZ-MVP-5003022)
 * [Getting Started with the Analytics Portal](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal)
-* [Application Insights 中分析的教學課程](https://docs.microsoft.com/zh-tw/azure/application-insights/app-insights-analytics-tour)
+* [Application Insights 中分析的教學課程](https://docs.microsoft.com/zh-tw/azure/application-insights/app-insights-analytics-tour?WT.mc_id=AZ-MVP-5003022)
 * [Query Language Reference](https://docs.loganalytics.io/docs/Language-Reference)
 * [SQL to Analytics language cheat sheet](https://aka.ms/sql-analytics)

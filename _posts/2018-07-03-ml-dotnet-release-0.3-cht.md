@@ -175,7 +175,7 @@ Below are some of the highlights from this release.
       supporting certain other types of models) which enables developers to
       move models between different ML toolkits.
     * ONNX models can be used in [Windows
-      ML](https://docs.microsoft.com/en-us/windows/uwp/machine-learning/overview)
+      ML](https://docs.microsoft.com/en-us/windows/uwp/machine-learning/overview?WT.mc_id=DT-MVP-5003022)
       which enables evaluating models on Windows 10 devices and taking
       advantage of capabilities like hardware acceleration.
     * Currently, only a subset of ML.NET components can be used in a model

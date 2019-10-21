@@ -7,7 +7,7 @@ comments: true
 categories: [Develop, PowerShell]
 ---
 
-透過 [.NET Core CLI](https://docs.microsoft.com/zh-tw/dotnet/core/tools/?tabs=netcore2x) 的命令，我們可以透過 `dotnet --version --list-runtime` 查詢本機有安裝的執行環境版本，如果你是使用 IIS 來架設 .NET Core 的站台，還需要安裝 .NET Core Hosting Bundle 才能正確執行，但如何檢查本機所安裝的 .NET Core Hosting Bundle 版本呢？這裡有個 Script 很好用。
+透過 [.NET Core CLI](https://docs.microsoft.com/zh-tw/dotnet/core/tools/?tabs=netcore2x&WT.mc_id=DT-MVP-5003022) 的命令，我們可以透過 `dotnet --version --list-runtime` 查詢本機有安裝的執行環境版本，如果你是使用 IIS 來架設 .NET Core 的站台，還需要安裝 .NET Core Hosting Bundle 才能正確執行，但如何檢查本機所安裝的 .NET Core Hosting Bundle 版本呢？這裡有個 Script 很好用。
 
 要檢查 .NET Core Hosting Bundle 版本沒有工具或指令可以幫忙，最土法煉鋼的方式是透過 `regeidt.exe` 檢查登陸檔內的 .NET Core Hosting Bundle 版本名稱，路徑為 `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Updates\.NET Core`，如下圖就安裝了 3 個 .NET Core Hosting Bundle 版本。
 

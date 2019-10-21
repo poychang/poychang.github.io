@@ -29,7 +29,7 @@ void Main()
 
 在 .NET 應用程式有個 `AppDomain` 的類別，表示應用程式定義域，也就是應用程式執行的獨立環境。而在 .NET Framework 中，這個應用程式定義域有個事件類別 `AppDomain.UnhandledException` 可以讓我們輕鬆對全域加上處理未被我們程式碼捕捉到的例外。
 
-在 .NET Core 中也有同樣的 API，只不過要 .NET Core 2.0 以上版本才有支援此 API，詳請參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/api/system.appdomain.unhandledexception?view=netcore-2.1#%E9%81%A9%E7%94%A8%E6%96%BC)。
+在 .NET Core 中也有同樣的 API，只不過要 .NET Core 2.0 以上版本才有支援此 API，詳請參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/api/system.appdomain.unhandledexception?view=netcore-2.1&WT.mc_id=DT-MVP-5003022#%E9%81%A9%E7%94%A8%E6%96%BC)。
 
 那麼要如何讓上面的 Console 應用程式使用這個 API 來做全域的例外處理呢？其實也很簡單，請參考下列程式碼：
 
@@ -75,5 +75,5 @@ void Main()
 參考資料：
 
 * [.NET Core Global exception handler in console application](https://stackoverflow.com/questions/43639601/net-core-global-exception-handler-in-console-application)
-* [.NET Core 2.1 Doc - AppDomain.UnhandledException Event](https://docs.microsoft.com/zh-tw/dotnet/api/system.appdomain.unhandledexception?view=netcore-2.1)
+* [.NET Core 2.1 Doc - AppDomain.UnhandledException Event](https://docs.microsoft.com/zh-tw/dotnet/api/system.appdomain.unhandledexception?view=netcore-2.1&WT.mc_id=DT-MVP-5003022)
 * [如何正確捕捉 Task 例外](https://dotblogs.com.tw/sean_liao/2018/01/09/taskexceptionshandling)

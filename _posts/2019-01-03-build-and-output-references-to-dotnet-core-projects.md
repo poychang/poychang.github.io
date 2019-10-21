@@ -9,11 +9,11 @@ categories: [CSharp, Dotnet, Develop]
 
 當我們要建立一個隨插 (DLL) 即用 (Method) 的系統的時候，我們會使用類別函式庫專案來建置 DLL，但預設建置類別函式庫專案只會輸出你所寫的程式（通常只有一隻 DLL），不會包含額外參考的 DLL 函示庫檔案（例如 NuGet 的套件），這時會造成一些小困擾，我們可以怎樣優雅的處理這個問題呢？
 
->撰寫類別函式庫專案建議使用 .NET Standard 來做，讓之後跨平台時能輕鬆銜接。這裡的平台指的是 .NET Framework、.NET Core、Xamarin 等 .NET 家族的平台實作（[參考這裡](https://docs.microsoft.com/zh-tw/dotnet/standard/net-standard#net-implementation-support)）。
+>撰寫類別函式庫專案建議使用 .NET Standard 來做，讓之後跨平台時能輕鬆銜接。這裡的平台指的是 .NET Framework、.NET Core、Xamarin 等 .NET 家族的平台實作（[參考這裡](https://docs.microsoft.com/zh-tw/dotnet/standard/net-standard?WT.mc_id=DT-MVP-5003022#net-implementation-support)）。
 
 ## 情境
 
-假設我們有個 Plug-in System，根據需要動態載入 DLL，當我們要新增加功能時，只要把包含新功能的 DLL 複製至指定的資料夾位置即可，系統會利用 .NET 的反射機制（[System.Reflection](https://docs.microsoft.com/zh-tw/dotnet/framework/reflection-and-codedom/reflection)）來調用新功能。
+假設我們有個 Plug-in System，根據需要動態載入 DLL，當我們要新增加功能時，只要把包含新功能的 DLL 複製至指定的資料夾位置即可，系統會利用 .NET 的反射機制（[System.Reflection](https://docs.microsoft.com/zh-tw/dotnet/framework/reflection-and-codedom/reflection?WT.mc_id=DT-MVP-5003022)）來調用新功能。
 
 這時如果你使用類別函式庫專案寫好新功能，而這個專案裡面安裝了許多 NuGet 套件，建置的時候你會發現輸出的檔案只有少少的三個（如下圖）。
 
@@ -63,6 +63,6 @@ categories: [CSharp, Dotnet, Develop]
 參考資料：
 
 * [How to get .NET Core projects to copy NuGet references to build output?](https://stackoverflow.com/questions/43837638/how-to-get-net-core-projects-to-copy-nuget-references-to-build-output)
-* [專案檔中的套件參考 (PackageReference)](https://docs.microsoft.com/zh-tw/nuget/consume-packages/package-references-in-project-files)
+* [專案檔中的套件參考 (PackageReference)](https://docs.microsoft.com/zh-tw/nuget/consume-packages/package-references-in-project-files?WT.mc_id=DT-MVP-5003022)
 * [MSBuild tasks with dependencies](https://natemcmaster.com/blog/2017/11/11/msbuild-task-with-dependencies/)
 * [Plug-in architecture on ASP.NET Core - Dependency problems and solutions](https://thienn.com/Plug-in-architecture-on-aspnetcore-dependency-problems-solutions/)

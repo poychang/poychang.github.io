@@ -11,7 +11,7 @@ PowerShell 不僅僅是一種腳本語言，還是一個可執行命令列的 Sh
 
 ## 直接寫程式碼進行載入
 
-PowerShell 提供了 `Add-Tpye` 命令，[這個命令](https://docs.microsoft.com/zh-tw/powershell/module/microsoft.powershell.utility/add-type?view=powershell-6)的用途在於將 Microsoft .NET Framework 或 .NET Core 的類別載入 PowerShell 執行階段中。
+PowerShell 提供了 `Add-Tpye` 命令，[這個命令](https://docs.microsoft.com/zh-tw/powershell/module/microsoft.powershell.utility/add-type?view=powershell-6&WT.mc_id=DT-MVP-5003022)的用途在於將 Microsoft .NET Framework 或 .NET Core 的類別載入 PowerShell 執行階段中。
 
 `Add-Type` 有可以參數可以直接接收 C# 程式碼，使用方式基本如下：
 
@@ -64,7 +64,7 @@ namespace PSLib
 Add-Type -ReferencedAssemblies $Assemblies -TypeDefinition $CSharpCode -Language CSharp
 ```
 
-> 一個常見的問題是，該如何取得組件的描述，可以[參考這篇](https://docs.microsoft.com/zh-tw/dotnet/framework/app-domains/how-to-view-the-contents-of-the-gac)，主要透過 Visual Studio 的開發人員命令提示字元，使用 `gacutil -l` 命令就可以取得本機全域組件快取的組件清單。
+> 一個常見的問題是，該如何取得組件的描述，可以[參考這篇](https://docs.microsoft.com/zh-tw/dotnet/framework/app-domains/how-to-view-the-contents-of-the-gac?WT.mc_id=DT-MVP-5003022)，主要透過 Visual Studio 的開發人員命令提示字元，使用 `gacutil -l` 命令就可以取得本機全域組件快取的組件清單。
 
 執行後我們就可以有下面兩個命令可以執行：
 
@@ -139,7 +139,7 @@ $PSLib = "$CurrentLocation\PSLib.dll"
 
 參考資料：
 
-- [組件版本控制](https://docs.microsoft.com/zh-tw/dotnet/framework/app-domains/assembly-versioning)
-- [檢視全域組件快取的內容](https://docs.microsoft.com/zh-tw/dotnet/framework/app-domains/how-to-view-the-contents-of-the-gac)
+- [組件版本控制](https://docs.microsoft.com/zh-tw/dotnet/framework/app-domains/assembly-versioning?WT.mc_id=DT-MVP-5003022)
+- [檢視全域組件快取的內容](https://docs.microsoft.com/zh-tw/dotnet/framework/app-domains/how-to-view-the-contents-of-the-gac?WT.mc_id=DT-MVP-5003022)
 - [Using CSharp (C#) code in Powershell scripts](https://blogs.technet.microsoft.com/stefan_gossner/2010/05/07/using-csharp-c-code-in-powershell-scripts/)
-- [PowerShell Docs - Add-Type](https://docs.microsoft.com/zh-tw/powershell/module/microsoft.powershell.utility/add-type?view=powershell-6)
+- [PowerShell Docs - Add-Type](https://docs.microsoft.com/zh-tw/powershell/module/microsoft.powershell.utility/add-type?view=powershell-6?WT.mc_id=DT-MVP-5003022)

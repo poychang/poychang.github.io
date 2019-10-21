@@ -89,7 +89,7 @@ xmlDocument.Validate(schema, (sender, event) =>
 
 `Validate()` 會有兩個參數，第一個是要載入的 XmlSchemaSet 驗證物件，第二個是 `ValidationEventHandler`，後者比較需要多說明一些。
 
-後者 `ValidationEventHandler` 是一個委派([詳細資訊](https://docs.microsoft.com/zh-tw/dotnet/api/system.xml.schema.validationeventhandler?view=netframework-4.7.1))，可以有兩個參數，sender 和 event，sender 代表所驗證的物件本身，event 代表驗證過程中發生的事件，通常拿來顯示驗證的錯誤訊息。
+後者 `ValidationEventHandler` 是一個委派([詳細資訊](https://docs.microsoft.com/zh-tw/dotnet/api/system.xml.schema.validationeventhandler?view=netframework-4.7.1&WT.mc_id=DT-MVP-5003022))，可以有兩個參數，sender 和 event，sender 代表所驗證的物件本身，event 代表驗證過程中發生的事件，通常拿來顯示驗證的錯誤訊息。
 
 而 `ValidationEventHandler` 這個委派在驗證過程中，如果有發生錯誤才會被執行，而這個委派參數如果設定成 null，則會在驗證發生錯誤時，會吐出執行例外。
 
@@ -100,7 +100,7 @@ xmlDocument.Validate(schema, (sender, event) =>
 參考資料：
 
 - [Wiki - XML Schema](https://zh.wikipedia.org/wiki/XML_Schema)
-- [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml)
+- [LINQ to XML (C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml?WT.mc_id=DT-MVP-5003022)
 - [YouTube - LINQ to XML Tutorial](https://www.youtube.com/playlist?list=PL6n9fhu94yhX-U0Ruy_4eIG8umikVmBrk)
 - [LINQ to XML Tutorial](http://csharp-video-tutorials.blogspot.tw/2014/08/linq-to-xml-tutorial.html)
 - [XML Schema Tutorial](https://www.liquid-technologies.com/xml-schema-tutorial/xsd-elements-attributes)

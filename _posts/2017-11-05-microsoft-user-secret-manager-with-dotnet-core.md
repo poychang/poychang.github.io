@@ -94,7 +94,7 @@ categories: [Dotnet, Develop, Tools]
 
 參考資料：
 
-* [安全的儲存 ASP.NET Core 在開發期間的應用程式密碼](https://docs.microsoft.com/zh-tw/aspnet/core/security/app-secrets)
+* [安全的儲存 ASP.NET Core 在開發期間的應用程式密碼](https://docs.microsoft.com/zh-tw/aspnet/core/security/app-secrets?WT.mc_id=DT-MVP-5003022)
 * [.NET Core程序中使用User Secrets存储敏感数据](http://www.cnblogs.com/nianming/p/7068253.html)
 * [ASP.NET CORE 2.0 SECRET MANAGER](https://tahirnaushad.com/2017/08/31/asp-net-core-2-0-secret-manager/)
 

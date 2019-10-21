@@ -60,12 +60,12 @@ CI/CD 任務流程變成如下圖：
 
 不過這樣做還有一個問題，就是網站會在佈署期間停機，無法提供服務，這時候可以使用 Swap Slots 這個任務做正式環境與預備環境的對調，對調的過程相當於起兩個站台，新的站台服務新連線，舊的站台的服務停止後就移除了。
 
-Swap Slots 這個動作必須搭配 Standard 以上的 Azure App Service 方案，像我是使用共用等級的方案就不能用了，有興趣的朋友們請參考這份[在 Azure App Service 中設定預備環境](https://docs.microsoft.com/zh-tw/azure/app-service/web-sites-staged-publishing)官方文件。
+Swap Slots 這個動作必須搭配 Standard 以上的 Azure App Service 方案，像我是使用共用等級的方案就不能用了，有興趣的朋友們請參考這份[在 Azure App Service 中設定預備環境](https://docs.microsoft.com/zh-tw/azure/app-service/web-sites-staged-publishing?WT.mc_id=DT-MVP-5003022)官方文件。
 
 ----------
 
 參考資料：
 
 * [Can Azure Web App Deployment have an option to stop/start web app?](https://github.com/Microsoft/vsts-tasks/issues/1233)
-* [使用 Visual Studio Team Services 和 IIS 建立持續整合管線](https://docs.microsoft.com/zh-tw/azure/virtual-machines/windows/tutorial-vsts-iis-cicd)
+* [使用 Visual Studio Team Services 和 IIS 建立持續整合管線](https://docs.microsoft.com/zh-tw/azure/virtual-machines/windows/tutorial-vsts-iis-cicd?WT.mc_id=DT-MVP-5003022)
 

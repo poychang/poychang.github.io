@@ -153,9 +153,9 @@ public IActionResult OnlyAdministrator()
 參考資料：
 
 * [瞭解 ASP.NET 的執行身份識別](http://vito-note.blogspot.com/2013/04/windows.html)
-* [在 ASP.NET Core 中使用多個環境](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/environments?view=aspnetcore-2.1)  
-* [將驗證和身分識別移轉至 ASP.NET Core 2.0](https://docs.microsoft.com/zh-tw/aspnet/core/migration/1x-to-2x/identity-2x?view=aspnetcore-2.1)
-* [在 ASP.NET Core 原則為基礎的授權](https://docs.microsoft.com/zh-tw/aspnet/core/security/authorization/policies?view=aspnetcore-2.1)
-* [在 ASP.NET Core 應用程式中設定 Windows 驗證](https://docs.microsoft.com/zh-tw/aspnet/core/security/authentication/windowsauth?tabs=aspnetcore2x#enable-windows-authentication-with-httpsys-or-weblistener)
+* [在 ASP.NET Core 中使用多個環境](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/environments?view=aspnetcore-2.1&WT.mc_id=DT-MVP-5003022)
+* [將驗證和身分識別移轉至 ASP.NET Core 2.0](https://docs.microsoft.com/zh-tw/aspnet/core/migration/1x-to-2x/identity-2x?view=aspnetcore-2.1&WT.mc_id=DT-MVP-5003022)
+* [在 ASP.NET Core 原則為基礎的授權](https://docs.microsoft.com/zh-tw/aspnet/core/security/authorization/policies?view=aspnetcore-2.1&WT.mc_id=DT-MVP-5003022)
+* [在 ASP.NET Core 應用程式中設定 Windows 驗證](https://docs.microsoft.com/zh-tw/aspnet/core/security/authentication/windowsauth?tabs=aspnetcore2x&WT.mc_id=DT-MVP-5003022#enable-windows-authentication-with-httpsys-or-weblistener)
 * [Web API with windows authentication on asp.net Core 2](https://haithamshaddad.com/2017/12/29/web-api-with-windows-authentication-on-asp-net-core-2/)
 * [How to implement Windows Authentication in an Angular (^4.3.1) application with a stand-alone Web API](https://spikesapps.wordpress.com/2017/08/04/how-to-implement-windows-authentication-in-an-angular-4-3-1-application-with-a-stand-alone-web-api/)

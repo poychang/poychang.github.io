@@ -67,8 +67,8 @@ Azure Bot Service 是一個開發、運行對話機器人的整合環境，然�
 
 接者可以參考*使用 Bot Builder SDK 建立對話機器人*的官方快速上手文件：
 
-* [Create a bot with the Bot Builder SDK for .NET](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-quickstart)
-* [Create a bot with the Bot Builder SDK for Node.js](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-quickstart)
+* [Create a bot with the Bot Builder SDK for .NET](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-quickstart?WT.mc_id=DT-MVP-5003022)
+* [Create a bot with the Bot Builder SDK for Node.js](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-quickstart?WT.mc_id=AZ-MVP-5003022)
 
 ### Bot Framework Emulator
 
@@ -90,7 +90,7 @@ Bot Framework 提供產生對話框操作介面的 API，用於產生卡片、�
 
 ### Bot Framework REST API
 
-有時候我們不想使用各種第三方的通訊平台，而是想自建一個的時候，可以使用 Bot Service 中的 Direct Line 頻道，這個頻道官方有提供專屬的 [Direct Line API 文件](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts)，透過文件中的操作方式，我們可以自己運用各種 API 呼叫，組合出自己的對話流程。
+有時候我們不想使用各種第三方的通訊平台，而是想自建一個的時候，可以使用 Bot Service 中的 Direct Line 頻道，這個頻道官方有提供專屬的 [Direct Line API 文件](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?WT.mc_id=AZ-MVP-5003022)，透過文件中的操作方式，我們可以自己運用各種 API 呼叫，組合出自己的對話流程。
 
 ## 後記
 
@@ -100,5 +100,5 @@ Bot Framework 提供產生對話框操作介面的 API，用於產生卡片、�
 
 參考資料：
 
-* [官方文件 - Create a bot with the Bot Builder SDK for .NET](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-quickstart)
+* [官方文件 - Create a bot with the Bot Builder SDK for .NET](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-quickstart?WT.mc_id=DT-MVP-5003022)
 * [2018 鐵人賽 - 利用 MS Bot framework 與 Cognitive Service 建構自用智慧小秘書](https://ithelp.ithome.com.tw/users/20091494/ironman/1411)

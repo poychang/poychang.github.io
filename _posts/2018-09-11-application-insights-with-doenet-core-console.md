@@ -7,7 +7,7 @@ comments: true
 categories: [Dotnet, Develop, Tools]
 ---
 
-一般聽到 Azure 的 [Application Insights](https://docs.microsoft.com/zh-tw/azure/application-insights/app-insights-overview)，會直接與 Web 應用程式連結在一起，認為他是一個監視即時 Web 應用程式狀態的遙測工具。但其實我們可以將 Application Insights 強大的自動偵測效能異常及分析功能，放在一般的應用程式中，例如主控台應用程式。
+一般聽到 Azure 的 [Application Insights](https://docs.microsoft.com/zh-tw/azure/application-insights/app-insights-overview?WT.mc_id=AZ-MVP-5003022)，會直接與 Web 應用程式連結在一起，認為他是一個監視即時 Web 應用程式狀態的遙測工具。但其實我們可以將 Application Insights 強大的自動偵測效能異常及分析功能，放在一般的應用程式中，例如主控台應用程式。
 
 > 在使用 Application Insights 功能之前，您必須要有 Azure 訂閱帳戶，[免費取得 NT$6,100 的 Azure 點數與 12 個月的熱門服務](https://azure.microsoft.com/zh-tw/free/)。
 
@@ -72,9 +72,9 @@ categories: [Dotnet, Develop, Tools]
 
 ### 設定 TelemetryClient 遙測客戶端的方法
 
-有兩種方式來設定 `TelemetryClient` 客戶端的遙測實體，第一種是透過程式碼來設定 `TelemetryClient` 要收集的遙測資訊，這個方法能夠讓我們自行決定那些程式碼段落要套用哪種收集遙測資料的收集器，相關程式碼範例請參考[這裡](https://docs.microsoft.com/zh-tw/azure/application-insights/application-insights-console#configuring-telemetry-collection-from-code)。
+有兩種方式來設定 `TelemetryClient` 客戶端的遙測實體，第一種是透過程式碼來設定 `TelemetryClient` 要收集的遙測資訊，這個方法能夠讓我們自行決定那些程式碼段落要套用哪種收集遙測資料的收集器，相關程式碼範例請參考[這裡](https://docs.microsoft.com/zh-tw/azure/application-insights/application-insights-console?WT.mc_id=AZ-MVP-5003022#configuring-telemetry-collection-from-code)。
 
-另一種是[使用設定檔的方式](https://docs.microsoft.com/zh-tw/azure/application-insights/application-insights-console#using-config-file)，比較常見透過 `ApplicationInsights.config` 檔案做設定，然後加載到 `TelemetryClient` 遙測實體，預設會抓應用程式根目錄下的這個官方預設檔案，而你也可以明確指定設定檔路徑做載入，請參考下列程式碼來指定檔案位置：
+另一種是[使用設定檔的方式](https://docs.microsoft.com/zh-tw/azure/application-insights/application-insights-console?WT.mc_id=AZ-MVP-5003022#using-config-file)，比較常見透過 `ApplicationInsights.config` 檔案做設定，然後加載到 `TelemetryClient` 遙測實體，預設會抓應用程式根目錄下的這個官方預設檔案，而你也可以明確指定設定檔路徑做載入，請參考下列程式碼來指定檔案位置：
 
 ```csharp
 // 使用官方預設設定檔
@@ -92,7 +92,7 @@ var telemetryClient = new TelemetryClient(configuration);
 
 上述明確指定設定檔路徑的範例，會使用存放在 C 槽跟目錄的設定檔來設定 `TelemetryClient`，借此你也可以讓多個應用程式共用同一個遙測設定檔。
 
->詳細的 `ApplicationInsights.config` 設定說明請參考[這裡](https://docs.microsoft.com/zh-tw/azure/application-insights/app-insights-configuration-with-applicationinsights-config)。
+>詳細的 `ApplicationInsights.config` 設定說明請參考[這裡](https://docs.microsoft.com/zh-tw/azure/application-insights/app-insights-configuration-with-applicationinsights-config?WT.mc_id=AZ-MVP-5003022)。
 
 有一點請注意，為了收集完整的應用程式遙測資料，應盡早將 Application Insights 初始化。
 
@@ -218,7 +218,7 @@ namespace ApplicationInsightsConsole
 
 本文一開始有提到，安裝一個常用的遙測套件 `Microsoft.ApplicationInsights.DependencyCollector` 它會自動追蹤 HTTP、SQL 或某些其他外部相依性呼叫，這個遙測套件相當實用，建議一定要裝。
 
-完整範例中，用到 `telemetryClient.Flush()` 提前清空 Application Insights 的訊息緩衝區，這常用在關閉應用程式前使用此方法強制將資料傳送出去，官方說明文件請參考[這裡](https://docs.microsoft.com/zh-tw/azure/application-insights/app-insights-api-custom-events-metrics#flushing-data)。
+完整範例中，用到 `telemetryClient.Flush()` 提前清空 Application Insights 的訊息緩衝區，這常用在關閉應用程式前使用此方法強制將資料傳送出去，官方說明文件請參考[這裡](https://docs.microsoft.com/zh-tw/azure/application-insights/app-insights-api-custom-events-metrics#flushing-data?WT.mc_id=AZ-MVP-5003022)。
 
 > 本篇完整範例程式碼請參考 [poychang/Demo-ApplicationInsights-Console-App](https://github.com/poychang/Demo-ApplicationInsights-Console-App)。
 
@@ -230,8 +230,8 @@ namespace ApplicationInsightsConsole
 
 參考資料：
 
-- [什麼是 Application Insights](https://docs.microsoft.com/zh-tw/azure/application-insights/app-insights-overview)
-- [適用於 .NET 主控台應用程式的 Application Insights](https://docs.microsoft.com/zh-tw/azure/application-insights/application-insights-console)
+- [什麼是 Application Insights](https://docs.microsoft.com/zh-tw/azure/application-insights/app-insights-overview?WT.mc_id=AZ-MVP-5003022)
+- [適用於 .NET 主控台應用程式的 Application Insights](https://docs.microsoft.com/zh-tw/azure/application-insights/application-insights-console?WT.mc_id=AZ-MVP-5003022)
 - [Microsoft/ApplicationInsights-Home](https://github.com/Microsoft/ApplicationInsights-Home)
 - [DevOps - 透過 Application Insights 將遙測最佳化](https://msdn.microsoft.com/magazine/mt808502)
 - [Azure Application Insights REST API](https://dev.applicationinsights.io/)

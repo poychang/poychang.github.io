@@ -20,7 +20,7 @@ categories: [Azure, Tools]
 
 ## 搭配 WebApp
 
-如果你是使用 Azuew Paas 的 WebApp 服務，可以直接參考官方[建立和管理混合式連線](https://docs.microsoft.com/zh-tw/azure/biztalk-services/integration-hybrid-connection-create-manage)的文件，設定方式寫得很清楚，跟著做就差不多了，這裡就不多做說明。
+如果你是使用 Azuew Paas 的 WebApp 服務，可以直接參考官方[建立和管理混合式連線](https://docs.microsoft.com/zh-tw/azure/biztalk-services/integration-hybrid-connection-create-manage?WT.mc_id=AZ-MVP-5003022)的文件，設定方式寫得很清楚，跟著做就差不多了，這裡就不多做說明。
 
 比較需要注意的是地端的防火牆設定：
 
@@ -37,7 +37,7 @@ categories: [Azure, Tools]
 1. 登入 [Azure 傳統入口網站](https://manage.windowsazure.com/)
 	* 目前只有 Azure 傳統入口網站能單獨建立 BizTalk 服務
 	* BizTalk Hybrid Connection 基本有 5 個免費連線可以用（好棒棒！）
-2. 在左側瀏覽窗格中，選取並建立 [BizTalk 服務](https://docs.microsoft.com/zh-tw/azure/biztalk-services/biztalk-provision-services)
+2. 在左側瀏覽窗格中，選取並建立 [BizTalk 服務](https://docs.microsoft.com/zh-tw/azure/biztalk-services/biztalk-provision-services?WT.mc_id=AZ-MVP-5003022)
 3. 從中選取 [建立混合式連接] 並設定想要連線地端伺服器
 4. 在地端伺服器上使用 Hybrid Connection Manager 來設定內部部屬連接字串
 
@@ -172,7 +172,7 @@ Get-HybridConnectionClient -URI "hc://YourBizTalkServiceName.hybrid.biztalk.wind
 
 參考資料：
 
-* [混合式連線概觀](https://docs.microsoft.com/zh-tw/azure/biztalk-services/integration-hybrid-connection-overview)
+* [混合式連線概觀](https://docs.microsoft.com/zh-tw/azure/biztalk-services/integration-hybrid-connection-overview?WT.mc_id=AZ-MVP-5003022)
 * [使用混合式連接，讓WebApp不使用VPN就可以連接內部網路進行資料存取](https://dotblogs.com.tw/maduka/2016/06/02/163424)
 * [Azure BizTalk Services: Connecting to On-Premises Resources](https://www.simple-talk.com/cloud/platform-as-a-service/azure-biztalk-services-connecting-to-on-premises-resources/)
 * [Is there way to create HYBRID CONNECTIONS for azure could service or azure VM?](http://stackoverflow.com/questions/32329361/is-there-way-to-create-hybrid-connections-for-azure-could-service-or-azure-vm)

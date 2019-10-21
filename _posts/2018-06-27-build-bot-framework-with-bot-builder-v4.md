@@ -14,12 +14,12 @@ categories: [CSharp, Dotnet, WebAPI, Azure, Bot]
 
 **Table of Contents**
 
-- [開發環境](#%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83)
-- [建立對話機器人](#%E5%BB%BA%E7%AB%8B%E5%B0%8D%E8%A9%B1%E6%A9%9F%E5%99%A8%E4%BA%BA)
-- [本機偵錯](#%E6%9C%AC%E6%A9%9F%E5%81%B5%E9%8C%AF)
-- [發行至 Azure](#%E7%99%BC%E8%A1%8C%E8%87%B3-azure)
-- [註冊對話機器人服務](#%E8%A8%BB%E5%86%8A%E5%B0%8D%E8%A9%B1%E6%A9%9F%E5%99%A8%E4%BA%BA%E6%9C%8D%E5%8B%99)
-- [專案範本擴充套件](#%E5%B0%88%E6%A1%88%E7%AF%84%E6%9C%AC%E6%93%B4%E5%85%85%E5%A5%97%E4%BB%B6)
+- [開發環境](#%e9%96%8b%e7%99%bc%e7%92%b0%e5%a2%83)
+- [建立對話機器人](#%e5%bb%ba%e7%ab%8b%e5%b0%8d%e8%a9%b1%e6%a9%9f%e5%99%a8%e4%ba%ba)
+- [本機偵錯](#%e6%9c%ac%e6%a9%9f%e5%81%b5%e9%8c%af)
+- [發行至 Azure](#%e7%99%bc%e8%a1%8c%e8%87%b3-azure)
+- [註冊對話機器人服務](#%e8%a8%bb%e5%86%8a%e5%b0%8d%e8%a9%b1%e6%a9%9f%e5%99%a8%e4%ba%ba%e6%9c%8d%e5%8b%99)
+- [專案範本擴充套件](#%e5%b0%88%e6%a1%88%e7%af%84%e6%9c%ac%e6%93%b4%e5%85%85%e5%a5%97%e4%bb%b6)
 
 ## 開發環境
 
@@ -88,7 +88,7 @@ categories: [CSharp, Dotnet, WebAPI, Azure, Bot]
 
 新增 `EchoState.cs` 檔案，建立 `EchoState` 類別，裡面包含一個 `TurnCount` 屬性，作為記錄第幾次對話的計數器。
 
->有時為了追蹤對話過程中的關鍵資訊，為對話機器人設計 State 作為資訊保留機制，能讓我們更容易處理程式邏輯，詳細請參考官方文件[Save state using conversation and user properties](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-state?view=azure-bot-service-4.0&tabs=csharp)。
+>有時為了追蹤對話過程中的關鍵資訊，為對話機器人設計 State 作為資訊保留機制，能讓我們更容易處理程式邏輯，詳細請參考官方文件[Save state using conversation and user properties](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-state?view=azure-bot-service-4.0&tabs=csharp&WT.mc_id=AZ-MVP-5003022)。
 
 ```cs
 namespace DemoBotBuilderV4

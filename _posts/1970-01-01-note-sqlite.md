@@ -177,7 +177,7 @@ public void Main()
 
 ## 使用 EF Core SQLite Provider 的限制
 
-參考資料：[SQLite EF Core Database Provider Limitations](https://docs.microsoft.com/zh-tw/ef/core/providers/sqlite/limitations)
+參考資料：[SQLite EF Core Database Provider Limitations](https://docs.microsoft.com/zh-tw/ef/core/providers/sqlite/limitations?WT.mc_id=DT-MVP-5003022)
 
 使用 Entity Framework Core 來處理 SQLite 資料庫時，有一些 Migrations 的限制，請參考下表：
 
