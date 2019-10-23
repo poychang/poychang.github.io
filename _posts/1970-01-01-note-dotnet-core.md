@@ -166,57 +166,50 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 參考資料：[.NET Standard](https://docs.microsoft.com/zh-tw/dotnet/standard/net-standard?WT.mc_id=DT-MVP-5003022)
 
 下表列出所有 .NET Standard 版本和支援的平台：
-
 <table class="table table-striped">
-<thead>
-  <tr>
-    <th>.NET Standard</th>
-  <th>1.0</th>
-  <th>1.1</th>
-  <th>1.2</th>
-  <th>1.3</th>
-  <th>1.4</th>
-  <th>1.5</th>
-  <th>1.6</th>
-  <th>2.0</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>.NET Core</td>
-  <td>1.0</td>
-  <td>1.0</td>
-    <td>1.0</td>
-  <td>1.0</td>
-  <td>1.0</td>
-    <td>1.0</td>
-  <td>1.0</td>
-  <td>2.0</td>
-  </tr>
-  <tr>
-    <td>.NET Framework (含 .NET Core 1.x SDK)</td>
-  <td>4.5</td>
-  <td>4.5</td>
-    <td>4.5.1</td>
-  <td>4.6</td>
-  <td>4.6.1</td>
-    <td>4.6.2</td>
-  <td></td>
-  <td></td>
-  </tr>
-  <tr>
-    <td>.NET Framework (含 .NET Core 2.0 SDK)</td>
-  <td>4.5</td>
-  <td>4.5</td>
-    <td>4.5.1</td>
-  <td>4.6</td>
-  <td>4.6.1</td>
-    <td>4.6.1</td>
-  <td>4.6.1</td>
-  <td>4.6.1</td>
-  </tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>.NET Standard</th>
+      <th>1.0</th>
+      <th>1.1</th>
+      <th>1.2</th>
+      <th>1.3</th>
+      <th>1.4</th>
+      <th>1.5</th>
+      <th>1.6</th>
+      <th>2.0</th>
+      <th>2.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>.NET Core</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>.NET Framework</td>
+      <td>4.5</td>
+      <td>4.5</td>
+      <td>4.5.1</td>
+      <td>4.6</td>
+      <td>4.6.1</td>
+      <td>4.6.1</td>
+      <td>4.6.1</td>
+      <td>4.6.1</td>
+      <td>不適用</td>
+    </tr>
+  </tbody>
 </table>
+
+>請注意！.NET Framework 不支援 .NET Standard 2.1 或更新版本。
 
 ## 執行(發佈)模式
 
