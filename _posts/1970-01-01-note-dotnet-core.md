@@ -236,9 +236,11 @@ public class MyClass
 | .NET Standard  | `NETSTANDARD`, `NETSTANDARD1_6`, `NETSTANDARD2_0`, `NETSTANDARD2_1`                               |
 | .NET Core      | `NETCOREAPP`, `NETCOREAPP1_0`, `NETCOREAPP1_1`, `NETCOREAPP2_0`, `NETCOREAPP2_2`, `NETCOREAPP3_0` |
 
+>記憶方式：基本上就是 [TFM 目標 Framework](https://docs.microsoft.com/zh-tw/dotnet/standard/frameworks?WT.mc_id=DT-MVP-5003022) 的符號轉成大寫，並將 `.` 改成 `_` 就是了。
+
 ## 執行(發佈)模式
 
-- 設定 `<TargetFramework>` 區段的設定值參考資料：[目標 Framework](https://docs.microsoft.com/zh-tw/dotnet/standard/frameworks?WT.mc_id=DT-MVP-5003022)
+- 設定 `<TargetFramework>` 區段的設定值參考資料：[TFM 目標 Framework](https://docs.microsoft.com/zh-tw/dotnet/standard/frameworks?WT.mc_id=DT-MVP-5003022)
 - 設定 `<RuntimeIdentifiers>` 區段的設定值參考資料：[.NET Core RID Catalog](https://docs.microsoft.com/zh-tw/dotnet/core/rid-catalog?WT.mc_id=DT-MVP-5003022)
 
 ### Framework Dependent Deployment(FDD)
