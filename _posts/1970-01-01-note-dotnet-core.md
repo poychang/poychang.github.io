@@ -211,10 +211,35 @@ System.Diagnostics.Debug.WriteLine(sw.Elapsed.TotalSeconds.ToString());         
 
 >請注意！.NET Framework 不支援 .NET Standard 2.1 或更新版本。
 
+開發多目標架構的程式時，可以透過 [C# 前置處理器指示詞](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/preprocessor-directives/index?WT.mc_id=DT-MVP-5003022)來設定該段程式碼只會在指定的目標架構下進行編譯，用法參考如下：
+
+```csharp
+public class MyClass
+{
+    static void Main()
+    {
+#if NET40
+        WebClient _client = new WebClient();
+#else
+        HttpClient _client = new HttpClient();
+#endif
+    }
+    //...
+}
+```
+
+更多目標架構的前置處理器指示詞，請參考[#if (C# 參考)](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if)這篇官方文件，常用的前置處理器指示詞，請參考下表：
+
+| 目標架構        | 前置處理器指示詞                                                                                     |
+| -------------- | ------------------------------------------------------------------------------------------------- |
+| .NET Framework | `NETFRAMEWORK`, `NET40`, `NET452`, `NET46`, `NET462`, `NET47`, `NET472`, `NET48`                  |
+| .NET Standard  | `NETSTANDARD`, `NETSTANDARD1_6`, `NETSTANDARD2_0`, `NETSTANDARD2_1`                               |
+| .NET Core      | `NETCOREAPP`, `NETCOREAPP1_0`, `NETCOREAPP1_1`, `NETCOREAPP2_0`, `NETCOREAPP2_2`, `NETCOREAPP3_0` |
+
 ## 執行(發佈)模式
 
 - 設定 `<TargetFramework>` 區段的設定值參考資料：[目標 Framework](https://docs.microsoft.com/zh-tw/dotnet/standard/frameworks?WT.mc_id=DT-MVP-5003022)
-- 設定 `<RuntimeIdentifiers>` 區段的設定值參考資料：[.NET Core RID Catalog](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog?WT.mc_id=DT-MVP-5003022)
+- 設定 `<RuntimeIdentifiers>` 區段的設定值參考資料：[.NET Core RID Catalog](https://docs.microsoft.com/zh-tw/dotnet/core/rid-catalog?WT.mc_id=DT-MVP-5003022)
 
 ### Framework Dependent Deployment(FDD)
 
