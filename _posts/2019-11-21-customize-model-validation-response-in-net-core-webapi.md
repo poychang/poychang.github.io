@@ -44,6 +44,8 @@ public void ConfigureServices(IServiceCollection services)
 | `ValueMustBeANumberAccessor`                 | `The field {0} must be a number.`                               |
 | `NonPropertyValueMustBeANumberAccessor`      | `The field must be a number.`                                   |
 
+
+
 但你無法直接修改該屬性，必須透過存取器來修改，例如 `NonPropertyAttemptedValueIsInvalidAccessor` 的存取器為 `SetNonPropertyAttemptedValueIsInvalidAccessor()` 基本上就是名稱前面加上 Set 前綴就是了。
 
 接著每個訊息的修改方式稍有不同，在注意一下他需要接收幾個參數做修正就可以了。
