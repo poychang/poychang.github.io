@@ -30,20 +30,19 @@ public void ConfigureServices(IServiceCollection services)
 
 這裡透過 `AddMvcOptions()` 來修改 MVC 內所使用的選項，在預設的 `ModelBindingMessageProvider` 模型繫結訊息供應器中，有以下 11 種訊息（或參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.metadata.modelbindingmessageprovider?view=aspnetcore-3.0&WT.mc_id=DT-MVP-5003022)）：
 
-| 屬性                                          | 預設的訊息樣板                                                    |
-| -------------------------------------------- | --------------------------------------------------------------- |
-| `MissingBindRequiredValueAccessor`           | `A value for the '{0}' parameter or property was not provided.` |
-| `MissingKeyOrValueAccessor`                  | `A value is required.`                                          |
-| `MissingRequestBodyRequiredValueAccessor`    | `A non-empty request body is required.`                         |
-| `ValueMustNotBeNullAccessor`                 | `The value '{0}' is invalid.`                                   |
-| `AttemptedValueIsInvalidAccessor`            | `The value '{0}' is not valid for {1}.`                         |
-| `NonPropertyAttemptedValueIsInvalidAccessor` | `The value '{0}' is not valid.`                                 |
-| `UnknownValueIsInvalidAccessor`              | `The supplied value is invalid for {0}.`                        |
-| `NonPropertyUnknownValueIsInvalidAccessor`   | `The supplied value is invalid.`                                |
-| `ValueIsInvalidAccessor`                     | `The value '{0}' is invalid.`                                   |
-| `ValueMustBeANumberAccessor`                 | `The field {0} must be a number.`                               |
-| `NonPropertyValueMustBeANumberAccessor`      | `The field must be a number.`                                   |
-
+| 屬性                                          | 預設的訊息樣板                                                  |
+| -------------------------------------------- | ------------------------------------------------------------- |
+| `MissingBindRequiredValueAccessor`           | A value for the '{0}' parameter or property was not provided. |
+| `MissingKeyOrValueAccessor`                  | A value is required.                                          |
+| `MissingRequestBodyRequiredValueAccessor`    | A non-empty request body is required.                         |
+| `ValueMustNotBeNullAccessor`                 | The value '{0}' is invalid.                                   |
+| `AttemptedValueIsInvalidAccessor`            | The value '{0}' is not valid for {1}.                         |
+| `NonPropertyAttemptedValueIsInvalidAccessor` | The value '{0}' is not valid.                                 |
+| `UnknownValueIsInvalidAccessor`              | The supplied value is invalid for {0}.                        |
+| `NonPropertyUnknownValueIsInvalidAccessor`   | The supplied value is invalid.                                |
+| `ValueIsInvalidAccessor`                     | The value '{0}' is invalid.                                   |
+| `ValueMustBeANumberAccessor`                 | The field {0} must be a number.                               |
+| `NonPropertyValueMustBeANumberAccessor`      | The field must be a number.                                   |
 
 
 但你無法直接修改該屬性，必須透過存取器來修改，例如 `NonPropertyAttemptedValueIsInvalidAccessor` 的存取器為 `SetNonPropertyAttemptedValueIsInvalidAccessor()` 基本上就是名稱前面加上 Set 前綴就是了。
