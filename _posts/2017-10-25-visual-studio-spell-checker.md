@@ -8,7 +8,7 @@ categories: [Tools]
 ---
 寫程式真的需要些英文底子，畢竟程式碼大多數是用英文寫的，你是否有在 Visual Studio 中寫程式時，老是有英文拼字拼錯的困擾呢？這裡有個優秀的擴充套件可以幫助你！
 
-[Visual Studio Spell Checker](https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellCheckerVS2017andLater) 是個檢查程式碼英文拼寫是否正確的擴充套件，適用於 Visual Studio 2013、2015、2017，安裝完成之後，在寫程式碼或註解的時候，會自動檢查英文單字是否有拼寫正確，避免造成日後維護時的困擾。
+[Visual Studio Spell Checker](https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellCheckerVS2017andLater) 是個檢查程式碼英文拼寫是否正確的擴充套件，安裝完成之後，在寫程式碼或註解的時候，會自動檢查英文單字是否有拼寫正確，避免造成日後維護時的困擾。
 
 當有檢查到拼寫錯誤的時候，該字下面就會出現紅色毛毛蟲。
 
@@ -31,6 +31,10 @@ categories: [Tools]
 ![Exclusion Expressions](https://i.imgur.com/Y5NdqDI.png)
 
 如果設定完還有紅色毛毛蟲了話，請關閉檔案重新開啟看看，讓 Spell Checker 自動重新檢查。
+
+## Visual Studio Code
+
+另外，如果你也很常使用 Visual Studio Code，針對這個需求也有 [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) 擴充套件可以，同樣會幫你檢查英文拼字並提示，支援 20 多種的程式語言檔案格式，就連 camelCase 的字，他也可以幫你檢查，是個提升基本程式碼品質的優秀擴充套件。
 
 ----------
 
