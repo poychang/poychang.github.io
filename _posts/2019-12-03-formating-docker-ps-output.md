@@ -6,6 +6,7 @@ author: Poy Chang
 comments: true
 categories: [Develop, Docker, PowerShell]
 ---
+
 最近使用 Docker 時遇到個小狀況，每次下 `docker ps` 查看容器資訊的時候，所輸出的資訊太多，斷行的結果造成閱讀困難，於是就在想，這個輸出應該可以被格式化吧，只顯示部分我比較關心的欄位就好了，於是找了一下官方文件，`docker ps --format` 是這次狀況的好夥伴。
 
 從 Docker 官方文件 [docker ps](https://docs.docker.com/engine/reference/commandline/ps/) 中，有個參數 `--format` 可以妥善利用，使用說明在 [Formatting](https://docs.docker.com/engine/reference/commandline/ps/#formatting) 這個段落。
