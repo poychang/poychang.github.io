@@ -28,7 +28,15 @@ https://view.officeapps.live.com/op/view.aspx?src=
 https://view.officeapps.live.com/op/embed.aspx?src=
 ```
 
-<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/poychang/poychang.github.io/raw/master/assets/post-files/THIS-IS-WORD.docx' width='500px' height='300px' frameborder='0'>This is an embedded <a target='_blank' href='http://office.com'>Microsoft Office</a> document, powered by <a target='_blank' href='http://office.com/webapps'>Office Online</a>.</iframe>
+搭配 `iframe` 來呈現的範例如下：
+
+```html
+<iframe
+    src='https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/poychang/poychang.github.io/raw/master/assets/post-files/THIS-IS-WORD.docx'
+    width='500px' height='300px' frameborder='0'>
+    This is an embedded <a target='_blank' href='http://office.com'>Microsoft Office</a> document, powered by <a target='_blank' href='http://office.com/webapps'>Office Online</a>.
+</iframe>
+```
 
 Microsoft Office Viewer 支援的檔案格式有下面這幾種，基本上只支援 Office 家族的檔案格式：
 
