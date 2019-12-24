@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 為什麼考證照？如何準備 AZ-900 Microsoft Azure Fundamentals 雲端證照
-date: 2019-12-31 00:40
+date: 2019-12-20 00:40
 author: Poy Chang
 comments: true
 categories: [Azure, Develop]
@@ -80,3 +80,4 @@ Microsoft 官方有個教學平台 Microsoft Learn，這個平台上面有很豐
 * [資策會 Microsoft Azure Fundamentals 免費線上課程](https://openedx.iiiedu.org.tw/courses/course-v1:Microsoft+AZ-900+2019_T1/about)
 * [Microsoft Learn - Microsoft Certified Azure Fundamentals](https://docs.microsoft.com/zh-tw/learn/certifications/azure-fundamentals)
 * [GitHub - MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals)
+* [Prepare for Exam AZ-900](https://www.exam-answer.com/microsoft/az-900)
