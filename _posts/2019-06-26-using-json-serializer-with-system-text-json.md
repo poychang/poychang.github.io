@@ -63,7 +63,7 @@ var json = JsonSerializer.Serialize<Student>(student, options);
 }
 ```
 
-`JsonSerializerOptions` 還有其他屬性可以做調整，詳請查看[官方文件](https://docs.microsoft.com/zh-tw/dotnet/api/system.text.json.serialization.jsonserializeroptions?WT.mc_id=DT-MVP-5003022)。
+`JsonSerializerOptions` 還有其他屬性可以做調整，詳請查看[官方文件](https://docs.microsoft.com/zh-tw/dotnet/api/system.text.json.jsonserializeroptions?WT.mc_id=DT-MVP-5003022)。
 
 ## 將文字反序列化成物件
 
