@@ -9,7 +9,7 @@ categories: [CSharp, Dotnet]
 
 一直以來，當要處理 JSON 的時候 [Json.NET](https://www.newtonsoft.com/json) 是最佳的幫手，有非常順手的 API 和功能，讓開發者輕鬆處理 JSON 的大小事，甚至在 .NET 的各種函示庫、框架中都有用到，但當許多專案相依於此函示庫時，只要版本一更新，很容易造成許多專案要更著變動，造成相依的函示庫版本很難掌握，因此 .NET Team 發展了 `System.Text.Json` 來在 .NET 專案中取代 Json.NET 的依賴。
 
->目前 `System.Text.Json` 還在 Preview 版本，如果你是使用最新的 .NET Core 3，此函示庫已經包含在裡面了。當然你也可以自行透過 NuGet 來安裝 Preview 版本的 [System.Text.Json](https://nuget.org/packages/System.Text.Json) 擴充套件來使用。
+>如果你是使用 .NET Core 3 以上版本，`System.Text.Json` 此函示庫已經包含在裡面了。當然你也可以自行透過 NuGet 來安裝 Preview 版本的 [System.Text.Json](https://nuget.org/packages/System.Text.Json) 擴充套件來使用。
 
 >2019/07/23 推出了 Preview 7，這版有 Breaking Change，已修正此文章。
 
