@@ -59,3 +59,4 @@ Visual Studio 在安裝時，會將所需要的 XML 結構描述快取存在 `%V
 
 * [XML 結構描述快取](https://docs.microsoft.com/zh-tw/visualstudio/xml-tools/schema-cache)
 * [microsoft/msbuild - msbuild/src/MSBuild/ProjectSchemaValidationHandler.cs](https://github.com/Microsoft/msbuild/blob/master/src/MSBuild/ProjectSchemaValidationHandler.cs)
+* [microsoft/msbuild - msbuild/src/MSBuild/Microsoft.Build.CommonTypes.xsd](https://github.com/Microsoft/msbuild/blob/master/src/MSBuild/Microsoft.Build.CommonTypes.xsd)
