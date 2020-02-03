@@ -54,7 +54,7 @@ categories: [CSharp, Dotnet, Develop]
 
 ![修改設定後會多很多檔案](https://i.imgur.com/7f2ZRu5.png)
 
-多出來的檔案可以分成兩種，一種是 NuGet 套件本身的 DLL，另一種是 NuGet 套件相依的 DLL，例如 Newtonsoft.Json 套件只會多出一個 `Newtonsoft.Json.dll`，而 Dapper 套件除了會多出一個 `Dapper.dll` 外，還會出現其他相依的 DLL 檔。
+多出來的檔案可以分成兩種，一種是 NuGet 套件本身的 DLL，另一種是 NuGet 套件相依的 DLL，例如 Newtonsoft.Json 套件就會多出一個 `Newtonsoft.Json.dll`，而 Dapper 套件除了會多出一個 `Dapper.dll` 外，還會出現其他相依的 DLL 檔。
 
 如此一來我們就可以強制專案在建置時，將相依的套件整個複製至輸出資料夾了。
 
@@ -65,4 +65,4 @@ categories: [CSharp, Dotnet, Develop]
 * [How to get .NET Core projects to copy NuGet references to build output?](https://stackoverflow.com/questions/43837638/how-to-get-net-core-projects-to-copy-nuget-references-to-build-output)
 * [專案檔中的套件參考 (PackageReference)](https://docs.microsoft.com/zh-tw/nuget/consume-packages/package-references-in-project-files?WT.mc_id=DT-MVP-5003022)
 * [MSBuild tasks with dependencies](https://natemcmaster.com/blog/2017/11/11/msbuild-task-with-dependencies/)
-* [Plug-in architecture on ASP.NET Core - Dependency problems and solutions](https://thienn.com/Plug-in-architecture-on-aspnetcore-dependency-problems-solutions/)
+* [Plug-in architecture on ASP.NET Core - Dependency problems and solutions](https://thienn.com/plug-in-architecture-on-aspnetcore-dependency-problems-solutions/)
