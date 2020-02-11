@@ -1,21 +1,31 @@
 ---
 layout: post
-title: Javascript Array 操作筆記
+title: Javascript 筆記
 date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Javascript, Note]
 ---
 
-使用 javascript 操作 JSON 時，使用內建陣列的操作功能，不管是在陣列上的資料儲存、過濾、排序、組合，都是超級無敵好用
+本篇作為筆記用途，記錄 JavaScript 參考資料
 
-[完整的 Array 用法可以看 MDN 官網](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+## JavaScript 模組匯入匯出
+
+基本上分兩種，具名(name)和預設(default)，前者必須有指定的名稱做匯入匯出(但可以用as變更)，後者匯出時不指定名稱，而在匯入時由開發者自訂。
+
+![JavaScript 模組匯入匯出](https://i.imgur.com/1IUxxHG.jpg)
+
+參考資料：[Module Cheatsheet](https://www.samanthaming.com/tidbits/79-module-cheatsheet/)
 
 ## Javascript Array Cheat Sheet
+
+使用 javascript 操作 JSON 時，使用內建陣列的操作功能，不管是在陣列上的資料儲存、過濾、排序、組合，都是超級無敵好用
 
 <a href="http://i.imgur.com/Jsb9NrZ.jpg" target="_blank">
   ![Javascript-Array-Cheat-Sheet](http://i.imgur.com/Jsb9NrZ.jpg)
 </a>
+
+[完整的 Array 用法可以看 MDN 官網](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ## 推薦使用 [Lodash](https://lodash.com/)
 
