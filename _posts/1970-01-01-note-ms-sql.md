@@ -17,6 +17,10 @@ SQL Server 2014 Express LocalDB 的連線伺服器名稱：`(localdb)\MSSQLLocal
 
 參考資料：[升級舊專案中 SQLLOCALDB V11.0 至 V12.0](http://blog.kkbruce.net/2015/12/upgrade-sqllocaldb-v11-to-v12.html#.V8ADJyh97cs)
 
+## SQL 執行順序
+
+![SQL 執行順序](https://i.imgur.com/8jmTSgX.jpg)
+
 ## 基本指令
 
 ```sql
