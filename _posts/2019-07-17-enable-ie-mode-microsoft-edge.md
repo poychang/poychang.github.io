@@ -9,7 +9,7 @@ categories: [Tools]
 
 相信還有很多企業內部的網頁應用程式還是只能用 IE 來開啟使用，針對這點 Microsoft Edge (Chromium) 有提供 IE Mode，讓你可以在 Microsoft Edge 中使用 IE 開啟 IE Only 的網頁，而不脫離整個瀏覽器介面，對於不想要在多個應用程式切換來切換去的使用者來說，相當便利。
 
->IE Mode 這個功能能目前還屬於實驗性質，但已經可以在最新版的 Windows 10 上順利運作。
+>2020/02/01 更多關於以 IE Mode 使用 Microsoft Edge 請參考這份[官方文件](https://docs.microsoft.com/zh-tw/deployedge/edge-ie-mode)。
 
 想要體驗 IE Mode 功能，首先你需要 Microsoft Edge 瀏覽器，而且必須是 77.0.211.1 以上版本，可以到[這裡](https://www.microsoftedgeinsider.com/en-us/)下載安裝 Dev 或 Canary 頻道的版本。
 
@@ -45,3 +45,4 @@ categories: [Tools]
 
 * [How to enable IE Mode on Microsoft Edge Chromium](https://pureinfotech.com/enable-ie-mode-microsoft-edge-chromium/)
 * [Microsoft Edge Chromium Receives Full Featured IE Mode](https://winaero.com/blog/microsoft-edge-chromium-receives-full-featured-ie-mode/)
+* [以 IE 模式使用 Microsoft Edge](https://docs.microsoft.com/zh-tw/deployedge/edge-ie-mode)
