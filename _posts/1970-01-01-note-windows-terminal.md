@@ -11,8 +11,8 @@ categories: [Develop, Tools]
 
 ## Windows Terminal 快速鍵
 
-- <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>+</kbd> 增加分割畫面
-- <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>-</kbd> 減少分割畫面
+- <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>+</kbd> 增加左右分割畫面
+- <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>-</kbd> 增加上下分割畫面
 - <kbd>alt</kbd> + <kbd>←</kbd> 或 <kbd>→</kbd> 移動焦點至另一個分割畫面
 
 ## WSL 設定
