@@ -23,6 +23,8 @@ categories: [Note, Docker]
 
 ![Docker 官方 CheatSheet 繁中翻譯版](https://i.imgur.com/Dle3hqm.png)
 
+![Docker CheatSheet](https://i.imgur.com/20LvjL3.png)
+
 ## Best Practice
 
 - [Docker Docs - Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
