@@ -9,6 +9,12 @@ categories: [Develop, Tools]
 
 本篇作為書籤用途，記錄網路上的 Windows Terminal 相關資訊
 
+## Windows Terminal 快速鍵
+
+- <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>+</kbd> 增加分割畫面
+- <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>-</kbd> 減少分割畫面
+- <kbd>alt</kbd> + <kbd>←</kbd> 或 <kbd>→</kbd> 移動焦點至另一個分割畫面
+
 ## WSL 設定
 
 - [保哥的 Windows Subsystem for Linux (WSL) 終極開發人員配置 - 2018 版](https://blog.miniasp.com/post/2018/06/15/My-Windows-Subsystem-for-Linux-WSL-Setup-2018)
