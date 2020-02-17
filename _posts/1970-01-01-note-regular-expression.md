@@ -9,6 +9,12 @@ categories: [Note]
 
 正規表示式通常被稱為一個模式（pattern），為用來描述或者符合一系列符合某個句法規則的字串，透過他我們可以快速搜尋符合指定模式的文字。
 
+## 工具網站
+
+- [iHateRegex](https://ihateregex.io/) 查詢常用的正規表示式
+- [RegExr - Regular Expression Online](http://regexr.com/) 線上測試正規表示式
+- [JavaScript Regular Expression Visualizer](https://jex.im/regulex/) 視覺化呈現正規表示式的規則路徑
+
 ## 效能
 
 正規表示式可以幫助我們快速找到符合文字模式的字串，但執行效率未必"快速"，不精確的寫法還是很容易造成效能低落的問題。
@@ -495,3 +501,4 @@ REF:
 - [A Single Page Perl Regular Expression Quick Reference](http://www.erudil.com/pdf/preqr.pdf)
 - [What special characters must be escaped in regular expressions?](https://stackoverflow.com/questions/399078/what-special-characters-must-be-escaped-in-regular-expressions?answertab=active#tab-top)
 - [JavaScript Regular Expression Visualizer](https://jex.im/regulex/)
+- [i Hate Regex](https://ihateregex.io/)

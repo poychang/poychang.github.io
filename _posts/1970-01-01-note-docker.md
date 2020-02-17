@@ -91,6 +91,7 @@ Docker CLI 官方文件：[Use the Docker command line](https://docs.docker.com/
 - `docker rm [container]`: 移除本地端未執行的容器 [doc](https://docs.docker.com/engine/reference/commandline/rm/)
 - `docker rm $(docker ps -a -q)`:移除本地端所有未執行的容器
 - `docker rmi [image]` 移除本地端的映像檔 [doc](https://docs.docker.com/engine/reference/commandline/rmi/)
+- `docker container prune` 移除所以未執行的容器 [doc](https://docs.docker.com/engine/reference/commandline/container_prune/)
 
 > Docker Image 名稱必須是小寫，否則會無法編譯。
 
