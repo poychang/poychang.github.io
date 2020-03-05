@@ -37,7 +37,7 @@ categories: [Azure, Develop]
 
 ### 實體課程
 
-以 AZ-900 Microsoft Azure Fundamentals 來說，訪間有很多教育訓練機構有開這張證照的課程，像是[恆逸教育訓練中心](https://www.uuu.com.tw/Course)或是[資策會數位教育研究所](https://www.iiiedu.org.tw/az-900-class/)都有開班授課，對於雲端是完全新手的考生，可以參考上實體課程，畢竟很多問題透過面對面的解答，會比文字來容易表達。
+以 AZ-900 Microsoft Azure Fundamentals 來說，訪間有很多教育訓練機構有開這張證照的課程，像是[恆逸教育訓練中心](https://www.uuu.com.tw/Course)、[資策會數位教育研究所](https://www.iiiedu.org.tw/az-900-class/)或是 [Trainocate 創能培訓中心](https://www.trainocate.com.tw/microsoft.html)都有開班授課，對於雲端是完全新手的考生，可以參考上實體課程，畢竟很多問題透過面對面的解答，會比文字來容易表達。
 
 ### 線上課程
 
