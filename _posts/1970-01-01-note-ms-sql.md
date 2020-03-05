@@ -21,6 +21,37 @@ SQL Server 2014 Express LocalDB 的連線伺服器名稱：`(localdb)\MSSQLLocal
 
 ![SQL 執行順序](https://i.imgur.com/8jmTSgX.jpg)
 
+## 清除資料庫交易紀錄 Log
+
+REF:[SQL Server 資料庫清除 Log](https://shunnien.github.io/2017/05/27/mssql-clear-log/)
+
+```sql
+--- 清除SQL Server Log檔
+USE [資料庫名稱]
+GO
+ALTER DATABASE [資料庫名稱] SET RECOVERY SIMPLE WITH NO_WAIT
+DBCC SHRINKFILE(記錄檔邏輯名稱, 1)
+ALTER DATABASE [資料庫名稱] SET RECOVERY FULL WITH NO_WAIT
+GO
+```
+
+## 設定 In-Memory 資料表
+
+計算最佳 Bucket count 語法
+
+```sql
+SELECT
+  POWER(2,CEILING( LOG(COUNT(0)) / LOG(2))) AS 'BUCKET_COUNT'
+FROM
+  (SELECT DISTINCT [索引用的欄位] FROM [資料庫名稱]) T
+```
+
+REF:
+
+- [透過參考數值設定In Memory Table的Index](https://edwardkuo.imas.tw/paper/2017/03/22/DataBase/Memorytableindex/)
+- [[SQL Server][In-Memory OLTP]記憶內資料表BUCKET_COUNT預估](https://dotblogs.com.tw/stanley14/2016/10/28/234914)
+
+
 ## 基本指令
 
 ```sql
