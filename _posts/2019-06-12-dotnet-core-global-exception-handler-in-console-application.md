@@ -31,6 +31,8 @@ void Main()
 
 在 .NET Core 中也有同樣的 API，只不過要 .NET Core 2.0 以上版本才有支援此 API，詳請參考[官方文件](https://docs.microsoft.com/zh-tw/dotnet/api/system.appdomain.unhandledexception?view=netcore-2.1&WT.mc_id=DT-MVP-5003022#%E9%81%A9%E7%94%A8%E6%96%BC)。
 
+>官方為了讓開發者更輕鬆地可以從 .NET Framework 移轉至 .NET Core，因此在 .NET Standard 2.0 開放了 `AppDomain` 這個 API 接口，但不是所有 API 都可以使用，在 .NET Core 執行環境下使用某些 API 會擲出 `PlatformNotSupportedException` 例外，一般來說建議盡量少用 `AppDomain` 這個 API。詳參考[這篇討論](https://stackoverflow.com/questions/27266907/no-appdomains-in-net-core-why)。
+
 那麼要如何讓上面的 Console 應用程式使用這個 API 來做全域的例外處理呢？其實也很簡單，請參考下列程式碼：
 
 ```csharp
