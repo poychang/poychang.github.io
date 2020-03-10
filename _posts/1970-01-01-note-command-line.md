@@ -23,7 +23,26 @@ Windows 叫做命令提示字元（cmd.exe, Command Line），Unix-like OS 叫�
 
 REF:[Moving efficiently in the CLI](https://clementc.github.io/blog/2018/01/25/moving_cli/)
 
-### Net Use
+## 驗證當前環境是否有系統管理員權限
+
+https://stackoverflow.com/a/16285248/3803939
+
+This trick only requires one command: type `net session` into the command prompt.
+
+If you are **NOT an admin**, you get an access is denied message.
+
+```
+System error 5 has occurred.
+Access is denied.
+```
+
+If you **ARE an admin**, you get a different message, the most common being:
+
+```
+There are no entries in the list.
+```
+
+## Net Use
 
 NET 指令是 Windows NT 中的一個功能強大的工具，可以管理網路環境、各種服務程序的執行和配置、進行用戶和登入管理等。
 
@@ -37,7 +56,7 @@ NET 指令是 Windows NT 中的一個功能強大的工具，可以管理網路�
 - NET TIME 作用：使電腦的時鐘與另一台電腦或域的時間同步
 - [Net 指令教學](http://ocean2002n.pixnet.net/blog/post/88734895-%5B%E6%95%99%E5%AD%B8%5D-net%E6%8C%87%E4%BB%A4%E6%95%99%E5%AD%B8)
 
-### 使用 UNC 路徑
+## 使用 UNC 路徑
 
 在命令提示字元中無法用 `cd` 來取得 UNC（Universal Naming Convention，通用命名慣例）的路徑，可以使用 `pushd` 和 `popd` 來執行
 
@@ -54,7 +73,7 @@ C:\a\local\path> REM the U: drive has been deleted
 C:\a\local\path>
 ```
 
-### 刪除 Mac OS 自動生成隱藏檔案（.\_DS_Store）
+## 刪除 Mac OS 自動生成隱藏檔案（.\_DS_Store）
 
 Mac OS 會自動為每個可以由 GUI 圖像界面瀏覽的資料夾生成隱藏檔案 `._DS_Store`，用來記往資料夾的個別設定。
 
@@ -64,7 +83,7 @@ Mac OS 會自動為每個可以由 GUI 圖像界面瀏覽的資料夾生成隱�
 del /s /q /f /a .DS_STORE
 ```
 
-### 其他待整理指令
+## 其他待整理指令
 
 ```bash
 # 清除登入帳密
@@ -128,7 +147,7 @@ Metric 說明
 
 計量數能夠反映通過網路設備的數量、路徑的速度、路徑可靠性、路徑吞吐量以及管理屬性。
 
-### 雙網卡設定案例
+## 雙網卡設定案例
 
 網路環境：
 
@@ -242,13 +261,13 @@ Unix           | MS-DOS          | 說明
 
 參考資料：
 
-- [命令列也有快捷鍵](#%E5%91%BD%E4%BB%A4%E5%88%97%E4%B9%9F%E6%9C%89%E5%BF%AB%E6%8D%B7%E9%8D%B5)
+- [命令列也有快捷鍵](#%e5%91%bd%e4%bb%a4%e5%88%97%e4%b9%9f%e6%9c%89%e5%bf%ab%e6%8d%b7%e9%8d%b5)
+- [驗證當前環境是否有系統管理員權限](#%e9%a9%97%e8%ad%89%e7%95%b6%e5%89%8d%e7%92%b0%e5%a2%83%e6%98%af%e5%90%a6%e6%9c%89%e7%b3%bb%e7%b5%b1%e7%ae%a1%e7%90%86%e5%93%a1%e6%ac%8a%e9%99%90)
 - [Net Use](#net-use)
-- [使用 UNC 路徑](#%E4%BD%BF%E7%94%A8-unc-%E8%B7%AF%E5%BE%91)
-- [刪除 Mac OS 自動生成隱藏檔案（.\_DS_Store）](#%E5%88%AA%E9%99%A4-mac-os-%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E9%9A%B1%E8%97%8F%E6%AA%94%E6%A1%88dsstore)
-- [其他待整理指令](#%E5%85%B6%E4%BB%96%E5%BE%85%E6%95%B4%E7%90%86%E6%8C%87%E4%BB%A4)
-- [修改 Windows 路由表](#%E4%BF%AE%E6%94%B9-windows-%E8%B7%AF%E7%94%B1%E8%A1%A8)
-- [雙網卡設定案例](#%E9%9B%99%E7%B6%B2%E5%8D%A1%E8%A8%AD%E5%AE%9A%E6%A1%88%E4%BE%8B)
-- [curl 指令用法](#curl-%E6%8C%87%E4%BB%A4%E7%94%A8%E6%B3%95)
-- [Unix 與 MS-DOS 指令對照表](#unix-%E8%88%87-ms-dos-%E6%8C%87%E4%BB%A4%E5%B0%8D%E7%85%A7%E8%A1%A8)
-- [命令列的藝術](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh-Hant.md)
+- [使用 UNC 路徑](#%e4%bd%bf%e7%94%a8-unc-%e8%b7%af%e5%be%91)
+- [刪除 Mac OS 自動生成隱藏檔案（.\_DS_Store）](#%e5%88%aa%e9%99%a4-mac-os-%e8%87%aa%e5%8b%95%e7%94%9f%e6%88%90%e9%9a%b1%e8%97%8f%e6%aa%94%e6%a1%88dsstore)
+- [其他待整理指令](#%e5%85%b6%e4%bb%96%e5%be%85%e6%95%b4%e7%90%86%e6%8c%87%e4%bb%a4)
+- [修改 Windows 路由表](#%e4%bf%ae%e6%94%b9-windows-%e8%b7%af%e7%94%b1%e8%a1%a8)
+- [雙網卡設定案例](#%e9%9b%99%e7%b6%b2%e5%8d%a1%e8%a8%ad%e5%ae%9a%e6%a1%88%e4%be%8b)
+- [curl 指令用法](#curl-%e6%8c%87%e4%bb%a4%e7%94%a8%e6%b3%95)
+- [Unix 與 MS-DOS 指令對照表](#unix-%e8%88%87-ms-dos-%e6%8c%87%e4%bb%a4%e5%b0%8d%e7%85%a7%e8%a1%a8)
