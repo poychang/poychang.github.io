@@ -9,7 +9,7 @@ categories: [CSharp, Dotnet, Develop]
 
 之前寫過一篇[在 .NET Core 主控台應用程式中全域捕捉未處理的例外](https://poychang.github.io/dotnet-core-global-exception-handler-in-console-application/)，主要是透過 .NET 應用程式的 AppDomain 類別下的 `UnhandledException` 來添加客製的例外處理，然而在 ASP.NET Core 專案中，內部會是個小型 [Kestrel 網頁伺服器](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/servers/kestrel)在運作，因此大多數的 Exception 是不會往上傳遞並被 `AppDomain.UnhandledException` 接收到，所以這個方式是行不通的。但我們可以透過 ASP.NET Core 專案架構中的中介程序，捕捉發生在 HTTP Context 下的例外錯誤，這篇來做看看如何在中介程序（Middleware）中全域處理例外。
 
->官方為了讓開發者更輕鬆地可以從 .NET Framework 移轉至 .NET Core，因此在 .NET Standard 2.0 開放了 `AppDomain` 這個 API 接口，但不是所有 API 都可以使用，在 .NET Core 執行環境下使用某些 API 會擲出 `PlatformNotSupportedException` 例外，一般來說建議盡量少用 `AppDomain` 這個 API。詳參考[這篇討論](https://stackoverflow.com/questions/27266907/no-appdomains-in-net-core-why)。
+>官方為了讓開發者更輕鬆地可以從 .NET Framework 移轉至 .NET Core，因此在 .NET Standard 2.0 開放了 `AppDomain` 這個 API 接口，但不是所有 API 都可以使用，在 .NET Core 執行環境下使用某些 API 會擲出 `PlatformNotSupportedException` 例外，一般來說建議盡量少用 `AppDomain` 這個 API。詳參考[這篇討論](https://stackoverflow.com/questions/27266907/no-appdomains-in-net-core-why)以及[這篇官方文章](https://docs.microsoft.com/zh-tw/dotnet/core/porting/net-framework-tech-unavailable)。
 
 ## 目標
 
