@@ -1,19 +1,19 @@
 ---
 layout: post
-title: 使用系統管理員身分開啟 Windows Terminal
+title: 使用系統管理員身分開啟 Windows Terminal 分頁
 date: 2020-03-12 22:52
 author: Poy Chang
 comments: true
 categories: [PowerShell, Tools]
 ---
 
-如果你曾經使用過 [cmder](https://cmder.net/) 你一定對讚譽有佳，我也不例外，不過自從我改用 [Windows Terminal](https://github.com/microsoft/terminal) 之後，除了無法只將其中一個 Tab 頁籤用系統管理員開啟外，我再也沒有想念 cmder 了，而最近好同事教了我一招，讓我能用系統管理員身分開啟 Windows Terminal 頁籤，我想我真的可以忘記 cmder 了（謝謝 cmder 曾經讓我重拾打指令的快感）。
+如果你曾經使用過 [cmder](https://cmder.net/) 你一定對讚譽有佳，我也不例外，不過自從我改用 [Windows Terminal](https://github.com/microsoft/terminal) 之後，除了無法只將其中一個 Tab 分頁用系統管理員開啟外，我再也沒有想念 cmder 了，而最近好同事教了我一招，讓我能用系統管理員身分開啟 Windows Terminal 分頁，我想我真的可以忘記 cmder 了（謝謝 cmder 曾經讓我重拾打指令的快感）。
 
-從這篇討論 [microsoft/terminal #632](https://github.com/microsoft/terminal/issues/632) 可以知道，基於安全性的考量，尚無計畫讓 Windows Terminal 同時開啟**提升權限的頁籤**（具系統管理者權限的頁籤）以及**一般頁籤**。
+從這篇討論 [microsoft/terminal #632](https://github.com/microsoft/terminal/issues/632) 可以知道，基於安全性的考量，尚無計畫讓 Windows Terminal 同時開啟**提升權限的分頁**（具系統管理者權限的分頁）以及**一般分頁**。
 
 >但 [2020/02/14 從討論串的更新](https://github.com/microsoft/terminal/issues/632#issuecomment-491033558)發現，事情是忽有一點曙光，雖然還是非計畫內，但開發團隊似乎找到了解法。
 
-如果你曾經使用過 Linux 或 Unix base 的系統，那你一定對 `sudo` 這個指令很熟悉，這是一隻允許使用者透過安全的方式使用特殊的權限來執行程式的指令，那我們能不能在 Windows 用類似的方法，讓我們將 Windows Terminal 的頁籤，在啟動 Shell 的時候，用像 `sudo` 這樣的指令來賦予系統管理者權限呢？
+如果你曾經使用過 Linux 或 Unix base 的系統，那你一定對 `sudo` 這個指令很熟悉，這是一隻允許使用者透過安全的方式使用特殊的權限來執行程式的指令，那我們能不能在 Windows 用類似的方法，讓我們將 Windows Terminal 的分頁，在啟動 Shell 的時候，用像 `sudo` 這樣的指令來賦予系統管理者權限呢？
 
 [gerardog/gsudo](https://github.com/gerardog/gsudo) 這個開源專案就是這次的主角！
 
@@ -46,7 +46,7 @@ PowerShell -Command "Set-ExecutionPolicy RemoteSigned -scope Process; iwr -useb 
 ]
 ```
 
-最關鍵的設定就是 `commandline` 這個屬性，他使用 `gsudo` 去啟動 `powershell.exe` 使之有系統管理者的權限，想當然而的，使用此頁籤的時候，會跳出 Windows 的 UAC 確認視窗，確認你真的要用系統管理者權限開啟，但這個確認視窗只會跳出一次，在同一個 Windows Terminal 底下，只需要做一次 UAC 的確認。
+最關鍵的設定就是 `commandline` 這個屬性，他使用 `gsudo` 去啟動 `powershell.exe` 使之有系統管理者的權限，想當然而的，使用此分頁的時候，會跳出 Windows 的 UAC 確認視窗，確認你真的要用系統管理者權限開啟，但這個確認視窗只會跳出一次，在同一個 Windows Terminal 底下，只需要做一次 UAC 的確認。
 
 另外，我為了區分是否是使用 `gsudo` 來啟動具有系統管理者權限的 PowerShell，我改了 PowerShell 圖示的顏色，方便我識別。
 
@@ -54,7 +54,7 @@ PowerShell -Command "Set-ExecutionPolicy RemoteSigned -scope Process; iwr -useb 
 
 ![清單中有使用系統管理者權限啟動 PowerShell 的選項](https://i.imgur.com/oIDcqw9.png)
 
-除了啟動時會出現 UAC 的確認是窗外，可以怎樣驗證該頁籤是具有系統管理者權限的呢？以 PowerShell 來說，我們可以透過執行 `net session` 這個指令來判別，如果執行解決是 `There are no entries in the list.` 則帶表有系統管理者權限來使用 `net` 指令，如果沒有權限了話，則會看到 `Access is denied.` 的提示訊息。
+除了啟動時會出現 UAC 的確認是窗外，可以怎樣驗證該分頁是具有系統管理者權限的呢？以 PowerShell 來說，我們可以透過執行 `net session` 這個指令來判別，如果執行解決是 `There are no entries in the list.` 則帶表有系統管理者權限來使用 `net` 指令，如果沒有權限了話，則會看到 `Access is denied.` 的提示訊息。
 
 下圖左邊就是一般權限的執行結果，右邊則是具有系統管理者權限的執行結果：
 
