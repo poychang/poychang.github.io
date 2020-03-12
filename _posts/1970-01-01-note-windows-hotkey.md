@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Windows 快速鍵
-date: 2020-03-10 08:13
+date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Tools, Note]
 ---
 
-
+本篇作為書籤用途，記錄 Windows 快速鍵相關資訊
 
 ## Windows 10 新增功能快捷鍵大全：
 
