@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 如何使用 Secret Manager 保護 Dotnet Core 專案的機密設定
+title: 如何使用 Secret Manager 保護 .NET Core 專案的機密設定
 date: 2017-11-05 11:25
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop, Tools]
 ---
-開發的過程中經常會有機密資訊需要設定，例如資料庫的連線字串、服務平台的 API 金鑰，如何保護這些機密不被外流，是件很值得探討的議題，而在 Dotnet 的開發環境中，有提供 Secret Manager 的套件讓我們輕鬆的保護應用程式的機密資訊。
+開發的過程中經常會有機密資訊需要設定，例如資料庫的連線字串、服務平台的 API 金鑰，如何保護這些機密不被外流，是件很值得探討的議題，而在 .NET 的開發環境中，有提供 Secret Manager 的套件讓我們輕鬆的保護應用程式的機密資訊。
 
 >請不要將資料庫連線字串等機密資訊放在版控中的，尤其是帳號密碼。
 
@@ -38,11 +38,11 @@ categories: [Dotnet, Develop, Tools]
 
 如此一來，就可以達到應用程式的機密資訊只存在有權限的人身上，Secret save with you.
 
-## Dotnet CLI
+## .NET CLI
 
-使用 Dotnet CLI 命令列工具也可以達成一樣的任務。
+使用 .NET CLI 命令列工具也可以達成一樣的任務。
 
-首先需要將 `Microsoft.Extensions.SecretManager.Tools` Dotnet CLI 套件加入 `.csproj` 檔案中，程式碼如下；
+首先需要將 `Microsoft.Extensions.SecretManager.Tools` .NET CLI 套件加入 `.csproj` 檔案中，程式碼如下；
 
 ```xml
 <ItemGroup>
