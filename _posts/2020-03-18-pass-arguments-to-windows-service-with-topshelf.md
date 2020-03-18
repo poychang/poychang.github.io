@@ -80,7 +80,7 @@ configurator.ApplyCommandLine();
 
 但 Windows 服務控制管理器會將啟動的路徑寫到 Windows 登陸檔裡面，以 `DemoService` 來說，登陸檔的路徑會是長這樣 `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DemoService`，而啟動路徑會放在這底下的 `ImagePath` 屬性中，你可以手動將啟動參數加進去裡面，這樣會讓 Windows 服務控制管理器在啟動該服務時，具有附加啟動參數的效果。
 
-[Windows Service 的執行路徑放在登陸檔中的 ImagePath 屬性中](https://i.imgur.com/W0Vualh.png)
+![Windows Service 的執行路徑放在登陸檔中的 ImagePath 屬性中](https://i.imgur.com/W0Vualh.png)
 
 >`ImagePath` 這個屬性值是修改的關鍵！
 
