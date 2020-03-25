@@ -1,4 +1,14 @@
+{% if site.facebook_comments %}
 <!-- <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0&appId=325238924476122&autoLogAppEvents=1"></script> -->
 
-<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+<div class="fb-comments"></div>
+<script type="text/javascript">
+    (function () {
+        var el = document.querySelector('.fb-comments');
+        el.setAttribute('data-href', window.location.href);
+        el.setAttribute('data-width', '100%');
+        el.setAttribute('data-numposts', '5');
+    })();
+</script>
+{% endif %}
