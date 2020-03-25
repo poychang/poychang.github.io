@@ -29,6 +29,21 @@ Set-Location $location
 
 REF: [CTP: PowerShell Versioning](https://blogs.msdn.microsoft.com/powershell/2007/11/02/ctp-versioning/)
 
+## 註解
+
+```ps1
+# 單行註解
+```
+
+```ps1
+<#
+多行註解 1
+多行註解 2
+#>
+```
+
+若要針對指令撰寫完整的註解，請參考[註解型說明的範例](https://docs.microsoft.com/zh-tw/powershell/scripting/developer/help/examples-of-comment-based-help)官方文件。
+
 ## 快速鍵
 
 REF: [Windows PowerShell ISE 的鍵盤快速鍵](https://docs.microsoft.com/zh-tw/powershell/scripting/core-powershell/ise/keyboard-shortcuts-for-the-windows-powershell-ise?view=powershell-6&WT.mc_id=DT-MVP-5003022)
