@@ -6,3 +6,7 @@ layout: default
 {% if site.disqus and page.comments %}
     {% include disqus.html %}
 {% endif %}
+
+{% if page.comments %}
+    {% include fb-comments.html %}
+{% endif %}
