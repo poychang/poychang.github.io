@@ -6,6 +6,7 @@ exclude: ["README.md", "vendor"] # files to exclude
 highlighter: rouge
 markdown: kramdown
 disqus: 
+facebook_comments: poychang
 title: Poy Chang
 google_analytics: UA-1849069-6
 google_optimize: GTM-W9G45SD
