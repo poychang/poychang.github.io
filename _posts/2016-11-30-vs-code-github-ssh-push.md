@@ -5,6 +5,7 @@ date: 2016-11-30 08:42
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/vs-code-github-ssh-push/
 ---
 版控很重要，所以 Visual Studio Code 內建 Git 版控工具，方便開發時提交程式碼到本機的版控庫，如果使用 SSH 的方式和 Github 溝通了話，在 Visual Studio Code 直接操作了話，會遇到`Permission denied` 拒絕存取的問題，這是因為還沒有做 SSH 驗證的關係。
 

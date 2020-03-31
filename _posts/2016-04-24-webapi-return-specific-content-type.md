@@ -5,12 +5,14 @@ date: 2016-04-24 15:25
 author: Poy Chang
 comments: true
 categories: [WebAPI, App]
+redirect_to: https://blog.poychang.net/webapi-return-specific-content-type/
 ---
+
 最近在測試 [Cordova-App-Loader](https://github.com/markmarijnissen/cordova-app-loader)，他可以透過 `manifest.json` 去判斷 App 是否有檔案需要更新，再向遠端的 Server 要下載資料，原本套件的做法是可以透過 HTTP 去檢查遠端的 `manifest.json` 是否和 App 內部所記錄的有差異，然後再透過同一組 HTTP URL 去抓取要更新的檔案。
 
 而我打算透過 WebAPI 提供這樣的資源服務，因此寫了一個 `UpdateController` ，去檢查 `manifest.json` ，以其之後可以增加權限控制，避免任何知道此連結的人都可以下載的到相關的檔案，也避免暴露網站資料夾結構。
 
-```cs
+```csharp
 //GET api/Update/Manifest
 [Route("api/Update/Manifest")]
 [HttpGet]
@@ -31,7 +33,7 @@ public HttpResponseMessage GetManifest()
 
 另外，在下載更新檔案的動作也用類似的作法，但 filename 可能包含了資料夾路徑，且會回應正確 MIME 型別的檔案
 
-```cs
+```csharp
 //GET api/Update/js/app.js
 [Route("api/Update/{*filename}")]
 [HttpGet]

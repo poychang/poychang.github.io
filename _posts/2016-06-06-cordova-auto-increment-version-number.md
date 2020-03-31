@@ -5,6 +5,7 @@ date: 2016-06-06 12:34
 author: Poy Chang
 comments: true
 categories: [Javascript, App, Develop]
+redirect_to: https://blog.poychang.net/cordova-auto-increment-version-number/
 ---
 更新版本號這個小動作總是讓人忽略，如果能自動更新就好了。
 

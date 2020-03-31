@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note]
+redirect_to: https://blog.poychang.net/note-regular-expression/
 ---
 
 正規表示式通常被稱為一個模式（pattern），為用來描述或者符合一系列符合某個句法規則的字串，透過他我們可以快速搜尋符合指定模式的文字。

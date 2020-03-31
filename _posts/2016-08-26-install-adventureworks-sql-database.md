@@ -5,6 +5,7 @@ date: 2016-08-26 17:20
 author: Poy Chang
 comments: true
 categories: [SQL, Tools]
+redirect_to: https://blog.poychang.net/install-adventureworks-sql-database/
 ---
 有時候在看 MSDN 的文件練習 SQL 語法時，會看到官方的範例 SQL，如果你想要執行該 SQL 試試看了話，你必須要先有一個 SQL Server 和一個資料庫，我通常會用 SQL Server Express 搭配 LocalDB 來當作測試環境，而官方的範例資料幾乎都是用 Adventure Works 的資料（以前是用NorthWind），那我們怎樣快速還原資料庫呢？請看下去。
 

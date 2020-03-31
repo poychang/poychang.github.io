@@ -5,7 +5,9 @@ date: 2014-03-15 11:30
 author: Poy Chang
 comments: true
 categories: [Develop, SQL]
+redirect_to: https://blog.poychang.net/sql-server-open-query/
 ---
+
 在SQL Server 中建立好與 Oracle 的 DBLink 連接後，可透過下列方式查詢 Oracle DB Server 的資料
 
 ```sql

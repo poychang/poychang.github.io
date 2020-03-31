@@ -5,6 +5,7 @@ date: 2016-06-01 16:23
 author: Poy Chang
 comments: true
 categories: [Javascript, App, Develop]
+redirect_to: https://blog.poychang.net/cordova-jshint/
 ---
 JavaScript 是一個好好先生，總是包容我們程式碼的小瑕疵，不和我們計較語法結尾是否有 `;` 或是一些奇怪的打字錯誤，但總不能因為這樣的包容性，就讓程式碼老是髒髒的，不管程式碼品質這件事。
 

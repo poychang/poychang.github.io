@@ -5,6 +5,7 @@ date: 2016-06-22 17:17
 author: Poy Chang
 comments: true
 categories: [Javascript]
+redirect_to: https://blog.poychang.net/useful-hacks-for-javascript/
 ---
 偶然在逛到一篇在講 JavaScript 的 hack 小技巧，有幾項覺得滿實用的，寫下來筆記。
 

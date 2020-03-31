@@ -5,6 +5,7 @@ date: 2016-11-03 14:10
 author: Poy Chang
 comments: true
 categories: [Develop, Tools]
+redirect_to: https://blog.poychang.net/vscode-shortcuts/
 ---
 
 Visual Studio Code 真的是很優秀，官方提供了值得收藏的 Visual Studio Code 快速鍵一覽表，Windows、Mac、Linux 都有，快來收藏吧 :)

@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Tools, Note]
+redirect_to: https://blog.poychang.net/note-windows-hotkey/
 ---
 
 本篇作為書籤用途，記錄 Windows 快速鍵相關資訊

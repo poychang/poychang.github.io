@@ -5,6 +5,7 @@ date: 2016-11-17 10:22
 author: Poy Chang
 comments: true
 categories: [Javascript, Angular, Develop, Tools]
+redirect_to: https://blog.poychang.net/angular-vscode-extensions/
 ---
 [台灣 AngularJS 社群](https://www.facebook.com/groups/Angular2.tw/)於 2016/10/19 舉辦的小聚時，看到好多神奇的擴充套件，[保哥](http://blog.miniasp.com)更發起了[開發 Angular 2 必備 VSCode 擴充套件](https://paper.dropbox.com/doc/-Angular-2-VSCode--Kh2w3saOyZtJSHawFoBem)的共筆，讓各位先進們一同分享好用的擴充套件。內文為共筆的備份。
 

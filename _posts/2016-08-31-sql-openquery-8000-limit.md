@@ -5,6 +5,7 @@ date: 2016-08-30 15:39
 author: Poy Chang
 comments: true
 categories: [SQL]
+redirect_to: https://blog.poychang.net/sql-openquery-8000-limit/
 ---
 在 SQL Server 做跨異質資料庫（如 Oracle）查詢的時候，可以透過 DBLink 方式建立連結，然後透過 OpenQuery 的方式做查詢，但是如果遇到要執行的 SQL 語法，超級無敵長的時候，就會發生 `'SELECT xxxxxxxx' 開頭的 字元字串 太長。最大長度為 8000。` 這樣的錯誤訊息。
 

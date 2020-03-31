@@ -5,6 +5,7 @@ date: 2016-05-13 16:02
 author: Poy Chang
 comments: true
 categories: [App]
+redirect_to: https://blog.poychang.net/remotebuild-hook-failed-with-error-code-127/
 ---
 利用 Visual Studio + Cordova 開發跨平台的 App，可以利用 [remotebuild](http://taco.tools/docs/remote-build.html) 來達成不離開 Visual Studio 又可以測試 iOS App 的開發環境。
 

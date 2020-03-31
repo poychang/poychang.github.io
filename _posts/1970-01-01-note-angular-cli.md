@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note, Angular, Tools]
+redirect_to: https://blog.poychang.net/note-angular-cli/
 ---
 
 開發 Angular 就不能不知道 Angular CLI 這個超級好用的命令列工具，有了這個工具，原本渾沌的開發環境，頓時清晰，許多繁瑣的瑣事，一個命令就搞定！這邊是我自己的操作筆記，讓記憶力不佳的我，有個地方可以方便查詢。

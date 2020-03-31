@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note, Angular]
+redirect_to: https://blog.poychang.net/note-angular/
 ---
 
 本篇作為書籤用途，記錄網路上的 Angular 參考資料

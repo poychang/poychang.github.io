@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note, Tools]
+redirect_to: https://blog.poychang.net/note-batch/
 ---
 
 想要將指令集合起來並且自動化執行，批次檔絕對是你不可或缺的技能之一。

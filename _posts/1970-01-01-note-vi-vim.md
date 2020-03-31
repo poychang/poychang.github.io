@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note, Tools]
+redirect_to: https://blog.poychang.net/note-vi-vim/
 ---
 
 幾乎所有 Linux 系統都會內建 vi 文字編輯器，之於 Windows 就是 notepad 了，再不想安裝其他編輯器時，或臨時需要修改文件時，vi 絕對是你隨手可得的好幫手。

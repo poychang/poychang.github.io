@@ -5,6 +5,8 @@ date: 2016-07-01 11:48
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/linqpad-sql-command-class-model/
+
 ---
 以下操作是參考 Kevin 大的文章：[Dapper - 使用 LINQPad 快速產生相對映 SQL Command 查詢結果的類別](http://kevintsengtw.blogspot.tw/2015/10/dapper-linqpad-sql-command.html)，所寫的筆記，原文請至 Kevin 大的文章。
 

@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Javascript, Note]
+redirect_to: https://blog.poychang.net/note-javascript/
 ---
 
 本篇作為筆記用途，記錄 JavaScript 參考資料

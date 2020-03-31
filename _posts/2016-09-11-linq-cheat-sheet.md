@@ -5,6 +5,7 @@ date: 2016-09-11 08:19
 author: Poy Chang
 comments: true
 categories: [CSharp, Develop]
+redirect_to: https://blog.poychang.net/linq-cheat-sheet/
 ---
 LINQ 語言整合查詢（Language Integrated Query），提供標準且容易學習的資料查詢與更新方法，並且從 .NET Framework 3.5 開始就可以在 C# 以及 VB.NET 中使用此查詢語法。寫法分兩種方式：
 

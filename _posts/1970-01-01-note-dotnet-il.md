@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, Note]
+redirect_to: https://blog.poychang.net/note-dotnet-il/
 ---
 
 本篇作為書籤用途，記錄 .NET IL 指令查詢

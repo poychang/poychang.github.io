@@ -5,6 +5,7 @@ date: 2016-11-21 12:27
 author: Poy Chang
 comments: true
 categories: [CSharp, WebAPI, Develop, Tools]
+redirect_to: https://blog.poychang.net/net-core-drop-package-json/
 ---
 在 2016 年 5 月的時候就有消息說 .NET Core 計畫要棄用 `package.json`，在安裝完 Visual Studio 2017 並使用新範本來建立專案時，確認了這項傳言，.NET Core 棄用 package.json 啦！
 

@@ -5,6 +5,7 @@ date: 2016-06-09 17:46
 author: Poy Chang
 comments: true
 categories: [App, Tools]
+redirect_to: https://blog.poychang.net/android-app-google-play/
 ---
 Android 的上架動作其實很簡單，相關資料打一打，分級問卷寫一寫就差不多了，只是封裝好的 APK 需要做一些處理，才能上傳成功。
 

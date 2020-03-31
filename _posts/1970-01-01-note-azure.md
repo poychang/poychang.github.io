@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note, Azure]
+redirect_to: https://blog.poychang.net/note-azure/
 ---
 
 本篇作為書籤用途，紀錄網路上的 Azure 參考資料

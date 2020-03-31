@@ -5,6 +5,7 @@ date: 2016-05-20 00:09
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/windows-nvm-install/
 ---
 
 看完 [NativeScript 2.0 Launch Webinar](https://www.youtube.com/watch?v=efk_oeI58hc) 的影片，覺得 JavaScript 野心真的很強大，讓我也想玩玩看用 JavaScript (TypeScript) 來做 Native App 了。

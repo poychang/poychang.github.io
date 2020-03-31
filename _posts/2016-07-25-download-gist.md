@@ -5,6 +5,7 @@ date: 2016-07-25 17:31
 author: Poy Chang
 comments: true
 categories: [Develop]
+redirect_to: https://blog.poychang.net/download-gist/
 ---
 [GitHub](https://github.com) 有個好用的服務，[Gist](https://gist.github.com)，最基本的用法就是分享程式碼，相較於 GitHub，這裡所分享的程式碼通常以檔案為單位，或是小型的程式專案。
 

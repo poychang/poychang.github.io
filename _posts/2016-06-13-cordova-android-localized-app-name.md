@@ -5,6 +5,7 @@ date: 2016-06-13 13:53
 author: Poy Chang
 comments: true
 categories: [App, Develop]
+redirect_to: https://blog.poychang.net/cordova-android-localized-app-name/
 ---
 要讓 App 邁向國際，多語系是一定要做的。透過 [angular-translate](https://github.com/angular-translate/angular-translate) 可以輕鬆讓 App 做到 i18n 的服務。內容搞定了，那 App 名稱呢，也能依據語系而且不同的名稱嗎？答案是肯定的。
 

@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note]
+redirect_to: https://blog.poychang.net/note-browser-extension/
 ---
 
 本篇作為書籤用途，記錄網路上的關於開發瀏覽器擴充套件的參考資料

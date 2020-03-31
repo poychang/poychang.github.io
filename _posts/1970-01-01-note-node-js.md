@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note]
+redirect_to: https://blog.poychang.net/note-nodejs/
 ---
 
 官方網站：[https://nodejs.org/](https://nodejs.org/)

@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note]
+redirect_to: https://blog.poychang.net/note-character-pronunciation/
 ---
 
 有時候知道一些數學、拉丁或標記符號的念法，會讓你更顯專業（帥） 😁

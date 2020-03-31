@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note, Tools]
+redirect_to: https://blog.poychang.net/note-visual-studio/
 ---
 
 本篇作為書籤用途，記錄網路上的 Visual Studio 相關資訊

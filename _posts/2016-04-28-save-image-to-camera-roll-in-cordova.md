@@ -5,6 +5,7 @@ date: 2016-04-28 09:25
 author: Poy Chang
 comments: true
 categories: [Javascript, App]
+redirect_to: https://blog.poychang.net/save-image-to-camera-roll-in-cordova/
 ---
 要控制裝置的相機進行拍照和儲存、讀取照片，可以透過 [apache/cordova-plugin-camera](https://github.com/apache/cordova-plugin-camera) 套件進行處理，那如果只是想將圖片做另存的動作呢？那可以選用 [devgeeks/Canvas2ImagePlugin](https://github.com/devgeeks/Canvas2ImagePlugin) 來達成這樣的目標。
 

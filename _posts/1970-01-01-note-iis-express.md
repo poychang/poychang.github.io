@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note]
+redirect_to: https://blog.poychang.net/note-iis-express/
 ---
 
 # 手動啟動 IIS

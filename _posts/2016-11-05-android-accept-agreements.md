@@ -5,6 +5,7 @@ date: 2016-11-05 11:30
 author: Poy Chang
 comments: true
 categories: [App]
+redirect_to: https://blog.poychang.net/android-accept-agreements/
 ---
 在將 Cordova 專案的 CLI 工具從 6.0 生到 6.4 的時候發生了「授權」問題，在偉大的 stackoverflow 中找到了快速解法，筆記一下。
 

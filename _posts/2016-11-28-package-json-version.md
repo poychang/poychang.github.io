@@ -5,6 +5,7 @@ date: 2016-11-28 15:57
 author: Poy Chang
 comments: true
 categories: [Javascript, Develop, Tools]
+redirect_to: https://blog.poychang.net/package-json-version/
 ---
 在 `package.json` 中，每個套件都有自己的版本號，預設在 `npm install package-name --save` 的時候，會預設使用最新版當作相依的版本號，但當專案發展到一定程度的時候，因應相依性的需求做好套件版本管理，就是一項相當重要的工作。
 

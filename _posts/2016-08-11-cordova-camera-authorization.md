@@ -5,6 +5,7 @@ date: 2016-08-11 10:24
 author: Poy Chang
 comments: true
 categories: [App, Tools]
+redirect_to: https://blog.poychang.net/cordova-camera-authorization/
 ---
 想要讓 Cordova App 具有掃描 QR Code 的功能，簡單！加入 [phonegap/phonegap-plugin-barcodescanner](https://github.com/phonegap/phonegap-plugin-barcodescanner) 套件，照著套件的使用說明，寫個[幾行程式碼](#code-1)就搞定了，輕鬆寫意。只是部署到 Android 然後要使用相機功能時，出現了這個畫面...
 

@@ -5,6 +5,7 @@ date: 2016-05-22 09:56
 author: Poy Chang
 comments: true
 categories: [Javascript, App]
+redirect_to: https://blog.poychang.net/improving-angular-performance-for-production/
 ---
 不多看文件不會知道，其實 Angular 裡面有很多地方可以調整效能，其中有一個方式可以一行 code 就提升整個 Angular App 效能的方法，你一定要知道。
 

@@ -5,6 +5,7 @@ date: 2016-05-4 14:46
 author: Poy Chang
 comments: true
 categories: [Develop]
+redirect_to: https://blog.poychang.net/batch-rename/
 ---
 在 Windows 中整理檔案名稱的時候，可以將要修改的檔案全選，按 `F2` ，或滑鼠右鍵選擇`重新命名`，使用批次命名，快速將修改檔案名稱，並且在後面加上序號。
 

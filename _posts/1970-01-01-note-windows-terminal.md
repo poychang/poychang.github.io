@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Develop, Tools]
+redirect_to: https://blog.poychang.net/note-windows-terminal/
 ---
 
 本篇作為書籤用途，記錄網路上的 Windows Terminal 相關資訊

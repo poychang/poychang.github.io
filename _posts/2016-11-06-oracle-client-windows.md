@@ -5,6 +5,7 @@ date: 2016-11-06 12:07
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/oracle-client-windows/
 ---
 這篇是為公司寫的。如何在 Windows 環境下安裝支援 Oracle Database 8.1.7 的 Oracle Client。
 

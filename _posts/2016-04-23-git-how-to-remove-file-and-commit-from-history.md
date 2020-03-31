@@ -5,7 +5,9 @@ date: 2016-04-23 01:15
 author: Poy Chang
 comments: true
 categories: [Tools, Develop]
+redirect_to: https://blog.poychang.net/git-how-to-remove-file-and-commit-from-history/
 ---
+
 做版控很重要，但版控的內容也非常關鍵，如果不小放把不該放上去的資訊（例如帳號、密碼或個人玉照）給 commit 了話，那麼大家都會看的到唷！
 
 如何修改 commit 歷史紀錄，把不該出現的紀錄移除，可以參考下列情境：

@@ -5,6 +5,7 @@ date: 2016-06-13 17:22
 author: Poy Chang
 comments: true
 categories: [App, Develop]
+redirect_to: https://blog.poychang.net/cordova-ios-localized-app-name/
 ---
 
 繼上一篇的 Android 支援多語系 App 名稱，趕緊把 iOS 的多語系 App 名稱給補齊。因為在我的 Cordova 專案中，沒辦法做自動化流程，所以不趕緊做些筆記，應該很快就會忘記了。

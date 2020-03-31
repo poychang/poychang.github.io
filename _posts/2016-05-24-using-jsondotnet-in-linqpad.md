@@ -5,6 +5,7 @@ date: 2016-05-24 09:09
 author: Poy Chang
 comments: true
 categories: [CSharp, Tools]
+redirect_to: https://blog.poychang.net/using-jsondotnet-in-linqpad/
 ---
 在練習使用 LINQPad 來將 JSON 當作 ORM 來處理的時候，因為我買的 LINQPad 不是 DEVELOPER/PREMIUM 版本，所以無法使用內建的 NuGet 功能，必須手動加入所需的 LINQ to JSON 套件，也就是超級好用的 [Newtonsoft.Json](http://www.newtonsoft.com/json)，我此篇的範例程式碼也是從[該網站文件中](http://www.newtonsoft.com/json/help/html/linqtojson.htm)節取出來的。
 

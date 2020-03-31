@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note, Develop]
+redirect_to: https://blog.poychang.net/note-node-js/
 ---
 
 本篇作為筆記用途，記錄 Node.js 參考資料

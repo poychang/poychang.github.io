@@ -5,6 +5,7 @@ date: 2016-07-01 14:02
 author: Poy Chang
 comments: true
 categories: [Azure]
+redirect_to: https://blog.poychang.net/azure-hybrid-connections/
 ---
 架設在 Azure 上的網站或服務，如果需要和自家內部的伺服器連結了話，除了打 VPN 通道外，還可以透過 Azure BizTalk 的服務，達成 Hybrid Connections 混合式連結。
 

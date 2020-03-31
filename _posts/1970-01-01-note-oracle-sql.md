@@ -5,6 +5,7 @@ date: 1970-01-01 12:00
 author: Poy Chang
 comments: true
 categories: [Note]
+redirect_to: https://blog.poychang.net/note-oracle-sql/
 ---
 
 ## 目前系統時間
@@ -77,12 +78,12 @@ OracleClient 會依 x64/x86 決定適當的 Oracle Client 版本，不必手工�
 
 參考資料：
 
-- [目前系統時間](#%E7%9B%AE%E5%89%8D%E7%B3%BB%E7%B5%B1%E6%99%82%E9%96%93)
-- [資料庫系統版本](#%E8%B3%87%E6%96%99%E5%BA%AB%E7%B3%BB%E7%B5%B1%E7%89%88%E6%9C%AC)
-- [更改目前 session 日期顯示格式](#%E6%9B%B4%E6%94%B9%E7%9B%AE%E5%89%8D-session-%E6%97%A5%E6%9C%9F%E9%A1%AF%E7%A4%BA%E6%A0%BC%E5%BC%8F)
-- [常用的時間格式](#%E5%B8%B8%E7%94%A8%E7%9A%84%E6%99%82%E9%96%93%E6%A0%BC%E5%BC%8F)
+- [目前系統時間](#%e7%9b%ae%e5%89%8d%e7%b3%bb%e7%b5%b1%e6%99%82%e9%96%93)
+- [資料庫系統版本](#%e8%b3%87%e6%96%99%e5%ba%ab%e7%b3%bb%e7%b5%b1%e7%89%88%e6%9c%ac)
+- [更改目前 session 日期顯示格式](#%e6%9b%b4%e6%94%b9%e7%9b%ae%e5%89%8d-session-%e6%97%a5%e6%9c%9f%e9%a1%af%e7%a4%ba%e6%a0%bc%e5%bc%8f)
+- [常用的時間格式](#%e5%b8%b8%e7%94%a8%e7%9a%84%e6%99%82%e9%96%93%e6%a0%bc%e5%bc%8f)
   - [Daily](#daily)
   - [Weekly](#weekly)
   - [Monthly](#monthly)
-- [Oracle 的 SQL 報表出現斷行錯誤](#oracle-%E7%9A%84-sql-%E5%A0%B1%E8%A1%A8%E5%87%BA%E7%8F%BE%E6%96%B7%E8%A1%8C%E9%8C%AF%E8%AA%A4)
-- [C# System.Data.OracleClient 問題](#c-systemdataoracleclient-%E5%95%8F%E9%A1%8C)
+- [Oracle 的 SQL 報表出現斷行錯誤](#oracle-%e7%9a%84-sql-%e5%a0%b1%e8%a1%a8%e5%87%ba%e7%8f%be%e6%96%b7%e8%a1%8c%e9%8c%af%e8%aa%a4)
+- [C# System.Data.OracleClient 問題](#c-systemdataoracleclient-%e5%95%8f%e9%a1%8c)
