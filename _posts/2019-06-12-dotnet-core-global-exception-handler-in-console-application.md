@@ -5,6 +5,7 @@ date: 2019-06-12 12:53
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, Develop]
+redirect_to: https://blog.poychang.net/dotnet-core-global-exception-handler-in-console-application/
 ---
 
 開發 .NET 應用程式時，我們可以在程式碼中使用 `try...catch` 語法來捕捉例外，並對異常進行處理，但有時候總會有漏網之魚，最常見的作法是在程式碼的最外層來加上 `try...catch` 語法來捕捉例外，但這樣程式碼有點不夠優雅，如果能在應用程式定義域中來處理，程式碼會變得更漂亮。

@@ -5,6 +5,7 @@ date: 2018-01-31 00:38
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
+redirect_to: https://blog.poychang.net/linq-to-xml-create-xml-file/
 ---
 
 接續上篇的基本操作，這篇主要使用 LINQ to XML 來建立 XML 檔案。

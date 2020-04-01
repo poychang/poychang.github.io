@@ -5,7 +5,9 @@ date: 2018-02-11 16:26
 author: Poy Chang
 comments: true
 categories: [Develop]
+redirect_to: https://blog.poychang.net/scrum-guides/
 ---
+
 Scrum 是開發和維護複雜產品的框架，也是一種敏捷軟體開發的方法學，透過迭代式的增量開發過程，每次以潛在可用軟體為目標一步步的向前推進。
 
 個人覺得**迭代**這個概念是最精妙的地方。

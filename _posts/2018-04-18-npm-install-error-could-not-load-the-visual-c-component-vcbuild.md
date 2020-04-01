@@ -5,6 +5,7 @@ date: 2018-04-18 21:37
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/npm-install-error-could-not-load-the-visual-c-component-vcbuild/
 ---
 有時候使用 npm 安裝或還原套件的時候，出現 `MSBUILD : error MSB3428: Could not load the Visual C++ component "VCBuild.exe"` 的錯誤訊息，這是因為所相依的工具需要系統額外的工具所造成，這裡記錄一下解決方法。
 

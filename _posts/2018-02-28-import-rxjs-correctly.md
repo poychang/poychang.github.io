@@ -5,7 +5,9 @@ date: 2018-02-28 12:00
 author: Poy Chang
 comments: true
 categories: [Typescript, Javascript, Angular]
+redirect_to: https://blog.poychang.net/import-rxjs-correctly/
 ---
+
 在 RxJS 5.4 以前，常使用 `import 'rxjs/add/operator/map';` 這樣的方式來匯入 RxJS 的操作符，但這樣的做法是會有副作用的，如果使用 RxJS 5.5 以後的版本，建議使用 `import { map } from 'rxjs/operator/map';` 這樣的方式來匯入。
 
 使用 RxJS 操作前的第一件事就是要匯入要使用的操作符，在以前我們會用下面這種方式匯入並使用：

@@ -5,7 +5,9 @@ date: 2017-04-28 12:52
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/generating-sitemap-in-jekyll-without-plugin/
 ---
+
 最近剛好在處理 Sitemap 的問題，如果有在做 SOE 的朋友應該都知道 Sitemap 的重要性，他可以為搜索引擎的蜘蛛提供瀏覽整個網站的連結，藉此讓搜尋引擎更認識你的網站，後來就想在自己的部落格來玩玩看，就找到這個方法，不使用任何 Jekyll 套件，就能輕鬆產出 sitemap.xml。
 
 >因為我的部落格是使用 Github Pages 的服務，所以 Jekyll 是執行 `--safe` 模式，因此也不能使用客製套件

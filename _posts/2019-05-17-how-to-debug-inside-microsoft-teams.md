@@ -5,6 +5,7 @@ date: 2019-05-17 12:41
 author: Poy Chang
 comments: true
 categories: [Develop, Bot]
+redirect_to: https://blog.poychang.net/how-to-debug-inside-microsoft-teams/
 ---
 
 Microsoft Teams 是一款團隊協作工具，全球已有超過 50 萬家組織採用，對於開發者而言，要開發出滿足組織所提出的需求，試必須要開啟開發人員模式，只是要開啟 Teams 的開發人員模式，沒有這麼直接...

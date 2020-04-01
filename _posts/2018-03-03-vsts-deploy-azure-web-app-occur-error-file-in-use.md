@@ -5,7 +5,9 @@ date: 2018-03-03 18:09
 author: Poy Chang
 comments: true
 categories: [Azure, Tools]
+redirect_to: https://blog.poychang.net/vsts-deploy-azure-web-app-occur-error-file-in-use/
 ---
+
 [Visual Studio Team Service](https://www.visualstudio.com/vso/) 所提供的 CI/CD 功能非常強大且很容易使用，內建了很多任務 (Task) 可以直接取用，甚至還提供許多設計好的範本讓你直接套用，相當方便，例如 Azure Web App 範本，可以幫你從做了一套從還原套件至編譯然後佈署至 Azure 一系列的流程。不過對於持續運行的站台，使用這個 CI/CD 範本可能在佈署至 Azure 這段發生 `ERROR_FILE_IN_USE` 錯誤。
 
 `ERROR_FILE_IN_USE` 的錯誤訊息如下：

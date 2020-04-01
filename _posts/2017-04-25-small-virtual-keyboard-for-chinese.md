@@ -5,7 +5,9 @@ date: 2017-04-25 22:07
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/small-virtual-keyboard-for-chinese/
 ---
+
 這個問題已經苦惱了我很久很久，大概從幫雙親升級 Windows 10 就開始了。個人覺得 Windows 10 真的很好用，但對老一輩習慣使用**螢幕小鍵盤**的使用者來說，真的是很痛苦，觸碰虛擬鍵盤太大、osk 輔助鍵盤沒注音符號、ㄅ半又一直裝不起來，直至今日，我終於找到目前來說最佳的解法！
 
 跌過多少坑就不贅述了，直接講解法！[Click-N-Type](http://cnt.lakefolks.com/)！

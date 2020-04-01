@@ -5,7 +5,9 @@ date: 2017-12-15 22:38
 author: Poy Chang
 comments: true
 categories: [Angular, Develop]
+redirect_to: https://blog.poychang.net/execute-http-call-when-angular-initialize/
 ---
+
 有時候我們希望能在應用程式執行前先取得設定檔，然後應用程式再根據設定檔去做對應的動作，Angular CLI 專案有準備 environment 設定檔讓我們使用，但有些情況我們希望從遠端，例如透過呼叫 API 的方式，取得設定值，這時候開怎麼做呢？
 
 ## Router Resolver

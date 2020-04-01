@@ -5,17 +5,19 @@ date: 2017-04-19 08:20
 author: Poy Chang
 comments: true
 categories: [Develop]
+redirect_to: https://blog.poychang.net/http-status-code/
 ---
 
 HTTP 狀態碼指的是從伺服器端回應(HTTP Response)的狀態，對於狀態的分類可區分三個層級，分別用三個數字表示，第一個數字為大類、第二個數字為中類、第三個數字為小類。完整的狀態碼定義可以參考 [RFC 2616 Hypertext Transfer Protocol -- HTTP/1.1 的 10 Status Code Definitions](https://tools.ietf.org/html/rfc2616#section-10)，裡面有完整且詳盡的標準說明。
 
 在 RFC 2616 所定義的 HTTP/1.1 中，狀態碼可以分成 5 類
 
-1. [1xx Informationa - 參考資訊](#1xx-informational-參考資訊)
-2. [2xx Successful - 成功](#2xx-successful-成功)
-3. [3xx Redirection - 重新導向](#3xx-redirection-重新導向)
-4. [4xx Client Error - 用戶端錯誤](#4xx-client-error-用戶端錯誤)
-5. [5xx Server Error - 伺服器錯誤](#5xx-server-error-伺服器錯誤)
+- [1xx Informational 參考資訊](#1xx-informational-%e5%8f%83%e8%80%83%e8%b3%87%e8%a8%8a)
+- [2xx Successful 成功](#2xx-successful-%e6%88%90%e5%8a%9f)
+- [3xx Redirection 重新導向](#3xx-redirection-%e9%87%8d%e6%96%b0%e5%b0%8e%e5%90%91)
+- [4xx Client Error 用戶端錯誤](#4xx-client-error-%e7%94%a8%e6%88%b6%e7%ab%af%e9%8c%af%e8%aa%a4)
+- [5xx Server Error 伺服器錯誤](#5xx-server-error-%e4%bc%ba%e6%9c%8d%e5%99%a8%e9%8c%af%e8%aa%a4)
+- [後記](#%e5%be%8c%e8%a8%98)
 
 以下就根據 RFC 2616 標準中的這五類來做說明。
 

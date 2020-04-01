@@ -5,6 +5,7 @@ date: 2018-12-04 19:11
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop, Tools]
+redirect_to: https://blog.poychang.net/output-static-content-file-to-project-in-dotnet-core-nuget-pack/
 ---
 
 自從 .NET CLI 內建了建立 NuGet 套件的功能後，要將自己寫好的類別庫專案打包成 NuGet 套件就變得非常容易，[快速入門請看這裡](https://docs.microsoft.com/zh-tw/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?WT.mc_id=DT-MVP-5003022)，如果今天想要在安裝你用 .NET Core 寫好的 NuGet 套件時，除了加入寫好的類別庫參考外，還要輸出靜態檔案到專案中，可以參考這篇教學。

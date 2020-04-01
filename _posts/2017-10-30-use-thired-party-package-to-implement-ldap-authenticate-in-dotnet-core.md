@@ -5,7 +5,9 @@ date: 2017-10-30 23:35
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop]
+redirect_to: https://blog.poychang.net/use-thired-party-package-to-implement-ldap-authenticate-in-dotnet-core/
 ---
+
 截至 Dotnet Core 2.0 尚未移轉 `System.DirectoryServices`，因此以前寫的 LDAP 驗證程式碼無法移轉到 Dotnet Core 中使用，在官方尚未提供對應的解法時，可以使用 `Novell.Directory.Ldap.NETStandard` 第三方套件來處理。
 
 >LDAP 對很多公司來說是非常常用的驗證技術，大家可以到這個 [#2089 issues](https://github.com/dotnet/corefx/issues/2089) 加一，讓微軟知道您的想法。

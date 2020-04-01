@@ -5,7 +5,9 @@ date: 2017-08-15 17:00
 author: Poy Chang
 comments: true
 categories: [Dotnet, WebAPI, Develop]
+redirect_to: https://blog.poychang.net/troubleshoot-an-error-occurred-in-asp-dot-net-core-on-iis/
 ---
+
 當架設在 IIS 下的 ASP.NET Core 網站出現不知道怎麼查錯誤的時候，可以試試這個方法。
 
 ![An error occurred while starting the application](http://i.imgur.com/uZ3EYe2.png)

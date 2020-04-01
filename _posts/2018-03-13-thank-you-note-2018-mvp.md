@@ -5,6 +5,7 @@ date: 2018-03-13 23:49
 author: Poy Chang
 comments: true
 categories: [Uncategorized]
+redirect_to: https://blog.poychang.net/thank-you-note-2018-mvp/
 ---
 今天收到來自 Microsoft MVP Program Team 寄來的 Award Kit，第一次看到 MVP 獎盃實體，還附有寫 Poy Chang 的 MVP 證書，心中真是又驚又喜，這一路上要感謝的人真的太多了，先讓我謝天謝地，謝謝各位一路上的指導。
 

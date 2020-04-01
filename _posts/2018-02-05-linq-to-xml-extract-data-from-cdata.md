@@ -5,6 +5,7 @@ date: 2018-02-05 00:00
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
+redirect_to: https://blog.poychang.net/linq-to-xml-extract-data-from-cdata/
 ---
 
 接續上篇的基本操作，這篇主要使用 LINQ to XML 來取得 CDATA 標籤內的資料內容。

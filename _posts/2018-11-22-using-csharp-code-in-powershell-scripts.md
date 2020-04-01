@@ -5,6 +5,7 @@ date: 2018-11-22 23:11
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, PowerShell, Develop, Tools]
+redirect_to: https://blog.poychang.net/using-csharp-code-in-powershell-scripts/
 ---
 
 PowerShell 不僅僅是一種腳本語言，還是一個可執行命令列的 Shell 工具，而他也和其他 Shell 一樣可以透過撰寫腳本來執行很複雜的功能，但有時候我們已經有大量用 C# 撰寫好的類別庫，或者想要用熟悉的 C# 程式碼來擴充 PowerShell 的使用情境時，這裡提供兩種讓你在 PowerShell 中執行 C# 程式的方法。

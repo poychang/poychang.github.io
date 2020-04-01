@@ -5,7 +5,9 @@ date: 2017-05-25 22:16
 author: Poy Chang
 comments: true
 categories: [Angular, Tools]
+redirect_to: https://blog.poychang.net/deploy-angular-to-iis-virtual-directory/
 ---
+
 佈署 Angular 應用程式至 IIS 時，一定會遇到路由問題，基本上兩種解法，修改 Angular 路由模組訂定，改用 [useHash](https://angular.io/docs/ts/latest/guide/router.html#!#-hashlocationstrategy-) 的方式處理，或者使用 IIS 的 URL Rewrite 模組，而如果佈署到 IIS 網站的虛擬目錄 / 應用程式時，有些地方就要修改了。
 
 >保哥的這篇文章：[如何將 Angular 2 含有路由機制的 SPA 網頁應用程式部署到 IIS 網站伺服器](http://blog.miniasp.com/post/2017/01/17/Angular-2-deploy-on-IIS.aspx)，把佈署方式寫得很清楚，可以解決常見的佈署問題。

@@ -5,6 +5,7 @@ date: 2018-02-13 19:18
 author: Poy Chang
 comments: true
 categories: [Dotnet]
+redirect_to: https://blog.poychang.net/retrieve-data-annotations-from-model/
 ---
 
 建立資料模型時，我們可以透過 Data Annotations 的方式來設定該資料模型的資料欄位屬性，藉此增加資料欄位的特性，例如使用 `DisplayAttribute` 標示該資料欄位要顯示的字樣，在用 ASP.NET MVC 時常透過這樣的方式來設定資料模型，甚至在 Entity Framework 中，也會用這樣的方式來設定欄位屬性，但我們怎樣用程式來抓到這屬性的值呢？

@@ -5,7 +5,9 @@ date: 2017-08-12 18:23
 author: Poy Chang
 comments: true
 categories: [Typescript, Angular]
+redirect_to: https://blog.poychang.net/integrate-swiper-into-angular/
 ---
+
 [Swiper](http://idangero.us/swiper/) 是一款很不錯的開放原始碼套件，可輕鬆製作出支援觸碰的輪播功能，相關的範例與 API 都非常完整，這篇就用它來跑一次 Angular 整合第三方套件的作法。
 
 ## 建立專案

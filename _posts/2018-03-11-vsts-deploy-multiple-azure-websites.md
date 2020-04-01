@@ -5,7 +5,9 @@ date: 2018-03-11 17:19
 author: Poy Chang
 comments: true
 categories: [Azure, Tools]
+redirect_to: https://blog.poychang.net/vsts-deploy-multiple-azure-websites/
 ---
+
 如果今天想要使用 [Visual Studio Team Service](https://www.visualstudio.com/vso/) 提供的持續整合和部署 (CI/CD) 管線，建置並發行多個 ASP.NET 網站專案至 Azure 雲端時，預設情況下，你會發現建置任務會兩個網站專案都建置，但在佈署任務時，你無法指定要佈署哪一個建置後的網站專案，而且只有某一個網站專案會被佈署。
 
 根據 [Continuous Integration Deploying Wrong Project From Solution](https://peter.orneholm.com/post/84647111808/deploy-to-multiple-azure-websites-with-visual) 這串 MSDN 的討論，裡面提到兩個重點：

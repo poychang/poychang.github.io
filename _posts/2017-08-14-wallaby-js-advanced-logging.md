@@ -5,7 +5,9 @@ date: 2017-08-14 23:32
 author: Poy Chang
 comments: true
 categories: [Develop, Tools, Test]
+redirect_to: https://blog.poychang.net/wallaby-js-advanced-logging/
 ---
+
 使用 Wallaby.js 時，有三個非常值得學習的 Logging 技巧，用來直接在編輯器中輸出運算結果或測試狀態，讓測試一目了然。
 
 >本篇程式碼截圖取自 [Wallaby.js 官網文件](https://wallabyjs.com/docs/)

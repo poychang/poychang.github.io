@@ -5,6 +5,7 @@ date: 2018-10-22 22:05
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/preview-svg-thumbnails-in-in-windows-explorer/
 ---
 
 最近在做投影片的時候，會大量用到 SVG 圖案，SVG 除了有檔案小的優勢，還具有可縮放的向量特性，不怕放大失真。不過在 Windows 的檔案總管中，只能支援檢視例如 JPG、PNG 等圖檔，遇到 SVG 預設就是顯示 IE 的圖示而不是預覽圖，有點小不方便。

@@ -5,6 +5,7 @@ date: 2019-07-31 00:12
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, Azure]
+redirect_to: https://blog.poychang.net/transcribe-speech-to-text-with-azure-cognitive-speech-service-and-dotnet-core/
 ---
 
 Azure 認知服務平台提供了 AI as a Platform 的一站式服務，其中提供了多種認知服務，例如電腦視覺、語音服務、文字分析、異常偵測等等，官方也提供了多種程式語言的 SDK，讓開發者可以更容易地使用 SDK 來呼叫認知服務的 REST API，輕鬆應用 AI 讓應用程式變得更智能。這篇來玩玩**將語音即時轉譯為文字**的 Speech Cognitive Service。

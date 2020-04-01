@@ -5,7 +5,9 @@ date: 2018-01-03 21:12
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/use-soapui-to-test-web-service/
 ---
+
 要測試 REST API 時，[Postman](https://www.getpostman.com/) 絕對是你的好幫手，但如果是要測試 SOAP 協議的 Web Service 的時候呢？有個工具叫做 [SoapUI](https://www.soapui.org/)，提供介面讓我們輕鬆測試 Web Service 是否能成功的被呼叫。
 
 SoapUI API 測試工具有 Open Source 的版本，[從這裡下載](https://www.soapui.org/downloads/soapui.html)，可以測試呼叫 SOAP 及 REST API，也包含匯入 WSDL 來建立 API 清單，另外還可以建立測試案例、LoadTest等進階功能，相當強大。

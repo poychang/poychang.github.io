@@ -5,6 +5,7 @@ date: 2018-11-18 22:43
 author: Poy Chang
 comments: true
 categories: [Angular]
+redirect_to: https://blog.poychang.net/publish-angular-app-to-github-pages/
 ---
 
 GitHub 除了提供版控的功能，還有一個服務叫做 [GitHub Pages](https://pages.github.com/)，可以透過他來架設靜態網頁，甚至還有提供綁定網域名稱的功能，因此這對於想用來展示作品集、做單頁式行銷，甚至拿來部屬 SPA 應用程式都是可以的，這篇來分享如何將 Angular 應用程式佈署到 GitHub Pages，輕鬆地展示你的開發成果。

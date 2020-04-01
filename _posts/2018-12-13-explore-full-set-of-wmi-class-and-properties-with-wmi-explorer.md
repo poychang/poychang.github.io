@@ -5,6 +5,7 @@ date: 2018-12-13 22:43
 author: Poy Chang
 comments: true
 categories: [Dotnet, PowerShell, Tools]
+redirect_to: https://blog.poychang.net/explore-full-set-of-wmi-class-and-properties-with-wmi-explorer/
 ---
 
 WMI（Windows Management Instrumentation）是微軟根據 DMTF（Distributed Management Task Force）所制訂的 Web-based Enterprise Management（WBEM）為基礎的實作，藉此讓系統管理人員能方便管理系統，以及取得系統資訊。

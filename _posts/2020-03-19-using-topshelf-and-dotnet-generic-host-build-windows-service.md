@@ -5,6 +5,7 @@ date: 2020-03-19 00:12
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop]
+redirect_to: https://blog.poychang.net/using-topshelf-and-dotnet-generic-host-build-windows-service/
 ---
 
 [上一篇](./pass-arguments-to-windows-service-with-topshelf/)使用 [Topshelf](https://github.com/topshelf/topshelf) 處理了啟動 Windows Service 時要環境參數的問題，為了讓之後用 Topshelf 寫 Windows Service 時，有更一致的寫法，這篇將使用使用 Topshelf 與 .NET 泛型主機架構，來建立專案架構。

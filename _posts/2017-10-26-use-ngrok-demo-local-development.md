@@ -5,7 +5,9 @@ date: 2017-10-26 12:59
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/use-ngrok-demo-local-development/
 ---
+
 專案的進程中，時常需要和使用單位討論進度或介面，使用截圖的方式溝通稍嫌沒有效率，而且無法讓使用單位體驗操作方式，除了將開發中的網站專案架在測試站台外，可以利用 [Ngrok](https://ngrok.com/) 直接 Demo 本機 localhost 運行的網站。
 
 ![Demo](https://i.imgur.com/wpgVYu4.png)

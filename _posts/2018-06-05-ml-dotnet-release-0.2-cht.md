@@ -5,6 +5,7 @@ date: 2018-06-05 12:00
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, MachineLearning]
+redirect_to: https://blog.poychang.net/ml-dotnet-release-0.2-cht/
 ---
 從 ML.NET 0.2 Release Notes 發行說明來了解在 .NET 生態中，機器學習的發展。如有翻譯錯誤，請指正，謝謝！
 

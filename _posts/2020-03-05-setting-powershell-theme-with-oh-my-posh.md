@@ -5,6 +5,7 @@ date: 2020-03-05 09:12
 author: Poy Chang
 comments: true
 categories: [Develop, PowerShell, Tools]
+redirect_to: https://blog.poychang.net/setting-powershell-theme-with-oh-my-posh/
 ---
 
 之前一直很羨慕 Mac OS 的使用者有 [iTerm2](https://iterm2.com/) + [oh-my-zsh](https://ohmyz.sh/) 可以讓終端命令列介面變得美美的，自從 Microsoft 官方推出 [Windows Terminal](https://github.com/microsoft/terminal)，讓我弭補了沒有 iTerm2 的缺憾後，再加上 [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh) 這個 Powershell 樣式套件，終於可以在 Windows 環境下輕送設定美美的 PowerShell 樣式了！這篇紀錄如何輕鬆使用 oh-my-posh 美化 PowerShell 樣式。

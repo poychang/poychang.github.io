@@ -5,6 +5,7 @@ date: 2019-04-19 12:59
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/microsoft-edge-install-chrome-web-store-extensions/
 ---
 
 在 2019 四月初的時候，Microsoft 推出了基於 Chromium 的 [Microsoft Edge](https://www.microsoftedgeinsider.com/en-us/) 瀏覽器測試版，可以到[這裡下載](https://www.microsoftedgeinsider.com/en-us/download/)適合你的測試版本，既然是基於 Chromium，當然也支援來自 Chrome Web Store 的擴充套件，但要怎麼安裝 Chrome 的擴充套件呢？

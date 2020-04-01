@@ -5,6 +5,7 @@ date: 2019-11-19 12:52
 author: Poy Chang
 comments: true
 categories: [Uncategorized]
+redirect_to: https://blog.poychang.net/using-microsoft-learn-as-company-training-center/
 ---
 
 每當有新人進公司的時候，前三個月總是免不了接受許多公司內部的教育訓練，這些教育訓練內容無非是希望新進人員能快速上手一些公司內部既有的流程，甚至針對所任職的工作內容能有進一步的認識，如果公司內部已經使用許多 Microsoft 的服務，甚至 .NET 相關的開發技術，都可以透過 [Microsoft Learn](https://docs.microsoft.com/zh-tw/learn/?WT.mc_id=DT-MVP-5003022) 來作為新進人員的教育訓練，重點是有中文還免費！

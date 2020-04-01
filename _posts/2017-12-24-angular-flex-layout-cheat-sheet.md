@@ -5,7 +5,9 @@ date: 2017-12-24 21:12
 author: Poy Chang
 comments: true
 categories: [Angular]
+redirect_to: https://blog.poychang.net/angular-flex-layout-cheat-sheet/
 ---
+
 個人覺得 [Angular Flex-Layout](https://github.com/angular/flex-layout) 這套布局工具真的很好用，之前寫了篇[使用 Angular Flex-Layout 輔助版面佈局](https://poychang.github.io/use-angular-flex-layout-package/)的筆記，為了讓自己更方便使用，做了張 Cheat Sheet，分享給有需要的開發者們。
 
 <a href="https://i.imgur.com/H3BVfPZ.png" target="_blank">

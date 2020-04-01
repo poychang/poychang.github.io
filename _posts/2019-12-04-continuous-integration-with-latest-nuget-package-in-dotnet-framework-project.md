@@ -5,6 +5,7 @@ date: 2019-12-04 17:37
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop]
+redirect_to: https://blog.poychang.net/continuous-integration-with-latest-nuget-package-in-dotnet-framework-project/
 ---
 
 這是一個逼不得已的做法，為了要讓 .NET Framework 專案總是使用最新的 NuGet 套件，讓每次部屬都用最新的套件功能，試出了這樣的處理方式。

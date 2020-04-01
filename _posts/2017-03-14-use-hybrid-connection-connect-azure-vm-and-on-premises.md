@@ -5,6 +5,7 @@ date: 2017-03-14 19:11
 author: Poy Chang
 comments: true
 categories: [Azure, Tools]
+redirect_to: https://blog.poychang.net/use-hybrid-connection-connect-azure-vm-and-on-premises/
 ---
 在傳統企業環境中要使用雲端服務，應該會經常被問到雲端能不能存取地端（On-Promises）的伺服器，畢竟企業內部有些資源、資料是企業主不想放在別人家的，而這問題的標準答案絕對是 YES，BizTalk 的 Hybrid Connection 是一個不錯的解決方案。
 

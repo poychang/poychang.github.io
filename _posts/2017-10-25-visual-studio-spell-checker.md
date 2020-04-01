@@ -5,7 +5,9 @@ date: 2017-10-25 23:15
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/visual-studio-spell-checker/
 ---
+
 寫程式真的需要些英文底子，畢竟程式碼大多數是用英文寫的，你是否有在 Visual Studio 中寫程式時，老是有英文拼字拼錯的困擾呢？這裡有個優秀的擴充套件可以幫助你！
 
 [Visual Studio Spell Checker](https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellCheckerVS2017andLater) 是個檢查程式碼英文拼寫是否正確的擴充套件，安裝完成之後，在寫程式碼或註解的時候，會自動檢查英文單字是否有拼寫正確，避免造成日後維護時的困擾。

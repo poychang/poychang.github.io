@@ -5,6 +5,7 @@ date: 2019-05-08 12:45
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/how-to-build-early-version-of-new-windows-terminal/
 ---
 
 Microsoft Build 2019 發表了全新的 Windows Terminal 終端機工具，預計在今年夏天在 Windows 10 的 Microsoft Store 推出預覽版，並在冬天的時候推出正式版本，不過對於開發者而言，看到這全新的終端機工具，想必躍躍欲試，很想早點玩玩這支援多頁籤、使用 GPU 加速、等現代化功能的終端機，這裡就帶大家親自 Build 起來！

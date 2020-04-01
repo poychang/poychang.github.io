@@ -5,6 +5,7 @@ date: 2017-01-20 14:14
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/jekyll-facebook-like-button/
 ---
 社群媒體當道的時代，在部落格上增加一個 Facebook Like 按鈕，也是理所當然的事情，如何在使用 Jekyll 架設的部落格中，添加這社群媒體的神兵利器，這裡讓你看仔細。
 

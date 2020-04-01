@@ -5,6 +5,7 @@ date: 2020-02-05 01:40
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
+redirect_to: https://blog.poychang.net/system-text-json-custom-jsonconverter-for-timespan/
 ---
 
 `System.Text.Json` 目前無法反/序列化轉換 `TimeSpan` 型別，但從 .NET 5 的 [Milestone](https://github.com/dotnet/runtime/milestone/7)可以知道，這功能將會包含在 .NET 5 之中，在此之前，如果真的要對 `TimeSpan` 做反/序列化轉換，可以自行實作 JsonConverter 來處理。

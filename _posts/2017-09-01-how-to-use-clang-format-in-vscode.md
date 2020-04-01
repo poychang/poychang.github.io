@@ -5,7 +5,9 @@ date: 2017-09-01 12:00
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/how-to-use-clang-format-in-vscode/
 ---
+
 每次都要手動將程式碼排整齊了話，那也太沒生產力了，如果有工具幫你代勞，甚至幫你把一些開發基本規範給套用上去，那人生會美好很多，Clang-Format 是一套我很喜歡的排版工具。
 
 ## 前言

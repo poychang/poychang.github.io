@@ -5,7 +5,9 @@ date: 2017-12-01 12:00
 author: Poy Chang
 comments: true
 categories: [Develop]
+redirect_to: https://blog.poychang.net/how-to-use-html-head/
 ---
+
 HTML 中的 Meta 標籤可以用來提供網頁的內容資訊給瀏覽器或存取網頁的服務使用，例如常見的網頁內容描述（Description）、適用的螢幕解析度（Viewport），還有很多給爬蟲、社群媒體等使用的設定可以透過 Meta 標籤來標示，這裡做個整理。
 
 ## Meta 基本用法

@@ -5,6 +5,7 @@ date: 2019-06-25 22:15
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/windows-and-linux-has-different-newline-characters/
 ---
 
 最近在玩 Windows Terminal 搭配 WLS 的時候，遇到一件和換行字元有關的小狀況，讓我無法順利使用 `.bash_aliases`，簡單說就是 Windows 和 Linux 的換行字元是不一樣的。

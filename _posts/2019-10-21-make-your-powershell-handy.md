@@ -5,6 +5,7 @@ date: 2019-10-21 19:32
 author: Poy Chang
 comments: true
 categories: [PowerShell, Tools]
+redirect_to: https://blog.poychang.net/make-your-powershell-handy/
 ---
 
 最近愛上使用 [Windows Terminal](https://github.com/microsoft/terminal) 來當作終端機工具，讓你可以將多種 Shell 整合在一起使用，包括 Windows 內建的 cmd，在 Windows 運行 Linux 環境的 WSL，用於管理 Azure 資源的 Azure Cloud Shell，以及本篇想要分享的 PowerShell，然而經常在各種 Shell 切換的過程中，難免會有些指令工具覺得好用，卻在另一個 Shell 中沒那個指令可以用，這篇將分享如何讓你的 PowerShell 變得順手、更好用。

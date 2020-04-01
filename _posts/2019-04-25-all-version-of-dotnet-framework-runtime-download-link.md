@@ -5,6 +5,7 @@ date: 2019-04-25 12:46
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, Develop]
+redirect_to: https://blog.poychang.net/all-version-of-dotnet-framework-runtime-download-link/
 ---
 
 要執行 .NET Framework 開發的應用程式，系統必須安裝對應版本的 .NET Framework Runtime，這裡整理了所有版本的 .NET Framework Runtime 下載路徑，方便使用。

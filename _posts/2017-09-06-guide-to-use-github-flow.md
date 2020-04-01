@@ -5,7 +5,9 @@ date: 2017-09-06 21:12
 author: Poy Chang
 comments: true
 categories: [Develop, Tools]
+redirect_to: https://blog.poychang.net/guide-to-use-github-flow/
 ---
+
 GitHub 是開發人員都知道的程式碼代管平台，大多數的開放原始碼專案都放在這個平台上，這上面也營造出許多開源社群，當有開發者對某項專案有興趣時，可以在這研究其背後的寫作方式，有能力了話，還可以貢獻所長，改善或增強開源專案。那麼要如何參與開源專案呢？GitHub 提供了一套流程，讓開源協助變得簡單。
 
 ![GitHub Flow](https://i.imgur.com/gns2luN.png)

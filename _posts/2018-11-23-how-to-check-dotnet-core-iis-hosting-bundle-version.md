@@ -5,6 +5,7 @@ date: 2018-11-23 09:10
 author: Poy Chang
 comments: true
 categories: [Develop, PowerShell]
+redirect_to: https://blog.poychang.net/how-to-check-dotnet-core-iis-hosting-bundle-version/
 ---
 
 透過 [.NET Core CLI](https://docs.microsoft.com/zh-tw/dotnet/core/tools/?tabs=netcore2x&WT.mc_id=DT-MVP-5003022) 的命令，我們可以透過 `dotnet --version --list-runtime` 查詢本機有安裝的執行環境版本，如果你是使用 IIS 來架設 .NET Core 的站台，還需要安裝 .NET Core Hosting Bundle 才能正確執行，但如何檢查本機所安裝的 .NET Core Hosting Bundle 版本呢？這裡有個 Script 很好用。

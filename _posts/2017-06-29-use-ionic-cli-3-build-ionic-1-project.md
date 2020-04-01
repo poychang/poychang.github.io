@@ -5,6 +5,7 @@ date: 2017-06-29 11:44
 author: Poy Chang
 comments: true
 categories: [App, Develop, Tools]
+redirect_to: https://blog.poychang.net/use-ionic-cli-3-build-ionic-1-project/
 ---
 
 換了新筆電後，還沒有用他寫過 Ionic 專案，很多工具必須先裝起來，於是就裝了最新版的 Cordova 7.0 和 Ionic CLI 3.4，但就此無法編譯一年多前啟動的舊專案，錯愕呀！

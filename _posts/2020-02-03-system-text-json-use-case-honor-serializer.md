@@ -5,6 +5,7 @@ date: 2020-02-03 21:11
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
+redirect_to: https://blog.poychang.net/system-text-json-use-case-honor-serializer/
 ---
 
 使用 `System.Text.Json` 做序列化/反序列化的時候，如果看起來程式沒有錯，但不知道為甚麼序列化一直失敗，或是反序列化一直拿到 `null` 而無法取得所設定的值，很有可能就是你中了**尊重名稱大小寫**這個雷，解法就是將 `JsonSerializerOptions` 的 `PropertyNameCaseInsensitive` 屬性設定成 `true` 就可以了。

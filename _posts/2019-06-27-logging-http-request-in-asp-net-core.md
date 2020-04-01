@@ -5,6 +5,7 @@ date: 2019-06-27 18:28
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, WebAPI]
+redirect_to: https://blog.poychang.net/logging-http-request-in-asp-net-core/
 ---
 
 在開發 Web API 的時候你可能會遇到這種情境，想要收集所有對我們網站所發起的 HTTP 要求，從呼叫 API 的網址、HTTP 方法、甚至 HTTP 要求的內容（Request Body）等，要把這些資訊儲存下來，供之後分析使用，以前你可能會透過 IIS Log 來做，現在在 ASP.NET Core 的程式架構中，我們可以在專案架構的中介程序中，攔截 HTTP 資訊，來做任何我們想要做的事。

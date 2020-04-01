@@ -5,7 +5,9 @@ date: 2017-10-8 16:55
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, SQL, WebAPI]
+redirect_to: https://blog.poychang.net/asp-net-core-webapi-with-entity-framework-core/
 ---
+
 後端程式存取資料庫是稀鬆平常的事，透過 Entity Framework Core 來存取資料庫，不僅可以享受 ORM 的開發效率，還可以搭配[擴充套件達成 Unit of Work](https://docs.microsoft.com/zh-tw/ef/core/extensions/unitofwork?WT.mc_id=DT-MVP-5003022) 的效果，本篇將介紹 ASP.NET Core WebAPI 搭配 Entity Framework Core 來處理存取資料庫的作業。
 
 >完整範例程式碼請參考 [poychang/DemoEFCore](https://github.com/poychang/DemoEFCore)。

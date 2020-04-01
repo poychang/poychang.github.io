@@ -5,6 +5,7 @@ date: 2018-07-03 01:07
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, Develop, IoT]
+redirect_to: https://blog.poychang.net/use-file-system-watcher-collect-iot-log/
 ---
 
 工業 4.0 最早從 2011 年德國的漢諾瓦工業博覽會提出，台灣在 2014 年也提出[生產力 4.0 發展方案](https://1drv.ms/b/s!Aiwtjhj5fofrk_wBNT0wgz6f84dPBw?e=oCGVqM)，不管是哪個 4.0 都會出現 IoT 物聯網的概念，然而大多數現行的機台上，即便有感測器去蒐集資料，但往往只是單純的做 Log 儲存成**檔案**，供後續有心人接續利用，離我們自動化蒐集感測資料，連網上傳資料進行分析作業，有一段不知如何跨越的距離，但其實我們只要做到持續監看 Log 的變化，並轉交由分析系統，傳統的機台也是可以沾點工業 4.0 的光，.NET 提供的 FileSystemWatcher 類別正是讓傳統機台發光的黑魔法。

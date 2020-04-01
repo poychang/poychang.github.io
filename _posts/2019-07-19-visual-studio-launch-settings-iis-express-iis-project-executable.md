@@ -5,6 +5,7 @@ date: 2019-07-19 15:06
 author: Poy Chang
 comments: true
 categories: [Dotnet, WebAPI, Develop]
+redirect_to: https://blog.poychang.net/visual-studio-launch-settings-iis-express-iis-project-executable/
 ---
 
 當我們使用 Visual Studio 開發 ASP.NET Core 網站的時候，執行偵錯時，Visual Studio 會去讀取 `launchSettings.json` 設定檔，並根據所提供的設定值來啟動網站，但裡面有個屬性 `commandName` 其實很關鍵，關係到 Visual Studio 是"如何"啟動網站的。

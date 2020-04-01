@@ -5,6 +5,7 @@ date: 2019-04-18 16:28
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop, Tools]
+redirect_to: https://blog.poychang.net/sonarqube-no-analysable-projects-were-found/
 ---
 
 今天在使用 Azure DevOps 搭配 SonarQube 做程式碼分析的時候，遇到執行分析時找不到 .NET Core 專案的錯誤，但是過去明明就可以對 .NET Core 專案程式碼作分析，怎麼會報出 `No analysable projects were found` 的錯誤訊息呢？

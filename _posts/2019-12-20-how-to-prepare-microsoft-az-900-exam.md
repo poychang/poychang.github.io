@@ -5,6 +5,7 @@ date: 2019-12-20 00:40
 author: Poy Chang
 comments: true
 categories: [Azure, Develop]
+redirect_to: https://blog.poychang.net/how-to-prepare-microsoft-az-900-exam/
 ---
 
 我所認為的證照，他所代表的意義其實覆蓋了一層機率，用白話文說就是：證照代表你有**可能**知道的比較多一點，在現在技術的洪流中，即便是同一個技術領域，也可能在幾年內汰舊換新，而證照或許是快速識別你是否有可能**提供專業的技能**。

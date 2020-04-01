@@ -5,6 +5,7 @@ date: 2017-02-17 21:58
 author: Poy Chang
 comments: true
 categories: [SQL, Tools]
+redirect_to: https://blog.poychang.net/enable-dark-theme-in-sql-server-management-studio-2016/
 ---
 現在越來越多的開發工具或使用者介面都有黑色主題，從 [Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2012/05/29/visual-studio-dark-theme/) 到 [Google Chrome Web DevTools](https://developers.google.com/web/updates/2016/02/devtools-digest-devtools-go-dark) 也有了黑色主題，那我們常用的 SQL Server Management Studio 資料庫管理工具呢？有個方法可以讓你搶先享受！
 

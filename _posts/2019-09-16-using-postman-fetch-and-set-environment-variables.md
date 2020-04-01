@@ -5,6 +5,7 @@ date: 2019-09-16 12:00
 author: Poy Chang
 comments: true
 categories: [Javascript, WebAPI, Tools]
+redirect_to: https://blog.poychang.net/using-postman-fetch-and-set-environment-variables/
 ---
 
 Postman 幫助開發人員在開發時期能夠快速測試 Web API 的功能是否正確運作，而很多時候我們的 API 設計，會因為安全性的關係，在呼叫時必須夾帶 Token 資訊，以驗證呼叫端是否有權限使用該 API，所以會先呼叫一隻驗證身份並回傳 Token 的 API，再將該 Token 放到其他呼叫 API 的 HTTP Request 中去使用，這篇將介紹兩種在此情境下，加速測試時期使用 Token 的作法。

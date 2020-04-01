@@ -5,6 +5,7 @@ date: 2018-07-24 23:33
 author: Poy Chang
 comments: true
 categories: [Azure]
+redirect_to: https://blog.poychang.net/how-to-query-and-analytics-application-insights-log/
 ---
 Azure Application Insights 是一個應用程式遙測工具，可以幫助開發者輕鬆的深入了解應用程式和資源的運作，運作的過程中會將收集到的遙測資料紀錄在 Azure 雲端平台中，我們可以簡單的從 Azure 平台搜尋過去發生的事件，也可以透過 Azure Log Analytics 這一套功能強大的視覺效果與分析工具，協助開發者或 IT 管理員輕易地掌握所記錄的遙測資訊。
 

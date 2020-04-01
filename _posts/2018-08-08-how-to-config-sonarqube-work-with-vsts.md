@@ -5,6 +5,7 @@ date: 2018-08-08 23:32
 author: Poy Chang
 comments: true
 categories: [Develop, Tools]
+redirect_to: https://blog.poychang.net/how-to-config-sonarqube-work-with-vsts/
 ---
 
 想要自動化檢查程式碼品質，[SonarQube](https://www.sonarqube.org/) 是一套相當不錯的程式碼品質檢查工具，這項[開放原始碼專案](https://github.com/SonarSource/sonarqube)可以幫助我們找出潛在 Bug、重複程式碼、測試覆蓋率、程式碼複雜度等等軟體品質報告，如果配合 [Visual Studio Team Services](https://visualstudio.microsoft.com/team-services/) 在持續整合這個環節中做檢查，就更能夠及時且清楚的掌控專案品質，本文將介紹如何在 VSTS 上設定並使用 SonarQube 進行程式碼品質分析。

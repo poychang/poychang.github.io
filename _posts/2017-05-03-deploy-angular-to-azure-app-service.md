@@ -5,7 +5,9 @@ date: 2017-05-03 23:10
 author: Poy Chang
 comments: true
 categories: [Angular, Azure, Tools]
+redirect_to: https://blog.poychang.net/deploy-angular-to-azure-app-service/
 ---
+
 DevOps 當道的時代，CI 和 CD 這兩個名詞一定要知道，而在 Azure App Service 上，也有提供 CI、CD 的服務，讓你可以使用各種版控工具做提交，然後執行腳本來完成持續整合，並在最後發布至 Azure App Service 中。
 
 一般來說，在開發完 Angular 的應用程式後，如果要部署到 Azure 上，你必須在本機 `ng build` 一次後，再將 `dist` 資料夾中的檔案上傳到 Azure 中，才能順利開啟網頁。
@@ -161,9 +163,9 @@ IF EXIST "%DEPLOYMENT_TARGET%\.angular-cli.json" (
 
 ```json
 "assets": [
-	"assets",
-	"web.config",
-	"favicon.ico"
+  "assets",
+  "web.config",
+  "favicon.ico"
 ]
 ```
 

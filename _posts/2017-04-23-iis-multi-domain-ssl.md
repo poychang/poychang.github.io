@@ -5,7 +5,9 @@ date: 2017-04-23 21:23
 author: Poy Chang
 comments: true
 categories: [WebAPI, Develop, Tools]
+redirect_to: https://blog.poychang.net/iis-multi-domain-ssl/
 ---
+
 這是個講求 CP 值的時代，如何在一個 IIS 裡架設多個網站，而且是多個 HTTPS 的網站，提供安全及充分利用系統資源，是這次的主題。
 
 ## 基本設定

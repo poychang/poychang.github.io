@@ -5,7 +5,9 @@ date: 2017-05-23 21:12
 author: Poy Chang
 comments: true
 categories: [Typescript, Angular, Develop]
+redirect_to: https://blog.poychang.net/angular-rxjs-operaror-location/
 ---
+
 Angular 專案環境是一個 RxJS friendly 的環境，可以透過 RxJS 幫我們完成很多任務，而如果你和我一樣總是傻傻分不清楚所使用的 RxJS 是來自 operator 和 observable 了話，然後總是背不起來運算子到底在哪裡，可以試試看下面這種查詢方式。
 
 >如果是使用 RxJS 5.5 之後的版本，[建議使用這種方式 Import RxJS 的各項功能](https://poychang.github.io/import-rxjs-correctly/)。

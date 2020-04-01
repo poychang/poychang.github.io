@@ -5,6 +5,7 @@ date: 2017-09-04 17:14
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/my-vscode-config/
 ---
 
 Visual Studio Code 提供了極大的彈性讓我們自訂想要的編輯器樣式，端看使用者設定（User Setting）中，就超過 800 項設定可以讓開發者自由調整，而且還有擴充套件能夠增強 VS Code 的開發能力。

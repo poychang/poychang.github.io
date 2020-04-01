@@ -5,6 +5,7 @@ date: 2018-03-22 23:32
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop, Tools]
+redirect_to: https://blog.poychang.net/deploy-exe-application-without-installing/
 ---
 Visual Studio 預設在發行 WPF 專案時，會幫你將專案封裝成可安裝檔，並幫你製作 ClickOnce 安裝精靈，方便你做發布。不過有時候只是做一個簡單的 WPF 桌面應用程式，只想要簡單傳給使用者使用，如果使用者使用時還要跑一段安裝步驟，就顯得相當多餘。
 

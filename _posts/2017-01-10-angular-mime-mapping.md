@@ -5,7 +5,9 @@ date: 2017-01-10 10:07
 author: Poy Chang
 comments: true
 categories: [Javascript, Angular, Develop]
+redirect_to: https://blog.poychang.net/angular-mime-mapping/
 ---
+
 [MIME](https://zh.wikipedia.org/wiki/%E5%A4%9A%E7%94%A8%E9%80%94%E4%BA%92%E8%81%AF%E7%B6%B2%E9%83%B5%E4%BB%B6%E6%93%B4%E5%B1%95)（Multipurpose Internet Mail Extensions） 定義了媒體類型，在做檔案傳輸時經常會用檔案的附檔名去找對應的 MIME，我們可以寫一隻 Angular Service 方便我們使用。
 
 這功能基本上就是個查詢對應字串的函數，給一個附檔名的 `key`，返回一組 MIME 字串，就這樣而已，可以直接看[完整程式碼](#code)。

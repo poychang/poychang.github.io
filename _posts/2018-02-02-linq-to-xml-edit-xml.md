@@ -5,6 +5,7 @@ date: 2018-02-02 00:00
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
+redirect_to: https://blog.poychang.net/linq-to-xml-edit-xml/
 ---
 
 接續上篇的基本操作，這篇主要使用 LINQ to XML 來修改 XML 資料。

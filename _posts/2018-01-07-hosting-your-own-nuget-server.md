@@ -5,7 +5,9 @@ date: 2018-01-07 17:27
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/hosting-your-own-nuget-server/
 ---
+
 NuGet 對於 .NET 開發人員的重要如同喝咖啡一般，當你開發了一套給自己或內部人員使用的套件時，有個 NuGet Server 幫你管理這些套件，那是多麼開心的一件事。
 
 從微軟官方文件看到一篇[如何架設私有 NuGet 伺服器](https://docs.microsoft.com/zh-tw/nuget/hosting-packages/overview?WT.mc_id=DT-MVP-5003022)，裡面提到有三種方法：

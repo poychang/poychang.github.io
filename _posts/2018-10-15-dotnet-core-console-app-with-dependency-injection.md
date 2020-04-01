@@ -5,6 +5,7 @@ date: 2018-10-15 21:34
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
+redirect_to: https://blog.poychang.net/dotnet-core-console-app-with-dependency-injection/
 ---
 
 透過 .NET Core 內建的依賴注入套件，除了可以讓我們輕鬆實現 Dependency Injection 依賴注入的設計模式，更可以幫助我們把程式碼寫得更職責分離，在 ASP.NET Core 的專案範架構中，已經被列為基礎架構，幾乎所有應用服務都是基於 DI 來設計，如果我們想要在自己的應用程式中加入這好用的工具，可以參考這篇作法，如何將內建的依賴注入工具整合至主控台應用程式中。

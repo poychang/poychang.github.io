@@ -5,7 +5,9 @@ date: 2018-02-12 00:12
 author: Poy Chang
 comments: true
 categories: [Develop, Tools]
+redirect_to: https://blog.poychang.net/gitignore-and-delete-untracked-files/
 ---
+
 如果開發到一半，你才加入 `.gitignore` 了話，之前被加入 Git 版控的檔案將不會被排除，這些已經加入的檔案將持續被 Git 追蹤，這時候我們可以怎麼做，才能把不再需要被版控的檔案移除，並請不再被 Git 追蹤呢？
 
 `.gitignore` 可以告訴 Git 版控系統不要處理指定規則下的檔案，但只要檔案有被提交過，就會持續被 Git 所追蹤，因此再建立 `.gitignore` 之前，就已經提交檔案了話，那麼即使再從 `.gitignore` 內加入新規則，也無法排除已經被追蹤的檔案。

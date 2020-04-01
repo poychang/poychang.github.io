@@ -5,7 +5,9 @@ date: 2017-07-28 00:23
 author: Poy Chang
 comments: true
 categories: [Typescript, Javascript]
+redirect_to: https://blog.poychang.net/find-the-max-value-in-an-array-of-objects/
 ---
+
 這是個小技巧，使用 JavaScript/TypeScript 找到物件陣列中某項屬性的最大值，或者最小值也 OK。
 
 假設我們有個兩個陣列如下：

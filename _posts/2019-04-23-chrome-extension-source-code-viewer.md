@@ -5,6 +5,7 @@ date: 2019-04-23 12:43
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/chrome-extension-source-code-viewer/
 ---
 
 Chrome 的擴充套件非常的豐富，可以將我們的瀏覽器增加很多好用的功能，例如將 GitHub 網站黑化的 [GitHub Dark Theme](https://chrome.google.com/webstore/detail/github-dark-theme/odkdlljoangmamjilkamahebpkgpeacp)，基本上 Chrome 擴充套件都是用 JavaScript 寫的，如果你想要查看某一個擴充套件的程式碼是怎麼寫的，可以透過下面介紹的方式來觀看。

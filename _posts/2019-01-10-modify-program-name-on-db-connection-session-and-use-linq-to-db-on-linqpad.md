@@ -5,6 +5,7 @@ date: 2019-01-10 12:55
 author: Poy Chang
 comments: true
 categories: [Dotnet, SQL, Develop, Tools]
+redirect_to: https://blog.poychang.net/modify-program-name-on-db-connection-session-and-use-linq-to-db-on-linqpad/
 ---
 
 連線 MS SQL Server 的資料庫時會記錄一些連線資訊，我們可以透過查詢這些 Session 連線資訊取得是用哪種工具做連線的，這篇講述一些查詢資料庫的小事情。

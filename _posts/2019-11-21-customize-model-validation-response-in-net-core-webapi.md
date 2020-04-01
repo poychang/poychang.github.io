@@ -5,6 +5,7 @@ date: 2019-11-21 14:31
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, WebAPI]
+redirect_to: https://blog.poychang.net/customize-model-validation-response-in-net-core-webapi/
 ---
 
 在使用複雜的 JSON 資料作為呼叫 ASP.NET Core WebAPI 的 HTTP Body 的時候，ASP.NET Core 會將 JSON 資料做對應的模型繫結，當模型繫結失敗的時候，ASP.NET Core WebAPI 有預設的錯誤訊息回饋給呼叫端，而在 ASP.NET Core 的架構中，保留了很多修改的彈性，如何自訂 ASP.NET Core WebAPI 模型繫結的驗證訊息，是這篇想要介紹的。

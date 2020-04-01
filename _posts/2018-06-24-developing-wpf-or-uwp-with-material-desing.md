@@ -5,6 +5,7 @@ date: 2018-06-24 21:12
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, App]
+redirect_to: https://blog.poychang.net/developing-wpf-or-uwp-with-material-desing/
 ---
 有時候我們還是要寫一些 WinForm 的程式，但是總覺得 WinForm 預設的樣式不夠現代化，如果能像 Web 一樣有 Material Design 的控制項，讓開發者能夠輕鬆做出友善的 UI 介面該有多好，[MaterialDesignInXamlToolkit](https://github.com/ButchersBoy/MaterialDesignInXamlToolkit) 這個專案就是讓你開開心心建置優良 UX 的好套件，而且還支援 UWP 和 WPF 兩種框架唷。
 

@@ -5,6 +5,7 @@ date: 2019-10-30 12:43
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/speeding-up-sourcetree-fetching-older-commits/
 ---
 
 程式碼的版本控制是專案很重要的一個環節，當專案越長越大，歷時也越來越悠久的時候，你會發現 Git 的版本紀錄 (Commits) 會非常多，除非你用 Git 指令來操作，否則用有介面的版本控制工具都很容易卡在讀取過多 Commits，或是在繪製 Commits Tree 的時候卡很久，如果你剛好是使用 [SourceTree](https://www.sourcetreeapp.com/) 作為版本控制工具， 這裡有個設定你可以參考一下。

@@ -5,7 +5,9 @@ date: 2017-12-14 15:10
 author: Poy Chang
 comments: true
 categories: [Angular, Develop]
+redirect_to: https://blog.poychang.net/use-forroot-to-provide-services-in-angular-shared-module/
 ---
+
 在 Angular 專案中，我們會把共用的元件(Component)、指令(Directive)、管道(Pipe)放在一個 SharedModule 中做管理，那服務(Service)呢？一般來說，我們希望服務是單一實例(Singleton Service)的狀態，但基於底層運作的方式，直接在 SharedModule 建立服務，會產生多個重複的單一實例服務，而可能引發問題，這時我們可以透過 `forRoot()` 來幫我們避免這狀況的發生。
 
 ## 模組分割

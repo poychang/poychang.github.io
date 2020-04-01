@@ -5,6 +5,7 @@ date: 2019-06-26 12:58
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
+redirect_to: https://blog.poychang.net/using-json-serializer-with-system-text-json/
 ---
 
 一直以來，當要處理 JSON 的時候 [Json.NET](https://www.newtonsoft.com/json) 是最佳的幫手，有非常順手的 API 和功能，讓開發者輕鬆處理 JSON 的大小事，甚至在 .NET 的各種函示庫、框架中都有用到，但當許多專案相依於此函示庫時，只要版本一更新，很容易造成許多專案要更著變動，造成相依的函示庫版本很難掌握，因此 .NET Team 發展了 `System.Text.Json` 來在 .NET 專案中取代 Json.NET 的依賴。

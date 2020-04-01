@@ -5,6 +5,7 @@ date: 2019-01-21 22:12
 author: Poy Chang
 comments: true
 categories: [Javascript]
+redirect_to: https://blog.poychang.net/autofill-tscc-boarding-info-query-paramter/
 ---
 
 如果你經常搭乘台灣高鐵出差了話，你應該會辦一張悠遊聯名卡來自動扣款，方便你快速進出站，然後再報支差旅費的時候，透過[台灣高鐵悠遊聯名卡搭乘資訊查詢系統](https://queryweb.tscc.com.tw/thsrc_web/)查詢搭查紀錄，列印相關搭乘紀錄做為申請出差費的報銷憑證，但每次查詢的過程中都要輸入一樣的悠遊卡號碼和生日，有點累，透過這篇的小技巧，可以加速查詢搭查紀錄的作業時間。

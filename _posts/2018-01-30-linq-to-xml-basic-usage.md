@@ -5,6 +5,7 @@ date: 2018-01-30 23:58
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
+redirect_to: https://blog.poychang.net/linq-to-xml-basic-usage/
 ---
 
 XML(eXtensible Markup Language) 可擴展標記語言常作為各種資訊交換用的通訊格式，例如用於 SOAP 通訊協定，其豐富的描述讓資料資訊表達得更完整（當然資料本身也變得比較複雜些），.Net Team 提供了方便操作 XML 的工具 [System.Xml.Linq](https://docs.microsoft.com/zh-tw/dotnet/api/system.xml.linq?WT.mc_id=DT-MVP-5003022) 也就是 LINQ to XML，這篇介紹 LINQ to XML 的基本操作。

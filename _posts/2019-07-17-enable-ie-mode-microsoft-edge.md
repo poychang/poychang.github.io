@@ -5,6 +5,7 @@ date: 2019-07-17 12:56
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/enable-ie-mode-microsoft-edge/
 ---
 
 相信還有很多企業內部的網頁應用程式還是只能用 IE 來開啟使用，針對這點 Microsoft Edge (Chromium) 有提供 IE Mode，讓你可以在 Microsoft Edge 中使用 IE 開啟 IE Only 的網頁，而不脫離整個瀏覽器介面，對於不想要在多個應用程式切換來切換去的使用者來說，相當便利。

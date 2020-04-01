@@ -5,6 +5,7 @@ date: 2019-05-29 22:23
 author: Poy Chang
 comments: true
 categories: [Develop, Bot, Tools]
+redirect_to: https://blog.poychang.net/create-microsoft-teams-app/
 ---
 
 使用 Bot Framework 搭配 Azure Bot Service 開發完聊天機器人後，要如何加入 Microsoft Teams 之中呢？除了在 Azure Bot Service 上開通 Teams 頻道之外，在 Teams 應用程式中，必須要將所開發的 Bot 包成一個自訂應用程式，而要做到這一點，Teams 還提供了 App Studio 應用程式來幫我們快速達成這個目標。

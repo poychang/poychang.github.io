@@ -5,6 +5,7 @@ date: 2020-03-18 12:40
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop]
+redirect_to: https://blog.poychang.net/pass-arguments-to-windows-service-with-topshelf/
 ---
 
 使用 [Topshelf](https://github.com/topshelf/topshelf) 框架來開發 Windows Service 專案，是一個相當不錯的選擇，他解決的版本更新總是又要用 [sc.exe](https://docs.microsoft.com/zh-tw/windows-server/administration/windows-commands/sc-create) 重新安裝 Windows Service 以及 Debug 不易的問題。然而 Topshelf 框架本質是一個 Console 應用程式，這隻程式最終安裝到 Windows 服務控制管理器（SCM）中，而有時候我們會希望傳遞參數，然後根據參數值來啟動應用程式，但這樣的行為在 SCM 卻無法直接處理，因此要做到此功能，處理方式要稍微有點不一樣。

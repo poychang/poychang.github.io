@@ -5,6 +5,7 @@ date: 2019-05-01 21:34
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, Develop]
+redirect_to: https://blog.poychang.net/enumerate-depth-directories-or-subfolders-path/
 ---
 
 有天在處理網路芳鄰的檔案時，有個需求是要在某一個根目錄下，往下找多層子目錄後，針對路徑名稱及檔案內容做後續處理，通常這時候我們會使用 `Directory` 類別的 `EnumerateDirectories` 方法取得根目錄底下的所有子目錄的路徑，但因為子目錄很深又很多，這種取回所有子目錄路徑的方法會有反應速度很慢的問題（每次要等 5~8 秒才找得到），這時候如果能指定搜尋的子目錄深度，相信會快很多。

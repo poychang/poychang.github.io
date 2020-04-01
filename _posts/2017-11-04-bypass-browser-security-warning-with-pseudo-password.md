@@ -5,7 +5,9 @@ date: 2017-11-04 22:12
 author: Poy Chang
 comments: true
 categories: [Develop]
+redirect_to: https://blog.poychang.net/bypass-browser-security-warning-with-pseudo-password/
 ---
+
 2017 年起 Chrome 56、Firefox 51 以上版本的瀏覽器會將收集密碼的網頁標示為不安全，除非你使用 HTTPS 開啟該網頁，對於沒有 SSL 保護的小型網站（尤其是企業內部的小網站）造成了一點點困擾，而資訊人員總不想被人挑戰安全性議題，因此有個小撇步可以繞過這安全性檢查。
 
 >最好的作法還是使用 SSL 幫你的網站做好連線保護。

@@ -5,6 +5,7 @@ date: 2018-05-23 23:28
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop, Tools]
+redirect_to: https://blog.poychang.net/use-multiple-configurations-with-wpf/
 ---
 開發網站應用程式的時候，我們可以透過切換 Debug 或 Release 組態，來自動切換對應的 `Web.Debug.config` 或 `Web.Release.config` 進而整合成運行還經中所需要的 `Web.config`，也藉此達到在不同運行環境上配置該應用程式可以執行的設定參數，然而在 WinFrom 或 Console 的專案中，雖然有 `App.config` 可以將設定抽離程式碼，但無法根據組態來自動切換環境所需的設定檔，這時我們可以這樣做。
 

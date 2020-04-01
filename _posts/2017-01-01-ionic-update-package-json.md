@@ -5,7 +5,9 @@ date: 2016-01-01 22:56
 author: Poy Chang
 comments: true
 categories: [App, Tools]
+redirect_to: https://blog.poychang.net/ionic-update-package-json/
 ---
+
 使用 [Ionic CLI](https://github.com/driftyco/ionic-cli) 執行 `ionic platform add android` 或 `ionic plugin add some-plugin` 指令，可以增加編譯平台或所需的套件，而且會在新增後自動更新 `package.json`，但最近不知道怎麼了，`package.json` 竟然不會自動更新了。
 
 當然，我們可以直接修改 `package.json` 手動加入所需要的平台或套件，但這方法還是稍嫌麻煩。

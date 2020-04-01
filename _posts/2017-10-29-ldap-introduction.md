@@ -5,7 +5,9 @@ date: 2017-10-29 20:35
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop]
+redirect_to: https://blog.poychang.net/ldap-introduction/
 ---
+
 LDAP 的目錄服務，不僅可以幫助我們管理階層結構的組織或資源，對很多傳公司來說也是非常常用的驗證技術，這篇對 LDAP 做一些簡單介紹。
 
 LDAP (Lightweight Directory Access Protocol) 是一種輕量的目綠服務協定，像是通訊錄一樣記錄人員資訊，可以拿來做帳號整合、驗證，LDAP 目錄服務通常有層級結構，像是公司組織階層。

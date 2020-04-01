@@ -5,6 +5,7 @@ date: 2020-03-12 22:52
 author: Poy Chang
 comments: true
 categories: [PowerShell, Tools]
+redirect_to: https://blog.poychang.net/run-windows-terminal-as-administrator-with-elevated-admin-permissions/
 ---
 
 如果你曾經使用過 [cmder](https://cmder.net/) 你一定對讚譽有佳，我也不例外，不過自從我改用 [Windows Terminal](https://github.com/microsoft/terminal) 之後，除了無法只將其中一個 Tab 分頁用系統管理員開啟外，我再也沒有想念 cmder 了，而最近好同事教了我一招，讓我能用系統管理員身分開啟 Windows Terminal 分頁，我想我真的可以忘記 cmder 了（謝謝 cmder 曾經讓我重拾打指令的快感）。

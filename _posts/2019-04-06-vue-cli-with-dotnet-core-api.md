@@ -5,6 +5,7 @@ date: 2019-04-06 20:10
 author: Poy Chang
 comments: true
 categories: [Javascript, CSharp, Dotnet, WebAPI, Develop]
+redirect_to: https://blog.poychang.net/vue-cli-with-dotnet-core-api/
 ---
 
 Vue CLI 開發工具幫助 Vue 開發人員快速建立前端專案，但網站除了前端之外，後端的 API 支援也是專案中相當重要的一部分，然而前後端都有自己的專案架構，要如何將兩者整合在一個專案，其實很簡單的。這裡使用 ASP.NET Core Web API 作為後端專案的框架，然後搭配 Vue CLI 來產生前端專案架構，再做一點點調整，讓前後端除了保有自己的專案架構，還讓兩者能融洽的存在同一個專案中。

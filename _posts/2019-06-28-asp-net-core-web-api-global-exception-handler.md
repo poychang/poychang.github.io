@@ -5,6 +5,7 @@ date: 2019-06-28 21:32
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, Develop]
+redirect_to: https://blog.poychang.net/asp-net-core-web-api-global-exception-handler/
 ---
 
 之前寫過一篇[在 .NET Core 主控台應用程式中全域捕捉未處理的例外](https://poychang.github.io/dotnet-core-global-exception-handler-in-console-application/)，主要是透過 .NET 應用程式的 AppDomain 類別下的 `UnhandledException` 來添加客製的例外處理，然而在 ASP.NET Core 專案中，內部會是個小型 [Kestrel 網頁伺服器](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/servers/kestrel)在運作，因此大多數的 Exception 是不會往上傳遞並被 `AppDomain.UnhandledException` 接收到，所以這個方式是行不通的。但我們可以透過 ASP.NET Core 專案架構中的中介程序，捕捉發生在 HTTP Context 下的例外錯誤，這篇來做看看如何在中介程序（Middleware）中全域處理例外。

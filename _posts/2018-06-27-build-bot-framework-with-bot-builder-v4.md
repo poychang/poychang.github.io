@@ -5,6 +5,7 @@ date: 2018-06-27 13:30
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, WebAPI, Azure, Bot]
+redirect_to: https://blog.poychang.net/build-bot-framework-with-bot-builder-v4/
 ---
 在兩年前的 Build 2016 大會，微軟正式推出了 Bot Framework 智能機器人開發框架，一個**交談即平台** (conversation as a platform) 未來就此展開。在兩年後的今天，許多技術不斷迭代已經和過去不一樣了，在 Bot Builder SDK v3 以前，是用 .NET Framework 的 ASP.NET WebAPI 作為開發基礎，現在跨平台的 .NET Core 推出了，也成熟了，Bot Builder SDK v4 也理所當然的改用新的技術架構，讓開發者能輕鬆打造出跨平台、高效能的智能機器人。
 

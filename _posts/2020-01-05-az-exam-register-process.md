@@ -5,6 +5,7 @@ date: 2020-01-05 21:22
 author: Poy Chang
 comments: true
 categories: [Azure]
+redirect_to: https://blog.poychang.net/az-exam-register-process/
 ---
 
 如果你是去上 Azure 認證實體課程了話，對應的機構應該會幫你把考試日期安排好，但如果你是自己念書了話，你可能就要自行註冊/安排考試行程了，這篇手把手帶你註冊認證考試。

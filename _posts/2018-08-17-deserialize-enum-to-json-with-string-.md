@@ -5,6 +5,7 @@ date: 2018-08-17 19:31
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, WebAPI]
+redirect_to: https://blog.poychang.net/deserialize-enum-to-json-with-string/
 ---
 使用 Enum 的好處很多，可以有強型別又有 intellisense 提示，還可以增加閱讀性，但在 WebAPI 中要將 Enum 的值輸出時，有點不如期待，他會用數字代碼來當作 JSON 的值，這樣有點不方便閱讀，這裡提供 2 種方法，讓你用簡單的方式，把 Enum 用有意義的文字做輸出。
 

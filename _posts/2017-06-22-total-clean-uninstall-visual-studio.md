@@ -5,7 +5,9 @@ date: 2017-06-21 11:10
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/total-clean-uninstall-visual-studio/
 ---
+
 **警告！**這篇介紹的 Visual Studio 完整移除工具，建議用在**你真的沒辦法了**的時候再用，因為當你按下 `Y` 他真的會把**所有** Visual Studio 相關的工具都移除，務必小心使用。
 
 開發環境總是在經歷了很長一段時間後，安裝很多有的沒的開發工具，甚至一套工具存在很多個版本，當環境很亂的時候，難免奇怪的事情就會發生。

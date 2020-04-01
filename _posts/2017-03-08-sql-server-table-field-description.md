@@ -5,6 +5,7 @@ date: 2017-03-08 12:00
 author: Poy Chang
 comments: true
 categories: [SQL, Develop]
+redirect_to: https://blog.poychang.net/sql-server-table-field-description/
 ---
 
 SQL Database 的資料表是允許我們在上面輸入欄位說明的，我們可以透過此欄位更容易資料表內的各個欄位的用途，不過要查看的時候都都要透過 SQL Server Management Studio 的介面去查，有一點不方便，這時候可以使用這篇的 SQL 來快速查詢

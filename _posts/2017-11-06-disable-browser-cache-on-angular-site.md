@@ -5,7 +5,9 @@ date: 2017-11-06 10:01
 author: Poy Chang
 comments: true
 categories: [Angular]
+redirect_to: https://blog.poychang.net/disable-browser-cache-on-angular-site/
 ---
+
 預設的情況下，瀏覽器會將網站的資料作快取，幫助下次瀏覽時能更快速的呈現內容，不過有時候我們不想要這樣的功能時，例如安全性議題，該怎麼應對呢？這樣提供兩種方式，修改 Html 的 Meta 設定，或是從 Angular 程式碼中下手。
 
 ## 修改 Html Meta 的方法

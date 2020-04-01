@@ -5,6 +5,7 @@ date: 2018-06-04 22:14
 author: Poy Chang
 comments: true
 categories: [Develop, Tools]
+redirect_to: https://blog.poychang.net/docker-cheat-sheet-in-traditional-chinese/
 ---
 
 容器化技術越來越隨處可見，最多人稱道的屬 Docker 莫屬，Docker 的指令其實不複雜，只是對初學者來說還是會有些門檻，如果有個指令大全，或是小抄在手，那肯定會便利不少。

@@ -5,6 +5,7 @@ date: 2019-12-9 17:50
 author: Poy Chang
 comments: true
 categories: [WebAPI, Develop, Tools]
+redirect_to: https://blog.poychang.net/office-word-excel-powerpoint-online-viewer/
 ---
 
 在網頁上預覽檔案的需求越來越常見，尤其是 Office 類型的檔案，使用者希望能在不用另存檔案的情況下，直接在網頁上預覽，過去比較常見的對應方式是將 Office 檔案轉成 PDF 檔，在透過 [PDF.js](https://mozilla.github.io/pdf.js/) 或其他 JavaScript 函示庫來處理，但缺點就在於要先將 Office 檔案轉成 PDF 才能呈現，這裡提供兩種方式，讓你能在網頁上快速成預覽 Office 檔案。

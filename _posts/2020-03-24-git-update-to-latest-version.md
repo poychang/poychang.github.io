@@ -5,6 +5,7 @@ date: 2020-03-24 15:23
 author: Poy Chang
 comments: true
 categories: [Develop, Tools]
+redirect_to: https://blog.poychang.net/git-update-to-latest-version/
 ---
 
 不管是修補[安全漏洞](https://www.ithome.com.tw/news/123526)或是[提供新功能](https://www.ithome.com.tw/news/128961)，Git 版控工具一直在進步，要升級 Git 其實相當單純，解除安裝然後下載新版本的安裝檔，重新安裝一下就好了，但如果你有安裝 Git for Windows，那麼你有更方便的指令來更新 Git。

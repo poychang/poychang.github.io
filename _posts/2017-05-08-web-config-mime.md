@@ -5,7 +5,9 @@ date: 2017-05-08 11:30
 author: Poy Chang
 comments: true
 categories: [Develop]
+redirect_to: https://blog.poychang.net/web-config-mime/
 ---
+
 IIS 中已經幫我們設定好基本的 MIME 類型，但總有些特殊的 MIME 必須我們手動加入，除了在 IIS 上，使用介面做新增外，我們可以透過設定 web.config 檔的方式，將應用程式所需要的 MIME 指定上去，這樣就不用一直去更新 IIS 了。
 
 開啟 web.config 檔案後，一般來說 MIME 的設定是放在 `system.webServer` 節點中的 `staticContent` 裡面，加入 `mimeMap` 節點，並設定 `fileExtension` 和 `mimeType` 這兩個屬性即可。

@@ -5,6 +5,7 @@ date: 2019-01-03 12:54
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, Develop]
+redirect_to: https://blog.poychang.net/build-and-output-references-to-dotnet-core-projects/
 ---
 
 當我們要建立一個隨插 (DLL) 即用 (Method) 的系統的時候，我們會使用類別函式庫專案來建置 DLL，但預設建置類別函式庫專案只會輸出你所寫的程式（通常只有一隻 DLL），不會包含額外參考的 DLL 函示庫檔案（例如 NuGet 的套件），這時會造成一些小困擾，我們可以怎樣優雅的處理這個問題呢？

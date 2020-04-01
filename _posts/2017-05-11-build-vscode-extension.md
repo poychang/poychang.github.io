@@ -5,7 +5,9 @@ date: 2017-05-11 01:22
 author: Poy Chang
 comments: true
 categories: [Develop, Tools]
+redirect_to: https://blog.poychang.net/build-vscode-extension/
 ---
+
 在官方還沒有提供同步設定檔與套件的功能前，可以透過 [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 擴充套件來做同步，最近學習到一種做法，是將推薦的套件包成一個擴充套件包，之後只要安裝這一個套件，其他的也會一起裝起來，感覺超棒的！
 
 ## 推薦擴充套件

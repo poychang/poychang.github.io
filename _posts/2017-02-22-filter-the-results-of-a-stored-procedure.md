@@ -5,6 +5,7 @@ date: 2017-02-22 10:12
 author: Poy Chang
 comments: true
 categories: [SQL, Tools]
+redirect_to: https://blog.poychang.net/filter-the-results-of-a-stored-procedure/
 ---
 有在碰資料庫的人應該都知道，我們可以透過預存程序（Store Procedure）來封裝資料查詢，讓資料服務更效率且更容易被管理，但做成預存程序後，就無法用簡單的查詢語法 `SELECT * FROM TableName` 來做基本的資料檢視。Google 了許久，發現一招，透過 `OPENROWSET` 來簡單達成查詢需求，真的又快又方便（但不建議用在 Production）。
 

@@ -5,7 +5,9 @@ date: 2017-08-30 21:57
 author: Poy Chang
 comments: true
 categories: [App]
+redirect_to: https://blog.poychang.net/cordova-with-wikitude-vr-sdk/
 ---
+
 近年來 VR 話題不斷，從 Apple 的 ARKit 到 Google 最近推出的 ARCore，甚至傳統的 AR SDK 廠商 Vuforia 和 Wikitude 也不斷的增強其開發工具，這都意味著 AR 的開發一直被注目。而最近有機會去研究 AR 在 Cordova 上面的實作與應用，這篇主要是建置 Wikitude 範例 App 的筆記。
 
 >因為目前只有 Wikitude 有推出 Cordova AR SDK 的套件，所以就從此開始著手研究。

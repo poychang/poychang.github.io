@@ -5,6 +5,7 @@ date: 2020-01-02 21:12
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, Develop]
+redirect_to: https://blog.poychang.net/show-code-summary-in-nuget-package/
 ---
 
 寫程式的時候要養成寫好註解的習慣，讓後續接手的開發者能容易的知道該段程式碼在做甚麼，開發通用的套件時也是一樣，讓開發者能在使用你所打造的 API 時，能透過 XML 文件註解（C# XML Documentation Comments）來清楚知道該 API 的用途是什麼，這樣可以提升軟體品質，且有助於開發效率。

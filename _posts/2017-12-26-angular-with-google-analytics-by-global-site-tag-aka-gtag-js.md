@@ -5,7 +5,9 @@ date: 2017-12-26 19:32
 author: Poy Chang
 comments: true
 categories: [Typescript, Angular]
+redirect_to: https://blog.poychang.net/angular-with-google-analytics-by-global-site-tag-aka-gtag-js/
 ---
+
 2017 年 8 月開始，Google Analytics 推出新的追蹤流量工具 Global Site Tag (gtag.js) 來接收網頁流量數據，此工具除了提供更強大的資料收集 API 外，還對 SPA (Single Page Application) 網站提出了更簡單使用的 API。這篇將示範如何在 Angular 專案中加入 Global Site Tag 網站追蹤程式碼。
 
 >官方文件：[Add gtag.js to your site](https://developers.google.com/analytics/devguides/collection/gtagjs/)

@@ -5,6 +5,7 @@ date: 2017-06-27 23:12
 author: Poy Chang
 comments: true
 categories: [Angular, WebAPI, Develop, Tools]
+redirect_to: https://blog.poychang.net/angualr-cli-with-dotnet-core/
 ---
 
 Angular CLI 開發工具真的是很優秀，將前端開發所需要的工作、流程都包裝好了，學會之後，前端開發流程就甘之如飴了。前端搞定了，別忘了還有後端，我偏好使用 ASP.NET Core Web API 作為開發後端專案的框架，然後前後端都有自己的專案架構，這兩者要如何整合呢？

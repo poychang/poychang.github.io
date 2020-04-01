@@ -5,6 +5,7 @@ date: 2019-07-30 19:33
 author: Poy Chang
 comments: true
 categories: [Azure]
+redirect_to: https://blog.poychang.net/list-azure-service-regions/
 ---
 
 Azure 提供了豐富的雲端資源，而為了讓全球的使用者能更享受更低的網路延遲，Azure 截至目前為止，在全球提供 54 個資料中心（或稱`地區`），我們可以把應用程式放在離使用者相對靠近的地方，提供更高效率的服務，所以在設定 Azure 上的資源時，要放在哪個地區就要好好想想了，那麼要如何得知這 54 個地區的清單及地理資訊呢？

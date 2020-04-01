@@ -5,6 +5,7 @@ date: 2020-03-12 15:16
 author: Poy Chang
 comments: true
 categories: [Dotnet, Tools]
+redirect_to: https://blog.poychang.net/batch-uninstall-order-dotnet-sdk-version/
 ---
 
 當使用 .NET Core 開發一段時間後，會發現你的作業系統安裝了很多版本的 .NET Core SDK 或 Runtime，因為在 Visual Studio 2019 16.3 版之前，每次更新 Visual Studio，Visual Studio 安裝程式會安裝相依版本的 .NET Core SDK，因此在控制台的 [新增或移除程式] 中，會看到很多版本的 .NET Core SDK，官方推出了一個小工具，幫助我們快速移除這些不會再用到的 SDK。

@@ -5,6 +5,7 @@ date: 2019-04-17 17:41
 author: Poy Chang
 comments: true
 categories: [Dotnet, WebAPI]
+redirect_to: https://blog.poychang.net/authenticating-jwt-tokens-in-asp-net-core-webapi/
 ---
 
 為了保護 WebAPI 僅提供合法的使用者存取，有很多機制可以做，透過 JWT (JSON Web Token) 便是其中一種方式，這篇示範如何使用官方所提供的 `System.IdentityModel.Tokens.Jwt` 擴充套件，處理呼叫 API 的來源是否為合法的使用者身分。

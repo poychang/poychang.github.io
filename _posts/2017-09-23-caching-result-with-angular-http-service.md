@@ -5,7 +5,9 @@ date: 2017-09-23 01:25
 author: Poy Chang
 comments: true
 categories: [Typescript, Angular]
+redirect_to: https://blog.poychang.net/caching-result-with-angular-http-service/
 ---
+
 前端向後端 API 要資料是稀鬆平常的事，而且前端可能會針對一份資料，依據不同商業邏輯做處理。然而每次處理都要發一次 HTTP Request 和 API 要資料嗎？這樣是不實際的，同一份資料為什麼要發兩次 Request 呢，因此前端需要暫存資料的需求油然而生。
 
 >這裡假設每次向後端要的資料都是一樣的，沒有變化。如果每次要的資料都會不一樣時，不適用這篇文章。

@@ -5,6 +5,7 @@ date: 2018-04-20 01:13
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop, Bot]
+redirect_to: https://blog.poychang.net/introduction-azure-bot-service-and-bot-framework/
 ---
 Azure Bot Service 是一套專用於開發、運行對話機器人的整合環境，也可以說是一個解決方案，裡面關聯到的功能、服務相當多元，從建置機器人對話服務、連結至各對話頻道、測試對話功能，甚至佈署與管理，都包含在 Azure Bot Service 中。
 

@@ -5,6 +5,7 @@ date: 2018-08-27 18:27
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet]
+redirect_to: https://blog.poychang.net/dotnet-core-console-app-with-configuration/
 ---
 
 如果建立過 ASP.NET Core 的專案範本，會在專案資料夾中看到 `appsettings.json` 這個 ASP.NET Core 應用程式的組態設定檔，透過這個檔案我們可以把應用程式的設定從程式碼中抽離，以達到跨環境，或是管理組態檔的目的。如果要在主控台應用程式中使用這樣的手法來控制組態設定，或是要透過環境變數來指定你要使用的組態檔，你可以參考這篇的作法。

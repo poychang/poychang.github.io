@@ -5,6 +5,7 @@ date: 2017-01-30 10:32
 author: Poy Chang
 comments: true
 categories: [Tools]
+redirect_to: https://blog.poychang.net/iis-http-header-ie-compatible/
 ---
 公司有個系統因為時空背景的關係只能用 IE 開，而且還要利用[相容性檢視設定](https://support.microsoft.com/zh-tw/help/17472/windows-internet-explorer-11-fix-site-display-problems-compatibility-view)的方式才能正確開啟，只是這個方法套用下去，只要是該網域的網站都會用舊版的 IE 模式來瀏覽，一直以來相安無事，直到有新系統進來，惱人的事又來了。
 

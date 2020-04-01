@@ -5,7 +5,9 @@ date: 2017-12-12 22:12
 author: Poy Chang
 comments: true
 categories: [Angular]
+redirect_to: https://blog.poychang.net/use-angular-flex-layout-package/
 ---
+
 強大的 Angular 團隊在 Github 上有個專案叫做 [angular/flex-layout](https://github.com/angular/flex-layout)，將 FlexBox CSS 包裝成一個個 Directive 來使用，這個 Flex Layout 專案輔助 Angular (v4.1 以上版本) 用更方便的方式來佈局 HTML 樣板。
 
 >因為 [angular/material2](https://github.com/angular/material2) 不包含 Flex 版面佈局系統，如果想要在 Material2 進行排版時，可以安裝 [angular/flex-layout](https://github.com/angular/flex-layout) 此工具來處理版面布局。 

@@ -5,6 +5,7 @@ date: 2020-01-06 13:50
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop, Tools]
+redirect_to: https://blog.poychang.net/intellisense-in-chineses-for-msbuild-project-file-csproj/
 ---
 
 若要說 Visual Stdio 最強大的武器，莫過於內建強大的 [IntelliSense](https://docs.microsoft.com/zh-tw/visualstudio/ide/using-intellisense) 了，提供列出成員、參數資訊、快速諮詢和自動完成文字等程式碼輔助工具，讓開發人員撰寫程式碼的速度提升了不少，而且藉由 IntelliSense 的提示，還可以在 IDE 中瀏覽當下使用的 API 的相關提示說明，而在 MSBuild 專案檔中（`.csproj`），也是可以使用中文的 IntelliSense 的唷！

@@ -5,6 +5,7 @@ date: 2018-09-11 22:34
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop, Tools]
+redirect_to: https://blog.poychang.net/application-insights-with-doenet-core-console/
 ---
 
 一般聽到 Azure 的 [Application Insights](https://docs.microsoft.com/zh-tw/azure/application-insights/app-insights-overview?WT.mc_id=AZ-MVP-5003022)，會直接與 Web 應用程式連結在一起，認為他是一個監視即時 Web 應用程式狀態的遙測工具。但其實我們可以將 Application Insights 強大的自動偵測效能異常及分析功能，放在一般的應用程式中，例如主控台應用程式。

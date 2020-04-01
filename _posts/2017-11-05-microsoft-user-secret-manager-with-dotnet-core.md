@@ -5,7 +5,9 @@ date: 2017-11-05 11:25
 author: Poy Chang
 comments: true
 categories: [Dotnet, Develop, Tools]
+redirect_to: https://blog.poychang.net/microsoft-user-secret-manager-with-dotnet-core/
 ---
+
 開發的過程中經常會有機密資訊需要設定，例如資料庫的連線字串、服務平台的 API 金鑰，如何保護這些機密不被外流，是件很值得探討的議題，而在 .NET 的開發環境中，有提供 Secret Manager 的套件讓我們輕鬆的保護應用程式的機密資訊。
 
 >請不要將資料庫連線字串等機密資訊放在版控中的，尤其是帳號密碼。

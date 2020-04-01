@@ -5,6 +5,7 @@ date: 2018-06-18 19:30
 author: Poy Chang
 comments: true
 categories: [CSharp, Dotnet, WebAPI]
+redirect_to: https://blog.poychang.net/asp-net-core-windows-authentication/
 ---
 建立 REST 服務的 WebAPI 大多會採用 Token 的方式作為呼叫驗證，不過有時候在企業內部，我們會想要使用 AD 作為身分驗證，也就是使用 Windows 驗證，在 WinForm 的時代，我們可以從 IIS 或設定 `Web.config` 來開啟 Windows 驗證的機制，那麼在 ASP.NET Core WebAPI 中我們可以怎麼做呢？
 
