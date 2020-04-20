@@ -5,7 +5,7 @@ date: 2018-03-12 23:32
 author: Poy Chang
 comments: true
 categories: [App, Tools]
-redirect_to: https://blog.poychang.net/export-provisioning-profile-with-free-ios-developer-/
+redirect_to: https://blog.poychang.net/export-provisioning-profile-with-free-ios-developer/
 ---
 前情提要：因為我只有免費 Personal Team 的 Apple 開發者帳號，又想要玩玩看 [Visual Studio App Center](https://www.visualstudio.com/zh-hant/app-center/)，讓 App 開發也能有 CI/CD 的開發流程，而要讓 App Center 能順利建置 iOS App 專案，你必須要提供開發人員憑證檔(Certificates)，以及 App 項目描述檔 (Provisioning Profiles)，如果你是付費開發者帳號，可以從 [Apple 開發者網站](https://developer.apple.com/account/)去下載 Provisioning Profiles，但免費的 Personal Team 帳號就無法在該網站下載了，這時候該怎麼辦呢？
 
